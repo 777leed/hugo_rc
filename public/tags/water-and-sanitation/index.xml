@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>#Kiln on Resilient Communities</title>
-    <link>https://example.org/tags/%23kiln/</link>
-    <description>Recent content in #Kiln on Resilient Communities</description>
+    <title>Water and Sanitation on Resilient Communities</title>
+    <link>https://example.org/tags/water-and-sanitation/</link>
+    <description>Recent content in Water and Sanitation on Resilient Communities</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/tags/%23kiln/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/tags/water-and-sanitation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project One</title>
+      <link>https://example.org/projects/project1/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/projects/project1/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Project Two</title>
       <link>https://example.org/projects/project2-copy-2/</link>

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Resilient Communities</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://example.org/tags/</link>
     <description>Recent content in Tags on Resilient Communities</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Energy</title>
-      <link>http://localhost:1313/tags/%23energy/</link>
+      <title>#Kiln</title>
+      <link>https://example.org/tags/%23kiln/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%23energy/</guid>
+      <guid>https://example.org/tags/%23kiln/</guid>
       <description></description>
     </item>
     <item>
-      <title>#Kiln</title>
-      <link>http://localhost:1313/tags/%23kiln/</link>
+      <title>Energy</title>
+      <link>https://example.org/tags/energy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%23kiln/</guid>
+      <guid>https://example.org/tags/energy/</guid>
       <description></description>
     </item>
     <item>
       <title>Water and Sanitation</title>
-      <link>http://localhost:1313/tags/%23water-and-sanitation/</link>
+      <link>https://example.org/tags/water-and-sanitation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%23water-and-sanitation/</guid>
+      <guid>https://example.org/tags/water-and-sanitation/</guid>
       <description></description>
     </item>
   </channel>

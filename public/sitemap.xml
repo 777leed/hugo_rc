@@ -2,114 +2,114 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/%23energy/</loc>
+    <loc>https://example.org/tags/%23kiln/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%23kiln/</loc>
+    <loc>https://example.org/articles/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%23water-and-sanitation/</loc>
+    <loc>https://example.org/tags/energy/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/</loc>
+    <loc>https://example.org/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://example.org/projects/project1/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/project1/</loc>
+    <loc>https://example.org/projects/project2-copy-2/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/project2-copy-2/</loc>
+    <loc>https://example.org/projects/project2-copy-3/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/project2-copy-3/</loc>
+    <loc>https://example.org/projects/project2-copy-4/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/project2-copy-4/</loc>
+    <loc>https://example.org/projects/project2-copy-5/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/project2-copy-5/</loc>
+    <loc>https://example.org/projects/project2-copy/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/project2-copy/</loc>
+    <loc>https://example.org/projects/project2/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/project2/</loc>
+    <loc>https://example.org/projects/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://example.org/tags/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://example.org/articles/article1/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/article1/</loc>
+    <loc>https://example.org/articles/article2/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/article2/</loc>
+    <loc>https://example.org/tags/water-and-sanitation/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/abderrahmane-ait-lqous/</loc>
+    <loc>https://example.org/about/abderrahmane-ait-lqous/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/eastman/</loc>
+    <loc>https://example.org/about/eastman/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/khalid/</loc>
+    <loc>https://example.org/about/khalid/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/rees/</loc>
+    <loc>https://example.org/about/rees/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/trent/</loc>
+    <loc>https://example.org/about/trent/</loc>
   </url><url>
-    <loc>http://localhost:1313/donation_page/cashapp/</loc>
+    <loc>https://example.org/donation_page/cashapp/</loc>
   </url><url>
-    <loc>http://localhost:1313/donation_page/paypal/</loc>
+    <loc>https://example.org/donation_page/paypal/</loc>
   </url><url>
-    <loc>http://localhost:1313/donation_page/venmo/</loc>
+    <loc>https://example.org/donation_page/venmo/</loc>
   </url><url>
-    <loc>http://localhost:1313/intern_projects/intern1-copy-2/</loc>
+    <loc>https://example.org/intern_projects/intern1-copy-2/</loc>
   </url><url>
-    <loc>http://localhost:1313/intern_projects/intern1-copy-3/</loc>
+    <loc>https://example.org/intern_projects/intern1-copy-3/</loc>
   </url><url>
-    <loc>http://localhost:1313/intern_projects/intern1-copy-4/</loc>
+    <loc>https://example.org/intern_projects/intern1-copy-4/</loc>
   </url><url>
-    <loc>http://localhost:1313/intern_projects/intern1-copy-5/</loc>
+    <loc>https://example.org/intern_projects/intern1-copy-5/</loc>
   </url><url>
-    <loc>http://localhost:1313/intern_projects/intern1-copy-6/</loc>
+    <loc>https://example.org/intern_projects/intern1-copy-6/</loc>
   </url><url>
-    <loc>http://localhost:1313/intern_projects/intern1-copy-7/</loc>
+    <loc>https://example.org/intern_projects/intern1-copy-7/</loc>
   </url><url>
-    <loc>http://localhost:1313/intern_projects/intern1-copy-8/</loc>
+    <loc>https://example.org/intern_projects/intern1-copy-8/</loc>
   </url><url>
-    <loc>http://localhost:1313/intern_projects/intern1-copy/</loc>
+    <loc>https://example.org/intern_projects/intern1-copy/</loc>
   </url><url>
-    <loc>http://localhost:1313/intern_projects/intern1/</loc>
+    <loc>https://example.org/intern_projects/intern1/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://example.org/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://example.org/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/what_we_do/activity1-copy-2/</loc>
+    <loc>https://example.org/what_we_do/activity1-copy-2/</loc>
   </url><url>
-    <loc>http://localhost:1313/what_we_do/activity1-copy-3/</loc>
+    <loc>https://example.org/what_we_do/activity1-copy-3/</loc>
   </url><url>
-    <loc>http://localhost:1313/what_we_do/activity1-copy-4/</loc>
+    <loc>https://example.org/what_we_do/activity1-copy-4/</loc>
   </url><url>
-    <loc>http://localhost:1313/what_we_do/activity1-copy/</loc>
+    <loc>https://example.org/what_we_do/activity1-copy/</loc>
   </url><url>
-    <loc>http://localhost:1313/what_we_do/activity1/</loc>
+    <loc>https://example.org/what_we_do/activity1/</loc>
   </url><url>
-    <loc>http://localhost:1313/donation_page/</loc>
+    <loc>https://example.org/donation_page/</loc>
   </url><url>
-    <loc>http://localhost:1313/intern_projects/</loc>
+    <loc>https://example.org/intern_projects/</loc>
   </url><url>
-    <loc>http://localhost:1313/join_us/</loc>
+    <loc>https://example.org/join_us/</loc>
   </url><url>
-    <loc>http://localhost:1313/partnership/</loc>
+    <loc>https://example.org/partnership/</loc>
   </url><url>
-    <loc>http://localhost:1313/map/</loc>
+    <loc>https://example.org/map/</loc>
   </url><url>
-    <loc>http://localhost:1313/volunteer_group/</loc>
+    <loc>https://example.org/volunteer_group/</loc>
   </url><url>
-    <loc>http://localhost:1313/what_we_do/</loc>
+    <loc>https://example.org/what_we_do/</loc>
   </url>
 </urlset>

@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About Us on Resilient Communities</title>
-    <link>http://localhost:1313/about/</link>
+    <link>https://example.org/about/</link>
     <description>Recent content in About Us on Resilient Communities</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/about/abderrahmane-ait-lqous/</link>
+      <link>https://example.org/about/abderrahmane-ait-lqous/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/abderrahmane-ait-lqous/</guid>
+      <guid>https://example.org/about/abderrahmane-ait-lqous/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/about/eastman/</link>
+      <link>https://example.org/about/eastman/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/eastman/</guid>
+      <guid>https://example.org/about/eastman/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/about/khalid/</link>
+      <link>https://example.org/about/khalid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/khalid/</guid>
+      <guid>https://example.org/about/khalid/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/about/rees/</link>
+      <link>https://example.org/about/rees/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/rees/</guid>
+      <guid>https://example.org/about/rees/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/about/trent/</link>
+      <link>https://example.org/about/trent/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/trent/</guid>
+      <guid>https://example.org/about/trent/</guid>
       <description></description>
     </item>
   </channel>
