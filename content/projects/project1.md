@@ -12,8 +12,8 @@ budget: "5234"
 raised: "5234"
 donors: "34"
 tags:
-  - "#Water and Sanitation"
-  - "#Energy"
+  - "Water and Sanitation"
+  - "Energy"
 images:
   - "Dual-Powered Kiln Prototype Dimensions and Interior.webp"
   - "Dual-Powered Kiln Prototype Dimensions and Interior.webp"

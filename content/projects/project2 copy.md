@@ -12,7 +12,7 @@ budget: "5234"
 raised: "5234"
 donors: "34"
 tags:
-  - "#Water and Sanitation"
+  - "Water and Sanitation"
   - "#Kiln"
 images:
   - "Aguerda Kids.webp"
