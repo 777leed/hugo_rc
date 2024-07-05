@@ -1,0 +1,33 @@
+{{ define "main" }}
+    <!-- Header & Hero -->
+    <div class="h-screen overflow-hidden w-full">
+        <!-- Hero -->
+        <div class="relative flex justify-center gap-4 flex-col items-center mx-auto h-full w-full bg-cover bg-local">
+              {{ partial "header.html" .}}
+
+                <div class="w-full h-screen flex flex-col md:flex-row">
+                    <!-- Internships Section -->
+                    <div class="w-full md:w-1/2 h-1/2 md:h-full bg-cover bg-center relative" style="background-image: url('/notassets/human-hands-connected-with-green-thread.png');">
+                      <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+                      <div class="bg-black bg-opacity-40 h-full flex flex-col items-center justify-center p-8">
+                        <h2 class="text-4xl text-white font-bold mb-4">Internships</h2>
+                        <p class="text-lg text-white mb-6 text-center max-w-md">Kickstart your career with our internship programs.<br>Gain valuable experience and grow your professional network.</p>
+                        <a href="/internships" class="z-10 px-6 py-3 border border-white text-white font-semibold rounded-md hover:bg-white hover:text-black transition">Learn More</a>
+                      </div>
+                    </div>
+                    <!-- Partnerships Section -->
+                    <div class="w-full md:w-1/2 h-1/2 md:h-full bg-cover bg-center relative" style="background-image: url('/notassets/partnership.png');">
+                      <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+                      <div class="bg-black bg-opacity-40 h-full flex flex-col items-center justify-center p-8">
+                        <h2 class="text-4xl text-white font-bold mb-4">Partnerships</h2>
+                        <p class="text-lg text-white mb-6 text-center max-w-md">Collaborate with us for mutual growth.<br>Explore partnership opportunities that can benefit both parties.</p>
+                        <a href="/partnerships" class="z-10 px-6 py-3 border border-white text-white font-semibold rounded-md hover:bg-white hover:text-black transition">Learn More</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+        </div>
+    </div>
+{{ end }}

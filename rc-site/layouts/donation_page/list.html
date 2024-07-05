@@ -1,0 +1,30 @@
+{{define "main"}}
+    <!-- Header & Hero -->
+    <div class="h-screen overflow-hidden w-full">
+        <!-- Hero -->
+        <div class="relative flex justify-center gap-4 flex-col items-center mx-auto h-full w-full bg-cover bg-local" style="background-image:url('../notassets/project\ banner\ green\ version.png');">
+                <!-- Header -->
+              {{partial "header.html" .}}
+                <div class="mx-auto h-full w-full max-w-4xl max-h-96 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 p-6 flex items-center justify-center flex-col">
+                    <div>
+                        <h2 class="text-gray-200 text-2xl font-semibold text-center font-['Playfair Display'] font-serif mb-4">
+                            Donate & Contribute
+                          </h2>
+                          <p class="px-7 font-sans text-sm antialiased font-light leading-relaxed text-gray-200 text-left">
+                            Support our causes by donating through your preferred payment method. Your contributions help us continue our important work and make a meaningful impact. Choose from Cash App, Venmo, or PayPal to make a secure and easy donation. If you want to deposit directly to our bank, please contact us via email
+                          </p>
+                    </div>
+                    <div class="mt-6 grid grid-cols-3 gap-8">
+                        {{ range .Pages }}
+                        <div class="flex flex-col items-center">
+                            <a href="{{.Params.link}}" class="border border-gray-400 grayscale p-4 rounded-md shadow-lg  flex items-center justify-center w-24 h-24">
+                              <img src="{{.Params.icon}}" alt="Cash App Logo" class="w-12 h-12">
+                            </a>
+                            <span class="mt-2 text-center text-sm font-medium text-gray-100">{{.Params.route}}</span>
+                          </div>
+                        {{ end }}
+                    </div>
+                  </div>
+        </div>
+    </div>
+{{end}}

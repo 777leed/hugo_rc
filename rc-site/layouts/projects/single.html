@@ -1,0 +1,112 @@
+
+{{ define "main" }}
+
+  {{partial "header.html" .}}
+    <div class="w-full scale-90">
+        <div class="w-full p-7">
+          <!-- Title & sub -->
+          <div class="mb-4 w-full lg:w-1/2">
+            <h2 class="text-gray-800 text-xl font-semibold font-['Playfair Display'] font-serif leading-tight">
+              {{ .Title }}
+            </h2>
+            <span class="font-sans text-base antialiased font-normal leading-relaxed text-gray-700 text-left">
+              {{ .Params.sdescription }}
+            </span>
+          </div>
+      
+          <!-- images & details -->
+          <div class="w-full min-h-fit flex flex-col lg:flex-row justify-between">
+            <div class="flex flex-col lg:flex-row h-[20rem] gap-4 mb-4 w-full lg:w-1/2">
+              <div class="flex flex-row lg:flex-col justify-between w-full lg:w-[10%]">
+                {{ range .Params.images }}                      
+                <img class="w-16 h-16 object-cover rounded-lg" src="../../notassets/Projects pics/{{ . }}" alt="">
+                {{ end }}
+              </div>
+              <div class="w-full lg:w-[90%]">
+                <img class="w-full h-1/2 object-cover rounded-lg lg:h-full" src="../../notassets/Projects pics/{{ .Params.thumbnail }}" alt="">
+              </div>
+            </div>
+            <div class="bg-gray-200 w-full lg:w-1/3 mb-4 rounded-lg p-7">
+              <h2 class="text-gray-800 text-xl font-semibold font-['Playfair Display'] font-serif mb-4 border-b border-gray-400">
+                Project Details
+              </h2>
+              <div class="flex flex-col gap-2">
+                <div class="flex items-center">
+                  <span class="material-symbols-outlined text-[#0E773F] mr-1">paid</span>
+                  <span class="font-semibold text-gray-800 text-sm mr-1">Budget :</span>
+                  <span class="font-semibold text-gray-800 text-sm">{{ .Params.budget }}$</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="material-symbols-outlined text-[#0E773F] mr-1">paid</span>
+                  <span class="font-semibold text-gray-800 text-sm mr-1">Raised :</span>
+                  <span class="font-semibold text-gray-800 text-sm">{{ .Params.raised }}$</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="material-symbols-outlined text-[#0E773F] mr-1">person</span>
+                  <span class="font-semibold text-gray-800 text-sm mr-1">Donors :</span>
+                  <span class="font-semibold text-gray-800 text-sm">{{ .Params.donors }}</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="material-symbols-outlined text-[#0E773F] mr-1">location_on</span>
+                  <span class="font-semibold text-gray-800 text-sm mr-1">Location :</span>
+                  <span class="font-semibold text-gray-800 text-sm">{{ .Params.location }}</span>
+                </div>
+              </div>
+              <br>
+              <button class="text-white text-center bg-[#0E773F] px-4 py-2 rounded-full font-semibold w-full">
+                DONATE
+              </button>
+            </div>
+          </div>
+      
+          <!-- Description -->
+          <h2 class="text-gray-800 text-xl font-semibold font-['Playfair Display'] font-serif leading-tight mb-4">
+            Description
+          </h2>
+          <div class="flex flex-col lg:flex-row justify-between w-full">
+            <div class="w-full lg:w-1/2">
+              <p class="font-sans text-base antialiased font-normal text-gray-700 text-justify">
+                {{ .Params.description }}
+              </p>
+              <br>
+              <div class="flex gap-4">
+                {{ range .Params.tags }}
+                <div class="bg-[#0E773F] rounded-lg text-white px-3 py-2 font-semibold w-fit text-sm text-center hover:bg-[#0e773fc0]"><span>{{ . }}</span></div>
+                {{ end }}
+              </div>
+            </div>
+            <div class="flex flex-col w-full lg:w-1/3 mt-4 lg:mt-0">
+              <div class="bg-gray-200 w-full mb-4 rounded-lg p-7 h-[20rem]">
+                <h2 class="text-gray-800 text-xl font-semibold font-['Playfair Display'] font-serif mb-4 border-b border-gray-400">
+                  Documents
+                </h2>
+                <span class="text-sm text-gray-700">For further information about this project, check the following documents</span>
+                {{ range .Params.documents }}
+                <button class="text-center bg-white px-4 py-2 rounded-full font-semibold w-full mt-4">
+                  <div class="w-full flex gap-4">
+                    <img class="w-6 h-6" src="../../notassets/icons/{{ .icon }}" alt="">
+                    <span>{{ .name }}</span>
+                  </div>
+                </button>
+                {{ end }}
+              </div>
+              <div class="bg-gray-200 w-full mb-4 rounded-lg p-7 h-[20rem]">
+                <h2 class="text-gray-800 text-xl font-semibold font-['Playfair Display'] font-serif mb-4 border-b border-gray-400">
+                  Partners
+                </h2>
+                <span class="text-sm text-gray-700">Our Partners regarding this project</span>
+                <div class="flex w-full gap-4 mt-4">
+                  {{ range .Params.partners }}
+                  <img class="object-cover h-16 w-16" src="../../notassets/Partners/{{ . }}" alt="">
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+{{ end }}
+
+
