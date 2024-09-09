@@ -1,44 +1,52 @@
-{{define "main"}}
-{{ partial "header.html" . }}
+{{define "main"}} {{ partial "headerDark.html" . }}
 
-<div class="mt-40 w-full relative">
-    <!-- component -->
-    <div class="max-w-screen-lg pl-7">
-
-
-
-        <div class="mb-4 md:mb-0 w-full mx-auto relative">
-                <div class="px-4 lg:px-0">
-                    <h2 class="text-4xl font-semibold text-gray-800 leading-tight">
-                        {{.Params.title}}
-                    </h2>
-                    <a href="#" class="py-2 text-green-700 inline-flex items-center justify-center">
-                        {{.Params.tags}}
-                    </a>
-                    <div class="flex py-2 mb-2 overflow-hidden">
-                        <img src="{{.Params.authorpic}}" class="h-10 w-10 rounded-full mr-2 object-cover" />
-                        <div>
-                            <p class="font-semibold text-gray-700 text-sm">{{.Params.author}}</p>
-                            <p class="font-semibold text-gray-600 text-sm">{{.Params.date}}</p>
-                        </div>
-                    </div>
-                </div>
-
-                <img src="{{.Params.thumbnail}}" class="w-full object-cover lg:rounded" style="height: 28em;" />
+<div class="mt-40 mb-10 w-full relative">
+  <!-- component -->
+  <div class="max-w-screen-lg mx-auto px-4 lg:px-8">
+    <div class="mb-6 w-full relative">
+      <div class="px-4 lg:px-0">
+        <h2
+          class="text-3xl md:text-4xl font-semibold text-gray-800 leading-tight"
+        >
+          {{.Params.title}}
+        </h2>
+        <a
+          href="#"
+          class="py-2 text-green-700 inline-flex items-center justify-center"
+        >
+          {{.Params.tags}}
+        </a>
+        <div class="flex items-center py-2 mb-4">
+          <img
+            src="{{.Params.authorpic}}"
+            class="h-8 w-8 rounded-full mr-2 object-cover"
+          />
+          <div>
+            <p class="font-semibold text-gray-700 text-sm">
+              {{.Params.author}}
+            </p>
+            <p class="text-gray-600 text-xs">{{.Params.date}}</p>
+          </div>
         </div>
-        <br>
+      </div>
 
-        <div class="flex flex-col lg:flex-row lg:space-x-12">
-            <div class="px-4 lg:px-0 mt-12 text-gray-700 text-lg leading-relaxed w-full lg:w-full">
-                {{.Content}}
-            </div>
-
-
-
-        </div>
-
-        <!-- main ends here -->
+      <img
+        src="{{.Params.thumbnail}}"
+        class="w-full h-64 md:h-80 object-cover rounded-lg"
+      />
     </div>
+    <br />
+
+    <div class="flex flex-col lg:flex-row lg:space-x-8">
+      <div
+        class="mt-6 lg:mt-12 text-gray-700 text-base text-justify leading-relaxed w-full"
+      >
+        {{.Content}}
+      </div>
+    </div>
+
+    <!-- main ends here -->
+  </div>
 </div>
 
 {{end}}

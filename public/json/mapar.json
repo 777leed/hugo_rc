@@ -1,0 +1,289 @@
+[
+  {
+    "latitude": 31.4966,
+    "longitude": -8.0982,
+    "color": null,
+    "title": "الحلول الإبداعية لمشاكل البيئة في المغرب والمنطقة البحر الأبيض المتوسط",
+    "subtitle": "دمج الممارسات التقليدية والحديثة والتصميم",
+    "images": [
+      "Collaborative Projects and programs/Environemtal Issues/pic1.jpg",
+      "Collaborative Projects and programs/Environemtal Issues/pic2.png",
+      "Collaborative Projects and programs/Environemtal Issues/pic3.png"
+    ],
+    "mainImage": "Collaborative Projects and programs/Environemtal Issues/pic1.jpg",
+    "budget": "5234",
+    "raised": "5234",
+    "donors": "34",
+    "location": "تامسلوت، المغرب",
+    "description": "تقع خمسة وتسعون في المائة من أشجار الزيتون في العالم في منطقة البحر الأبيض المتوسط. ونتيجة لذلك، تعاني العديد من البلديات من إيجاد حلاً لمياه الصرف الصحي (OWW) التي تنتجها صناعة زيت الزيتون. تواجه منطقة مراكش آسفي تحديات بيئية إضافية ضمن القطاع الصناعي التقليدي، لاسيما في تامسلوت. نظرًا لمناخها القاسي، تعتبر الأخشاب نادرة، مما يجبر الفخارين على حرق الإطارات لتشغيل أفرانهم. عند النظر في تصميمات بديلة لقطاع الفخار في تامسلوت، من المهم دمج الطرق والتصميم التقليديين بوعي مع الممارسة والتصميم الحديثين. كانت دراسة الحالة لـ إينيرجي إكسشينج ركيزة الأطروحة ونقطة الانطلاق لتطوير مشروع فرن Tameslouht الخاص بالطاقة الناتجة عن النفايات باستخدام غاز الميثان الذي يستخدم OWW كمصبغ والنفايات الصلبة للاحتراق.",
+    "tags": ["المياه والصرف الصحي", "الطاقة"],
+    "documents": [
+      {
+        "name": "Capping System.PDF",
+        "icon": "pdf.png",
+        "link": "path/to/Capping System.PDF"
+      },
+      {
+        "name": "Capping System.DOCX",
+        "icon": "docx.png",
+        "link": "path/to/Capping System.DOCX"
+      }
+    ],
+    "partners": ["uc-logo-red-1.png", "rc.png"]
+  },
+  {
+    "latitude": 31.4966,
+    "longitude": -8.0972,
+    "color": null,
+    "title": "أنشطة دار الشباب مع Fiers et Forts",
+    "subtitle": "أنشطة تعاونية لطلاب التبادل في دار الشباب",
+    "images": [
+      "Community Engagement/Fiers et Forts Youth House Activities/pic1.jpg",
+      "Community Engagement/Fiers et Forts Youth House Activities/pic2.jpg",
+      "Community Engagement/Fiers et Forts Youth House Activities/pic3.jpg"
+    ],
+    "mainImage": "Community Engagement/Fiers et Forts Youth House Activities/pic1.jpg",
+    "budget": "5234",
+    "raised": "5234",
+    "donors": "34",
+    "location": "تامسلوهت، المغرب",
+    "description": "قامت المجتمعات المتماسكة بالتعاون مع دار الشباب Fiers et Forts في تامسلوهت بتقديم برامج تفاعلية لطلاب التبادل للتفاعل مع الأطفال الذين يعيشون هناك. تعتبر المركز معروفة جدًا في تامسلوهت، حيث يقيم هناك أكثر من 40 طفل في أي وقت محدد. إنهم مركزون بشكل كبير على التعليم البيئي، والفنون الإبداعية والأدائية، والرياضة. يكون الأطفال دائمًا متحمسين للمشاركة ولقاء المغاربة من مدن أخرى أو الأجانب من دول أخرى. لقد قمنا بأنشطة رائعة مع طلاب التبادل من Cape Henry High School ضمن برنامج تبادل المغرب وطلاب NSLI-Y من CLC.",
+    "tags": ["تبادل ثقافي", "التعليم والرياضة"],
+    "documents": [
+      {
+        "name": "نظام التغطية.PDF",
+        "icon": "pdf.png",
+        "link": "path/to/Capping System.PDF"
+      },
+      {
+        "name": "نظام التغطية.DOCX",
+        "icon": "docx.png",
+        "link": "path/to/Capping System.DOCX"
+      }
+    ],
+    "partners": ["logo5.png", "NSLI-Y_Logo_White_Text.png"]
+  },
+  {
+    "latitude": 31.6225,
+    "longitude": -7.9898,
+    "color": null,
+    "title": "نظام غطاء الغاز الميثاني لمرافق معالجة مياه الصرف الصحي بالبرك العميقة",
+    "subtitle": "وصف صغير",
+    "images": [
+      "Collaborative Projects and programs/gas treatment/pic2.png",
+      "Collaborative Projects and programs/gas treatment/pic1.png"
+    ],
+    "mainImage": "Collaborative Projects and programs/gas treatment/pic2.png",
+    "budget": "5234",
+    "raised": "5234",
+    "donors": "34",
+    "location": "مراكش، المغرب",
+    "description": "كان مشروع التخرج الهندسي البيئي لعامي 2018-2019 متمحورًا حول تصميم نظام غطاء للغاز الميثاني لبرك الاختزال اللاهوائي لمعالجة مياه الصرف الصحي. يمكن استخدام الغاز الميثاني المحتمل لنماذج أفران الفخار الجديدة أو للاستخدام المنزلي. تم تصميم مفاعل دفعي صغير المقاس حاليًا للتحقق من حجم الأمتار المكعبة من الغاز الميثاني المنتج وتحديد أفضل عملية لتنقية الغاز.",
+    "tags": ["المياه والصرف الصحي", "الطاقة"],
+    "documents": [
+      {
+        "name": "Capping System.PDF",
+        "icon": "pdf.png",
+        "link": "path/to/Capping System.PDF"
+      },
+      {
+        "name": "Capping System.DOCX",
+        "icon": "docx.png",
+        "link": "path/to/Capping System.DOCX"
+      }
+    ],
+    "partners": ["uc-logo-red-1.png", "rc.png"]
+  },
+  {
+    "latitude": 31.4966,
+    "longitude": -8.0992,
+    "color": null,
+    "title": "نشاط Zwin-Up ",
+    "subtitle": "وصف صغير",
+    "images": [
+      "Community Engagement/ZwinUp/pic3.jpg",
+      "Community Engagement/ZwinUp/pic2.jpg",
+      "Community Engagement/ZwinUp/pic1.jpg"
+    ],
+    "mainImage": "Community Engagement/ZwinUp/pic3.jpg",
+    "budget": "5234",
+    "raised": "5234",
+    "donors": "34",
+    "location": "تامسلوهت، المغرب",
+    "description": "نفّذت المجتمعات المتماسكة نشاط Zwin-Up بانتظام في حي المجدوب وتوسعت خارجه. نقوم بشراء 40 وعاءً من التعاونية الألبداء للفخار والسيراميك في تامسلوهت و 40 نبتة من مشتل محلي. ثم، نُضع وعاءين عند كل باب وبعد ذلك نقوم برسم الأواني مع أطفال الحي. لقد عملنا مع مجموعات تبادل للمساعدة في تمويل النشاط وجلب طلابهم للتطوع. اكتسب النشاط اعترافًا في جميع أنحاء تامسلوهت، مما نأمل أن يلهم جمعيات أخرى لتنفيذه في أحياء أخرى.",
+    "tags": ["Zwin-Up", "الأحياء"],
+    "documents": [
+      {
+        "name": "Capping System.PDF",
+        "icon": "pdf.png",
+        "link": "path/to/Capping System.PDF"
+      },
+      {
+        "name": "Capping System.DOCX",
+        "icon": "docx.png",
+        "link": "path/to/Capping System.DOCX"
+      }
+    ],
+    "partners": ["uc-logo-red-1.png", "rc.png"]
+  },
+  {
+    "latitude": 30.5323,
+    "longitude": -7.9243,
+    "color": null,
+    "title": "ألواح شمسية تاسدرت",
+    "subtitle": "تعزيز وصول المياه في قرية صغيرة في وادي سوس",
+    "images": [
+      "Collaborative Projects and programs/Tassdert Solar Panels/tassdert project.webp",
+      "Collaborative Projects and programs/Tassdert Solar Panels/tassdert project.webp",
+      "Collaborative Projects and programs/Tassdert Solar Panels/tassdert project.webp"
+    ],
+    "mainImage": "Collaborative Projects and programs/Tassdert Solar Panels/tassdert project.webp",
+    "budget": "5234",
+    "raised": "5234",
+    "donors": "34",
+    "location": "تاسدرت، المغرب",
+    "description": "بالتعاون مع جمعية شباب تاسدرت، يهدف هذا المشروع إلى تعزيز وصول المياه في قرية صغيرة في وادي سوس، المغرب. تشمل المبادرة تركيب ألواح شمسية لتشغيل بئر وتعميق البئر لتحسين قدرات استخراج المياه. يتناول هذا الجهد قضية حرجة لندرة المياه في المنطقة ويدعم قدرة المجتمع المحلي على التعامل بفعالية مع ظروف الجفاف. سيوفر المشروع حلاً مستدامًا لزيادة توافر المياه للسكان والزراعة المحلية، مما يعزز المقاومة ضد التحديات المناخية.",
+    "tags": ["ماء", "طاقة شمسية"],
+    "documents": [
+      {
+        "name": "Capping System.PDF",
+        "icon": "pdf.png",
+        "link": "path/to/Capping System.PDF"
+      },
+      {
+        "name": "Capping System.DOCX",
+        "icon": "docx.png",
+        "link": "path/to/Capping System.DOCX"
+      }
+    ],
+    "partners": ["rc.png", "tassdert.png"]
+  },
+  {
+    "latitude": 30.5323,
+    "longitude": -7.9253,
+    "color": null,
+    "title": "ضمان السلامة والأمان: إعادة بناء بئر في تاسدرت",
+    "subtitle": "حماية بئر في قرية صغيرة في وادي سوس",
+    "images": [
+      "Collaborative Projects and programs/Tassdert Well Safeguarding/pic1.png",
+      "Collaborative Projects and programs/Tassdert Well Safeguarding/pic2.png",
+      "Collaborative Projects and programs/Tassdert Well Safeguarding/pic3.png"
+    ],
+    "mainImage": "Collaborative Projects and programs/Tassdert Well Safeguarding/pic1.png",
+    "budget": "5234",
+    "raised": "5234",
+    "donors": "34",
+    "location": "تاسدرت، المغرب",
+    "description": "بالشراكة مع جمعية شباب تاسدرت، يركز هذا المشروع على حماية بئر في قرية صغيرة في وادي سوس بالمغرب، التي أصبحت خطرًا عامًا على السكان. يتضمن المبادرة إعادة بناء البئر واستبدال الباب بواحد جديد وآمن من أجل ضمان السلامة ومنع الحوادث. يعالج هذا المشروع المخاوف العاجلة المتعلقة بالسلامة ويساعد في حماية المجتمع من المخاطر المحتملة المرتبطة بالبئر. من خلال تعزيز أمان البئر، نهدف إلى تحسين السلامة العامة والمساهمة في رفاهية سكان القرية.",
+    "tags": ["المياه والصرف الصحي", "السلامة"],
+    "documents": [
+      {
+        "name": "Capping System.PDF",
+        "icon": "pdf.png",
+        "link": "path/to/Capping System.PDF"
+      },
+      {
+        "name": "Capping System.DOCX",
+        "icon": "docx.png",
+        "link": "path/to/Capping System.DOCX"
+      }
+    ],
+    "partners": ["uc-logo-red-1.png", "tassdert.png"]
+  },
+  {
+    "latitude": 31.4966,
+    "longitude": -8.0996,
+    "color": null,
+    "title": "فرن الخزف القابل للتحريق بالقمامة والغاز الميثان",
+    "subtitle": "معالجة فرن الخزف التقليدي في تامسلوهت، والذي يعمل بحرق الإطارات.",
+    "images": [
+      "Collaborative Projects and programs/Trash and Methane Gas Powered Pottery Kiln/somekindameeting.jpg",
+      "Collaborative Projects and programs/Trash and Methane Gas Powered Pottery Kiln/pic1.jpeg",
+      "Collaborative Projects and programs/Trash and Methane Gas Powered Pottery Kiln/pic2.jpeg"
+    ],
+    "mainImage": "Collaborative Projects and programs/Trash and Methane Gas Powered Pottery Kiln/somekindameeting.jpg",
+    "budget": "5234",
+    "raised": "5234",
+    "donors": "34",
+    "location": "تامسلوهت، المغرب",
+    "description": "خلال العام الأكاديمي 2017-2018، أنشأت المجتمعات المتماسكة مشروع تخرج لطلاب الهندسة الميكانيكية. كان الفريق مؤلفًا أيضًا من طالبي هندسة البيئة واحدة، وأستاذ في الهندسة البيئية، ومدرس في الخزف الذين عملوا سويًا لإيجاد أفضل حلا ممكنًا لمعالجة فرن الخزف التقليدي في تامسلوهت، والذي يعمل بحرق الإطارات وما زال سامًا.",
+    "tags": ["هندسة", "طاقة"],
+    "documents": [
+      {
+        "name": "Capping System.PDF",
+        "icon": "pdf.png",
+        "link": "path/to/Capping System.PDF"
+      },
+      {
+        "name": "Capping System.DOCX",
+        "icon": "docx.png",
+        "link": "path/to/Capping System.DOCX"
+      }
+    ],
+    "partners": ["uc-logo-red-1.png", "rc.png"]
+  },
+  {
+    "latitude": 31.4966,
+    "longitude": -8.0999,
+    "color": null,
+    "title": "مرفق إدارة النفايات والفرز",
+    "subtitle": "وصف صغير",
+    "images": [
+      "Collaborative Projects and programs/landfill/pic1.jpeg",
+      "Collaborative Projects and programs/landfill/pic2.jpeg",
+      "Collaborative Projects and programs/landfill/pic3.png"
+    ],
+    "mainImage": "Collaborative Projects and programs/landfill/pic1.jpeg",
+    "budget": "5234",
+    "raised": "5234",
+    "donors": "34",
+    "location": "تامسلوت، المغرب",
+    "description": "خلال العام الدراسي 2019-2020، يقوم طلاب الهندسة البيئية بتصميم مكب ومرفق إدارة النفايات في تامسلوت. سيتم استخدام التقرير والتصاميم التي تم إنتاجها لدعم فصل النفايات وإعادة استخدامها من خلال استخدام بيانات النفايات الصلبة التي تم جمعها من قبل Eastman خلال بحثه في برنامج Fulbright.",
+    "tags": ["المياه والصرف الصحي", "الطاقة"],
+    "documents": [
+      {
+        "name": "نظام الغطاء.PDF",
+        "icon": "pdf.png",
+        "link": "path/to/Capping System.PDF"
+      },
+      {
+        "name": "نظام الغطاء.DOCX",
+        "icon": "docx.png",
+        "link": "path/to/Capping System.DOCX"
+      }
+    ],
+    "partners": ["uc-logo-red-1.png", "rc.png"]
+  },
+  {
+    "latitude": 31.6227,
+    "longitude": -7.9898,
+    "color": null,
+    "title": "أنشطة مركز الشباب ومركز الرياضة",
+    "subtitle": "وصف صغير",
+    "images": [
+      "Community Engagement/youth center sports/pic1.jpg",
+      "Community Engagement/youth center sports/pic2.jpg",
+      "Community Engagement/youth center sports/pic3.jpg"
+    ],
+    "mainImage": "Community Engagement/youth center sports/pic1.jpg",
+    "budget": "5234",
+    "raised": "5234",
+    "donors": "34",
+    "location": "مراكش، المغرب",
+    "description": "لقد تعاونا مؤخرًا مع مركز اللغة والثقافة في مراكش (CLC) لتوفير أنشطة التشارك الاجتماعي لطلابهم المتبادلين من برنامج NSLI-Y. قمنا بتنظيم أنشطة في مركز الشباب تامسلوهت ومركز الرياضة بالتعاون مع جمعية الشباب من أجل التنمية بدون حدود. جمعنا طلابًا محليين طموحين للعمل مع الطلاب المتبادلين لتطوير نشاطهم الخاص لتسهيله خلال نشاط 'زوين آب'. في يوم آخر، قمنا بالاستمتاع بلعب كرة القدم مع نفس الطلاب، مما فتح آفاقًا لحوار عابر للثقافات بين طلاب المدارس الثانوية.",
+    "tags": ["رياضة", "تبادل ثقافي"],
+    "documents": [
+      {
+        "name": "Capping System.PDF",
+        "icon": "pdf.png",
+        "link": "path/to/Capping System.PDF"
+      },
+      {
+        "name": "Capping System.DOCX",
+        "icon": "docx.png",
+        "link": "path/to/Capping System.DOCX"
+      }
+    ],
+    "partners": ["NSLI-Y_Logo_White_Text.png", "CLC.png"]
+  }
+]

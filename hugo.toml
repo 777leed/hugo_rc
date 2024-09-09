@@ -1,3 +1,23 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Resilient Communities'
+defaultContentLanguage = "en"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    contentDir = "content/en"
+    languageDirection = "ltr"
+
+  [languages.fr]
+    languageName = "Français"
+    weight = 2
+    contentDir = "content/fr"
+    languageDirection = "ltr"
+
+  [languages.ar]
+    languageName = "العربية"
+    weight = 3
+    contentDir = "content/ar"
+    languageDirection = "rtl"

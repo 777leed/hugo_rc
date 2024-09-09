@@ -1,0 +1,541 @@
+{{ define "main" }}
+<style>
+  body {
+    overflow: hidden;
+  }
+  .section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navigation-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+  }
+
+  #bgContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease-in-out; /* Transition for fade effect */
+  }
+
+  #bgContainer.fade-out {
+    opacity: 0; /* Fade-out effect */
+  }
+
+  #bgContainer.fade-in {
+    opacity: 1; /* Fade-in effect */
+  }
+</style>
+<div class="overflow-hidden">
+  <div
+    class="snap-y snap-mandatory h-screen overflow-y-auto scroll-smooth"
+    id="container"
+  >
+    <!-- Section 1 -->
+    <div class="section snap-start bg-gray-300" id="section-1">
+      <!-- Header & Hero -->
+      <div class="h-screen overflow-hidden w-full">
+        <!-- Hero -->
+        <div
+          class="relative flex justify-center gap-4 flex-col items-center mx-auto h-full w-full bg-cover bg-local"
+          style="background-image: url('/notassets/sky-toubkal.jpg')"
+        >
+          <!-- Header -->
+
+          {{partial "header.html" .}}
+          <h1
+            class="font-['Playfair Display'] font-serif text-white text-5xl text-center leading-tight"
+          >
+            {{ i18n "Resil6f5ec" }}<br />{{ i18n "Aroun69368" }}
+          </h1>
+          <span class="text-white line-clamp-4 text-center">
+            {{.Params.herotext | safeHTML}}
+          </span>
+          <div class="flex gap-4">
+            <button
+              class="text-white flex items-center justify-between gap-1 bg-[#0E773F] px-6 py-2 rounded-full font-bold min-w-[150px] hover:"
+              id="start-itinerary"
+            >
+              <span>{{ i18n "Starta6122" }}</span
+              ><span class="material-symbols-outlined"> arrow_right_alt </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 2 -->
+    <div class="section snap-start bg-gray-100" id="section-2">
+      <div
+        class="px-4 mt-4 mb-10 sm:px-6 md:px-8 gap-4 flex flex-wrap justify-center h-full items-center"
+      >
+        <!-- Hotel Stay Card -->
+        {{range .Pages}} {{ if eq .Params.type "basic" }}
+        <div
+          class="relative rounded-lg w-52 sm:w-72 h-80 bg-cover bg-center"
+          style="background-image: url('{{.Params.thumbnail}}');"
+        >
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-lg"
+          ></div>
+          <div class="absolute bottom-0 p-4">
+            <div class="border-t border-white mb-2"></div>
+            <h2 class="text-sm text-white font-semibold mb-2">
+              {{ i18n "Basic17171" }}
+            </h2>
+            <h2 class="text-base text-white font-bold opacity-80 mb-4">
+              {{.Params.title}}
+            </h2>
+          </div>
+          <div
+            class="text-white absolute bottom-0 right-0 p-4 text-3xl cursor-pointer activity-clicked"
+            data-activity="{{.Params.title}}"
+            data-pricetag="{{.Params.pricetag}}"
+          >
+            <i class="fa-solid fa-circle-plus"></i>
+          </div>
+        </div>
+        {{end}} {{end}}
+      </div>
+    </div>
+    <!-- Section 3 -->
+    <div class="section snap-start bg-gray-50" id="section-3">
+      <div
+        class="w-full min-h-screen flex flex-col justify-center items-center bg-center bg-cover bg-local"
+        id="bgContainer"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1632310226481-b8d07d2e2184?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        "
+      >
+        <h2 class="text-gray-300 text-sm mt-4">{{ i18n "Clickba1cf" }}</h2>
+        <div
+          class="w-full flex flex-col md:flex-row justify-center items-center"
+        >
+          <div class="w-full h-auto md:w-1/3 p-4">
+            <div class="border-t-white border-2 rounded-lg w-4 mb-2"></div>
+            <h2 class="text-lg text-white font-semibold mb-2" id="region-name">
+              {{ i18n "Sousse2691" }}
+            </h2>
+            <h2
+              class="text-4xl text-white font-bold opacity-80 mb-4"
+              id="activity-name"
+            >
+              {{ i18n "Toubk862fc" }}
+            </h2>
+            <p
+              class="text-sm text-justify text-gray-300"
+              id="activity-description"
+            >
+              {{ i18n "Toubk5bc7d" }}
+            </p>
+          </div>
+          <div class="w-full md:w-2/3 pt-4 pb-4 pl-4">
+            <div class="blaze-slider overflow-hidden" dir="rtl">
+              <div class="blaze-container">
+                <div class="blaze-track">
+                  {{range .Pages}} {{ if eq .Params.type "extra" }}
+                  <!-- Slide 1 -->
+                  <div
+                    class="blaze-slide"
+                    data-activity="{{.Params.title}}"
+                    data-backgroundimage="{{.Params.thumbnail}}"
+                    data-description="{{.Params.description}}"
+                    data-region="{{.Params.location}}"
+                  >
+                    <div
+                      class="relative scale-90 rounded-lg h-80 bg-cover bg-center"
+                      style="background-image: url('{{.Params.thumbnail}}');"
+                    >
+                      <div
+                        class="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-lg"
+                      ></div>
+                      <div class="absolute bottom-0 p-4 mb-6">
+                        <div class="border-t border-white mb-2"></div>
+                        <h2 class="text-sm text-white font-semibold mb-2">
+                          {{.Params.location}}
+                        </h2>
+                        <h2
+                          class="text-base text-white font-bold opacity-80 mb-4"
+                        >
+                          {{.Params.title}}
+                        </h2>
+                      </div>
+                      <div
+                        class="text-white absolute bottom-0 right-0 p-4 text-3xl cursor-pointer activity-clicked"
+                        data-activity="{{.Params.title}}"
+                        data-pricetag="{{.Params.pricetag}}"
+                      >
+                        <i class="fa-solid fa-circle-plus"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  {{ end }}{{ end }}
+                </div>
+              </div>
+              <div class="hidden text-white gap-4 mt-4 lg:flex">
+                <button class="blaze-prev text-3xl">
+                  <i class="fa-solid fa-circle-arrow-left"></i>
+                </button>
+                <button class="blaze-next text-3xl">
+                  <i class="fa-solid fa-circle-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 4 -->
+    <div class="section snap-start bg-white" id="section-4">
+      <div class="flex items-center justify-center p-12">
+        <div class="mx-auto w-full max-w-[550px] bg-white">
+          <form
+            action="https://formspree.io/f/xyzgjkbq"
+            id="itinerary-form"
+            method="post"
+          >
+            <div class="mb-5">
+              <label
+                class="mb-3 block text-base font-medium text-[#07074D]"
+                for="name"
+                >{{ i18n "FullNe309e" }}</label
+              >
+              <input class="w-full rounded-md border border-[#e0e0e0] bg-white
+              py-3 px-6 text-base font-medium text-[#6B7280] outline-none
+              focus:border-green-500 focus:shadow-md" id="name" name="name"
+              placeholder="{{ i18n "FullNe309e" }}" type="text" />
+            </div>
+            <div class="mb-5">
+              <label
+                class="mb-3 block text-base font-medium text-[#07074D]"
+                for="phone"
+                >{{ i18n "Phone677be" }}</label
+              >
+              <input class="w-full rounded-md border border-[#e0e0e0] bg-white
+              py-3 px-6 text-base font-medium text-[#6B7280] outline-none
+              focus:border-green-500 focus:shadow-md" id="phone" name="phone"
+              placeholder="{{ i18n "Phone677be" }}" type="text" />
+            </div>
+            <div class="mb-5">
+              <label
+                class="mb-3 block text-base font-medium text-[#07074D]"
+                for="email"
+                >{{ i18n "Email1e674" }}</label
+              >
+              <input class="w-full rounded-md border border-[#e0e0e0] bg-white
+              py-3 px-6 text-base font-medium text-[#6B7280] outline-none
+              focus:border-green-500 focus:shadow-md" id="email" name="email"
+              placeholder="{{ i18n "Email1e674" }}" type="email" />
+            </div>
+            <div class="-mx-3 flex flex-wrap">
+              <div class="w-full px-3 sm:w-1/2">
+                <div class="mb-5">
+                  <label
+                    class="mb-3 block text-base font-medium text-[#07074D]"
+                    for="date"
+                    >{{ i18n "Durat8ff43" }}</label
+                  >
+                  <select
+                    class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-green-500 focus:shadow-md"
+                    id="date"
+                    name="date"
+                  >
+                    <option value="7days">{{ i18n "7days8da1b" }}</option>
+                    <option value="12days">{{ i18n "12dayaba5f" }}</option>
+                  </select>
+                </div>
+              </div>
+              <div class="w-full px-3 sm:w-1/2">
+                <div class="mb-5">
+                  <label
+                    class="mb-3 block text-base font-medium text-[#07074D]"
+                    for="numberOfPeople"
+                    >{{ i18n "Numbeeafb3" }}</label
+                  >
+                  <input
+                    class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-green-500 focus:shadow-md"
+                    id="numberOfPeople"
+                    min="1"
+                    name="numberOfPeople"
+                    step="1"
+                    type="number"
+                    value="1"
+                  />
+                </div>
+              </div>
+            </div>
+            <span class="mb-3 block text-sm font-medium text-[#07074D]"
+              >{{ i18n "Estimdcf6d" }}<span
+                class="text-green-500"
+                id="estimated-cost"
+                >{{ i18n "0$6aa3a" }}</span
+              >
+            </span>
+            <input id="activities" name="activities" type="hidden" />
+            <input
+              id="hidden-estimated-cost"
+              name="estimatedCost"
+              type="hidden"
+            />
+            <div>
+              <button
+                class="hover:shadow-form w-full rounded-md bg-green-500 py-3 px-8 text-center text-base font-semibold text-white outline-none"
+                id="submit-button"
+                type="submit"
+              >
+                {{ i18n "Submi1169b" }}
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- basket/cart -->
+<div class="fixed top-0 right-0 p-8" id="cart-container">
+  <div class="relative">
+    <div class="text-3xl cursor-pointer" id="cart">
+      <i
+        class="text-white fa-solid fa-basket-shopping mix-blend-difference"
+      ></i>
+      <span
+        class="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs"
+        id="counter"
+        >{{ i18n "0cfcd2" }}</span
+      >
+    </div>
+  </div>
+</div>
+<!-- Navigation Buttons -->
+<div class="hidden lg:navigation-buttons mr-2">
+  <button
+    class="hidden prev-btn bg-gray-600 text-white py-2 px-4 rounded"
+    id="prev-btn"
+  >
+    {{ i18n "Previdd1f7" }}
+  </button>
+  <button
+    class="next-btn bg-[#0E773F] text-white py-2 px-4 rounded"
+    id="next-btn"
+  >
+    {{ i18n "Next10ac3" }}
+  </button>
+</div>
+<!-- navigation, cart, sliders, and form handling scripts -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Navigation-related script
+    const container = document.getElementById("container");
+    const submitButton = document.getElementById("submit-button");
+    const nextBtn = document.getElementById("next-btn");
+    const prevBtn = document.getElementById("prev-btn");
+    const cartContainer = document.getElementById("cart-container");
+    const startItinerary = document.getElementById("start-itinerary");
+    let currentSection = 1;
+    const totalSections = document.querySelectorAll(".section").length;
+
+    nextBtn.classList.add("hidden");
+    prevBtn.classList.add("hidden");
+    cartContainer.classList.add("hidden");
+
+    function updateButtons() {
+      if (currentSection === 1) {
+        prevBtn.classList.add("hidden");
+        nextBtn.classList.add("hidden");
+        cartContainer.classList.add("hidden");
+      } else {
+        prevBtn.classList.remove("hidden");
+        nextBtn.classList.remove("hidden");
+        cartContainer.classList.remove("hidden");
+      }
+
+      if (currentSection === totalSections) {
+        nextBtn.classList.add("hidden");
+      }
+    }
+
+    submitButton.addEventListener("click", () => {
+      document.getElementById("section-4").classList.add("blur");
+    });
+
+    nextBtn.addEventListener("click", () => {
+      currentSection = Math.min(currentSection + 1, totalSections);
+      document
+        .getElementById(`section-${currentSection}`)
+        .scrollIntoView({ behavior: "smooth" });
+      updateButtons();
+    });
+
+    startItinerary.addEventListener("click", () => {
+      currentSection = Math.min(currentSection + 1, totalSections);
+      document
+        .getElementById(`section-${currentSection}`)
+        .scrollIntoView({ behavior: "smooth" });
+      updateButtons();
+    });
+
+    prevBtn.addEventListener("click", () => {
+      currentSection = Math.max(currentSection - 1, 1);
+      document
+        .getElementById(`section-${currentSection}`)
+        .scrollIntoView({ behavior: "smooth" });
+      updateButtons();
+    });
+
+    container.addEventListener("scroll", () => {
+      const scrollPosition = container.scrollTop + container.offsetHeight / 2;
+      let newSection = currentSection;
+
+      document.querySelectorAll(".section").forEach((section, index) => {
+        if (scrollPosition >= section.offsetTop) {
+          newSection = index + 1;
+        }
+      });
+
+      if (newSection !== currentSection) {
+        currentSection = newSection;
+        updateButtons();
+      }
+
+      if (
+        container.scrollTop >
+        document.querySelector(".section").offsetHeight / 2
+      ) {
+        nextBtn.classList.remove("hidden");
+        prevBtn.classList.remove("hidden");
+        cartContainer.classList.remove("hidden");
+      }
+    });
+
+    updateButtons();
+
+    // Cart-related script
+    var activityList = [];
+
+    function updateEstimatedCost() {
+      const days = document.getElementById("date").value;
+      const numberOfPeople = parseInt(
+        document.getElementById("numberOfPeople").value,
+        10
+      );
+      const duration = parseInt(days, 10);
+
+      const baseCost = activityList.reduce((sum, activity) => {
+        return sum + parseInt(activity.cost, 10);
+      }, 0);
+
+      const totalCost = baseCost * duration * numberOfPeople;
+      document.getElementById("estimated-cost").innerText = `${totalCost}$`;
+    }
+
+    document.querySelectorAll(".activity-clicked").forEach(function (element) {
+      element.addEventListener("click", function () {
+        const cartIcon = document.getElementById("cart");
+        const counter = document.getElementById("counter");
+        let count = parseInt(counter.textContent);
+        const activity = {
+          name: element.getAttribute("data-activity"),
+          cost: element.getAttribute("data-pricetag"),
+        };
+
+        if (element.getAttribute("data-add") === "added") {
+          element.innerHTML = `<i class="fa-solid fa-circle-plus"></i>`;
+          element.setAttribute("data-add", "addednot");
+          count -= 1;
+
+          const index = activityList.findIndex(
+            (a) => a.name === activity.name && a.cost === activity.cost
+          );
+          if (index > -1) {
+            activityList.splice(index, 1);
+          }
+
+          counter.textContent = count;
+          bounce(cartIcon);
+        } else {
+          element.innerHTML = `<i class="fa-solid fa-circle-check"></i>`;
+          element.setAttribute("data-add", "added");
+          count += 1;
+
+          activityList.push(activity);
+
+          counter.textContent = count;
+          bounce(cartIcon);
+        }
+        updateEstimatedCost();
+      });
+    });
+
+    function bounce(cartIcon) {
+      cartIcon.classList.add("animate-bounce");
+      setTimeout(() => cartIcon.classList.remove("animate-bounce"), 1000);
+    }
+
+    document
+      .getElementById("date")
+      .addEventListener("change", updateEstimatedCost);
+    document
+      .getElementById("numberOfPeople")
+      .addEventListener("input", updateEstimatedCost);
+    document
+      .getElementById("itinerary-form")
+      .addEventListener("submit", function (event) {
+        var estimatedCost = document.getElementById("estimated-cost").innerText;
+        document.getElementById("activities").value =
+          JSON.stringify(activityList);
+        document.getElementById("hidden-estimated-cost").value = estimatedCost;
+      });
+
+    // Sliders and detail manipulation script
+    function initializeSliders() {
+      const slider = new BlazeSlider(document.querySelector(".blaze-slider"), {
+        all: {
+          slidesToShow: 1,
+          transitionDuration: 300,
+          loop: false,
+        },
+        "(min-width: 600px)": {
+          slidesToShow: 1.5,
+        },
+        "(min-width: 800px)": {
+          slidesToShow: 2.5,
+        },
+        "(min-width: 1024px)": {
+          slidesToShow: 3.5,
+        },
+      });
+    }
+
+    initializeSliders();
+    window.addEventListener("resize", initializeSliders);
+
+    document.querySelectorAll(".blaze-slide").forEach((slide) => {
+      slide.addEventListener("click", function () {
+        const activityName = this.getAttribute("data-activity");
+        const activityDescription = this.getAttribute("data-description");
+        const activityRegion = this.getAttribute("data-region");
+        const backgroundImage = this.getAttribute("data-backgroundImage"); // assuming you have a data attribute for the background image
+
+        document.getElementById("activity-name").textContent = activityName;
+        document.getElementById("activity-description").textContent =
+          activityDescription;
+        document.getElementById("region-name").textContent = activityRegion;
+        // document.getElementById('bgContainer').style.backgroundImage = `url('${backgroundImage}')`;
+      });
+    });
+  });
+</script>
+<!-- Blaze Slider CDN -->
+<script src="https://cdn.jsdelivr.net/npm/blaze-slider@latest/dist/blaze-slider.min.js"></script>
+
+{{ end }}

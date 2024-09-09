@@ -1,0 +1,153 @@
+{{ define "main" }}
+<!-- Header & Hero -->
+{{ partial "hero.html" . }}
+
+<!-- desc -->
+<div class="bg-white">
+  <h2 class="text-[#0E773F] text-base font-semibold text-center mb-2 mt-4">
+    {{i18n "latest_workshops"}}
+  </h2>
+  <h2
+    class="text-gray-800 text-2xl font-semibold text-center font-['Playfair Display'] font-serif mb-4"
+  >
+    {{i18n "our_latest_workshops"}}
+  </h2>
+  <p
+    class="p-7 font-sans text-sm antialiased font-light leading-relaxed text-gray-700 text-center rtl:text-right"
+  >
+    {{i18n "explore_impact"}}
+  </p>
+</div>
+
+<!-- project body -->
+<div class="bg-gray-50 mb-10">
+  <div class="container mx-auto px-4">
+    <div id="blur-overlay"></div>
+
+    <div class="flex flex-wrap w-full justify-center gap-6">
+      {{ range .Pages}}
+      <div
+        class="scale-90 relative flex w-full max-w-[20rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg"
+      >
+        <div
+          class="relative overflow-hidden text-white shadow-lg rounded-t-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40"
+        >
+          <img
+            src="../notassets/Projects pics/{{ .Params.thumbnail }}"
+            class="object-cover w-full h-48"
+            alt="project"
+          />
+          <div
+            class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-r from-transparent via-transparent to-black/60"
+          ></div>
+        </div>
+        <div class="p-4">
+          <div class="mb-2">
+            <h5
+              class="h-12 font-sans text-base antialiased font-medium leading-snug line-clamp-2 tracking-normal text-blue-gray-900"
+            >
+              {{ .Params.title }}
+            </h5>
+            <h5
+              class="block font-sans text-sm antialiased font-normal leading-snug tracking-normal text-blue-gray-900"
+            >
+              {{ .Params.location }}
+            </h5>
+          </div>
+          <p
+            class="font-sans text-sm antialiased font-light leading-relaxed text-gray-700 mb-2 line-clamp-3"
+          >
+            {{ .Params.description }}
+          </p>
+          <h5
+            class="block font-sans text-sm antialiased font-medium italic leading-snug tracking-normal text-[#3B4A3F]"
+          >
+            {{i18n "instructor"}} : {{ .Params.instructor }}
+          </h5>
+        </div>
+        <div class="p-4 pt-2">
+          <button
+            class="project-card block w-full select-none rounded-lg bg-[#3B4A3F] py-2.5 px-5 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            type="button"
+            data-title="{{ .Params.title }}"
+            data-description="{{ .Params.description }}"
+            data-docurl="{{ .Params.document }}"
+            data-img="../notassets/Projects pics/{{ .Params.thumbnail }}"
+          >
+            {{i18n "ReadM4cd70"}}
+          </button>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+<script>
+  // Content for the popup
+  var blurOverlay = document.getElementById("blur-overlay");
+
+  Array.from(document.getElementsByClassName("project-card")).forEach(
+    (element) => {
+      element.addEventListener("click", () => {
+        openPopup(element);
+      });
+    }
+  );
+
+  function openPopup(element) {
+    blurOverlay.style.display = "flex";
+    var popup = document.createElement("div");
+    popup.innerHTML = `
+  <div class="bg-white flex flex-col justify-between m-auto rounded-lg lg:flex-row p-4 w-full max-w-4xl h-96">
+      <div class="w-full lg:w-1/3 mb-4 lg:mb-0 lg:mr-4 h-full">
+          <img class="w-full h-full object-cover rounded-lg" src="${element.getAttribute(
+            "data-img"
+          )}" alt="Thumbnail">
+      </div>
+      <div class="w-full lg:w-2/3 lg:pl-4 h-full overflow-y-auto">
+          <h2 class="text-gray-800 text-xl font-semibold mb-2">
+              ${element.getAttribute("data-title")}
+          </h2>
+          <span class="text-gray-600 block mb-4">
+              ${element.getAttribute("data-description")}
+          </span>
+          <a href="${element.getAttribute(
+            "data-docurl"
+          )}" download class="text-blue-500 hover:underline flex items-center mt-4">
+              <img src="/notassets/file.png" class="w-5 h-auto mr-2" alt="">
+              Participant's Manual
+          </a>
+      </div>
+  </div>
+`;
+
+    popup.style.position = "fixed";
+    popup.style.width = "90%";
+    popup.style.height = "auto";
+    popup.style.top = "50%";
+    popup.style.left = "50%";
+    popup.style.transform = "translate(-50%, -50%)";
+    popup.style.zIndex = "1111";
+    popup.style.overflowY = "auto";
+    popup.classList.add("popup"); // Add a class to the popup for easier selection
+    document.body.appendChild(popup);
+
+    blurOverlay.addEventListener(
+      "click",
+      (event) => {
+        if (!popup.contains(event.target)) {
+          closePopup(popup);
+        }
+      },
+      { once: true }
+    );
+  }
+
+  function closePopup(popup) {
+    blurOverlay.style.display = "none";
+    document.body.removeChild(popup);
+  }
+</script>
+
+{{ end }}

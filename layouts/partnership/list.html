@@ -1,266 +1,408 @@
 {{ define "main" }}
 
-    <!-- Header & Hero -->
-    <div class="h-screen overflow-hidden w-full">
-        <div class="relative flex justify-center gap-4 flex-col items-center mx-auto h-full w-full bg-cover bg-local" style="background-image:url('/notassets/partnership.png');">
-            <!-- Header -->
+<!-- Header & Hero -->
+{{ partial "hero.html" . }}
 
-            {{ partial "header.html" .}}
-
-            <h1 class="font-['Playfair Display'] font-serif text-white text-5xl text-center leading-tight">
-                Resilient Communities <br> Around The World
-            </h1>
-             <span class="text-white line-clamp-4 text-center">
-                Our mission is to positively influence a multitude of communities,<br>ranging from renowned landmarks to undiscovered villages,<br>making a meaningful impact wherever we go.
-            </span>
-            <div class="flex gap-4">
-            <button class="text-white flex items-center justify-between gap-1 bg-[#0E773F] px-6 py-2 rounded-full font-bold min-w-[150px] hover:"><span>Partern With Us</span><span class="material-symbols-outlined">
-            arrow_right_alt
-            </span>
-            </button>
-            <button class="text-white flex items-center justify-between gap-1 border-[#0E773F] border-2 px-6 py-2 rounded-full font-bold min-w-[150px]"><span>Join Now</span><span class="material-symbols-outlined">
-            arrow_right_alt
-            </span>
-            </button>
-            </div>
-
-
-        </div>
-</div>
 <!-- intro -->
-<div class="bg-white">
-<h2 class="text-[#0E773F] text-base font-semibold text-center mb-2 mt-4">
-    Partnerships & collaborations
-</h2>
-<h2 class="text-gray-800 text-2xl font-semibold text-center font-['Playfair Display'] font-serif mb-4">
-    Partner With RC
-</h2>
-<p class="p-10 font-sans text-sm antialiased font-light leading-relaxed text-gray-700 text-left">
-    Are you an association that needs help developing a project? Are you a university professor looking for an international project to incorporate into a studio or capstone project offer your students an impactful internship (remote or in Morocco), and/or organize a faculty-led trip to Morocco? Are you an organization wanting to organize hands-on service learning trip to Morocco? Contact a staff member today to learn more about partnering with us to support you through our field experience and vast network that we've developed since 2014.
-</p>
+<br />
+<br />
+<div class="bg-white" id="partnerplans">
+  <h2 class="text-[#0E773F] text-base font-semibold text-center mb-2 mt-4">
+    {{ i18n "Partncdc1b" }}
+  </h2>
+  <h2
+    class="text-gray-800 text-2xl font-semibold text-center font-['Playfair Display'] font-serif mb-4"
+  >
+    {{ i18n "Partn846f1" }}
+  </h2>
+  <p
+    class="p-10 font-sans text-sm antialiased font-light leading-relaxed text-center text-gray-700 rtl:text-right"
+  >
+    {{ i18n "Areyo71284" }}
+  </p>
 </div>
 <!-- categories -->
-<div class="flex  items-center justify-center bg-gray-50">
-<div class="mx-auto max-w-screen-xl px-4 py-7 lg:px-6 lg:py-14">
-    <div class="space-y-8  lg:grid md:grid-cols-3 lg:space-y-0 lg:gap-10">
-        <!-- Pricing Card -->
-        <div
-            class="scale-95 mx-auto flex max-w-lg space-y-8 items-start flex-col rounded-3xl border border-gray-200 bg-white p-6 text-gray-900 xl:p-8">
-
-            <h3 class="text-lg font-normal ">Associations</h3>
-            <div class="my-8 flex items-baseline justify-center ">
-            <img class="w-16 h-16 object-contain" src="/notassets/icons/users-linked.png" alt="">
-            </div>
-
-            <p class="font-light text-justify min-h-[100px] text-gray-600 sm:text-sm">Are you an association that needs help developing a project ? Let us assist you in bringing your vision to life.</p>
-            <a
-                class="cursor-pointer bg-gray-900 w-full rounded-md  p-3 text-center text-sm font-semibold text-white shadow-sm  hover:-translate-y-1">Get
-                started</a>
-            <!-- List -->
-            <ul role="list" class="mb-8 space-y-4 text-left text-gray-600  text-sm">
-                <li class="flex items-center space-x-3">
-                    <!-- Icon -->
-                    <svg class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white" fill="currentColor"
-                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                    <span>Project management support.</span>
-                </li>
-                <li class="flex items-center space-x-3 ">
-                    <!-- Icon -->
-                    <svg class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white" fill="currentColor"
-                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                    <span>Project idea refinement through consultations and brainstorming.</span>
-                </li>
-                <li class="flex items-center space-x-3">
-                    <!-- Icon -->
-                    <svg class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white" fill="currentColor"
-                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                    <span>Assistance with project planning, timelines, and budgets.</span>
-                </li>
-                <li class="flex items-center space-x-3">
-                    <!-- Icon -->
-                    <svg class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white" fill="currentColor"
-                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                    <span>Training workshops/resources for project members.</span>
-                </li>
-            </ul>
+<div class="flex items-center justify-center bg-gray-50">
+  <div class="mx-auto max-w-screen-xl px-4 py-7 lg:px-6 lg:py-14">
+    <div class="space-y-8 lg:grid md:grid-cols-3 lg:space-y-0 lg:gap-10">
+      <!-- Pricing Card -->
+      <div
+        class="mx-auto flex max-w-lg space-y-8 items-start flex-col rounded-3xl border border-gray-200 bg-white p-6 text-gray-900 xl:p-8"
+      >
+        <h3 class="text-lg font-normal">{{ i18n "Assoc00633" }}</h3>
+        <div class="my-8 flex items-baseline justify-center">
+          <img
+            alt=""
+            class="w-16 h-16 object-contain"
+            src="/notassets/icons/users-linked.png"
+          />
         </div>
-        <!-- Pricing Card 2-->
-        <div
-            class="scale-95 mx-auto flex max-w-lg space-y-8 items-start flex-col rounded-3xl border border-gray-200 bg-white p-6 text-gray-900 xl:p-8">
-
-            <h3 class="text-lg font-normal ">University Professors</h3>
-            <div class="my-8 flex items-baseline justify-center ">
-                <img class="w-16 h-16 object-contain" src="/notassets/icons/university.png" alt="">
-
-            </div>
-
-            <p class="font-light text-justify min-h-[100px] text-gray-600 sm:text-sm">Are you a university professor looking for an international project to incorporate into a studio or capstone project? Offer your students an impactful internship (remote or in Morocco), and/or organize a faculty-led trip to Morocco with our support.</p>
-            <a
-                class="cursor-pointer bg-gray-900 w-full rounded-md  p-3 text-center text-sm font-semibold text-white shadow-sm  hover:-translate-y-1">Get
-                started</a>
-            <!-- List -->
-            <ul role="list" class="mb-8 space-y-4 text-left text-gray-600  text-sm">
-                <li class="flex items-center space-x-3">
-                    <!-- Icon -->
-                    <svg class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white" fill="currentColor"
-                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                    <span>Organize faculty-led trips to Morocco.</span>
-                </li>
-                <li class="flex items-center space-x-3">
-                    <!-- Icon -->
-                    <svg class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white" fill="currentColor"
-                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                    <span>Offer impactful internships (remote or in Morocco).</span>
-                </li>
-                <li class="flex items-center space-x-3">
-                    <!-- Icon -->
-                    <svg class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white" fill="currentColor"
-                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                    <span>Incorporate international projects into studio or capstone courses.</span>
-                </li>
-
-
-                <li class="flex items-center space-x-3">
-                    <!-- Icon -->
-                    <svg class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white" fill="currentColor"
-                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                    <span>Facilitate cross-cultural collaboration opportunities for students.</span>
-                </li>
-            </ul>
-
+        <p
+          class="font-light text-justify min-h-[100px] text-gray-600 sm:text-sm"
+        >
+          {{ i18n "Areyof12cb" }}
+        </p>
+        <a
+          href="#formm"
+          class="cursor-pointer bg-gray-900 w-full rounded-md p-3 text-center text-sm font-semibold text-white shadow-sm hover:-translate-y-1"
+          >{{ i18n "Getstfb517" }}</a
+        >
+        <!-- List -->
+        <ul
+          class="mb-8 space-y-4 rtl:text-right text-gray-600 text-sm"
+          role="list"
+        >
+          <li class="flex items-center space-x-3">
+            <!-- Icon -->
+            <svg
+              class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white"
+              fill="currentColor"
+              viewbox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+            <span>{{ i18n "Proje955a1" }}</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <!-- Icon -->
+            <svg
+              class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white"
+              fill="currentColor"
+              viewbox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+            <span>{{ i18n "Proje594f6" }}</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <!-- Icon -->
+            <svg
+              class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white"
+              fill="currentColor"
+              viewbox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+            <span>{{ i18n "Assisb371c" }}</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <!-- Icon -->
+            <svg
+              class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white"
+              fill="currentColor"
+              viewbox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+            <span>{{ i18n "Traine204c" }}</span>
+          </li>
+        </ul>
+      </div>
+      <!-- Pricing Card 2-->
+      <div
+        class="mx-auto flex max-w-lg space-y-8 items-start flex-col rounded-3xl border border-gray-200 bg-white p-6 text-gray-900 xl:p-8"
+      >
+        <h3 class="text-lg font-normal">{{ i18n "Univebc7b5" }}</h3>
+        <div class="my-8 flex items-baseline justify-center">
+          <img
+            alt=""
+            class="w-16 h-16 object-contain"
+            src="/notassets/icons/university.png"
+          />
         </div>
-        <!-- Pricing Card 3-->
-        <div
-            class="scale-95 mx-auto flex max-w-lg space-y-8 items-start flex-col rounded-3xl border border-gray-200 bg-white p-6 text-center text-gray-700 xl:p-8">
-
-            <h3 class="text-lg font-normal ">Organizations</h3>
-            <div class="my-8 flex items-baseline justify-center ">
-                <img class="w-16 h-16 object-contain" src="/notassets/icons/united-nations (1).png" alt="">
-            </div>
-
-            <p class="font-light text-justify min-h-[100px] text-gray-700 sm:text-sm">Are you an organization wanting to organize hands-on service learning trips to Morocco? Let's collaborate to create a meaningful experience for your team.</p>
-            <a
-                class="cursor-pointer bg-gray-900 w-full rounded-md  p-3  text-sm font-semibold text-white shadow-sm  hover:-translate-y-1">Get
-                started</a>
-            <!-- List -->
-            <ul role="list" class="mb-8 space-y-4 text-left text-gray-700  text-sm">
-                <li class="flex items-center space-x-3 ">
-                    <!-- Icon -->
-                    <svg class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white" fill="currentColor"
-                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                    <span>Tailor service learning experiences to meet your organization's goals</span>
-                </li>
-                <li class="flex items-center space-x-3">
-                    <!-- Icon -->
-                    <svg class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white" fill="currentColor"
-                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                    <span>Offer cultural immersion opportunities for deeper understanding.</span>
-                </li>
-                <li class="flex items-center space-x-3">
-                    <!-- Icon -->
-                    <svg class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white" fill="currentColor"
-                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                    <span>Provide logistical support for seamless trip organization.</span>
-                </li>
-                <li class="flex items-center space-x-3">
-                    <!-- Icon -->
-                    <svg class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white" fill="currentColor"
-                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                    <span>Ensure safety and security measures throughout the trip.</span>
-                </li>
-
-            </ul>
-
+        <p
+          class="font-light text-justify min-h-[100px] text-gray-600 sm:text-sm"
+        >
+          {{ i18n "Areyoa1fa4" }}
+        </p>
+        <a
+          href="#formm"
+          class="cursor-pointer bg-gray-900 w-full rounded-md p-3 text-center text-sm font-semibold text-white shadow-sm hover:-translate-y-1"
+          >{{ i18n "Getstfb517" }}</a
+        >
+        <!-- List -->
+        <ul
+          class="mb-8 space-y-4 rtl:text-right text-gray-600 text-sm"
+          role="list"
+        >
+          <li class="flex items-center space-x-3">
+            <!-- Icon -->
+            <svg
+              class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white"
+              fill="currentColor"
+              viewbox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+            <span>{{ i18n "Organ2c142" }}</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <!-- Icon -->
+            <svg
+              class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white"
+              fill="currentColor"
+              viewbox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+            <span>{{ i18n "Offerd7fe7" }}</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <!-- Icon -->
+            <svg
+              class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white"
+              fill="currentColor"
+              viewbox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+            <span>{{ i18n "Incor8d924" }}</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <!-- Icon -->
+            <svg
+              class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white"
+              fill="currentColor"
+              viewbox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+            <span>{{ i18n "Faciladf47" }}</span>
+          </li>
+        </ul>
+      </div>
+      <!-- Pricing Card 3-->
+      <div
+        class="mx-auto flex max-w-lg space-y-8 items-start flex-col rounded-3xl border border-gray-200 bg-white p-6  text-gray-700 xl:p-8"
+      >
+        <h3 class="text-lg font-normal">{{ i18n "Organfe8d3" }}</h3>
+        <div class="my-8 flex items-baseline justify-center">
+          <img
+            alt=""
+            class="w-16 h-16 object-contain"
+            src="/notassets/icons/united-nations (1).png"
+          />
         </div>
+        <p
+          class="font-light text-justify min-h-[100px] text-gray-700 sm:text-sm"
+        >
+          {{ i18n "Areyodbf14" }}
+        </p>
+        <a
+          href="#formm"
+          class="cursor-pointer bg-gray-900 w-full rounded-md p-3 text-sm text-center font-semibold text-white shadow-sm hover:-translate-y-1"
+          >{{ i18n "Getstfb517" }}</a
+        >
+        <!-- List -->
+        <ul
+          class="mb-8 space-y-4 rtl:text-right text-gray-700 text-sm"
+          role="list"
+        >
+          <li class="flex items-center space-x-3">
+            <!-- Icon -->
+            <svg
+              class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white"
+              fill="currentColor"
+              viewbox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+            <span>{{ i18n "Tailo69051" }}</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <!-- Icon -->
+            <svg
+              class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white"
+              fill="currentColor"
+              viewbox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+            <span>{{ i18n "Offer1836d" }}</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <!-- Icon -->
+            <svg
+              class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white"
+              fill="currentColor"
+              viewbox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+            <span>{{ i18n "Provib667d" }}</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <!-- Icon -->
+            <svg
+              class="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white"
+              fill="currentColor"
+              viewbox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+            <span>{{ i18n "Ensurd5e23" }}</span>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 </div>
-
-</div>
-
-<div class="lg:h-screen">
-
-<div class="bg-white">
+<div class="lg:min-h-screen" id="formm">
+  <div class="bg-white">
     <h2 class="text-[#0E773F] text-base font-semibold text-center mb-2 pt-4">
-        Partnerships & collaborations
+      {{ i18n "Partncdc1b" }}
     </h2>
-    <h2 class="text-gray-800 text-2xl font-semibold text-center font-['Playfair Display'] font-serif mb-4">
-        Contact RC
+    <h2
+      class="text-gray-800 text-2xl font-semibold text-center font-['Playfair Display'] font-serif mb-4"
+    >
+      {{ i18n "Conta550bb" }}
     </h2>
-    <p class="p-10 font-sans text-sm antialiased font-light leading-relaxed text-gray-700 text-left">
-        Welcome to our contact section! if you are interested in partenering/ collaborating with RC Please complete the form with the requested information. Your inquiry will be directed to ejohnson@resilientcommunitiesngo.org
+    <p
+      class="p-10 font-sans text-sm antialiased font-light leading-relaxed text-gray-700 rtl:text-right"
+    >
+      {{ i18n "Welco01679" }}
     </p>
-</div>
-<div class="p-8 bg-gray-50">
-  <div class="flex gap-4">
-    <input type="Name" name="name" class="mt-1 block w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-[#0E773F] focus:outline-none focus:ring-1 focus:ring-[#0E773F] sm:text-sm" placeholder="Organization/University/Name *" />
-    <input type="email" name="email" class="mt-1 block w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-[#0E773F] focus:outline-none focus:ring-1 focus:ring-[#0E773F] sm:text-sm" placeholder="Email *" />
   </div>
-  <div class="my-6 flex gap-4">
-    <input type="tel" name="number" class="mt-1 block w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-[#0E773F] focus:outline-none focus:ring-1 focus:ring-[#0E773F] sm:text-sm" placeholder="Phone Number (WhatsApp If Outside The US)" />
+  <form
+    action="https://formspree.io/f/xyzgjkbq"
+    class="p-8 bg-gray-50"
+    method="post"
+  >
+    <div class="flex gap-4">
+      <input class="mt-1 block w-1/2 rounded-md border border-slate-300 bg-white
+      px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold
+      placeholder:text-gray-500 focus:border-[#0E773F] focus:outline-none
+      focus:ring-1 focus:ring-[#0E773F] sm:text-sm" name="name" placeholder="{{
+      i18n "organization_university_name" }}" type="text" />
+      <input
+        class="mt-1 block w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-[#0E773F] focus:outline-none focus:ring-1 focus:ring-[#0E773F] sm:text-sm"
+        name="email"
+        placeholder="{{ i18n "Email1e674" }}*"
+        type="email"
+      />
+    </div>
+    <div class="my-6 flex gap-4">
+      <input class="mt-1 block w-1/2 rounded-md border border-slate-300 bg-white
+      px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold
+      placeholder:text-gray-500 focus:border-[#0E773F] focus:outline-none
+      focus:ring-1 focus:ring-[#0E773F] sm:text-sm" name="number"
+      placeholder="{{ i18n "phone_number" }}" type="tel" />
 
-    <select name="select" id="select" class="block w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-[#0E773F] focus:outline-none focus:ring-1 focus:ring-[#0E773F] sm:text-sm">
-      <option  class="font-semibold text-slate-400">Project Development</option>
-      <option  class="font-semibold text-slate-400">Internships/Co-ops</option>
-      <option  class="font-semibold text-slate-400">Capstone/Studio Project</option>
-      <option  class="font-semibold text-slate-400">Service Learning Trip</option>
-      <option  class="font-semibold text-slate-400">Faculty-Led Service Learning Trip</option>
-      <option  class="font-semibold text-slate-400">Other</option>
-    </select>
-  </div>
-  <div class="">
-    <textarea name="textarea" id="text" placeholder="Message" cols="30" rows="10" class="mb-10 h-40 w-full resize-none rounded-md border border-slate-300 p-5 font-semibold"></textarea>
-  </div>
-  <div class="text-center">
-    <a class="cursor-pointer rounded-lg bg-[#0E773F] px-8 py-5 text-sm font-semibold text-white">Submit Request</a>
-  </div>
-</div>
+      <select
+        class="block w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-[#0E773F] focus:outline-none focus:ring-1 focus:ring-[#0E773F] sm:text-sm"
+        id="select"
+        name="select"
+      >
+        <option
+          class="font-semibold text-slate-400"
+          value="{{ i18n "Proje0039c" }}"
+        >
+          {{ i18n "Proje0039c" }}
+        </option>
+        <option class="font-semibold text-slate-400" value="Internships/Co-ops">
+          {{ i18n "Interb2b7b" }}
+        </option>
+        <option
+          class="font-semibold text-slate-400"
+          value="Capstone/Studio Project"
+        >
+          {{ i18n "Capstb131b" }}
+        </option>
+        <option
+          class="font-semibold text-slate-400"
+          value="Service Learning Trip"
+        >
+          {{ i18n "Servi2de9d" }}
+        </option>
+        <option
+          class="font-semibold text-slate-400"
+          value="Faculty-Led Service Learning Trip"
+        >
+          {{ i18n "Faculad34a" }}
+        </option>
+        <option class="font-semibold text-slate-400" value="Other">
+          {{ i18n "Other6311a" }}
+        </option>
+      </select>
+    </div>
+    <div class="">
+      <textarea
+        class="mb-10 h-40 w-full resize-none rounded-md border border-slate-300 p-5 font-semibold"
+        cols="30"
+        id="text"
+        name="textarea"
+        placeholder="{{ i18n "message" }}"
+        rows="10"
+      ></textarea>
+    </div>
+    <div class="text-center">
+      <button
+        class="cursor-pointer mb-10 rounded-lg bg-[#0E773F] px-8 py-5 text-sm font-semibold text-white"
+        type="submit"
+      >
+        {{ i18n "Submife8d9" }}
+      </button>
+    </div>
+  </form>
 </div>
 {{ end }}

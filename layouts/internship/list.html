@@ -1,0 +1,1341 @@
+{{define "main"}}
+<!-- Header & Hero -->
+{{ partial "hero.html" . }}
+
+<!-- Introduction -->
+<div class="bg-white py-6 sm:py-8 lg:py-12" id="firstsection">
+  <div class="mx-auto max-w-screen-xl px-7 md:px-8">
+    <div class="grid gap-8 md:grid-cols-2 lg:gap-12">
+      <div class="md:pt-8">
+        <p
+          class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+        >
+          {{ i18n "RCInt01e78" }}
+        </p>
+        <h1
+          class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left rtl:text-right"
+        >
+          {{ i18n "Inter7d90c" }}
+        </h1>
+        <p class="mb-2 text-gray-600 text-justify sm:text-lg md:mb-2">
+          {{ i18n "Wecur099fc" }}
+        </p>
+        <p class="mb-6 text-gray-600 text-justify sm:text-lg md:mb-8">
+          {{ i18n "Inter39f6a" }}
+        </p>
+        <p class="mb-6 text-gray-500 text-justify sm:text-lg md:mb-0">
+          {{ i18n "Toleaca48b" }}
+        </p>
+        <p class="mb-6 text-gray-500 text-justify sm:text-lg md:mb-8">
+          {{ i18n "Conta91469" }}<a class="text-green-700" href=""
+            >{{ i18n "trainf80d1" }}</a
+          >{{ i18n "formodc8f3" }}
+        </p>
+      </div>
+      <div>
+        <div class="scale-90 rounded-lg h-64 overflow-hidden md:h-auto">
+          <img
+            alt="Photo by Martin Sanchez"
+            class="h-full w-full object-cover object-center"
+            loading="lazy"
+            src="/notassets/greenspace.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Program Details -->
+<div class="min-h-screen bg-gray-50 py-6 sm:py-8 lg:py-12">
+  <div class="mx-auto max-w-screen-xl px-7 md:px-8">
+    <div class="grid gap-8 md:grid-cols-2 lg:gap-12"></div>
+    <div class="md:pt-8">
+      <p
+        class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+      >
+        {{ i18n "RCInt01e78" }}
+      </p>
+      <h1
+        class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left rtl:text-right"
+      >
+        {{ i18n "Inter7d90c" }}
+      </h1>
+      <p class="mb-2 text-gray-600 text-justify sm:text-lg md:mb-2">
+        {{ i18n "Resil2e819" }}
+      </p>
+      <p class="mb-6 text-gray-600 text-justify sm:text-lg md:mb-8">
+        {{ i18n "Appli98931" }}
+      </p>
+      <blockquote
+        class="mb-6 border-l-4 pl-4 italic text-gray-500 sm:text-lg md:mb-8 md:pl-6"
+      >
+        {{ i18n "Selec60d2b" }}
+      </blockquote>
+    </div>
+    <div class="lg:w-full w-full mx-auto overflow-auto">
+      <div class="w-full">
+        <div class="relative right-0">
+          <ul
+            class="relative flex flex-wrap p-1 list-none rounded-xl bg-gray-100"
+            data-tabs="tabs"
+            role="list"
+          >
+            <li class="z-30 flex-auto text-center">
+              <a
+                active=""
+                aria-controls="app"
+                aria-selected="true"
+                class="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                data-tab-target=""
+                role="tab"
+              >
+                <span class="ml-1 phase-change">{{ i18n "Phase7593e" }}</span>
+              </a>
+            </li>
+            <li class="z-30 flex-auto text-center">
+              <a
+                aria-controls="message"
+                aria-selected="false"
+                class="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                data-tab-target=""
+                role="tab"
+              >
+                <span class="ml-1 phase-change">{{ i18n "Specic1ec0" }}</span>
+              </a>
+            </li>
+            <li class="z-30 flex-auto text-center">
+              <a
+                aria-controls="settings"
+                aria-selected="false"
+                class="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                data-tab-target=""
+                role="tab"
+              >
+                <span class="ml-1 phase-change">{{ i18n "In-Pe2263d" }}</span>
+              </a>
+            </li>
+          </ul>
+          <div class="p-5" data-tab-content="">
+            <div class="block opacity-100" id="app" role="tabpanel">
+              <div class="block">
+                <!-- title -->
+                <p
+                  class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                >
+                  {{ i18n "PBIa1687" }}
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  {{ i18n "Inter260e8" }}
+                </h1>
+                <!-- text content -->
+                <p class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8">
+                  {{ i18n "Oncet133b5" }}
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  {{ i18n "Onboa10bf8" }}
+                </h1>
+                <!-- text content -->
+                <p class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8">
+                  {{ i18n "Thein25a58" }}
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  {{ i18n "Progra4ef3" }}
+                </h1>
+                <!-- accordions -->
+                <div class="w-full overflow-hidden">
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-1"
+                      >
+                        <span>{{ i18n "Phasee5ce8" }}</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-1"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >{{ i18n "Perfo00709" }}</span
+                            >
+                            <ul class="list-decimal px-4 mt-2 text-gray-500">
+                              <li>{{ i18n "R&Don085b8" }}</li>
+                              <li>{{ i18n "R&Don5ee34" }}</li>
+                            </ul>
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >{{ i18n "Anart6db9c" }}</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-2"
+                      >
+                        <span>{{ i18n "Phase1146b" }}</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-2"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >{{ i18n "Thesee56ac" }}</span
+                            >
+                            <ul class="list-decimal px-4 mt-2 text-gray-500">
+                              <li>{{ i18n "Creatc0443" }}</li>
+                              <li>{{ i18n "Creat7c6ee" }}</li>
+                              <li>{{ i18n "Creat3ed22" }}</li>
+                            </ul>
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >{{ i18n "Draft3091d" }}</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-3"
+                      >
+                        <span>{{ i18n "Phase8a7a8" }}</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-3"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >{{ i18n "Specib70e5" }}</span
+                            >
+                            <ul class="list-decimal px-4 mt-2 text-gray-500">
+                              <li>{{ i18n "Writi7d661" }}</li>
+                              <li>{{ i18n "Writi37e01" }}</li>
+                            </ul>
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >{{ i18n "Draft3091d" }}</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <span
+                    class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                    ><a href="/docs/PBI Program Description.pdf"
+                      >{{ i18n "Downl658ee" }}</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="hidden opacity-0" id="message" role="tabpanel">
+              <div class="block">
+                <!-- title -->
+                <p
+                  class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                >
+                  {{ i18n "SPI33dc5" }}
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  {{ i18n "Inter260e8" }}
+                </h1>
+                <!-- text content -->
+                <p class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8">
+                  {{ i18n "SPIin7925b" }}
+                </p>
+                <!-- title -->
+                <p
+                  class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                >
+                  {{ i18n "SPI33dc5" }}
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  {{ i18n "Onboa10bf8" }}
+                </h1>
+                <!-- text content -->
+                <p class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8">
+                  {{ i18n "Thein25a58" }}
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  {{ i18n "PastSf1dc4" }}
+                </h1>
+                <div class="px-4 mb-6 text-justify sm:text-base md:mb-8">
+                  <ul class="list-disc">
+                    <li class="mb-2">
+                      <span class="text-gray-600">{{ i18n "Sociaacc7a" }}</span>
+                    </li>
+                    <li class="mb-2">
+                      <span class="text-gray-600">{{ i18n "Works4b5c8" }}</span>
+                    </li>
+                    <li class="mb-2">
+                      <span class="text-gray-600">{{ i18n "Grapha988b" }}</span>
+                    </li>
+                  </ul>
+                </div>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  {{ i18n "Progra4ef3" }}
+                </h1>
+                <!-- accordions -->
+                <div class="w-full overflow-hidden">
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-4"
+                      >
+                        <span>{{ i18n "Phasee5ce8" }}</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-4"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >{{ i18n "Initic4dc6" }}</span
+                            >
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >{{ i18n "Parti1ed6a" }}</span
+                            >
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >{{ i18n "Anart6db9c" }}</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-5"
+                      >
+                        <span>{{ i18n "Phase1146b" }}</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-5"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >{{ i18n "Inter26637" }}</span
+                            >
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >{{ i18n "Draft3091d" }}</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-6"
+                      >
+                        <span>{{ i18n "Phase44db5" }}</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-6"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >{{ i18n "Theind6d3f" }}</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <span
+                    class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                    ><a href="/docs/SPI Program Description.pdf"
+                      >{{ i18n "Downl658ee" }}</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="hidden opacity-0" id="settings" role="tabpanel">
+              <div class="block">
+                <!-- title -->
+                <p
+                  class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                >
+                  {{ i18n "IPI0f4f4" }}
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  {{ i18n "Inter260e8" }}
+                </h1>
+                <!-- text content -->
+                <p class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8">
+                  {{ i18n "IPIInb8c11" }}
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  {{ i18n "Onboa10bf8" }}
+                </h1>
+                <!-- text content -->
+                <p class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8">
+                  {{ i18n "Thein25a58" }}
+                </p>
+                <!-- title -->
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  {{ i18n "Progra4ef3" }}
+                </h1>
+                <!-- accordions -->
+                <div class="w-full overflow-hidden">
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-7"
+                      >
+                        <span>{{ i18n "Phase040c0" }}</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-7"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >{{ i18n "Thema49103" }}</span
+                            >
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >{{ i18n "Wewan1e7c3" }}</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-8"
+                      >
+                        <span>{{ i18n "Phase02fca" }}</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-8"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >{{ i18n "​InPh8c85e" }}</span
+                            >
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >{{ i18n "Theydc654a" }}</span
+                            >
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >{{ i18n "Theinc83b3" }}</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-9"
+                      >
+                        <span>{{ i18n "Phaseb1ea8" }}</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-9"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >{{ i18n "Phase7ff50" }}</span
+                            >
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >{{ i18n "Atthebc758" }}</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <span
+                    class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                    >{{ i18n "Downl658ee" }}</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Program Dates -->
+<div class="min-h-screen bg-white py-6 sm:py-8 lg:py-12">
+  <div class="mx-auto max-w-screen-xl px-7 md:px-8">
+    <div class="grid gap-8 md:grid-cols-2 lg:gap-12"></div>
+    <div class="md:pt-8">
+      <p
+        class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+      >
+        {{ i18n "RCInt01e78" }}
+      </p>
+      <h1
+        class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left rtl:text-right"
+      >
+        {{ i18n "Progr35e8e" }}
+      </h1>
+      <p class="mb-2 text-gray-600 text-justify sm:text-lg md:mb-2">
+        {{ i18n "Tohelb9a4a" }}
+      </p>
+      <p class="mb-6 text-gray-600 text-justify sm:text-lg md:mb-8">
+        {{ i18n "Appli98931" }}
+      </p>
+      <blockquote
+        class="mb-6 border-l-4 pl-4 italic text-gray-500 sm:text-lg md:mb-8 md:pl-6"
+      >
+        {{ i18n "RCwil1a772" }}
+      </blockquote>
+    </div>
+    <div class="lg:w-full w-full mx-auto overflow-auto">
+      <table
+        class="table-auto w-full text-left rtl:text-right whitespace-no-wrap"
+      >
+        <thead>
+          <tr>
+            <th
+              class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl"
+            >
+              {{ i18n "PROGRc9c31" }}
+            </th>
+            <th
+              class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100"
+            >
+              {{ i18n "APPLI2d26e" }}
+            </th>
+            <th
+              class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100"
+            >
+              {{ i18n "START70c2c" }}
+            </th>
+            <th
+              class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100"
+            >
+              {{ i18n "ENDDA5652f" }}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="px-4 py-3 text-gray-700">{{.Params.program1}}</td>
+            <td class="px-4 py-3">{{.Params.program1due}}</td>
+            <td class="px-4 py-3">{{.Params.program1start}}</td>
+            <td class="px-4 py-3 text-lg">{{.Params.program1end}}</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 text-gray-700">{{.Params.program2}}</td>
+            <td class="px-4 py-3">{{.Params.program2due}}</td>
+            <td class="px-4 py-3">{{.Params.program2start}}</td>
+            <td class="px-4 py-3 text-lg">{{.Params.program2end}}</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 text-gray-700">{{.Params.program3}}</td>
+            <td class="px-4 py-3">{{.Params.program3due}}</td>
+            <td class="px-4 py-3">{{.Params.program3start}}</td>
+            <td class="px-4 py-3 text-lg">{{.Params.program3end}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!-- Get Started -->
+<div class="min-h-screen bg-gray-50 py-6 sm:py-8 lg:py-12">
+  <div class="mx-auto max-w-screen-xl px-7 md:px-8">
+    <div class="grid gap-8 md:grid-cols-2 lg:gap-12">
+      <div class="md:pt-8">
+        <p
+          class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+        >
+          {{ i18n "RCInt01e78" }}
+        </p>
+        <h1
+          class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left rtl:text-right"
+        >
+          {{ i18n "GetSt6ca8f" }}
+        </h1>
+        <div class="md:pr-10 md:py-6">
+          <div class="flex relative pb-12">
+            <div
+              class="h-full w-10 absolute inset-0 flex items-center justify-center"
+            >
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewbox="0 0 24 24"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div class="flex-grow ps-4">
+              <h2
+                class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+              >
+                {{ i18n "Connec81e2" }}
+              </h2>
+              <p class="leading-relaxed text-gray-700">
+                {{ i18n "Reach6129f" }}
+              </p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div
+              class="h-full w-10 absolute inset-0 flex items-center justify-center"
+            >
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewbox="0 0 24 24"
+              >
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
+            </div>
+            <div class="flex-grow ps-4">
+              <h2
+                class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+              >
+                {{ i18n "Startb8751" }}
+              </h2>
+              <p class="leading-relaxed text-gray-700">
+                {{ i18n "Sendu94a26" }}
+              </p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div
+              class="h-full w-10 absolute inset-0 flex items-center justify-center"
+            >
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewbox="0 0 24 24"
+              >
+                <circle cx="12" cy="5" r="3"></circle>
+                <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+              </svg>
+            </div>
+            <div class="flex-grow ps-4">
+              <h2
+                class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+              >
+                {{ i18n "Conta15e12" }}
+              </h2>
+              <p class="leading-relaxed text-gray-700">
+                {{ i18n "Getinda204" }}
+              </p>
+            </div>
+          </div>
+          <div class="flex relative">
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewbox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+            </div>
+            <div class="flex-grow ps-4">
+              <h2
+                class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+              >
+                {{ i18n "Finisa20dd" }}
+              </h2>
+              <p class="leading-relaxed text-gray-700">
+                {{ i18n "Compl54fa5" }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="mt-36 h-64 rounded-md overflow-hidden md:h-auto">
+          <video controls="controls" preload="metadata">
+            <source
+              src="https://video.wixstatic.com/video/82b4fb_83712fd4db2f4b93a7f3d15c1e2ab957/480p/mp4/file.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Our Recent Interns -->
+<div class="min-h-screen bg-white py-6 sm:py-8 lg:py-12">
+  <div class="mx-auto max-w-screen-xl px-7 md:px-8">
+    <div class="md:pt-8">
+      <p
+        class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+      >
+        {{ i18n "Testi13ea5" }}
+      </p>
+      <h1
+        class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left rtl:text-right"
+      >
+        {{ i18n "OurRef0998" }}
+      </h1>
+      <div class="flex flex-wrap justify-center" id="card-container">
+        {{ range .Pages }}
+        <div
+          class="card scale-90 relative w-72 h-96 bg-white rounded-lg max-w-xs shadow-lg group"
+        >
+          <img
+            alt="Person's Picture"
+            class="w-full h-full object-cover rounded-lg"
+            src="{{ .Params.pic }}"
+          />
+          <div
+            class="rounded-lg absolute bottom-0 left-0 right-0 px-6 py-4 bg-black bg-opacity-50 text-white"
+          >
+            <h2 class="text-lg font-bold">{{ .Params.name }}</h2>
+            <p class="text-sm">{{ .Params.position }}</p>
+          </div>
+          <div
+            class="absolute inset-0 rounded-lg bg-gray-800 bg-opacity-75 text-white px-6 py-4 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          >
+            <div
+              class="flex justify-center items-center absolute top-0 pt-4 gap-2"
+            >
+              <img alt="" class="w-7 h-auto" src="{{ .Params.symbol }}" />
+              <a href="{{ .Params.linkedIn }}" target="_blank">
+                <svg
+                  class="h-5 w-5 text-slate-100 hover:text-slate-200"
+                  fill="currentColor"
+                  viewbox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <p class="text-justify" style="hyphens: auto">{{ .Params.text }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- What's Included ? -->
+<div class="min-h-screen bg-gray-50 py-6 sm:py-8 lg:py-12">
+  <div class="mx-auto max-w-screen-xl px-7 md:px-8">
+    <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+      <!-- text - start -->
+      <div class="mb-10 md:mb-16">
+        <h2
+          class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl"
+        >
+          {{ i18n "What'3a6c4" }}
+        </h2>
+        <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
+          {{ i18n "Thisid373d" }}
+        </p>
+      </div>
+      <!-- text - end -->
+      <div class="grid gap-8 sm:grid-cols-2 md:gap-12 xl:grid-cols-3 xl:gap-16">
+        <!-- feature - start -->
+        <div class="flex gap-4 md:gap-6">
+          <div
+            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              {{ i18n "Langudd514" }}
+            </h3>
+            <p class="mb-2 text-gray-500">{{ i18n "OneMo2e8a1" }}</p>
+          </div>
+        </div>
+        <!-- feature - end -->
+        <!-- feature - start -->
+        <div class="flex gap-4 md:gap-6">
+          <div
+            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              {{ i18n "Housi6214b" }}
+            </h3>
+            <p class="mb-2 text-gray-500">{{ i18n "Assis47d70" }}</p>
+          </div>
+        </div>
+        <!-- feature - end -->
+        <!-- feature - start -->
+        <div class="flex gap-4 md:gap-6">
+          <div
+            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              {{ i18n "Pre-d29d7f" }}
+            </h3>
+            <p class="mb-2 text-gray-500">{{ i18n "Compr38d7d" }}</p>
+          </div>
+        </div>
+        <!-- feature - end -->
+        <!-- feature - start -->
+        <div class="flex gap-4 md:gap-6">
+          <div
+            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              {{ i18n "Orienabbd6" }}
+            </h3>
+            <p class="mb-2 text-gray-500">{{ i18n "On-si437f7" }}</p>
+          </div>
+        </div>
+        <!-- feature - end -->
+        <!-- feature - start -->
+        <div class="flex gap-4 md:gap-6">
+          <div
+            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              {{ i18n "24/7E32669" }}
+            </h3>
+            <p class="mb-2 text-gray-500">{{ i18n "Conti15b00" }}</p>
+          </div>
+        </div>
+        <!-- feature - end -->
+        <!-- feature - start -->
+        <div class="flex gap-4 md:gap-6">
+          <div
+            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m20.893 13.393-1.135-1.135a2.252 2.252 0 0 1-.421-.585l-1.08-2.16a.414.414 0 0 0-.663-.107.827.827 0 0 1-.812.21l-1.273-.363a.89.89 0 0 0-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 0 1-1.81 1.025 1.055 1.055 0 0 1-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 0 1-1.383-2.46l.007-.042a2.25 2.25 0 0 1 .29-.787l.09-.15a2.25 2.25 0 0 1 2.37-1.048l1.178.236a1.125 1.125 0 0 0 1.302-.795l.208-.73a1.125 1.125 0 0 0-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 0 1-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 0 1-1.458-1.137l1.411-2.353a2.25 2.25 0 0 0 .286-.76m11.928 9.869A9 9 0 0 0 8.965 3.525m11.928 9.868A9 9 0 1 1 8.965 3.525"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              {{ i18n "Cultu5a468" }}
+            </h3>
+            <p class="mb-2 text-gray-500">{{ i18n "Engag2d01c" }}</p>
+          </div>
+        </div>
+        <!-- feature - end -->
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  (function () {
+    var isRTL = document.documentElement.getAttribute("dir") === "rtl";
+    var total = document.querySelectorAll("[data-tabs]");
+    var getEventTarget = function getEventTarget(e) {
+      e = e || window.event;
+      return e.target || e.srcElement;
+    };
+    total.forEach(function (item, i) {
+      var moving_div = document.createElement("div");
+      var first_li = item.querySelector("li:first-child [data-tab-target]");
+      var tab = first_li.cloneNode();
+      tab.innerHTML = "-";
+      tab.classList.remove("bg-inherit", "text-slate-700");
+      tab.classList.add("bg-white", "text-white");
+      tab.style.animation = ".2s ease";
+      moving_div.classList.add(
+        "z-10",
+        "absolute",
+        "text-slate-700",
+        "rounded-lg",
+        "bg-inherit",
+        "flex-auto",
+        "text-center",
+        "bg-none",
+        "border-0",
+        "block",
+        "shadow"
+      );
+      moving_div.setAttribute("moving-tab", "");
+      moving_div.setAttribute("data-tab-target", "");
+      moving_div.appendChild(tab);
+      item.appendChild(moving_div);
+      var list_length = item.getElementsByTagName("li").length;
+      moving_div.style.padding = "0px";
+      moving_div.style.width =
+        item.querySelector("li:nth-child(1)").offsetWidth + "px";
+      moving_div.style.transform = "translate3d(0px, 0px, 0px)";
+      moving_div.style.transition = ".5s ease";
+      item.onmouseover = function (event) {
+        var target = getEventTarget(event);
+        var li = target.closest("li");
+        if (li) {
+          var nodes = Array.from(li.closest("ul").children);
+          var index = nodes.indexOf(li) + 1;
+          item.querySelector(
+            "li:nth-child(" + index + ") [data-tab-target]"
+          ).onclick = function () {
+            item.querySelectorAll("li").forEach(function (list_item) {
+              list_item.firstElementChild.removeAttribute("active");
+              list_item.firstElementChild.setAttribute(
+                "aria-selected",
+                "false"
+              );
+            });
+            li.firstElementChild.setAttribute("active", "");
+            li.firstElementChild.setAttribute("aria-selected", "true");
+            moving_div = item.querySelector("[moving-tab]");
+            var sum = 0;
+            if (item.classList.contains("flex-col")) {
+              for (var j = 1; j <= nodes.indexOf(li); j++) {
+                sum += item.querySelector(
+                  "li:nth-child(" + j + ")"
+                ).offsetHeight;
+              }
+              moving_div.style.transform =
+                "translate3d(0px," + sum + "px, 0px)";
+              moving_div.style.height = item.querySelector(
+                "li:nth-child(" + j + ")"
+              ).offsetHeight;
+            } else {
+              for (var j = 1; j <= nodes.indexOf(li); j++) {
+                sum += item.querySelector(
+                  "li:nth-child(" + j + ")"
+                ).offsetWidth;
+              }
+              // Reverse the direction if RTL
+              var transformValue = isRTL ? -sum + "px" : sum + "px";
+              moving_div.style.transform =
+                "translate3d(" + transformValue + ", 0px, 0px)";
+              moving_div.style.width =
+                item.querySelector("li:nth-child(" + index + ")").offsetWidth +
+                "px";
+            }
+          };
+        }
+      };
+    });
+    window.addEventListener("resize", function (event) {
+      total.forEach(function (item, i) {
+        item = item.parentElement.firstElementChild;
+        item.querySelector("[moving-tab]").remove();
+        var moving_div = document.createElement("div");
+        var tab = item
+          .querySelector("[data-tab-target][aria-selected='true']")
+          .cloneNode();
+        tab.innerHTML = "-";
+        tab.classList.remove("bg-inherit");
+        tab.classList.add("bg-white", "text-white");
+        tab.style.animation = ".2s ease";
+        moving_div.classList.add(
+          "z-10",
+          "absolute",
+          "text-slate-700",
+          "rounded-lg",
+          "bg-inherit",
+          "flex-auto",
+          "text-center",
+          "bg-none",
+          "border-0",
+          "block",
+          "shadow"
+        );
+        moving_div.setAttribute("moving-tab", "");
+        moving_div.setAttribute("data-tab-target", "");
+        moving_div.appendChild(tab);
+        item.appendChild(moving_div);
+        moving_div.style.padding = "0px";
+        moving_div.style.transition = ".5s ease";
+        var li = item.querySelector(
+          "[data-tab-target][aria-selected='true']"
+        ).parentElement;
+        if (li) {
+          var nodes = Array.from(li.closest("ul").children);
+          var index = nodes.indexOf(li) + 1;
+          var sum = 0;
+          if (item.classList.contains("flex-col")) {
+            for (var j = 1; j <= nodes.indexOf(li); j++) {
+              sum += item.querySelector("li:nth-child(" + j + ")").offsetHeight;
+            }
+            moving_div.style.transform = "translate3d(0px," + sum + "px, 0px)";
+            moving_div.style.width =
+              item.querySelector("li:nth-child(" + index + ")").offsetWidth +
+              "px";
+            moving_div.style.height = item.querySelector(
+              "li:nth-child(" + j + ")"
+            ).offsetHeight;
+          } else {
+            for (var j = 1; j <= nodes.indexOf(li); j++) {
+              sum += item.querySelector("li:nth-child(" + j + ")").offsetWidth;
+            }
+            var transformValue = isRTL ? -sum + "px" : sum + "px";
+            moving_div.style.transform =
+              "translate3d(" + transformValue + ", 0px, 0px)";
+            moving_div.style.width =
+              item.querySelector("li:nth-child(" + index + ")").offsetWidth +
+              "px";
+          }
+        }
+      });
+      if (window.innerWidth < 991) {
+        total.forEach(function (item, i) {
+          if (!item.classList.contains("flex-col")) {
+            item.classList.add("flex-col", "on-resize");
+          }
+        });
+      } else {
+        total.forEach(function (item, i) {
+          if (item.classList.contains("on-resize")) {
+            item.classList.remove("flex-col", "on-resize");
+          }
+        });
+      }
+    });
+    var total = document.querySelectorAll("[data-tab-content]");
+    if (total[0]) {
+      total.forEach(function (nav_pills) {
+        var links = nav_pills.parentElement.querySelectorAll(
+          "li a[data-tab-target]"
+        );
+        links.forEach(function (link) {
+          link.addEventListener("click", function () {
+            var clicked_tab = document.querySelector(
+              "#" + link.getAttribute("aria-controls")
+            );
+            if (!clicked_tab.classList.contains("block", "opacity-100")) {
+              var active_link = clicked_tab
+                .closest("[data-tab-content]")
+                .parentElement.querySelector(
+                  "li a[data-tab-target][aria-selected='true']"
+                );
+              var active_panel = document.querySelector(
+                "#" + active_link.getAttribute("aria-controls")
+              );
+              active_panel.classList.remove("block", "opacity-100");
+              active_panel.classList.add("hidden", "opacity-0");
+              clicked_tab.classList.add("block", "opacity-100");
+              clicked_tab.classList.remove("hidden", "opacity-0");
+            }
+          });
+        });
+      });
+    }
+  })();
+</script>
+
+<script>
+  (function () {
+    var triggers = document.querySelectorAll("[data-collapse-target]");
+    var collapses = document.querySelectorAll("[data-collapse]");
+    if (triggers && collapses) {
+      Array.from(triggers).forEach(function (trigger) {
+        return Array.from(collapses).forEach(function (collapse) {
+          if (trigger.dataset.collapseTarget === collapse.dataset.collapse) {
+            trigger.addEventListener("click", function () {
+              if (collapse.style.height && collapse.style.height !== "0px") {
+                collapse.style.height = 0;
+                collapse.style.overflow = "hidden";
+                trigger.removeAttribute("open");
+              } else {
+                collapse.style.height = "".concat(
+                  collapse.children[0].clientHeight,
+                  "px"
+                );
+                collapse.style.overflow = "visible";
+                trigger.setAttribute("open", "");
+              }
+            });
+          }
+        });
+      });
+    }
+  })();
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("i.fa-chevron-down").forEach(function (icon) {
+      var parentElement = icon.closest("[dir]");
+      if (parentElement && parentElement.getAttribute("dir") === "rtl") {
+        icon.classList.remove("right-0");
+        icon.classList.add("left-0");
+      } else {
+        icon.classList.remove("left-0");
+        icon.classList.add("right-0");
+      }
+    });
+
+    function updatePhaseText() {
+      var abbreviations = {
+        "In-Person Internship (IPI)": "IPI",
+        "Special Project Internship (SPI)": "SPI",
+        "Phase-Based Internship (PBI)": "PBI",
+      };
+
+      var spans = document.querySelectorAll("span.phase-change");
+
+      spans.forEach(function (span) {
+        var fullText = span.innerText.trim();
+        if (window.innerWidth < 768 && abbreviations[fullText]) {
+          // Check if the screen width is less than 768px
+          span.innerText = abbreviations[fullText];
+        } else if (
+          window.innerWidth >= 768 &&
+          Object.values(abbreviations).includes(fullText)
+        ) {
+          // If the screen width is 768px or more and the span text is an abbreviation, revert to full text
+          for (var key in abbreviations) {
+            if (abbreviations[key] === fullText) {
+              span.innerText = key;
+            }
+          }
+        }
+      });
+    }
+
+    // Initial check
+    updatePhaseText();
+
+    // Update on resize
+    window.addEventListener("resize", updatePhaseText);
+  });
+</script>
+
+{{end}}

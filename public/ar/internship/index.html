@@ -1,0 +1,2398 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مشاريع التدريب</title>
+    <link href="/css/output.css" rel="stylesheet" />
+    <link href="/css/partnerSilder.css" rel="stylesheet" />
+    <link href="/css/overlay.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="/css/rtl.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/blaze-slider@latest/dist/blaze.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/blaze-slider@latest/dist/blaze-slider.min.js"></script>
+
+    
+  </head>
+
+  <body
+    class="bg-white w-full h-full m-0 p-0 antialiased"
+    style="scroll-behavior: smooth"
+  >
+    <main>
+
+<style>
+  #scroll-arrow {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .scroll-animation img {
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+</style>
+
+<div class="h-screen overflow-hidden w-full">
+  <div
+    class="relative flex justify-center gap-4 flex-col items-center mx-auto h-full w-full bg-cover bg-local p-4 md:p-8"
+    style="background-image:url('/notassets/human-hands-connected-with-green-thread.jpg');"
+  >
+    
+    
+
+<div
+  id="header-container"
+  class="min-h-20 h-auto justify-center w-full px-7 flex flex-col mx-auto absolute top-0 z-10"
+>
+  <nav
+    class="relative flex flex-wrap items-center justify-between w-full group py-7 shrink-0"
+  >
+    <a href="http://localhost:1313/ar" class="flex gap-2 items-center">
+      <img class="h-16 w-16" src="/notassets/logo transparent.svg" alt="" />
+      <div class="flex flex-col gap-1">
+        <span class="text-[#0E773F] text-sm font-medium"
+          >مجتمعات مرنة</span
+        >
+        <span class="text-gray-400 text-xs">الإلهام من خلال الابتكار</span>
+      </div>
+    </a>
+    <div class="items-center justify-between hidden gap-12 text-black lg:flex">
+      <a
+        class="text-sm font-semibold text-white hover:text-[#0E773F]"
+        href="http://localhost:1313/ar"
+        >الرئيسية</a
+      >
+      
+      <div>
+        <button
+          id="dropdownAboutButton"
+          data-dropdown-toggle="dropdownAbout"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-white hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+        >
+          حول
+        </button>
+        
+        <div
+          id="dropdownAbout"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownAboutButton"
+          >
+            <li>
+              <a
+                href="http://localhost:1313/ar/about"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >من نحن</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/ar/what_we_do"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >ماذا نفعل</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a
+        class="text-sm font-semibold text-white hover:text-[#0E773F]"
+        href="http://localhost:1313/ar/projects"
+        >المشاريع</a
+      >
+      
+      <div>
+        <button
+          id="dropdownInternshipButton"
+          data-dropdown-toggle="dropdownInternship"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-white hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+        >
+          التدريب
+        </button>
+        
+        <div
+          id="dropdownInternship"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownInternshipButton"
+          >
+            <li>
+              <a
+                href="http://localhost:1313/ar/internship"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >برامج التدريب</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/ar/intern_projects"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >مشاريع المتدربين</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div>
+        <button
+          id="dropdownGetInvolvedButton"
+          data-dropdown-toggle="dropdownGetInvolved"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-white hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+        >
+          شارك معنا
+        </button>
+        
+        <div
+          id="dropdownGetInvolved"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownGetInvolvedButton"
+          >
+            <li>
+              <a
+                href="http://localhost:1313/ar/volunteer_group"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >مجموعة المتطوعين</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/ar/partnership"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >الشراكة</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div>
+        <button
+          id="dropdownResourcesButton"
+          data-dropdown-toggle="dropdownResources"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-white hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+        >
+          الموارد
+        </button>
+        
+        <div
+          id="dropdownResources"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownResourcesButton"
+          >
+            <li>
+              <a
+                href="http://localhost:1313/ar/workshops"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >ورش العمل</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/ar/articles"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >المقالات</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/ar/map"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >خريطة المشاريع</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div>
+        <button
+          id="dropdownLanguageButton"
+          data-dropdown-toggle="dropdownLanguage"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-white hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+          style="text-transform: capitalize"
+        >
+          ar
+          <img
+            src="/notassets/icons/arrow-drop.png"
+            alt="Arrow Icon"
+            class="ml-2 w-4 h-4"
+          />
+        </button>
+        
+        <div
+          id="dropdownLanguage"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownLanguageButton"
+          >
+            
+            <li>
+              <a
+                href="http://localhost:1313/en"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >English</a
+              >
+            </li>
+            
+            <li>
+              <a
+                href="http://localhost:1313/fr"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Français</a
+              >
+            </li>
+            
+            <li>
+              <a
+                href="http://localhost:1313/ar"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >العربية</a
+              >
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="items-center hidden gap-8 lg:flex">
+      <div
+        class="items-baseline justify-between hidden gap-4 text-slate-400 md:flex"
+      >
+        
+        <a href="http://www.facebook.com/resilientcommunitiesmorocco/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+            /></svg
+        ></a>
+
+        
+        <a href="https://twitter.com/ResComm2017">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 6.9199219 6 L 21.136719 26.726562 L 6.2285156 44 L 9.40625 44 L 22.544922 28.777344 L 32.986328 44 L 43 44 L 28.123047 22.3125 L 42.203125 6 L 39.027344 6 L 26.716797 20.261719 L 16.933594 6 L 6.9199219 6 z"
+            ></path></svg
+        ></a>
+
+        
+        <a href="https://www.instagram.com/resilient_communities/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+            /></svg
+        ></a>
+
+        
+        <a
+          href="https://www.linkedin.com/company/resilient-communities-non-profit/"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+            /></svg
+        ></a>
+
+        
+        <a href="https://www.youtube.com/@resilientcommunities4942">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+            /></svg
+        ></a>
+
+        
+        <a href="https://www.tiktok.com/@resilient_communities">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="h-4 w-4"
+          >
+            
+            <path
+              fill="currentColor"
+              d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+            /></svg
+        ></a>
+      </div>
+      <a
+        href="http://localhost:1313/ar/donation_page"
+        class="text-white flex items-center justify-between gap-1 bg-[#0E773F] px-4 py-2 rounded-full font-bold"
+      >
+        <span>تبرع الآن</span>
+      </a>
+    </div>
+    <button
+      onclick="(() => { this.closest('.group').classList.toggle('open')})()"
+      class="flex lg:hidden"
+    >
+      <img src="/notassets/svgs/menu.svg" alt="" />
+    </button>
+    <div
+      class="z-20 absolute flex md:hidden transition-all overflow-auto duration-300 ease-in-out flex-col items-center shadow-main justify-center w-full gap-3 bg-white bg-opacity-30 backdrop-blur-xl backdrop-filter max-h-0 group-[.open]:py-4 px-4 rounded-2xl group-[.open]:max-h-80 mt-2 top-full"
+    >
+      <br />
+      <br />
+      <br />
+      <br />
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/ar"
+        >Home</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/ar/about"
+        >About Us</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/ar/what_we_do"
+        >What We do</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/ar/projects"
+        >Projects</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/ar/internship"
+        >Internship Programs</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/ar/intern_projects"
+        >Intern Projects</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/ar/volunteer_group"
+        >Volunteer Group</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/ar/partnership"
+        >Partnership</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/ar/articles"
+        >Articles</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/ar/map"
+        >Projects Map</a
+      >
+
+      <a
+        href="http://localhost:1313/ar/donation_page"
+        class="text-sm text-white flex items-center justify-between gap-1 bg-[#0E773F] px-4 py-2 rounded-full font-bold"
+      >
+        <span>Donate Now</span>
+      </a>
+      
+      <div class="mt-6 flex justify-center w-full gap-4">
+        
+        <a
+          href="http://localhost:1313/en"
+          class="text-xs font-semibold text-dark-grey-700 hover:text-dark-grey-900 transition-all duration-300"
+        >
+          English
+        </a>
+        
+        <a
+          href="http://localhost:1313/fr"
+          class="text-xs font-semibold text-dark-grey-700 hover:text-dark-grey-900 transition-all duration-300"
+        >
+          Français
+        </a>
+        
+        <a
+          href="http://localhost:1313/ar"
+          class="text-xs font-semibold text-dark-grey-700 hover:text-dark-grey-900 transition-all duration-300"
+        >
+          العربية
+        </a>
+        
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+    
+    <h1
+      class="font-['Playfair Display'] font-serif text-white text-3xl md:text-5xl text-center leading-tight md:leading-snug px-4"
+    >
+      المجتمعات المتينة<br>حول العالم
+    </h1>
+
+    <span
+      class="text-white text-center mt-4 px-4 md:px-0"
+      style="max-width: 500px"
+    >
+      قم بإطلاق إمكانياتك مع التجربة العملية: انضم إلينا في تشكيل مستقبل تطوير المجتمع.
+    </span>
+
+    <div class="flex gap-4 mt-6">
+      <a
+        href="http://localhost:1313/ar/internship/#firstsection"
+        class="text-white flex items-center justify-between gap-1 bg-[#0E773F] px-6 py-3 rounded-full font-bold min-w-[150px] hover:bg-green-700 transition-colors"
+      >
+        <span>عرض البرامج</span>
+        <span class="material-symbols-outlined">arrow_right_alt</span>
+      </a>
+
+      <a
+        href="http://localhost:1313/ar/join_us"
+        class="text-white flex items-center justify-between gap-1 border-[#0E773F] border-2 px-6 py-3 rounded-full font-bold min-w-[150px] hover:border-green-700 transition-colors"
+      >
+        <span>انضم الآن</span>
+        <span class="material-symbols-outlined">arrow_right_alt</span>
+      </a>
+    </div>
+
+    
+    <div id="scroll-arrow" class="scroll-animation h-7 w-7 mt-8">
+      <img src="/notassets/icons/arrow.png" alt="Scroll Down" />
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const scrollArrow = document.getElementById("scroll-arrow");
+
+    function hideScrollArrow() {
+      scrollArrow.style.opacity = "0";
+      setTimeout(() => {
+        scrollArrow.style.display = "none";
+      }, 500); 
+    }
+
+    
+    window.addEventListener("scroll", function () {
+      hideScrollArrow();
+    });
+
+    
+    window.addEventListener("wheel", function () {
+      hideScrollArrow();
+    });
+
+    window.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+        hideScrollArrow();
+      }
+    });
+  });
+</script>
+
+
+
+<div class="bg-white py-6 sm:py-8 lg:py-12" id="firstsection">
+  <div class="mx-auto max-w-screen-xl px-7 md:px-8">
+    <div class="grid gap-8 md:grid-cols-2 lg:gap-12">
+      <div class="md:pt-8">
+        <p
+          class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+        >
+          تدريب المنسق المقيم
+        </p>
+        <h1
+          class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left rtl:text-right"
+        >
+          برامج التدريب الداخلي
+        </h1>
+        <p class="mb-2 text-gray-600 text-justify sm:text-lg md:mb-2">
+          نقدم حالياً التدريب على مراحل والتدريب على المشاريع الخاصة إما عن بُعد أو في المغرب. نماذجنا قابلة للتكيف لتسمح لك بتطوير مهاراتك وتعزيزها وتعلمها بما يفيد تطورك المهني.
+        </p>
+        <p class="mb-6 text-gray-600 text-justify sm:text-lg md:mb-8">
+          يتم التدريب الداخلي خلال كل فصل دراسي (الخريف - الربيع - الصيف). يتطلب التدريب الداخلي عن بُعد من 7 إلى 30 ساعة في الأسبوع، ويتطلب التدريب الداخلي من 30 إلى 40 ساعة أسبوعياً وغير مدفوعة الأجر. إذا كان برنامجك الجامعي يتطلب ساعات أكثر، يمكن تعديل المهام لتلبية إجمالي ساعات العمل المطلوبة.
+        </p>
+        <p class="mb-6 text-gray-500 text-justify sm:text-lg md:mb-0">
+          لمعرفة المزيد عن خيارات التدريب عن بُعد وفي المغرب
+        </p>
+        <p class="mb-6 text-gray-500 text-justify sm:text-lg md:mb-8">
+          اتصل بنا على :<a class="text-green-700" href=""
+            >training@resilientcommunitiesngo.org</a
+          >لمزيد من المعلومات!
+        </p>
+      </div>
+      <div>
+        <div class="scale-90 rounded-lg h-64 overflow-hidden md:h-auto">
+          <img
+            alt="Photo by Martin Sanchez"
+            class="h-full w-full object-cover object-center"
+            loading="lazy"
+            src="/notassets/greenspace.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="min-h-screen bg-gray-50 py-6 sm:py-8 lg:py-12">
+  <div class="mx-auto max-w-screen-xl px-7 md:px-8">
+    <div class="grid gap-8 md:grid-cols-2 lg:gap-12"></div>
+    <div class="md:pt-8">
+      <p
+        class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+      >
+        تدريب المنسق المقيم
+      </p>
+      <h1
+        class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left rtl:text-right"
+      >
+        برامج التدريب الداخلي
+      </h1>
+      <p class="mb-2 text-gray-600 text-justify sm:text-lg md:mb-2">
+        تقدم المجتمعات المرنة (RC) مجموعة متنوعة من برامج التدريب الداخلي المصممة خصيصاً لمختلف الاهتمامات والأهداف. وسواء كنت طالباً أو محترفاً أو شخصاً شغوفاً بتنمية المجتمع، فلدينا فرص مناسبة لك. يرجى ملاحظة أن المتدربين مسؤولون عن النفقات مثل تذاكر السفر والتكاليف الشخصية. وعلى الرغم من أننا لا نقدم منحاً دراسية، إلا أننا نشجعك على استكشاف خيارات التمويل من خلال مكتب الدراسة في الخارج في جامعتك.
+      </p>
+      <p class="mb-6 text-gray-600 text-justify sm:text-lg md:mb-8">
+        من المقرر تقديم الطلبات قبل شهرين من تاريخ بدء البرنامج. تتزامن تواريخ البدء والانتهاء مع تواريخ الفصل الدراسي المعتادة.
+      </p>
+      <blockquote
+        class="mb-6 border-l-4 pl-4 italic text-gray-500 sm:text-lg md:mb-8 md:pl-6"
+      >
+        اختر من بين برامج التدريب الداخلي التالية للاطلاع على التفاصيل الكاملة المقابلة
+      </blockquote>
+    </div>
+    <div class="lg:w-full w-full mx-auto overflow-auto">
+      <div class="w-full">
+        <div class="relative right-0">
+          <ul
+            class="relative flex flex-wrap p-1 list-none rounded-xl bg-gray-100"
+            data-tabs="tabs"
+            role="list"
+          >
+            <li class="z-30 flex-auto text-center">
+              <a
+                active=""
+                aria-controls="app"
+                aria-selected="true"
+                class="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                data-tab-target=""
+                role="tab"
+              >
+                <span class="ml-1 phase-change">التدريب على أساس مرحلي (PBI)</span>
+              </a>
+            </li>
+            <li class="z-30 flex-auto text-center">
+              <a
+                aria-controls="message"
+                aria-selected="false"
+                class="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                data-tab-target=""
+                role="tab"
+              >
+                <span class="ml-1 phase-change">التدريب على المشاريع الخاصة (SPI)</span>
+              </a>
+            </li>
+            <li class="z-30 flex-auto text-center">
+              <a
+                aria-controls="settings"
+                aria-selected="false"
+                class="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                data-tab-target=""
+                role="tab"
+              >
+                <span class="ml-1 phase-change">التدريب الداخلي (IPI)</span>
+              </a>
+            </li>
+          </ul>
+          <div class="p-5" data-tab-content="">
+            <div class="block opacity-100" id="app" role="tabpanel">
+              <div class="block">
+                
+                <p
+                  class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                >
+                  PBI
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  مخطط التدريب الداخلي
+                </h1>
+                
+                <p class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8">
+                  وبمجرد اختيار المرشح، سيجتمع فريق المجتمعات المرنة مع المتدرب لمناقشة شغف المتدرب وأهدافه وكيفية تطبيقها على المراحل المبينة أدناه. سيقوم المتدربون بصياغة مقال في نهاية كل مرحلة يلخص المعارف والمهارات التي اكتسبوها. سيتم نشر المقالات على موقع المجتمعات المرنة على شبكة الإنترنت.
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  التأهيل
+                </h1>
+                
+                <p class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8">
+                  سيبدأ التدريب بحوار حول قائمة المهام المقدمة والتوقعات من جميع الأطراف. ستتم مناقشة تفاصيل المشاريع ومخرجات التدريب الداخلي وتحديدها.
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  مراحل البرنامج
+                </h1>
+                
+                <div class="w-full overflow-hidden">
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-1"
+                      >
+                        <span>المرحلة الأولى - البحث والتطوير</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-1"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >إجراء البحث والتطوير على مشروعك الخاص والجاري و/أو مشروع مستقبلي. ستتم هذه المرحلة بشكل فردي، ما لم يكن هناك متدرب لديه نفس الاهتمامات أو اهتمامات متداخلة.</span
+                            >
+                            <ul class="list-decimal px-4 mt-2 text-gray-500">
+                              <li>البحث والتطوير في موضوع مشروعك الخاص</li>
+                              <li>البحث والتطوير في مشروع يحتاجه المنسق المقيم أو جمعية شريكة.</li>
+                            </ul>
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >سيتم كتابة مقال من قبل المتدرب حول مواضيع تتعلق بالمرحلة ويتم الاتفاق عليها بين المتدرب وموظفي المنسق المقيم.</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-2"
+                      >
+                        <span>المرحلة الثانية - تطوير ورشة العمل</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-2"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >ستشمل المرحلة الثانية تدريباً على كيفية إنشاء ورشة عمل فعالة يليها إنشاء ورشة عمل من اختيارك، بقيادة رئيس قسم التدريب والتطوير لدينا، ن. ج. ريس. ستشارك مع متدربين آخرين من المنسقين المقيمين خلال هذه المرحلة.</span
+                            >
+                            <ul class="list-decimal px-4 mt-2 text-gray-500">
+                              <li>إنشاء ورشة عمل المنسق المقيم (يختارها المنسق المقيم);</li>
+                              <li>إنشاء ورشة عمل جماعية (يتم التصويت عليها بين المتدربين)؛ و</li>
+                              <li>إنشاء ورش عمل فردية (واحدة لكل متدرب يختارها كل متدرب).</li>
+                            </ul>
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >صياغة مقال ونشره.</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-3"
+                      >
+                        <span>المرحلة الثالثة - تطوير المقترحات وحملة جمع التبرعات</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-3"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >ستكون الوثائق المحددة التي سيتم إعدادها مرتبطة بالمشروع الشخصي للمتدرب ومشروع المنسق المقيم/الشريك. ستتم هذه المرحلة بشكل فردي، ما لم يكن هناك متدرب لديه نفس الاهتمامات أو اهتمامات متداخلة.</span
+                            >
+                            <ul class="list-decimal px-4 mt-2 text-gray-500">
+                              <li>كتابة مقترح و/أو إنشاء حملة لجمع التبرعات لمشروعك الشخصي;</li>
+                              <li>كتابة مقترح و/أو إنشاء حملة لجمع التبرعات لمشروع المنسق المقيم/الشريك.</li>
+                            </ul>
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >صياغة مقال ونشره.</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <span
+                    class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                    ><a href="/docs/PBI Program Description.pdf"
+                      >وصف التنزيل</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="hidden opacity-0" id="message" role="tabpanel">
+              <div class="block">
+                
+                <p
+                  class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                >
+                  SPI
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  مخطط التدريب الداخلي
+                </h1>
+                
+                <p class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8">
+                  ويتبع متدربو مبادرة الأثر الخاص هيكل مبادرة الأثر الخاص ولكن بمتطلبات مخفضة. وفي حين أن بإمكانهم اختيار المشاركة في العملية الكاملة لمبادرة الأثر السريع، يتوقع من متدربي مبادرة الأثر السريع إنجاز مهام محددة تعزز أهدافهم وأهداف المنسق المقيم. يتم التفاوض على التفاصيل الدقيقة لكل مبادرة خاصة بالمتدرب بين المنسق المقيم والمتدرب. وبصفتك متدرباً، سوف توظف مهاراتك للعمل بشكل مستقل وفي فرق مع زملائك المتدربين ومديري مشاريع الجمعية المغربية تحت إشراف موظفي المنسق المقيم
+                </p>
+                
+                <p
+                  class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                >
+                  SPI
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  التأهيل
+                </h1>
+                
+                <p class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8">
+                  سيبدأ التدريب بحوار حول قائمة المهام المقدمة والتوقعات من جميع الأطراف. ستتم مناقشة تفاصيل المشاريع ومخرجات التدريب الداخلي وتحديدها.
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  تضمنت موضوعات المتدربين السابقين في SPI ما يلي
+                </h1>
+                <div class="px-4 mb-6 text-justify sm:text-base md:mb-8">
+                  <ul class="list-disc">
+                    <li class="mb-2">
+                      <span class="text-gray-600">متدرب في وسائل التواصل الاجتماعي (إنشاء المحتوى وتحديث الموقع الإلكتروني)</span>
+                    </li>
+                    <li class="mb-2">
+                      <span class="text-gray-600">تطوير ورش العمل وتيسيرها</span>
+                    </li>
+                    <li class="mb-2">
+                      <span class="text-gray-600">متدرب في التصميم الجرافيكي.</span>
+                    </li>
+                  </ul>
+                </div>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  مراحل البرنامج
+                </h1>
+                
+                <div class="w-full overflow-hidden">
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-4"
+                      >
+                        <span>المرحلة الأولى - البحث والتطوير</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-4"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >يتم الانتهاء من البحث الأولي لمشاريع المتدربين، ويتم تحديد المعالم الرئيسية لإكمال التدريب.</span
+                            >
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >تعد المشاركة في البحث والتطوير في PBI اختيارية ويمكن أن تتم بالتنسيق مع متدرب آخر.</span
+                            >
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >سيتم كتابة مقال من قبل المتدرب حول مواضيع تتعلق بالمرحلة ويتم الاتفاق عليها بين المتدرب وموظفي المنسق المقيم.</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-5"
+                      >
+                        <span>المرحلة الثانية - تطوير ورشة العمل</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-5"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >سيشارك المتدربون في جميع التدريبات الخاصة بتطوير ورش العمل، إلا أن المشاركة في عملية إنشاء ورش العمل نفسها اختيارية.</span
+                            >
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >صياغة مقال ونشره.</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-6"
+                      >
+                        <span>المرحلة الثالثة - تطوير مقترح المشروع</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-6"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >يتلقى المتدرب الملاحظات والمساعدة من المنسق المقيم في إنجاز مراحل المشروع. تنتهي المرحلة عند اكتمال المشروع.</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <span
+                    class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                    ><a href="/docs/SPI Program Description.pdf"
+                      >وصف التنزيل</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="hidden opacity-0" id="settings" role="tabpanel">
+              <div class="block">
+                
+                <p
+                  class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                >
+                  IPI
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  مخطط التدريب الداخلي
+                </h1>
+                
+                <p class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8">
+                  سيتبع المتدربون في المبادرة إما (1) برنامج تدريب داخلي في مشروع خاص (SPI) بأهداف ومراحل يحددها المتدرب والمنسق المقيم، أو (2) برنامج تدريب داخلي على مراحل (PBI) مع التعاون العملي في ورش العمل والأنشطة مع المراكز والجمعيات المحلية في جميع أنحاء البلاد.
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  التأهيل
+                </h1>
+                
+                <p class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8">
+                  سيبدأ التدريب بحوار حول قائمة المهام المقدمة والتوقعات من جميع الأطراف. ستتم مناقشة تفاصيل المشاريع ومخرجات التدريب الداخلي وتحديدها.
+                </p>
+                
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  مراحل البرنامج
+                </h1>
+                
+                <div class="w-full overflow-hidden">
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-7"
+                      >
+                        <span>المرحلة الأولى - تطوير ورش العمل / تعلم اللغة والثقافة (6 أسابيع)</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-7"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >يتمثل الهدف الرئيسي في المرحلة الأولى في بناء وكالة المتدرب التي تعمل داخل المغرب.</span
+                            >
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >نريدهم أن يكونوا قادرين على السفر والعمل بشكل مستقل وبناء شبكة من النظراء والموجهين في مدن متعددة.</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-8"
+                      >
+                        <span>المرحلة الثانية - موضوع البحث وتطوير المشروع (6 أسابيع)</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-8"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >في المرحلة الثانية، يستخدم المتدرب وكالته المتزايدة لبناء ورش عمل والبدء في المساهمة الفعالة في أعمال التنمية في المغرب.</span
+                            >
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >ويقومون بتطوير وتقديم ورش عمل، والتنسيق مع المنظمات غير الحكومية ونظرائها، وتنظيم مشاريع صغيرة ممولة مسبقاً أو بدون تمويل.</span
+                            >
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >كما يتابع المتدرب مشروع شغفه الخاص بناءً على الاحتياجات التي حددها في المجتمعات التي زارها خلال المرحلة الأولى.</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-9"
+                      >
+                        <span>المرحلة الثالثة - تطوير مقترح المشروع والمشاركة المجتمعية (4 أسابيع)</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-9"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >تستخدم المرحلة الثالثة بحوث المتدرب كأساس لتطبيق مهارات كتابة المنح ومهارات إدارة المشاريع. وهي تمثل الانتقال من المشاريع الصغيرة النطاق إلى رؤية واسعة النطاق، وتشجع المتدرب على متابعة مثل هذا العمل في المستقبل.</span
+                            >
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >في نهاية المرحلة، يقوم المتدرب بتنفيذ مشروعه أو يضمن أن تكون ملكية المشروع لأفراد المجتمع.</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <span
+                    class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                    >وصف التنزيل</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="min-h-screen bg-white py-6 sm:py-8 lg:py-12">
+  <div class="mx-auto max-w-screen-xl px-7 md:px-8">
+    <div class="grid gap-8 md:grid-cols-2 lg:gap-12"></div>
+    <div class="md:pt-8">
+      <p
+        class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+      >
+        تدريب المنسق المقيم
+      </p>
+      <h1
+        class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left rtl:text-right"
+      >
+        تواريخ البرنامج
+      </h1>
+      <p class="mb-2 text-gray-600 text-justify sm:text-lg md:mb-2">
+        لمساعدتك في وضع ميزانيتك، ضع في اعتبارك أن الطلاب مسؤولون عن تكلفة تذاكر الطيران الدولي والنقل المحلي والنفقات الشخصية والرسوم الإدارية. ونظراً لأن مؤسسة مجتمعات مرنة لا تقدم حالياً أي منح دراسية، فمن المستحسن أن تتحقق من مكتب الدراسة في الخارج في جامعتك للتعرف على أي منح دراسية للسفر قد يقدمونها للمساعدة في دفع بعض النفقات.
+      </p>
+      <p class="mb-6 text-gray-600 text-justify sm:text-lg md:mb-8">
+        من المقرر تقديم الطلبات قبل شهرين من تاريخ بدء البرنامج. تتزامن تواريخ البدء والانتهاء مع تواريخ الفصل الدراسي المعتادة.
+      </p>
+      <blockquote
+        class="mb-6 border-l-4 pl-4 italic text-gray-500 sm:text-lg md:mb-8 md:pl-6"
+      >
+        سوف يساعدك المركز الإقليمي في ترتيبات إقامتك قبل مغادرتك إلى المغرب. اتصل بنا لمناقشة خطة البرنامج التي تناسب ميزانيتك على أفضل وجه!
+      </blockquote>
+    </div>
+    <div class="lg:w-full w-full mx-auto overflow-auto">
+      <table
+        class="table-auto w-full text-left rtl:text-right whitespace-no-wrap"
+      >
+        <thead>
+          <tr>
+            <th
+              class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl"
+            >
+              البرنامج
+            </th>
+            <th
+              class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100"
+            >
+              موعد استحقاق الطلب
+            </th>
+            <th
+              class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100"
+            >
+              تاريخ البدء
+            </th>
+            <th
+              class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100"
+            >
+              تاريخ الانتهاء
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="px-4 py-3 text-gray-700">الفصل الصيفي (15 أسبوع)</td>
+            <td class="px-4 py-3">22 مارس 2025</td>
+            <td class="px-4 py-3">22 مايو 2025</td>
+            <td class="px-4 py-3 text-lg">12 أغسطس 2025</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 text-gray-700">الفصل الخريفي (15 أسبوع)</td>
+            <td class="px-4 py-3">5 يوليو 2024</td>
+            <td class="px-4 py-3">5 سبتمبر 2024</td>
+            <td class="px-4 py-3 text-lg">10 ديسمبر 2024</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 text-gray-700">الفصل الربيعي (15 أسبوع)</td>
+            <td class="px-4 py-3">23 نوفمبر 2024</td>
+            <td class="px-4 py-3">23 يناير 2025</td>
+            <td class="px-4 py-3 text-lg">4 مايو 2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="min-h-screen bg-gray-50 py-6 sm:py-8 lg:py-12">
+  <div class="mx-auto max-w-screen-xl px-7 md:px-8">
+    <div class="grid gap-8 md:grid-cols-2 lg:gap-12">
+      <div class="md:pt-8">
+        <p
+          class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+        >
+          تدريب المنسق المقيم
+        </p>
+        <h1
+          class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left rtl:text-right"
+        >
+          ابدأ الآن
+        </h1>
+        <div class="md:pr-10 md:py-6">
+          <div class="flex relative pb-12">
+            <div
+              class="h-full w-10 absolute inset-0 flex items-center justify-center"
+            >
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewbox="0 0 24 24"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div class="flex-grow ps-4">
+              <h2
+                class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+              >
+                تواصل معنا
+              </h2>
+              <p class="leading-relaxed text-gray-700">
+                تواصل معنا لإقامة اتصال مع برنامج التدريب الداخلي لدينا.
+              </p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div
+              class="h-full w-10 absolute inset-0 flex items-center justify-center"
+            >
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewbox="0 0 24 24"
+              >
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
+            </div>
+            <div class="flex-grow ps-4">
+              <h2
+                class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+              >
+                بدء تطبيق
+              </h2>
+              <p class="leading-relaxed text-gray-700">
+                أرسل لنا سيرتك الذاتية ورسالة تغطية تعبر فيها عن اهتمامك وهيكل البرنامج الذي ترغب في أن تكون جزءًا منه.
+              </p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div
+              class="h-full w-10 absolute inset-0 flex items-center justify-center"
+            >
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewbox="0 0 24 24"
+              >
+                <circle cx="12" cy="5" r="3"></circle>
+                <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+              </svg>
+            </div>
+            <div class="flex-grow ps-4">
+              <h2
+                class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+              >
+                اتصل بمكتب الدراسة بالخارج التابع لحرمك الجامعي (إن أمكن)
+              </h2>
+              <p class="leading-relaxed text-gray-700">
+                تواصل مع مكتب الدراسة بالخارج في الحرم الجامعي للحصول على المساعدة.
+              </p>
+            </div>
+          </div>
+          <div class="flex relative">
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewbox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+            </div>
+            <div class="flex-grow ps-4">
+              <h2
+                class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+              >
+                الإنهاء
+              </h2>
+              <p class="leading-relaxed text-gray-700">
+                استكمال جميع خطوات التأهيل المطلوبة
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="mt-36 h-64 rounded-md overflow-hidden md:h-auto">
+          <video controls="controls" preload="metadata">
+            <source
+              src="https://video.wixstatic.com/video/82b4fb_83712fd4db2f4b93a7f3d15c1e2ab957/480p/mp4/file.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="min-h-screen bg-white py-6 sm:py-8 lg:py-12">
+  <div class="mx-auto max-w-screen-xl px-7 md:px-8">
+    <div class="md:pt-8">
+      <p
+        class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+      >
+        الشهادات
+      </p>
+      <h1
+        class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left rtl:text-right"
+      >
+        متدربينا الجدد
+      </h1>
+      <div class="flex flex-wrap justify-center" id="card-container">
+        
+        <div
+          class="card scale-90 relative w-72 h-96 bg-white rounded-lg max-w-xs shadow-lg group"
+        >
+          <img
+            alt="Person's Picture"
+            class="w-full h-full object-cover rounded-lg"
+            src="../notassets/Profile%20Pics/Amelia%20Wills_JPG.webp"
+          />
+          <div
+            class="rounded-lg absolute bottom-0 left-0 right-0 px-6 py-4 bg-black bg-opacity-50 text-white"
+          >
+            <h2 class="text-lg font-bold">أميليا ويلز</h2>
+            <p class="text-sm">متدربة خريف 2021</p>
+          </div>
+          <div
+            class="absolute inset-0 rounded-lg bg-gray-800 bg-opacity-75 text-white px-6 py-4 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          >
+            <div
+              class="flex justify-center items-center absolute top-0 pt-4 gap-2"
+            >
+              <img alt="" class="w-7 h-auto" src="/notassets/icons/uc-white-logo.png" />
+              <a href="https://www.linkedin.com/in/amelia-wills-6a99b348" target="_blank">
+                <svg
+                  class="h-5 w-5 text-slate-100 hover:text-slate-200"
+                  fill="currentColor"
+                  viewbox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <p class="text-justify" style="hyphens: auto">في SPI لأميليا، قامت بإنشاء وتسهيل ورش عمل افتراضية نظمها Resilient Communities بالإضافة إلى تلك التي قام بها المتدربون الآخرون. كما كتبت مقالات حول الورش العمل التي قامت بتسهيلها وتجاربها معها.</p>
+          </div>
+        </div>
+        
+        <div
+          class="card scale-90 relative w-72 h-96 bg-white rounded-lg max-w-xs shadow-lg group"
+        >
+          <img
+            alt="Person's Picture"
+            class="w-full h-full object-cover rounded-lg"
+            src="../notassets/Profile%20Pics/Ana.webp"
+          />
+          <div
+            class="rounded-lg absolute bottom-0 left-0 right-0 px-6 py-4 bg-black bg-opacity-50 text-white"
+          >
+            <h2 class="text-lg font-bold">آنا كليفنجر</h2>
+            <p class="text-sm">متدربة خريف 2021</p>
+          </div>
+          <div
+            class="absolute inset-0 rounded-lg bg-gray-800 bg-opacity-75 text-white px-6 py-4 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          >
+            <div
+              class="flex justify-center items-center absolute top-0 pt-4 gap-2"
+            >
+              <img alt="" class="w-7 h-auto" src="/notassets/icons/uc-white-logo.png" />
+              <a href="https://www.linkedin.com/in/ana-clevenger-664800154" target="_blank">
+                <svg
+                  class="h-5 w-5 text-slate-100 hover:text-slate-200"
+                  fill="currentColor"
+                  viewbox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <p class="text-justify" style="hyphens: auto">في SPI الخاص بها، عملت آنا على تحديث موقع الويب للمجتمعات المتماسكة وكذلك على وسائل التواصل الاجتماعي لدينا. كما شاركت أيضًا في اجتماعات ورش العمل الأسبوعية مع المتدربين الآخرين.</p>
+          </div>
+        </div>
+        
+        <div
+          class="card scale-90 relative w-72 h-96 bg-white rounded-lg max-w-xs shadow-lg group"
+        >
+          <img
+            alt="Person's Picture"
+            class="w-full h-full object-cover rounded-lg"
+            src="../notassets/Profile%20Pics/Antoinette%20Lim%20Pic.webp"
+          />
+          <div
+            class="rounded-lg absolute bottom-0 left-0 right-0 px-6 py-4 bg-black bg-opacity-50 text-white"
+          >
+            <h2 class="text-lg font-bold">أنطوانيت دانيكا ليم</h2>
+            <p class="text-sm">متدرب صيفي وخريفي 2021</p>
+          </div>
+          <div
+            class="absolute inset-0 rounded-lg bg-gray-800 bg-opacity-75 text-white px-6 py-4 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          >
+            <div
+              class="flex justify-center items-center absolute top-0 pt-4 gap-2"
+            >
+              <img alt="" class="w-7 h-auto" src="/notassets/icons/uc-white-logo.png" />
+              <a href="https://www.linkedin.com/in/antoinettedanicalim" target="_blank">
+                <svg
+                  class="h-5 w-5 text-slate-100 hover:text-slate-200"
+                  fill="currentColor"
+                  viewbox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <p class="text-justify" style="hyphens: auto">خلال فترة تدريبها، قامت أنطوانيت بمساعدتنا في البحث والتطوير الإضافي نحو مذكرة الفهم لاقتراح صندوق المناخ الأخضر. تتضمن مشروعها الشخصي إنشاء خطة عمل وتأسيس مؤسسة في بلادها الأم، الفلبين.</p>
+          </div>
+        </div>
+        
+        <div
+          class="card scale-90 relative w-72 h-96 bg-white rounded-lg max-w-xs shadow-lg group"
+        >
+          <img
+            alt="Person's Picture"
+            class="w-full h-full object-cover rounded-lg"
+            src="../notassets/Profile%20Pics/pic003.jpeg"
+          />
+          <div
+            class="rounded-lg absolute bottom-0 left-0 right-0 px-6 py-4 bg-black bg-opacity-50 text-white"
+          >
+            <h2 class="text-lg font-bold">أرجو بيا</h2>
+            <p class="text-sm">متدربة صيفية 2021</p>
+          </div>
+          <div
+            class="absolute inset-0 rounded-lg bg-gray-800 bg-opacity-75 text-white px-6 py-4 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          >
+            <div
+              class="flex justify-center items-center absolute top-0 pt-4 gap-2"
+            >
+              <img alt="" class="w-7 h-auto" src="/notassets/icons/uc-white-logo.png" />
+              <a href="https://www.linkedin.com/in/arjupiya" target="_blank">
+                <svg
+                  class="h-5 w-5 text-slate-100 hover:text-slate-200"
+                  fill="currentColor"
+                  viewbox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <p class="text-justify" style="hyphens: auto">قامت أرجو بتلبية متطلبات التعاون الصيفي لكلية التخطيط في جامعة سي. وقد ساعدتنا في تطوير محتوى ورش العمل وتنظيم حملة جمع تبرعات لمساعدة في بناء وتجهيز فصل دراسي للتعاونية النسائية في المسجد المحلي.</p>
+          </div>
+        </div>
+        
+        <div
+          class="card scale-90 relative w-72 h-96 bg-white rounded-lg max-w-xs shadow-lg group"
+        >
+          <img
+            alt="Person's Picture"
+            class="w-full h-full object-cover rounded-lg"
+            src="../notassets/Profile%20Pics/Blake%20Steiner.webp"
+          />
+          <div
+            class="rounded-lg absolute bottom-0 left-0 right-0 px-6 py-4 bg-black bg-opacity-50 text-white"
+          >
+            <h2 class="text-lg font-bold">بليك شتاينر</h2>
+            <p class="text-sm">متدرب صيفي 2020</p>
+          </div>
+          <div
+            class="absolute inset-0 rounded-lg bg-gray-800 bg-opacity-75 text-white px-6 py-4 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          >
+            <div
+              class="flex justify-center items-center absolute top-0 pt-4 gap-2"
+            >
+              <img alt="" class="w-7 h-auto" src="/notassets/icons/uc-white-logo.png" />
+              <a href="https://www.linkedin.com/in/blake-steiner-006639a9" target="_blank">
+                <svg
+                  class="h-5 w-5 text-slate-100 hover:text-slate-200"
+                  fill="currentColor"
+                  viewbox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <p class="text-justify" style="hyphens: auto">كان بليك رمز تطوير السلام الاطروحة الذين نقلوا الى المغرب من عام 2016 الى عام 2018. خلال تدريبه، التحق بالفريق مع مات روي لإنشاء &#39;ورشة عمل صحية&#39; تستهدف شباب المغرب. كما ساعد في كتابة مقترح المشروع لأفران الخزف التي تعمل بالنفايات في تامسلوت، والتي هي الآن جاهزة للتمويل.</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="min-h-screen bg-gray-50 py-6 sm:py-8 lg:py-12">
+  <div class="mx-auto max-w-screen-xl px-7 md:px-8">
+    <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+      
+      <div class="mb-10 md:mb-16">
+        <h2
+          class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl"
+        >
+          ماذا يتضمن؟
+        </h2>
+        <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
+          هذا قسم من نص حشو بسيط، يُعرف أيضًا باسم نص العنصر النائب. وهو يشترك في بعض خصائص النص المكتوب الحقيقي ولكنه عشوائي أو تم إنشاؤه بطريقة أخرى.
+        </p>
+      </div>
+      
+      <div class="grid gap-8 sm:grid-cols-2 md:gap-12 xl:grid-cols-3 xl:gap-16">
+        
+        <div class="flex gap-4 md:gap-6">
+          <div
+            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              تعلم اللغة
+            </h3>
+            <p class="mb-2 text-gray-500">شهر واحد لتعلم اللغة (اللغة العربية المغربية و/أو الفرنسية - اختياري).</p>
+          </div>
+        </div>
+        
+        
+        <div class="flex gap-4 md:gap-6">
+          <div
+            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              الإسكان
+            </h3>
+            <p class="mb-2 text-gray-500">المساعدة في إيجاد وتجهيز أماكن الإقامة المناسبة لإقامتك في المغرب.</p>
+          </div>
+        </div>
+        
+        
+        <div class="flex gap-4 md:gap-6">
+          <div
+            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              إرشادات ما قبل المغادرة
+            </h3>
+            <p class="mb-2 text-gray-500">إرشادات شاملة لإعدادك لتجربة التدريب في المغرب.</p>
+          </div>
+        </div>
+        
+        
+        <div class="flex gap-4 md:gap-6">
+          <div
+            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              التوجيه
+            </h3>
+            <p class="mb-2 text-gray-500">مقدمة في الموقع عن الثقافة والعادات والسلامة المغربية عند الوصول.</p>
+          </div>
+        </div>
+        
+        
+        <div class="flex gap-4 md:gap-6">
+          <div
+            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              دعم الطوارئ على مدار الساعة طوال أيام الأسبوع
+            </h3>
+            <p class="mb-2 text-gray-500">يتوفر الدعم والمساعدة المستمرة طوال فترة إقامتك.</p>
+          </div>
+        </div>
+        
+        
+        <div class="flex gap-4 md:gap-6">
+          <div
+            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m20.893 13.393-1.135-1.135a2.252 2.252 0 0 1-.421-.585l-1.08-2.16a.414.414 0 0 0-.663-.107.827.827 0 0 1-.812.21l-1.273-.363a.89.89 0 0 0-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 0 1-1.81 1.025 1.055 1.055 0 0 1-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 0 1-1.383-2.46l.007-.042a2.25 2.25 0 0 1 .29-.787l.09-.15a2.25 2.25 0 0 1 2.37-1.048l1.178.236a1.125 1.125 0 0 0 1.302-.795l.208-.73a1.125 1.125 0 0 0-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 0 1-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 0 1-1.458-1.137l1.411-2.353a2.25 2.25 0 0 0 .286-.76m11.928 9.869A9 9 0 0 0 8.965 3.525m11.928 9.868A9 9 0 1 1 8.965 3.525"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              الأنشطة الثقافية والمختلطة
+            </h3>
+            <p class="mb-2 text-gray-500">انخرط في تجارب ثرية تغمرك في الثقافة المغربية.</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  (function () {
+    var isRTL = document.documentElement.getAttribute("dir") === "rtl";
+    var total = document.querySelectorAll("[data-tabs]");
+    var getEventTarget = function getEventTarget(e) {
+      e = e || window.event;
+      return e.target || e.srcElement;
+    };
+    total.forEach(function (item, i) {
+      var moving_div = document.createElement("div");
+      var first_li = item.querySelector("li:first-child [data-tab-target]");
+      var tab = first_li.cloneNode();
+      tab.innerHTML = "-";
+      tab.classList.remove("bg-inherit", "text-slate-700");
+      tab.classList.add("bg-white", "text-white");
+      tab.style.animation = ".2s ease";
+      moving_div.classList.add(
+        "z-10",
+        "absolute",
+        "text-slate-700",
+        "rounded-lg",
+        "bg-inherit",
+        "flex-auto",
+        "text-center",
+        "bg-none",
+        "border-0",
+        "block",
+        "shadow"
+      );
+      moving_div.setAttribute("moving-tab", "");
+      moving_div.setAttribute("data-tab-target", "");
+      moving_div.appendChild(tab);
+      item.appendChild(moving_div);
+      var list_length = item.getElementsByTagName("li").length;
+      moving_div.style.padding = "0px";
+      moving_div.style.width =
+        item.querySelector("li:nth-child(1)").offsetWidth + "px";
+      moving_div.style.transform = "translate3d(0px, 0px, 0px)";
+      moving_div.style.transition = ".5s ease";
+      item.onmouseover = function (event) {
+        var target = getEventTarget(event);
+        var li = target.closest("li");
+        if (li) {
+          var nodes = Array.from(li.closest("ul").children);
+          var index = nodes.indexOf(li) + 1;
+          item.querySelector(
+            "li:nth-child(" + index + ") [data-tab-target]"
+          ).onclick = function () {
+            item.querySelectorAll("li").forEach(function (list_item) {
+              list_item.firstElementChild.removeAttribute("active");
+              list_item.firstElementChild.setAttribute(
+                "aria-selected",
+                "false"
+              );
+            });
+            li.firstElementChild.setAttribute("active", "");
+            li.firstElementChild.setAttribute("aria-selected", "true");
+            moving_div = item.querySelector("[moving-tab]");
+            var sum = 0;
+            if (item.classList.contains("flex-col")) {
+              for (var j = 1; j <= nodes.indexOf(li); j++) {
+                sum += item.querySelector(
+                  "li:nth-child(" + j + ")"
+                ).offsetHeight;
+              }
+              moving_div.style.transform =
+                "translate3d(0px," + sum + "px, 0px)";
+              moving_div.style.height = item.querySelector(
+                "li:nth-child(" + j + ")"
+              ).offsetHeight;
+            } else {
+              for (var j = 1; j <= nodes.indexOf(li); j++) {
+                sum += item.querySelector(
+                  "li:nth-child(" + j + ")"
+                ).offsetWidth;
+              }
+              
+              var transformValue = isRTL ? -sum + "px" : sum + "px";
+              moving_div.style.transform =
+                "translate3d(" + transformValue + ", 0px, 0px)";
+              moving_div.style.width =
+                item.querySelector("li:nth-child(" + index + ")").offsetWidth +
+                "px";
+            }
+          };
+        }
+      };
+    });
+    window.addEventListener("resize", function (event) {
+      total.forEach(function (item, i) {
+        item = item.parentElement.firstElementChild;
+        item.querySelector("[moving-tab]").remove();
+        var moving_div = document.createElement("div");
+        var tab = item
+          .querySelector("[data-tab-target][aria-selected='true']")
+          .cloneNode();
+        tab.innerHTML = "-";
+        tab.classList.remove("bg-inherit");
+        tab.classList.add("bg-white", "text-white");
+        tab.style.animation = ".2s ease";
+        moving_div.classList.add(
+          "z-10",
+          "absolute",
+          "text-slate-700",
+          "rounded-lg",
+          "bg-inherit",
+          "flex-auto",
+          "text-center",
+          "bg-none",
+          "border-0",
+          "block",
+          "shadow"
+        );
+        moving_div.setAttribute("moving-tab", "");
+        moving_div.setAttribute("data-tab-target", "");
+        moving_div.appendChild(tab);
+        item.appendChild(moving_div);
+        moving_div.style.padding = "0px";
+        moving_div.style.transition = ".5s ease";
+        var li = item.querySelector(
+          "[data-tab-target][aria-selected='true']"
+        ).parentElement;
+        if (li) {
+          var nodes = Array.from(li.closest("ul").children);
+          var index = nodes.indexOf(li) + 1;
+          var sum = 0;
+          if (item.classList.contains("flex-col")) {
+            for (var j = 1; j <= nodes.indexOf(li); j++) {
+              sum += item.querySelector("li:nth-child(" + j + ")").offsetHeight;
+            }
+            moving_div.style.transform = "translate3d(0px," + sum + "px, 0px)";
+            moving_div.style.width =
+              item.querySelector("li:nth-child(" + index + ")").offsetWidth +
+              "px";
+            moving_div.style.height = item.querySelector(
+              "li:nth-child(" + j + ")"
+            ).offsetHeight;
+          } else {
+            for (var j = 1; j <= nodes.indexOf(li); j++) {
+              sum += item.querySelector("li:nth-child(" + j + ")").offsetWidth;
+            }
+            var transformValue = isRTL ? -sum + "px" : sum + "px";
+            moving_div.style.transform =
+              "translate3d(" + transformValue + ", 0px, 0px)";
+            moving_div.style.width =
+              item.querySelector("li:nth-child(" + index + ")").offsetWidth +
+              "px";
+          }
+        }
+      });
+      if (window.innerWidth < 991) {
+        total.forEach(function (item, i) {
+          if (!item.classList.contains("flex-col")) {
+            item.classList.add("flex-col", "on-resize");
+          }
+        });
+      } else {
+        total.forEach(function (item, i) {
+          if (item.classList.contains("on-resize")) {
+            item.classList.remove("flex-col", "on-resize");
+          }
+        });
+      }
+    });
+    var total = document.querySelectorAll("[data-tab-content]");
+    if (total[0]) {
+      total.forEach(function (nav_pills) {
+        var links = nav_pills.parentElement.querySelectorAll(
+          "li a[data-tab-target]"
+        );
+        links.forEach(function (link) {
+          link.addEventListener("click", function () {
+            var clicked_tab = document.querySelector(
+              "#" + link.getAttribute("aria-controls")
+            );
+            if (!clicked_tab.classList.contains("block", "opacity-100")) {
+              var active_link = clicked_tab
+                .closest("[data-tab-content]")
+                .parentElement.querySelector(
+                  "li a[data-tab-target][aria-selected='true']"
+                );
+              var active_panel = document.querySelector(
+                "#" + active_link.getAttribute("aria-controls")
+              );
+              active_panel.classList.remove("block", "opacity-100");
+              active_panel.classList.add("hidden", "opacity-0");
+              clicked_tab.classList.add("block", "opacity-100");
+              clicked_tab.classList.remove("hidden", "opacity-0");
+            }
+          });
+        });
+      });
+    }
+  })();
+</script>
+
+<script>
+  (function () {
+    var triggers = document.querySelectorAll("[data-collapse-target]");
+    var collapses = document.querySelectorAll("[data-collapse]");
+    if (triggers && collapses) {
+      Array.from(triggers).forEach(function (trigger) {
+        return Array.from(collapses).forEach(function (collapse) {
+          if (trigger.dataset.collapseTarget === collapse.dataset.collapse) {
+            trigger.addEventListener("click", function () {
+              if (collapse.style.height && collapse.style.height !== "0px") {
+                collapse.style.height = 0;
+                collapse.style.overflow = "hidden";
+                trigger.removeAttribute("open");
+              } else {
+                collapse.style.height = "".concat(
+                  collapse.children[0].clientHeight,
+                  "px"
+                );
+                collapse.style.overflow = "visible";
+                trigger.setAttribute("open", "");
+              }
+            });
+          }
+        });
+      });
+    }
+  })();
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("i.fa-chevron-down").forEach(function (icon) {
+      var parentElement = icon.closest("[dir]");
+      if (parentElement && parentElement.getAttribute("dir") === "rtl") {
+        icon.classList.remove("right-0");
+        icon.classList.add("left-0");
+      } else {
+        icon.classList.remove("left-0");
+        icon.classList.add("right-0");
+      }
+    });
+
+    function updatePhaseText() {
+      var abbreviations = {
+        "In-Person Internship (IPI)": "IPI",
+        "Special Project Internship (SPI)": "SPI",
+        "Phase-Based Internship (PBI)": "PBI",
+      };
+
+      var spans = document.querySelectorAll("span.phase-change");
+
+      spans.forEach(function (span) {
+        var fullText = span.innerText.trim();
+        if (window.innerWidth < 768 && abbreviations[fullText]) {
+          
+          span.innerText = abbreviations[fullText];
+        } else if (
+          window.innerWidth >= 768 &&
+          Object.values(abbreviations).includes(fullText)
+        ) {
+          
+          for (var key in abbreviations) {
+            if (abbreviations[key] === fullText) {
+              span.innerText = key;
+            }
+          }
+        }
+      });
+    }
+
+    
+    updatePhaseText();
+
+    
+    window.addEventListener("resize", updatePhaseText);
+  });
+</script>
+
+</main>
+
+    <div class="h-screen border-gray-200 border-t">
+      
+      <div>
+        <div class="pt-2">
+          <h2 class="text-[#0E773F] text-base font-semibold text-center mt-2">
+            الشركاء والمتعاونين
+          </h2>
+          <h2
+            class="text-gray-800 text-2xl font-semibold text-center font-['Playfair Display'] font-serif mb-4"
+          >
+            شركاؤنا السابقون
+          </h2>
+        </div>
+
+        <div class="logos">
+          <div class="logos-slide">
+            <img src="/notassets/Partners/logo1.png" />
+            <img src="/notassets/Partners/logo2.png" />
+            <img src="/notassets/Partners/logo3.png" />
+            <img src="/notassets/Partners/logo4.png" />
+            <img src="/notassets/Partners/logo5.png" />
+            <img src="/notassets/Partners/logo6.png" />
+            <img src="/notassets/Partners/logo7.png" />
+            <img src="/notassets/Partners/logo1.png" />
+            <img src="/notassets/Partners/logo2.png" />
+            <img src="/notassets/Partners/logo3.png" />
+            <img src="/notassets/Partners/logo4.png" />
+            <img src="/notassets/Partners/logo5.png" />
+            <img src="/notassets/Partners/logo6.png" />
+            <img src="/notassets/Partners/logo7.png" />
+          </div>
+        </div>
+      </div>
+
+      
+      <footer class="bg-white pt-4 sm:pt-10 lg:pt-12">
+        <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <div
+            class="mb-10 grid grid-cols-2 gap-12 border-t pt-8 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-10"
+          >
+            <div class="col-span-full lg:col-span-2">
+              
+              <div class="mb-4 lg:-mt-2">
+                <a
+                  href="/"
+                  class="inline-flex items-center gap-2 text-xl font-bold text-black md:text-2xl"
+                  aria-label="logo"
+                >
+                  <img
+                    class="h-16 w-16"
+                    src="/notassets/logo transparent.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-1">
+                    <span class="text-green-900 text-sm"
+                      >مجتمعات مرنة</span
+                    >
+                    <span class="text-gray-500 text-xs"
+                      >الإلهام من خلال الابتكار</span
+                    >
+                  </div>
+                </a>
+              </div>
+              
+
+              <p class="mb-6 text-gray-500 sm:pr-8">
+لأي استفسارات، يرجى التواصل مع ايستمان جونسون على ejohnson@resilientcommunitiesngo.org.
+              </p>
+
+              
+              <div class="items-baseline hidden gap-4 text-slate-400 md:flex">
+                
+                <a href="http://www.facebook.com/resilientcommunitiesmorocco/">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                    /></svg
+                ></a>
+
+                
+                <a href="https://twitter.com/ResComm2017">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 50 50"
+                  >
+                    <path
+                      d="M 6.9199219 6 L 21.136719 26.726562 L 6.2285156 44 L 9.40625 44 L 22.544922 28.777344 L 32.986328 44 L 43 44 L 28.123047 22.3125 L 42.203125 6 L 39.027344 6 L 26.716797 20.261719 L 16.933594 6 L 6.9199219 6 z"
+                    ></path></svg
+                ></a>
+
+                
+                <a href="https://www.instagram.com/resilient_communities/">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    /></svg
+                ></a>
+
+                
+                <a
+                  href="https://www.linkedin.com/company/resilient-communities-non-profit/"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                    /></svg
+                ></a>
+
+                
+                <a href="https://www.youtube.com/@resilientcommunities4942">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                    /></svg
+                ></a>
+
+                
+                <a href="https://www.tiktok.com/@resilient_communities">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    class="h-4 w-4"
+                  >
+                    
+                    <path
+                      fill="currentColor"
+                      d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+                    /></svg
+                ></a>
+              </div>
+              
+            </div>
+
+            
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                <a href="http://localhost:1313/ar/what_we_do">ماذا نفعل</a>
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/what_we_do"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >المشاريع والبرامج التعاونية</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/what_we_do"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    ></a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/what_we_do"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >مشاريع مشاركة المجتمع</a
+                  >
+                </div>
+              </nav>
+            </div>
+
+            
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                
+                شارك معنا
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/partnership"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    ></a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/volunteer_group"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >مجموعات المتطوعين 
+                  </a>
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/map"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >خريطة المشاريع</a
+                  >
+                </div>
+              </nav>
+            </div>
+            
+
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                <a href="http://localhost:1313/ar/internship">برامج التدريب</a>
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/intern_projects"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >مشاريع المتدربين</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/Articles"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >المقالات</a
+                  >
+                </div>
+              </nav>
+            </div>
+            
+
+            
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                <a href="http://localhost:1313/ar/about">من نحن</a>
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/about"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >فريقنا</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/about"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >مهمتنا</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/Projects"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >المشاريع</a
+                  >
+                </div>
+              </nav>
+            </div>
+            
+          </div>
+
+          <div class="border-t py-8 text-center text-sm text-gray-400">
+            © 2024 - مجتمعات مرنة. جميع الحقوق محفوظة.
+          </div>
+        </footer>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        
+        const links = document.querySelectorAll('a');
+    
+        links.forEach(link => {
+          
+          let href = link.getAttribute('href');
+    
+          
+          if (href && href.includes('/en/')) {
+            
+            href = href.replace('/en/', '/');
+            link.setAttribute('href', href);
+          }
+        });
+      });
+    </script>
+    
+  </body>
+</html>

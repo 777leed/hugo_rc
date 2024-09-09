@@ -1,0 +1,2396 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projets de Stagiaires</title>
+    <link href="/css/output.css" rel="stylesheet" />
+    <link href="/css/partnerSilder.css" rel="stylesheet" />
+    <link href="/css/overlay.css" rel="stylesheet" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/blaze-slider@latest/dist/blaze.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/blaze-slider@latest/dist/blaze-slider.min.js"></script>
+
+    
+  </head>
+
+  <body
+    class="bg-white w-full h-full m-0 p-0 antialiased"
+    style="scroll-behavior: smooth"
+  >
+    <main>
+
+<style>
+  #scroll-arrow {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .scroll-animation img {
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+</style>
+
+<div class="h-screen overflow-hidden w-full">
+  <div
+    class="relative flex justify-center gap-4 flex-col items-center mx-auto h-full w-full bg-cover bg-local p-4 md:p-8"
+    style="background-image:url('/notassets/human-hands-connected-with-green-thread.jpg');"
+  >
+    
+    
+
+<div
+  id="header-container"
+  class="min-h-20 h-auto justify-center w-full px-7 flex flex-col mx-auto absolute top-0 z-10"
+>
+  <nav
+    class="relative flex flex-wrap items-center justify-between w-full group py-7 shrink-0"
+  >
+    <a href="http://localhost:1313/fr" class="flex gap-2 items-center">
+      <img class="h-16 w-16" src="/notassets/logo transparent.svg" alt="" />
+      <div class="flex flex-col gap-1">
+        <span class="text-[#0E773F] text-sm font-medium"
+          >Communautés Résilientes</span
+        >
+        <span class="text-gray-400 text-xs">Inspiration par l&#39;Innovation</span>
+      </div>
+    </a>
+    <div class="items-center justify-between hidden gap-12 text-black lg:flex">
+      <a
+        class="text-sm font-semibold text-white hover:text-[#0E773F]"
+        href="http://localhost:1313/fr"
+        >Accueil</a
+      >
+      
+      <div>
+        <button
+          id="dropdownAboutButton"
+          data-dropdown-toggle="dropdownAbout"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-white hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+        >
+          À propos
+        </button>
+        
+        <div
+          id="dropdownAbout"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownAboutButton"
+          >
+            <li>
+              <a
+                href="http://localhost:1313/fr/about"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >À propos de nous</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/fr/what_we_do"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Ce que nous faisons</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a
+        class="text-sm font-semibold text-white hover:text-[#0E773F]"
+        href="http://localhost:1313/fr/projects"
+        >Projets</a
+      >
+      
+      <div>
+        <button
+          id="dropdownInternshipButton"
+          data-dropdown-toggle="dropdownInternship"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-white hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+        >
+          Stage
+        </button>
+        
+        <div
+          id="dropdownInternship"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownInternshipButton"
+          >
+            <li>
+              <a
+                href="http://localhost:1313/fr/internship"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Programmes de Stage</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/fr/intern_projects"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Projets des Stagiaires</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div>
+        <button
+          id="dropdownGetInvolvedButton"
+          data-dropdown-toggle="dropdownGetInvolved"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-white hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+        >
+          S&#39;impliquer
+        </button>
+        
+        <div
+          id="dropdownGetInvolved"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownGetInvolvedButton"
+          >
+            <li>
+              <a
+                href="http://localhost:1313/fr/volunteer_group"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Groupe de bénévoles</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/fr/partnership"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Partenariat</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div>
+        <button
+          id="dropdownResourcesButton"
+          data-dropdown-toggle="dropdownResources"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-white hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+        >
+          Ressources
+        </button>
+        
+        <div
+          id="dropdownResources"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownResourcesButton"
+          >
+            <li>
+              <a
+                href="http://localhost:1313/fr/workshops"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Ateliers</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/fr/articles"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Articles</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/fr/map"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Carte des Projets</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div>
+        <button
+          id="dropdownLanguageButton"
+          data-dropdown-toggle="dropdownLanguage"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-white hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+          style="text-transform: capitalize"
+        >
+          fr
+          <img
+            src="/notassets/icons/arrow-drop.png"
+            alt="Arrow Icon"
+            class="ml-2 w-4 h-4"
+          />
+        </button>
+        
+        <div
+          id="dropdownLanguage"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownLanguageButton"
+          >
+            
+            <li>
+              <a
+                href="http://localhost:1313/en"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >English</a
+              >
+            </li>
+            
+            <li>
+              <a
+                href="http://localhost:1313/fr"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Français</a
+              >
+            </li>
+            
+            <li>
+              <a
+                href="http://localhost:1313/ar"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >العربية</a
+              >
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="items-center hidden gap-8 lg:flex">
+      <div
+        class="items-baseline justify-between hidden gap-4 text-slate-400 md:flex"
+      >
+        
+        <a href="http://www.facebook.com/resilientcommunitiesmorocco/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+            /></svg
+        ></a>
+
+        
+        <a href="https://twitter.com/ResComm2017">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 6.9199219 6 L 21.136719 26.726562 L 6.2285156 44 L 9.40625 44 L 22.544922 28.777344 L 32.986328 44 L 43 44 L 28.123047 22.3125 L 42.203125 6 L 39.027344 6 L 26.716797 20.261719 L 16.933594 6 L 6.9199219 6 z"
+            ></path></svg
+        ></a>
+
+        
+        <a href="https://www.instagram.com/resilient_communities/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+            /></svg
+        ></a>
+
+        
+        <a
+          href="https://www.linkedin.com/company/resilient-communities-non-profit/"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+            /></svg
+        ></a>
+
+        
+        <a href="https://www.youtube.com/@resilientcommunities4942">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+            /></svg
+        ></a>
+
+        
+        <a href="https://www.tiktok.com/@resilient_communities">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="h-4 w-4"
+          >
+            
+            <path
+              fill="currentColor"
+              d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+            /></svg
+        ></a>
+      </div>
+      <a
+        href="http://localhost:1313/fr/donation_page"
+        class="text-white flex items-center justify-between gap-1 bg-[#0E773F] px-4 py-2 rounded-full font-bold"
+      >
+        <span>Faire un don</span>
+      </a>
+    </div>
+    <button
+      onclick="(() => { this.closest('.group').classList.toggle('open')})()"
+      class="flex lg:hidden"
+    >
+      <img src="/notassets/svgs/menu.svg" alt="" />
+    </button>
+    <div
+      class="z-20 absolute flex md:hidden transition-all overflow-auto duration-300 ease-in-out flex-col items-center shadow-main justify-center w-full gap-3 bg-white bg-opacity-30 backdrop-blur-xl backdrop-filter max-h-0 group-[.open]:py-4 px-4 rounded-2xl group-[.open]:max-h-80 mt-2 top-full"
+    >
+      <br />
+      <br />
+      <br />
+      <br />
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/fr"
+        >Home</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/fr/about"
+        >About Us</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/fr/what_we_do"
+        >What We do</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/fr/projects"
+        >Projects</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/fr/internship"
+        >Internship Programs</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/fr/intern_projects"
+        >Intern Projects</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/fr/volunteer_group"
+        >Volunteer Group</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/fr/partnership"
+        >Partnership</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/fr/articles"
+        >Articles</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/fr/map"
+        >Projects Map</a
+      >
+
+      <a
+        href="http://localhost:1313/fr/donation_page"
+        class="text-sm text-white flex items-center justify-between gap-1 bg-[#0E773F] px-4 py-2 rounded-full font-bold"
+      >
+        <span>Donate Now</span>
+      </a>
+      
+      <div class="mt-6 flex justify-center w-full gap-4">
+        
+        <a
+          href="http://localhost:1313/en"
+          class="text-xs font-semibold text-dark-grey-700 hover:text-dark-grey-900 transition-all duration-300"
+        >
+          English
+        </a>
+        
+        <a
+          href="http://localhost:1313/fr"
+          class="text-xs font-semibold text-dark-grey-700 hover:text-dark-grey-900 transition-all duration-300"
+        >
+          Français
+        </a>
+        
+        <a
+          href="http://localhost:1313/ar"
+          class="text-xs font-semibold text-dark-grey-700 hover:text-dark-grey-900 transition-all duration-300"
+        >
+          العربية
+        </a>
+        
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+    
+    <h1
+      class="font-['Playfair Display'] font-serif text-white text-3xl md:text-5xl text-center leading-tight md:leading-snug px-4"
+    >
+      Communautés Résilientes<br>À Travers Le Monde
+    </h1>
+
+    <span
+      class="text-white text-center mt-4 px-4 md:px-0"
+      style="max-width: 500px"
+    >
+      Développez votre potentiel avec une expérience pratique : rejoignez-nous pour façonner l'avenir du développement communautaire.
+    </span>
+
+    <div class="flex gap-4 mt-6">
+      <a
+        href="http://localhost:1313/fr/internship/#firstsection"
+        class="text-white flex items-center justify-between gap-1 bg-[#0E773F] px-6 py-3 rounded-full font-bold min-w-[150px] hover:bg-green-700 transition-colors"
+      >
+        <span>Voir les Programmes</span>
+        <span class="material-symbols-outlined">arrow_right_alt</span>
+      </a>
+
+      <a
+        href="http://localhost:1313/fr/join_us"
+        class="text-white flex items-center justify-between gap-1 border-[#0E773F] border-2 px-6 py-3 rounded-full font-bold min-w-[150px] hover:border-green-700 transition-colors"
+      >
+        <span>Rejoignez-nous</span>
+        <span class="material-symbols-outlined">arrow_right_alt</span>
+      </a>
+    </div>
+
+    
+    <div id="scroll-arrow" class="scroll-animation h-7 w-7 mt-8">
+      <img src="/notassets/icons/arrow.png" alt="Scroll Down" />
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const scrollArrow = document.getElementById("scroll-arrow");
+
+    function hideScrollArrow() {
+      scrollArrow.style.opacity = "0";
+      setTimeout(() => {
+        scrollArrow.style.display = "none";
+      }, 500); 
+    }
+
+    
+    window.addEventListener("scroll", function () {
+      hideScrollArrow();
+    });
+
+    
+    window.addEventListener("wheel", function () {
+      hideScrollArrow();
+    });
+
+    window.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+        hideScrollArrow();
+      }
+    });
+  });
+</script>
+
+
+
+<div class="bg-white py-6 sm:py-8 lg:py-12" id="firstsection">
+  <div class="mx-auto max-w-screen-xl px-7 md:px-8">
+    <div class="grid gap-8 md:grid-cols-2 lg:gap-12">
+      <div class="md:pt-8">
+        <p
+          class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+        >
+          Stage en RC
+        </p>
+        <h1
+          class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left rtl:text-right"
+        >
+          Programmes de stages
+        </h1>
+        <p class="mb-2 text-gray-600 text-justify sm:text-lg md:mb-2">
+          Nous proposons actuellement des stages en phase et des stages dans le cadre de projets spéciaux, soit à distance, soit au Maroc. Nos modèles sont adaptables afin de vous permettre de développer, de renforcer et d&#39;acquérir des compétences utiles à votre développement professionnel.
+        </p>
+        <p class="mb-6 text-gray-600 text-justify sm:text-lg md:mb-8">
+          Les stages ont lieu au cours de chaque semestre universitaire (automne - printemps - été). Les stages à distance requièrent de 7 à 30 heures par semaine, et les stages dans le pays requièrent de 30 à 40 heures par semaine et ne sont pas rémunérés. Si votre programme universitaire exige plus d&#39;heures, les tâches peuvent être ajustées pour répondre à vos exigences en matière d&#39;heures de travail.
+        </p>
+        <p class="mb-6 text-gray-500 text-justify sm:text-lg md:mb-0">
+          Pour en savoir plus sur nos possibilités de stage à distance et au Maroc
+        </p>
+        <p class="mb-6 text-gray-500 text-justify sm:text-lg md:mb-8">
+          Contactez-nous à :<a class="text-green-700" href=""
+            >training@resilientcommunitiesngo.org</a
+          >pour plus d&#39;informations !
+        </p>
+      </div>
+      <div>
+        <div class="scale-90 rounded-lg h-64 overflow-hidden md:h-auto">
+          <img
+            alt="Photo by Martin Sanchez"
+            class="h-full w-full object-cover object-center"
+            loading="lazy"
+            src="/notassets/greenspace.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="min-h-screen bg-gray-50 py-6 sm:py-8 lg:py-12">
+  <div class="mx-auto max-w-screen-xl px-7 md:px-8">
+    <div class="grid gap-8 md:grid-cols-2 lg:gap-12"></div>
+    <div class="md:pt-8">
+      <p
+        class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+      >
+        Stage en RC
+      </p>
+      <h1
+        class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left rtl:text-right"
+      >
+        Programmes de stages
+      </h1>
+      <p class="mb-2 text-gray-600 text-justify sm:text-lg md:mb-2">
+        Resilient Communities (RC) offre une variété de programmes de stages adaptés à différents intérêts et objectifs. Que vous soyez étudiant, professionnel ou passionné par le développement communautaire, nous avons des opportunités pour vous. Veuillez noter que les stagiaires sont responsables des dépenses telles que les billets d&#39;avion et les frais personnels. Bien que nous n&#39;offrions pas de bourses, nous vous encourageons à explorer les possibilités de financement par l&#39;intermédiaire du bureau des études à l&#39;étranger de votre université.
+      </p>
+      <p class="mb-6 text-gray-600 text-justify sm:text-lg md:mb-8">
+        Les candidatures doivent être déposées deux mois avant la date de début du programme. Les dates de début et de fin coïncident avec les dates des semestres universitaires habituels.
+      </p>
+      <blockquote
+        class="mb-6 border-l-4 pl-4 italic text-gray-500 sm:text-lg md:mb-8 md:pl-6"
+      >
+        Sélectionnez l&#39;un des programmes de stage suivants pour voir tous les détails correspondants
+      </blockquote>
+    </div>
+    <div class="lg:w-full w-full mx-auto overflow-auto">
+      <div class="w-full">
+        <div class="relative right-0">
+          <ul
+            class="relative flex flex-wrap p-1 list-none rounded-xl bg-gray-100"
+            data-tabs="tabs"
+            role="list"
+          >
+            <li class="z-30 flex-auto text-center">
+              <a
+                active=""
+                aria-controls="app"
+                aria-selected="true"
+                class="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                data-tab-target=""
+                role="tab"
+              >
+                <span class="ml-1 phase-change">Stage par étapes (PBI)</span>
+              </a>
+            </li>
+            <li class="z-30 flex-auto text-center">
+              <a
+                aria-controls="message"
+                aria-selected="false"
+                class="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                data-tab-target=""
+                role="tab"
+              >
+                <span class="ml-1 phase-change">Stage de projet spécial (SPI)</span>
+              </a>
+            </li>
+            <li class="z-30 flex-auto text-center">
+              <a
+                aria-controls="settings"
+                aria-selected="false"
+                class="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                data-tab-target=""
+                role="tab"
+              >
+                <span class="ml-1 phase-change">Stage en personne (IPI)</span>
+              </a>
+            </li>
+          </ul>
+          <div class="p-5" data-tab-content="">
+            <div class="block opacity-100" id="app" role="tabpanel">
+              <div class="block">
+                
+                <p
+                  class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                >
+                  PBI
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  Schéma de stage
+                </h1>
+                
+                <p class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8">
+                  Une fois le candidat sélectionné, l&#39;équipe de Resilient Communities rencontrera le stagiaire pour discuter de ses passions et de ses objectifs et de la manière dont ils peuvent être appliqués aux phases décrites ci-dessous. À la fin de chaque phase, les stagiaires rédigeront un article résumant les connaissances et les compétences acquises. Les articles seront publiés sur le site web de Resilient Communities.
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  Embarquement
+                </h1>
+                
+                <p class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8">
+                  Le stage commencera par un dialogue sur la liste de tâches fournie et les attentes de toutes les parties. Les détails des projets et les résultats du stage seront discutés et déterminés.
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  Phases du programme
+                </h1>
+                
+                <div class="w-full overflow-hidden">
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-1"
+                      >
+                        <span>Phase I - Recherche et développement</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-1"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >Effectuer des travaux de R&amp;D sur votre propre projet, sur un projet en cours et/ou sur un projet futur. Cette phase sera réalisée individuellement, à moins qu&#39;un stagiaire n&#39;ait les mêmes intérêts ou des intérêts similaires.</span
+                            >
+                            <ul class="list-decimal px-4 mt-2 text-gray-500">
+                              <li>R&amp;D sur le thème de votre projet</li>
+                              <li>R&amp;D sur un projet dont le CR ou une association partenaire a besoin.</li>
+                            </ul>
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >Un article sera rédigé par le stagiaire sur des sujets liés à la phase et convenus entre le stagiaire et le personnel du CR.</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-2"
+                      >
+                        <span>Phase II - Développement de l&#39;atelier</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-2"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >La deuxième phase comprendra une formation sur la création d&#39;un atelier efficace, suivie de la création d&#39;un atelier de votre choix, dirigé par notre responsable de la formation et du développement, N.G. Rees. Vous participerez à cette phase avec d&#39;autres stagiaires du CR.</span
+                            >
+                            <ul class="list-decimal px-4 mt-2 text-gray-500">
+                              <li>Création d&#39;un atelier du CR (choisi par le CR) ;</li>
+                              <li>Création d&#39;un atelier collectif (voté par les stagiaires) ; et</li>
+                              <li>Création d&#39;ateliers individuels (un par stagiaire choisi par chaque stagiaire).</li>
+                            </ul>
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >Rédaction et publication d&#39;un article.</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-3"
+                      >
+                        <span>Phase III - Élaboration de la proposition et campagne de collecte de fonds</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-3"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >Les documents spécifiques à préparer seront liés au projet personnel du stagiaire et au projet du CR/partenaire. Cette phase sera réalisée individuellement, à moins qu&#39;un stagiaire n&#39;ait les mêmes intérêts ou des intérêts communs.</span
+                            >
+                            <ul class="list-decimal px-4 mt-2 text-gray-500">
+                              <li>Rédiger une proposition et/ou créer une campagne de collecte de fonds pour votre projet personnel ;</li>
+                              <li>Rédiger une proposition et/ou créer une campagne de collecte de fonds pour le projet du CR/partenaire.</li>
+                            </ul>
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >Rédaction et publication d&#39;un article.</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <span
+                    class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                    ><a href="/docs/PBI Program Description.pdf"
+                      >Télécharger la description</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="hidden opacity-0" id="message" role="tabpanel">
+              <div class="block">
+                
+                <p
+                  class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                >
+                  SPI
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  Schéma de stage
+                </h1>
+                
+                <p class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8">
+                  Les stagiaires SPI suivent la structure des IBP, mais avec des exigences réduites. Bien qu&#39;ils puissent choisir de participer à l&#39;ensemble du processus PBI, les stagiaires SPI doivent accomplir des tâches spécifiques qui leur permettent d&#39;atteindre leurs propres objectifs et ceux du CR. Les détails exacts de chaque IPS sont négociés entre le CR et le stagiaire. En tant que stagiaire, vous utiliserez vos compétences pour travailler de manière indépendante et en équipe avec d&#39;autres stagiaires et les chefs de projet de l&#39;association marocaine, sous la supervision du personnel de RC.
+                </p>
+                
+                <p
+                  class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                >
+                  SPI
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  Embarquement
+                </h1>
+                
+                <p class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8">
+                  Le stage commencera par un dialogue sur la liste de tâches fournie et les attentes de toutes les parties. Les détails des projets et les résultats du stage seront discutés et déterminés.
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  Les thèmes abordés par les stagiaires de l&#39;IPS dans le passé ont été les suivants
+                </h1>
+                <div class="px-4 mb-6 text-justify sm:text-base md:mb-8">
+                  <ul class="list-disc">
+                    <li class="mb-2">
+                      <span class="text-gray-600">Stagiaire en médias sociaux (création de contenu et mise à jour du site web)</span>
+                    </li>
+                    <li class="mb-2">
+                      <span class="text-gray-600">Développement et animation d&#39;ateliers</span>
+                    </li>
+                    <li class="mb-2">
+                      <span class="text-gray-600">Stagiaire en graphisme.</span>
+                    </li>
+                  </ul>
+                </div>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  Phases du programme
+                </h1>
+                
+                <div class="w-full overflow-hidden">
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-4"
+                      >
+                        <span>Phase I - Recherche et développement</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-4"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >Les recherches initiales pour les projets des stagiaires sont achevées et des jalons sont fixés pour l&#39;achèvement du stage.</span
+                            >
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >La participation à la R&amp;D de l&#39;IBP est facultative et peut se faire de concert avec un autre stagiaire.</span
+                            >
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >Un article sera rédigé par le stagiaire sur des sujets liés à la phase et convenus entre le stagiaire et le personnel du CR.</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-5"
+                      >
+                        <span>Phase II - Développement de l&#39;atelier</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-5"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >Les stagiaires participeront à toutes les formations sur la création d&#39;ateliers, mais la participation au processus de création d&#39;ateliers lui-même est facultative.</span
+                            >
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >Rédaction et publication d&#39;un article.</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-6"
+                      >
+                        <span>Phase III - Élaboration de la proposition de projet</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-6"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >Le stagiaire reçoit un retour d&#39;information et une assistance de la part du CR dans la réalisation de ses objectifs. La phase se termine à l&#39;achèvement du projet.</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <span
+                    class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                    ><a href="/docs/SPI Program Description.pdf"
+                      >Télécharger la description</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="hidden opacity-0" id="settings" role="tabpanel">
+              <div class="block">
+                
+                <p
+                  class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                >
+                  IPI
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  Schéma de stage
+                </h1>
+                
+                <p class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8">
+                  Les stagiaires de l&#39;IPI suivront soit (1) un programme de stage dans le cadre d&#39;un projet spécial (SPI) dont les objectifs et les étapes sont décidés par le stagiaire et le CR, soit (2) un programme de stage par étapes (PBI) avec une collaboration pratique à des ateliers et des activités avec des centres locaux et des associations dans tout le pays.
+                </p>
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  Embarquement
+                </h1>
+                
+                <p class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8">
+                  Le stage commencera par un dialogue sur la liste de tâches fournie et les attentes de toutes les parties. Les détails des projets et les résultats du stage seront discutés et déterminés.
+                </p>
+                
+                <h1
+                  class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                >
+                  Phases du programme
+                </h1>
+                
+                <div class="w-full overflow-hidden">
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-7"
+                      >
+                        <span>Phase I - Développement d&#39;ateliers / Apprentissage de la langue et de la culture (6 semaines)</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-7"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >L&#39;objectif principal de la phase 1 est de développer l&#39;agence du stagiaire au Maroc.</span
+                            >
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >Nous voulons qu&#39;ils soient capables de voyager et de travailler de manière indépendante et de construire un réseau d&#39;homologues et de mentors dans plusieurs villes.</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-8"
+                      >
+                        <span>Phase II - Développement du sujet de recherche et du projet (6 semaines)</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-8"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >Au cours de la phase II, le stagiaire utilise son pouvoir accru pour créer des ateliers et commencer à contribuer activement au travail de développement au Maroc.</span
+                            >
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >Ils développent et animent des ateliers, assurent la coordination avec les ONG et leurs homologues et organisent de petits projets préfinancés ou sans financement.</span
+                            >
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >Le stagiaire poursuit également son propre projet de passion basé sur les besoins qu&#39;il a identifiés dans les communautés qu&#39;il a visitées au cours de la phase I.</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative mb-3">
+                    <h6 class="mb-0">
+                      <button
+                        class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="animated-collapse-9"
+                      >
+                        <span>Phase III - Élaboration de la proposition de projet et engagement communautaire (4 semaines)</span>
+                        <i
+                          class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                        ></i>
+                      </button>
+                    </h6>
+                    <div
+                      class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                      data-collapse="animated-collapse-9"
+                    >
+                      <div class="p-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >La phase III utilise les recherches du stagiaire comme base pour appliquer les compétences en matière de rédaction de demandes de subvention et de gestion des projets. Elle marque le passage de projets à petite échelle à une vision à grande échelle et encourage le stagiaire à poursuivre ce type de travail à l&#39;avenir.</span
+                            >
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600"
+                              >À la fin de la phase, le stagiaire exécute son projet ou s&#39;assure que les membres de la communauté en sont les propriétaires.</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <span
+                    class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                    >Télécharger la description</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="min-h-screen bg-white py-6 sm:py-8 lg:py-12">
+  <div class="mx-auto max-w-screen-xl px-7 md:px-8">
+    <div class="grid gap-8 md:grid-cols-2 lg:gap-12"></div>
+    <div class="md:pt-8">
+      <p
+        class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+      >
+        Stage en RC
+      </p>
+      <h1
+        class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left rtl:text-right"
+      >
+        Dates du programme
+      </h1>
+      <p class="mb-2 text-gray-600 text-justify sm:text-lg md:mb-2">
+        Pour vous aider à établir votre budget, n&#39;oubliez pas que les étudiants sont responsables du coût du billet d&#39;avion international, du transport local, des dépenses personnelles et des frais de gestion. Étant donné que Resilient Communities n&#39;offre actuellement aucune bourse, il est recommandé de se renseigner auprès du bureau des études à l&#39;étranger de votre université sur les bourses de voyage qu&#39;il peut offrir pour vous aider à payer certaines dépenses.
+      </p>
+      <p class="mb-6 text-gray-600 text-justify sm:text-lg md:mb-8">
+        Les candidatures doivent être déposées deux mois avant la date de début du programme. Les dates de début et de fin coïncident avec les dates des semestres universitaires habituels.
+      </p>
+      <blockquote
+        class="mb-6 border-l-4 pl-4 italic text-gray-500 sm:text-lg md:mb-8 md:pl-6"
+      >
+        RC vous aidera à organiser votre séjour avant votre départ pour le Maroc. Contactez-nous pour discuter d&#39;un programme adapté à votre budget !
+      </blockquote>
+    </div>
+    <div class="lg:w-full w-full mx-auto overflow-auto">
+      <table
+        class="table-auto w-full text-left rtl:text-right whitespace-no-wrap"
+      >
+        <thead>
+          <tr>
+            <th
+              class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl"
+            >
+              PROGRAMME
+            </th>
+            <th
+              class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100"
+            >
+              APPLICATION DUE
+            </th>
+            <th
+              class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100"
+            >
+              DATE DE DÉBUT
+            </th>
+            <th
+              class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100"
+            >
+              DATE DE FIN
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="px-4 py-3 text-gray-700">Semestre d&#39;été (15 semaines)</td>
+            <td class="px-4 py-3">22 mars 2025</td>
+            <td class="px-4 py-3">22 mai 2025</td>
+            <td class="px-4 py-3 text-lg">12 août 2025</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 text-gray-700">Semestre d&#39;automne (15 semaines)</td>
+            <td class="px-4 py-3">5 juillet 2024</td>
+            <td class="px-4 py-3">5 septembre 2024</td>
+            <td class="px-4 py-3 text-lg">10 décembre 2024</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 text-gray-700">Semestre de printemps (15 semaines)</td>
+            <td class="px-4 py-3">23 novembre 2024</td>
+            <td class="px-4 py-3">23 janvier 2025</td>
+            <td class="px-4 py-3 text-lg">4 mai 2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="min-h-screen bg-gray-50 py-6 sm:py-8 lg:py-12">
+  <div class="mx-auto max-w-screen-xl px-7 md:px-8">
+    <div class="grid gap-8 md:grid-cols-2 lg:gap-12">
+      <div class="md:pt-8">
+        <p
+          class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+        >
+          Stage en RC
+        </p>
+        <h1
+          class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left rtl:text-right"
+        >
+          Commencer
+        </h1>
+        <div class="md:pr-10 md:py-6">
+          <div class="flex relative pb-12">
+            <div
+              class="h-full w-10 absolute inset-0 flex items-center justify-center"
+            >
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewbox="0 0 24 24"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div class="flex-grow ps-4">
+              <h2
+                class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+              >
+                Connectez-vous avec nous
+              </h2>
+              <p class="leading-relaxed text-gray-700">
+                Prenez contact avec notre programme de stages.
+              </p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div
+              class="h-full w-10 absolute inset-0 flex items-center justify-center"
+            >
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewbox="0 0 24 24"
+              >
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
+            </div>
+            <div class="flex-grow ps-4">
+              <h2
+                class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+              >
+                Lancer une demande
+              </h2>
+              <p class="leading-relaxed text-gray-700">
+                Envoyez-nous votre CV et une lettre de motivation exprimant votre intérêt et la structure du programme à laquelle vous aimeriez participer.
+              </p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div
+              class="h-full w-10 absolute inset-0 flex items-center justify-center"
+            >
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewbox="0 0 24 24"
+              >
+                <circle cx="12" cy="5" r="3"></circle>
+                <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+              </svg>
+            </div>
+            <div class="flex-grow ps-4">
+              <h2
+                class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+              >
+                Contactez le bureau des études à l&#39;étranger de votre campus (le cas échéant)
+              </h2>
+              <p class="leading-relaxed text-gray-700">
+                Contactez le bureau des études à l&#39;étranger de votre campus pour obtenir de l&#39;aide.
+              </p>
+            </div>
+          </div>
+          <div class="flex relative">
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewbox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+            </div>
+            <div class="flex-grow ps-4">
+              <h2
+                class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+              >
+                Finition
+              </h2>
+              <p class="leading-relaxed text-gray-700">
+                Effectuer toutes les étapes d&#39;intégration requises
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="mt-36 h-64 rounded-md overflow-hidden md:h-auto">
+          <video controls="controls" preload="metadata">
+            <source
+              src="https://video.wixstatic.com/video/82b4fb_83712fd4db2f4b93a7f3d15c1e2ab957/480p/mp4/file.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="min-h-screen bg-white py-6 sm:py-8 lg:py-12">
+  <div class="mx-auto max-w-screen-xl px-7 md:px-8">
+    <div class="md:pt-8">
+      <p
+        class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+      >
+        Témoignages
+      </p>
+      <h1
+        class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left rtl:text-right"
+      >
+        Nos récents stagiaires
+      </h1>
+      <div class="flex flex-wrap justify-center" id="card-container">
+        
+        <div
+          class="card scale-90 relative w-72 h-96 bg-white rounded-lg max-w-xs shadow-lg group"
+        >
+          <img
+            alt="Person's Picture"
+            class="w-full h-full object-cover rounded-lg"
+            src="../notassets/Profile%20Pics/Amelia%20Wills_JPG.webp"
+          />
+          <div
+            class="rounded-lg absolute bottom-0 left-0 right-0 px-6 py-4 bg-black bg-opacity-50 text-white"
+          >
+            <h2 class="text-lg font-bold">Amelia Wills</h2>
+            <p class="text-sm">Stagiaire Automne 2021</p>
+          </div>
+          <div
+            class="absolute inset-0 rounded-lg bg-gray-800 bg-opacity-75 text-white px-6 py-4 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          >
+            <div
+              class="flex justify-center items-center absolute top-0 pt-4 gap-2"
+            >
+              <img alt="" class="w-7 h-auto" src="/notassets/icons/uc-white-logo.png" />
+              <a href="https://www.linkedin.com/in/amelia-wills-6a99b348" target="_blank">
+                <svg
+                  class="h-5 w-5 text-slate-100 hover:text-slate-200"
+                  fill="currentColor"
+                  viewbox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <p class="text-justify" style="hyphens: auto">Pour le SPI d&#39;Amelia, elle a créé et animé des ateliers virtuels organisés par les Communautés Résilientes ainsi que ceux réalisés par d&#39;autres stagiaires. Elle a également rédigé des articles sur les ateliers qu&#39;elle a animés et ses expériences avec eux.</p>
+          </div>
+        </div>
+        
+        <div
+          class="card scale-90 relative w-72 h-96 bg-white rounded-lg max-w-xs shadow-lg group"
+        >
+          <img
+            alt="Person's Picture"
+            class="w-full h-full object-cover rounded-lg"
+            src="../notassets/Profile%20Pics/Ana.webp"
+          />
+          <div
+            class="rounded-lg absolute bottom-0 left-0 right-0 px-6 py-4 bg-black bg-opacity-50 text-white"
+          >
+            <h2 class="text-lg font-bold">Ana Clevenger</h2>
+            <p class="text-sm">Stagiaire Automne 2021</p>
+          </div>
+          <div
+            class="absolute inset-0 rounded-lg bg-gray-800 bg-opacity-75 text-white px-6 py-4 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          >
+            <div
+              class="flex justify-center items-center absolute top-0 pt-4 gap-2"
+            >
+              <img alt="" class="w-7 h-auto" src="/notassets/icons/uc-white-logo.png" />
+              <a href="https://www.linkedin.com/in/ana-clevenger-664800154" target="_blank">
+                <svg
+                  class="h-5 w-5 text-slate-100 hover:text-slate-200"
+                  fill="currentColor"
+                  viewbox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <p class="text-justify" style="hyphens: auto">Pour son SPI, Ana a travaillé sur la mise à jour du site Web des Communautés Résilientes ainsi que sur nos réseaux sociaux. Elle a également participé aux réunions d&#39;ateliers hebdomadaires avec les autres stagiaires.</p>
+          </div>
+        </div>
+        
+        <div
+          class="card scale-90 relative w-72 h-96 bg-white rounded-lg max-w-xs shadow-lg group"
+        >
+          <img
+            alt="Person's Picture"
+            class="w-full h-full object-cover rounded-lg"
+            src="../notassets/Profile%20Pics/Antoinette%20Lim%20Pic.webp"
+          />
+          <div
+            class="rounded-lg absolute bottom-0 left-0 right-0 px-6 py-4 bg-black bg-opacity-50 text-white"
+          >
+            <h2 class="text-lg font-bold">Antoinette Danica Lim</h2>
+            <p class="text-sm">Stagiaire d&#39;été et d&#39;automne 2021</p>
+          </div>
+          <div
+            class="absolute inset-0 rounded-lg bg-gray-800 bg-opacity-75 text-white px-6 py-4 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          >
+            <div
+              class="flex justify-center items-center absolute top-0 pt-4 gap-2"
+            >
+              <img alt="" class="w-7 h-auto" src="/notassets/icons/uc-white-logo.png" />
+              <a href="https://www.linkedin.com/in/antoinettedanicalim" target="_blank">
+                <svg
+                  class="h-5 w-5 text-slate-100 hover:text-slate-200"
+                  fill="currentColor"
+                  viewbox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <p class="text-justify" style="hyphens: auto">Pendant son stage, Antoinette nous a aidés à approfondir la recherche et le développement pour notre Note de concept pour la proposition de financement du Fonds vert pour le climat. Son projet personnel consistait à créer un plan d&#39;affaires et à établir une fondation dans son pays d&#39;origine, les Philippines.</p>
+          </div>
+        </div>
+        
+        <div
+          class="card scale-90 relative w-72 h-96 bg-white rounded-lg max-w-xs shadow-lg group"
+        >
+          <img
+            alt="Person's Picture"
+            class="w-full h-full object-cover rounded-lg"
+            src="../notassets/Profile%20Pics/pic003.jpeg"
+          />
+          <div
+            class="rounded-lg absolute bottom-0 left-0 right-0 px-6 py-4 bg-black bg-opacity-50 text-white"
+          >
+            <h2 class="text-lg font-bold">Arju Piya</h2>
+            <p class="text-sm">Stagiaire d&#39;été 2021</p>
+          </div>
+          <div
+            class="absolute inset-0 rounded-lg bg-gray-800 bg-opacity-75 text-white px-6 py-4 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          >
+            <div
+              class="flex justify-center items-center absolute top-0 pt-4 gap-2"
+            >
+              <img alt="" class="w-7 h-auto" src="/notassets/icons/uc-white-logo.png" />
+              <a href="https://www.linkedin.com/in/arjupiya" target="_blank">
+                <svg
+                  class="h-5 w-5 text-slate-100 hover:text-slate-200"
+                  fill="currentColor"
+                  viewbox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <p class="text-justify" style="hyphens: auto">Arju a respecté son exigence de stage d&#39;été pour l&#39;École d&#39;urbanisme à l&#39;UC. Elle nous a aidés à développer du contenu pour des ateliers et à organiser une campagne de collecte de fonds pour aider à construire et équiper une salle de classe pour la coopérative de femmes dans la mosquée locale.</p>
+          </div>
+        </div>
+        
+        <div
+          class="card scale-90 relative w-72 h-96 bg-white rounded-lg max-w-xs shadow-lg group"
+        >
+          <img
+            alt="Person's Picture"
+            class="w-full h-full object-cover rounded-lg"
+            src="../notassets/Profile%20Pics/Blake%20Steiner.webp"
+          />
+          <div
+            class="rounded-lg absolute bottom-0 left-0 right-0 px-6 py-4 bg-black bg-opacity-50 text-white"
+          >
+            <h2 class="text-lg font-bold">Blake Steiner</h2>
+            <p class="text-sm">Stagiaire d&#39;été 2020</p>
+          </div>
+          <div
+            class="absolute inset-0 rounded-lg bg-gray-800 bg-opacity-75 text-white px-6 py-4 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          >
+            <div
+              class="flex justify-center items-center absolute top-0 pt-4 gap-2"
+            >
+              <img alt="" class="w-7 h-auto" src="/notassets/icons/uc-white-logo.png" />
+              <a href="https://www.linkedin.com/in/blake-steiner-006639a9" target="_blank">
+                <svg
+                  class="h-5 w-5 text-slate-100 hover:text-slate-200"
+                  fill="currentColor"
+                  viewbox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <p class="text-justify" style="hyphens: auto">Blake était un PCR au Maroc de 2016 à 2018. Pendant son stage, il s&#39;est associé à Matt Roy pour créer un &#39;Atelier de santé&#39; destiné aux jeunes Marocains. Il a également aidé à rédiger la proposition de projet pour nos fours à poterie alimentés par des déchets à Tameslouht, qui sont maintenant prêts à être financés.</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="min-h-screen bg-gray-50 py-6 sm:py-8 lg:py-12">
+  <div class="mx-auto max-w-screen-xl px-7 md:px-8">
+    <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+      
+      <div class="mb-10 md:mb-16">
+        <h2
+          class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl"
+        >
+          Qu&#39;est-ce qui est inclus ?
+        </h2>
+        <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
+          Il s&#39;agit d&#39;une section de texte de remplissage simple, également connu sous le nom de &#34;placeholder text&#34;. Il présente certaines caractéristiques d&#39;un texte écrit réel, mais il est aléatoire ou généré d&#39;une autre manière.
+        </p>
+      </div>
+      
+      <div class="grid gap-8 sm:grid-cols-2 md:gap-12 xl:grid-cols-3 xl:gap-16">
+        
+        <div class="flex gap-4 md:gap-6">
+          <div
+            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              Apprentissage des langues
+            </h3>
+            <p class="mb-2 text-gray-500">Un mois d&#39;apprentissage des langues (arabe marocain et/ou français - en option).</p>
+          </div>
+        </div>
+        
+        
+        <div class="flex gap-4 md:gap-6">
+          <div
+            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              Logement
+            </h3>
+            <p class="mb-2 text-gray-500">Assistance dans la recherche et la préparation d&#39;un hébergement approprié pour votre séjour au Maroc.</p>
+          </div>
+        </div>
+        
+        
+        <div class="flex gap-4 md:gap-6">
+          <div
+            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              Conseils avant le départ
+            </h3>
+            <p class="mb-2 text-gray-500">Un accompagnement complet pour vous préparer à votre stage au Maroc.</p>
+          </div>
+        </div>
+        
+        
+        <div class="flex gap-4 md:gap-6">
+          <div
+            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              Orientation
+            </h3>
+            <p class="mb-2 text-gray-500">Introduction sur place à la culture marocaine, aux coutumes et à la sécurité à l&#39;arrivée.</p>
+          </div>
+        </div>
+        
+        
+        <div class="flex gap-4 md:gap-6">
+          <div
+            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              Assistance d&#39;urgence 24/7
+            </h3>
+            <p class="mb-2 text-gray-500">Un soutien et une assistance continus sont disponibles tout au long de votre séjour.</p>
+          </div>
+        </div>
+        
+        
+        <div class="flex gap-4 md:gap-6">
+          <div
+            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m20.893 13.393-1.135-1.135a2.252 2.252 0 0 1-.421-.585l-1.08-2.16a.414.414 0 0 0-.663-.107.827.827 0 0 1-.812.21l-1.273-.363a.89.89 0 0 0-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 0 1-1.81 1.025 1.055 1.055 0 0 1-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 0 1-1.383-2.46l.007-.042a2.25 2.25 0 0 1 .29-.787l.09-.15a2.25 2.25 0 0 1 2.37-1.048l1.178.236a1.125 1.125 0 0 0 1.302-.795l.208-.73a1.125 1.125 0 0 0-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 0 1-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 0 1-1.458-1.137l1.411-2.353a2.25 2.25 0 0 0 .286-.76m11.928 9.869A9 9 0 0 0 8.965 3.525m11.928 9.868A9 9 0 1 1 8.965 3.525"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              Activités culturelles et périscolaires
+            </h3>
+            <p class="mb-2 text-gray-500">Participez à des expériences enrichissantes qui vous plongent dans la culture marocaine.</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  (function () {
+    var isRTL = document.documentElement.getAttribute("dir") === "rtl";
+    var total = document.querySelectorAll("[data-tabs]");
+    var getEventTarget = function getEventTarget(e) {
+      e = e || window.event;
+      return e.target || e.srcElement;
+    };
+    total.forEach(function (item, i) {
+      var moving_div = document.createElement("div");
+      var first_li = item.querySelector("li:first-child [data-tab-target]");
+      var tab = first_li.cloneNode();
+      tab.innerHTML = "-";
+      tab.classList.remove("bg-inherit", "text-slate-700");
+      tab.classList.add("bg-white", "text-white");
+      tab.style.animation = ".2s ease";
+      moving_div.classList.add(
+        "z-10",
+        "absolute",
+        "text-slate-700",
+        "rounded-lg",
+        "bg-inherit",
+        "flex-auto",
+        "text-center",
+        "bg-none",
+        "border-0",
+        "block",
+        "shadow"
+      );
+      moving_div.setAttribute("moving-tab", "");
+      moving_div.setAttribute("data-tab-target", "");
+      moving_div.appendChild(tab);
+      item.appendChild(moving_div);
+      var list_length = item.getElementsByTagName("li").length;
+      moving_div.style.padding = "0px";
+      moving_div.style.width =
+        item.querySelector("li:nth-child(1)").offsetWidth + "px";
+      moving_div.style.transform = "translate3d(0px, 0px, 0px)";
+      moving_div.style.transition = ".5s ease";
+      item.onmouseover = function (event) {
+        var target = getEventTarget(event);
+        var li = target.closest("li");
+        if (li) {
+          var nodes = Array.from(li.closest("ul").children);
+          var index = nodes.indexOf(li) + 1;
+          item.querySelector(
+            "li:nth-child(" + index + ") [data-tab-target]"
+          ).onclick = function () {
+            item.querySelectorAll("li").forEach(function (list_item) {
+              list_item.firstElementChild.removeAttribute("active");
+              list_item.firstElementChild.setAttribute(
+                "aria-selected",
+                "false"
+              );
+            });
+            li.firstElementChild.setAttribute("active", "");
+            li.firstElementChild.setAttribute("aria-selected", "true");
+            moving_div = item.querySelector("[moving-tab]");
+            var sum = 0;
+            if (item.classList.contains("flex-col")) {
+              for (var j = 1; j <= nodes.indexOf(li); j++) {
+                sum += item.querySelector(
+                  "li:nth-child(" + j + ")"
+                ).offsetHeight;
+              }
+              moving_div.style.transform =
+                "translate3d(0px," + sum + "px, 0px)";
+              moving_div.style.height = item.querySelector(
+                "li:nth-child(" + j + ")"
+              ).offsetHeight;
+            } else {
+              for (var j = 1; j <= nodes.indexOf(li); j++) {
+                sum += item.querySelector(
+                  "li:nth-child(" + j + ")"
+                ).offsetWidth;
+              }
+              
+              var transformValue = isRTL ? -sum + "px" : sum + "px";
+              moving_div.style.transform =
+                "translate3d(" + transformValue + ", 0px, 0px)";
+              moving_div.style.width =
+                item.querySelector("li:nth-child(" + index + ")").offsetWidth +
+                "px";
+            }
+          };
+        }
+      };
+    });
+    window.addEventListener("resize", function (event) {
+      total.forEach(function (item, i) {
+        item = item.parentElement.firstElementChild;
+        item.querySelector("[moving-tab]").remove();
+        var moving_div = document.createElement("div");
+        var tab = item
+          .querySelector("[data-tab-target][aria-selected='true']")
+          .cloneNode();
+        tab.innerHTML = "-";
+        tab.classList.remove("bg-inherit");
+        tab.classList.add("bg-white", "text-white");
+        tab.style.animation = ".2s ease";
+        moving_div.classList.add(
+          "z-10",
+          "absolute",
+          "text-slate-700",
+          "rounded-lg",
+          "bg-inherit",
+          "flex-auto",
+          "text-center",
+          "bg-none",
+          "border-0",
+          "block",
+          "shadow"
+        );
+        moving_div.setAttribute("moving-tab", "");
+        moving_div.setAttribute("data-tab-target", "");
+        moving_div.appendChild(tab);
+        item.appendChild(moving_div);
+        moving_div.style.padding = "0px";
+        moving_div.style.transition = ".5s ease";
+        var li = item.querySelector(
+          "[data-tab-target][aria-selected='true']"
+        ).parentElement;
+        if (li) {
+          var nodes = Array.from(li.closest("ul").children);
+          var index = nodes.indexOf(li) + 1;
+          var sum = 0;
+          if (item.classList.contains("flex-col")) {
+            for (var j = 1; j <= nodes.indexOf(li); j++) {
+              sum += item.querySelector("li:nth-child(" + j + ")").offsetHeight;
+            }
+            moving_div.style.transform = "translate3d(0px," + sum + "px, 0px)";
+            moving_div.style.width =
+              item.querySelector("li:nth-child(" + index + ")").offsetWidth +
+              "px";
+            moving_div.style.height = item.querySelector(
+              "li:nth-child(" + j + ")"
+            ).offsetHeight;
+          } else {
+            for (var j = 1; j <= nodes.indexOf(li); j++) {
+              sum += item.querySelector("li:nth-child(" + j + ")").offsetWidth;
+            }
+            var transformValue = isRTL ? -sum + "px" : sum + "px";
+            moving_div.style.transform =
+              "translate3d(" + transformValue + ", 0px, 0px)";
+            moving_div.style.width =
+              item.querySelector("li:nth-child(" + index + ")").offsetWidth +
+              "px";
+          }
+        }
+      });
+      if (window.innerWidth < 991) {
+        total.forEach(function (item, i) {
+          if (!item.classList.contains("flex-col")) {
+            item.classList.add("flex-col", "on-resize");
+          }
+        });
+      } else {
+        total.forEach(function (item, i) {
+          if (item.classList.contains("on-resize")) {
+            item.classList.remove("flex-col", "on-resize");
+          }
+        });
+      }
+    });
+    var total = document.querySelectorAll("[data-tab-content]");
+    if (total[0]) {
+      total.forEach(function (nav_pills) {
+        var links = nav_pills.parentElement.querySelectorAll(
+          "li a[data-tab-target]"
+        );
+        links.forEach(function (link) {
+          link.addEventListener("click", function () {
+            var clicked_tab = document.querySelector(
+              "#" + link.getAttribute("aria-controls")
+            );
+            if (!clicked_tab.classList.contains("block", "opacity-100")) {
+              var active_link = clicked_tab
+                .closest("[data-tab-content]")
+                .parentElement.querySelector(
+                  "li a[data-tab-target][aria-selected='true']"
+                );
+              var active_panel = document.querySelector(
+                "#" + active_link.getAttribute("aria-controls")
+              );
+              active_panel.classList.remove("block", "opacity-100");
+              active_panel.classList.add("hidden", "opacity-0");
+              clicked_tab.classList.add("block", "opacity-100");
+              clicked_tab.classList.remove("hidden", "opacity-0");
+            }
+          });
+        });
+      });
+    }
+  })();
+</script>
+
+<script>
+  (function () {
+    var triggers = document.querySelectorAll("[data-collapse-target]");
+    var collapses = document.querySelectorAll("[data-collapse]");
+    if (triggers && collapses) {
+      Array.from(triggers).forEach(function (trigger) {
+        return Array.from(collapses).forEach(function (collapse) {
+          if (trigger.dataset.collapseTarget === collapse.dataset.collapse) {
+            trigger.addEventListener("click", function () {
+              if (collapse.style.height && collapse.style.height !== "0px") {
+                collapse.style.height = 0;
+                collapse.style.overflow = "hidden";
+                trigger.removeAttribute("open");
+              } else {
+                collapse.style.height = "".concat(
+                  collapse.children[0].clientHeight,
+                  "px"
+                );
+                collapse.style.overflow = "visible";
+                trigger.setAttribute("open", "");
+              }
+            });
+          }
+        });
+      });
+    }
+  })();
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("i.fa-chevron-down").forEach(function (icon) {
+      var parentElement = icon.closest("[dir]");
+      if (parentElement && parentElement.getAttribute("dir") === "rtl") {
+        icon.classList.remove("right-0");
+        icon.classList.add("left-0");
+      } else {
+        icon.classList.remove("left-0");
+        icon.classList.add("right-0");
+      }
+    });
+
+    function updatePhaseText() {
+      var abbreviations = {
+        "In-Person Internship (IPI)": "IPI",
+        "Special Project Internship (SPI)": "SPI",
+        "Phase-Based Internship (PBI)": "PBI",
+      };
+
+      var spans = document.querySelectorAll("span.phase-change");
+
+      spans.forEach(function (span) {
+        var fullText = span.innerText.trim();
+        if (window.innerWidth < 768 && abbreviations[fullText]) {
+          
+          span.innerText = abbreviations[fullText];
+        } else if (
+          window.innerWidth >= 768 &&
+          Object.values(abbreviations).includes(fullText)
+        ) {
+          
+          for (var key in abbreviations) {
+            if (abbreviations[key] === fullText) {
+              span.innerText = key;
+            }
+          }
+        }
+      });
+    }
+
+    
+    updatePhaseText();
+
+    
+    window.addEventListener("resize", updatePhaseText);
+  });
+</script>
+
+</main>
+
+    <div class="h-screen border-gray-200 border-t">
+      
+      <div>
+        <div class="pt-2">
+          <h2 class="text-[#0E773F] text-base font-semibold text-center mt-2">
+            Partenaires &amp; Collaborateurs
+          </h2>
+          <h2
+            class="text-gray-800 text-2xl font-semibold text-center font-['Playfair Display'] font-serif mb-4"
+          >
+            Nos Anciens Partenaires
+          </h2>
+        </div>
+
+        <div class="logos">
+          <div class="logos-slide">
+            <img src="/notassets/Partners/logo1.png" />
+            <img src="/notassets/Partners/logo2.png" />
+            <img src="/notassets/Partners/logo3.png" />
+            <img src="/notassets/Partners/logo4.png" />
+            <img src="/notassets/Partners/logo5.png" />
+            <img src="/notassets/Partners/logo6.png" />
+            <img src="/notassets/Partners/logo7.png" />
+            <img src="/notassets/Partners/logo1.png" />
+            <img src="/notassets/Partners/logo2.png" />
+            <img src="/notassets/Partners/logo3.png" />
+            <img src="/notassets/Partners/logo4.png" />
+            <img src="/notassets/Partners/logo5.png" />
+            <img src="/notassets/Partners/logo6.png" />
+            <img src="/notassets/Partners/logo7.png" />
+          </div>
+        </div>
+      </div>
+
+      
+      <footer class="bg-white pt-4 sm:pt-10 lg:pt-12">
+        <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <div
+            class="mb-10 grid grid-cols-2 gap-12 border-t pt-8 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-10"
+          >
+            <div class="col-span-full lg:col-span-2">
+              
+              <div class="mb-4 lg:-mt-2">
+                <a
+                  href="/"
+                  class="inline-flex items-center gap-2 text-xl font-bold text-black md:text-2xl"
+                  aria-label="logo"
+                >
+                  <img
+                    class="h-16 w-16"
+                    src="/notassets/logo transparent.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-1">
+                    <span class="text-green-900 text-sm"
+                      >Communautés Résilientes</span
+                    >
+                    <span class="text-gray-500 text-xs"
+                      >Inspiration par l&#39;Innovation</span
+                    >
+                  </div>
+                </a>
+              </div>
+              
+
+              <p class="mb-6 text-gray-500 sm:pr-8">
+Pour toute demande de renseignements, veuillez contacter Eastman Johnson à l&#39;adresse ejohnson@resilientcommunitiesngo.org.
+              </p>
+
+              
+              <div class="items-baseline hidden gap-4 text-slate-400 md:flex">
+                
+                <a href="http://www.facebook.com/resilientcommunitiesmorocco/">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                    /></svg
+                ></a>
+
+                
+                <a href="https://twitter.com/ResComm2017">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 50 50"
+                  >
+                    <path
+                      d="M 6.9199219 6 L 21.136719 26.726562 L 6.2285156 44 L 9.40625 44 L 22.544922 28.777344 L 32.986328 44 L 43 44 L 28.123047 22.3125 L 42.203125 6 L 39.027344 6 L 26.716797 20.261719 L 16.933594 6 L 6.9199219 6 z"
+                    ></path></svg
+                ></a>
+
+                
+                <a href="https://www.instagram.com/resilient_communities/">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    /></svg
+                ></a>
+
+                
+                <a
+                  href="https://www.linkedin.com/company/resilient-communities-non-profit/"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                    /></svg
+                ></a>
+
+                
+                <a href="https://www.youtube.com/@resilientcommunities4942">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                    /></svg
+                ></a>
+
+                
+                <a href="https://www.tiktok.com/@resilient_communities">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    class="h-4 w-4"
+                  >
+                    
+                    <path
+                      fill="currentColor"
+                      d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+                    /></svg
+                ></a>
+              </div>
+              
+            </div>
+
+            
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                <a href="http://localhost:1313/fr/what_we_do">Ce que nous faisons</a>
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/what_we_do"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Projets et Programmes Collaboratifs</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/what_we_do"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    ></a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/what_we_do"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Projets d&#39;Engagement Communautaire</a
+                  >
+                </div>
+              </nav>
+            </div>
+
+            
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                
+                S&#39;impliquer
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/partnership"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    ></a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/volunteer_group"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Groupes de bénévoles 
+                  </a>
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/map"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Carte des Projets</a
+                  >
+                </div>
+              </nav>
+            </div>
+            
+
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                <a href="http://localhost:1313/fr/internship">Programmes de Stage</a>
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/intern_projects"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Projets des Stagiaires</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/Articles"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Articles</a
+                  >
+                </div>
+              </nav>
+            </div>
+            
+
+            
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                <a href="http://localhost:1313/fr/about">À propos de nous</a>
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/about"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Notre équipe</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/about"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Notre mission</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/Projects"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Projets</a
+                  >
+                </div>
+              </nav>
+            </div>
+            
+          </div>
+
+          <div class="border-t py-8 text-center text-sm text-gray-400">
+            © 2024 - Resilient Communities. Tous droits réservés.
+          </div>
+        </footer>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        
+        const links = document.querySelectorAll('a');
+    
+        links.forEach(link => {
+          
+          let href = link.getAttribute('href');
+    
+          
+          if (href && href.includes('/en/')) {
+            
+            href = href.replace('/en/', '/');
+            link.setAttribute('href', href);
+          }
+        });
+      });
+    </script>
+    
+  </body>
+</html>

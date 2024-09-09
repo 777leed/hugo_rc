@@ -1,157 +1,176 @@
 {{ define "main" }}
 <style>
-    .box-one > article:nth-child(1) {
-padding-top: 0;
-padding-bottom: 0.125rem;
-padding-right: 0.125rem;
-}
-.box-one > article:nth-child(2) {
-padding-top: 0;
-padding-bottom: 0.125rem;
-padding-left: 0.125rem;
-}
-.box-one > article:nth-child(3) {
-padding-top: 0.125rem;
-padding-bottom: 0.125rem;
-padding-right: 0.125rem;
-}
-.box-one > article:nth-child(4) {
-padding-top: 0.125rem;
-padding-bottom: 0.125rem;
-padding-left: 0.125rem;
-}
-.max-h-98 {
-max-height: 24.3rem;
-}
+  .box-one > article:nth-child(1) {
+    padding-top: 0;
+    padding-bottom: 0.125rem;
+    padding-right: 0.125rem;
+  }
+  .box-one > article:nth-child(2) {
+    padding-top: 0;
+    padding-bottom: 0.125rem;
+    padding-left: 0.125rem;
+  }
+  .box-one > article:nth-child(3) {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+    padding-right: 0.125rem;
+  }
+  .box-one > article:nth-child(4) {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+    padding-left: 0.125rem;
+  }
+  .max-h-98 {
+    max-height: 24.3rem;
+  }
 </style>
-      <!-- Header & Hero -->
-      <div class="h-screen overflow-hidden w-full">
-        <div class="relative flex justify-center gap-4 flex-col items-center mx-auto h-full w-full bg-cover bg-local" style="background-image:url('../notassets/EDIT290524+DIM.png');">
-          <!-- Header -->
-          {{ partial "header.html" . }}
+<!-- Header & Hero -->
+{{ partial "hero.html" . }}
 
-            <h1 class="font-['Playfair Display'] font-serif text-white text-5xl text-center leading-tight">
-              Resilient Communities <br> Around The World
-            </h1>
-            <span class="text-white line-clamp-4 text-center">
-                Our mission is to positively influence a multitude of communities,<br>ranging from renowned landmarks to undiscovered villages,<br>making a meaningful impact wherever we go.
-            </span>
-            <div class="flex gap-4">
-              <button class="text-white flex items-center justify-between gap-1 bg-[#0E773F] px-6 py-2 rounded-full font-bold min-w-[150px] hover:"><span>Discover</span><span class="material-symbols-outlined">
-                arrow_right_alt
-                </span>
-              </button>
-              <button class="text-white flex items-center justify-between gap-1 border-[#0E773F] border-2 px-6 py-2 rounded-full font-bold min-w-[150px]"><span>Join Now</span><span class="material-symbols-outlined">
-                arrow_right_alt
-                </span>
-              </button>
-            </div>
-
-
-        </div>
+<!-- hero big grid -->
+<div class="bg-white py-6">
+  <div class="w-full py-3 flex items-center justify-center flex-col">
+    <h2 class="text-gray-800 text-2xl font-bold pb-3">
+      {{ i18n "Artic1eda1" }}
+    </h2>
+  </div>
+  <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+    <div class="w-full py-3">
+      <h2 class="text-gray-800 text-2xl font-bold" id="recentpost">
+        <span class="inline-block h-5 border-l-4 border-green-600 mr-2"></span
+        >{{ i18n "Recen38471" }}
+      </h2>
     </div>
-
-        <!-- hero big grid -->
-        <div class="bg-white py-6">
-            <div class="w-full py-3 flex items-center justify-center flex-col">
-                <h2 class="text-gray-800 text-2xl font-bold pb-3">
-                  Articles and Interviews
-                </h2>
-
+    <!-- big grid 1 -->
+    <div class="flex flex-row flex-wrap">
+      <!-- Start left cover -->
+      <div class="flex-shrink max-w-full w-full lg:w-1/2 pb-1 lg:pb-0 lg:pr-1">
+        <div class="relative hover-img max-h-98 overflow-hidden">
+          {{ $firstArticle := index (.Pages | first 5) 0 }}
+          <a href="{{ $firstArticle.RelPermalink }}">
+            <img
+              alt="{{ $firstArticle.Params.title }}"
+              class="max-w-full w-full mx-auto h-auto"
+              src="{{ $firstArticle.Params.thumbnail }}"
+            />
+          </a>
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+          ></div>
+          <div
+            class="absolute px-5 pt-8 pb-5 bottom-0 w-full bg-gradient-cover"
+          >
+            <a href="{{ $firstArticle.RelPermalink }}">
+              <h2 class="text-3xl font-bold capitalize text-white mb-3">
+                {{ $firstArticle.Params.title }}
+              </h2>
+            </a>
+            <p class="text-gray-100 hidden sm:inline-block">
+              {{ $firstArticle.Params.description }}
+            </p>
+            <div class="pt-2">
+              <div class="text-gray-100">
+                <div
+                  class="inline-block h-3 border-l-2 border-green-600 mr-2"
+                ></div>
+                {{ $firstArticle.Params.tag }}
               </div>
-
-          <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
-            <div class="w-full py-3">
-                <h2 class="text-gray-800 text-2xl font-bold">
-                  <span class="inline-block h-5 border-l-4 border-green-600 mr-2"></span>Recent Posts
-                </h2>
-              </div>
-            <!-- big grid 1 -->
-            <div class="flex flex-row flex-wrap">
-              <!--Start left cover-->
-              <div class=" flex-shrink max-w-full w-full lg:w-1/2 pb-1 lg:pb-0 lg:pr-1">
-                <div class="relative hover-img max-h-98 overflow-hidden">
-                  <a href="#">
-                    <img class="max-w-full w-full mx-auto h-auto" src="../notassets/Articles Gallery/pic1.jpeg" alt="Image description">
-                  </a>
-                  <div class=" absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-
-                  <div class="absolute px-5 pt-8 pb-5 bottom-0 w-full bg-gradient-cover">
-                    <a href="#">
-                      <h2 class="text-3xl font-bold capitalize text-white mb-3">How to Facilitate a Zoom Workshop</h2>
-                    </a>
-                    <p class="text-gray-100 hidden sm:inline-block">How to Facilitate a Zoom Workshop By Amelia Wills Today, our world is more interconnected than ever before. This means that no matter...</p>
-                    <div class="pt-2">
-                      <div class="text-gray-100"><div class="inline-block h-3 border-l-2 border-green-600 mr-2"></div>Article</div>
-                    </div>
-
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start box news -->
+      <div class="flex-shrink max-w-full w-full lg:w-1/2">
+        <div class="box-one flex flex-row flex-wrap">
+          {{ $articles := slice (index (.Pages | first 5) 1) (index (.Pages |
+          first 5) 2) (index (.Pages | first 5) 3) (index (.Pages | first 5) 4)
+          }} {{ range $articles }}
+          <article class="flex-shrink max-w-full w-full sm:w-1/2">
+            <div class="relative hover-img max-h-48 overflow-hidden">
+              <a href="{{ .RelPermalink }}">
+                <img
+                  alt="{{ .Params.title }}"
+                  class="w-full h-48 object-cover"
+                  src="{{ .Params.thumbnail }}"
+                />
+              </a>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+              ></div>
+              <div
+                class="absolute px-4 pt-7 pb-4 bottom-0 w-full bg-gradient-cover"
+              >
+                <a href="{{ .RelPermalink }}">
+                  <h2
+                    class="text-lg font-bold capitalize leading-tight text-white mb-1"
+                  >
+                    {{.Params.title}}
+                  </h2>
+                </a>
+                <div class="pt-1">
+                  <div class="text-gray-100">
+                    <div
+                      class="inline-block h-3 border-l-2 border-green-600 mr-2"
+                    ></div>
+                    {{.Params.tag}}
                   </div>
                 </div>
               </div>
-              <!--Start box news-->
-              <div class="flex-shrink max-w-full w-full lg:w-1/2">
-                <div class="box-one flex flex-row flex-wrap">
-                    {{ range first 4 (.Pages)}}
-
-                    <article class="flex-shrink max-w-full w-full sm:w-1/2">
-                        <div class="relative hover-img max-h-48 overflow-hidden">
-                          <a href="{{ .RelPermalink }}">
-                            <img class="max-w-full w-full mx-auto h-auto" src="{{ .Params.thumbnail }}" alt="Image description">
-                          </a>
-                          <div class=" absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-    
-                          <div class="absolute px-4 pt-7 pb-4 bottom-0 w-full bg-gradient-cover">
-                            <a href="{{ .RelPermalink }}">
-                                <h2 class="text-lg font-bold capitalize leading-tight text-white mb-1">{{.Params.title}}</h2>
-                            </a>
-                            <div class="pt-1">
-                              <div class="text-gray-100"><div class="inline-block h-3 border-l-2 border-green-600 mr-2"></div>{{.Params.tag}}</div>
-                            </div>
-                          </div>
-                        </div>
-                      </article>
-                    {{ end }}
-
-                </div>
+            </div>
+          </article>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- block news -->
+<div class="bg-white py-6">
+  <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+    <div class="flex flex-row flex-wrap">
+      <div class="flex-shrink max-w-full w-full overflow-hidden">
+        <div class="w-full py-3">
+          <h2 class="text-gray-800 text-2xl font-bold">
+            <span
+              class="inline-block h-5 border-l-4 border-green-600 mr-2"
+            ></span
+            >{{ i18n "AllBl1653f" }}
+          </h2>
+        </div>
+        <div class="flex flex-row flex-wrap -mx-3">
+          {{range .Pages}}
+          <div
+            class="flex-shrink max-w-full w-full sm:w-1/2 lg:w-1/4 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100"
+          >
+            <div class="flex flex-col hover-img">
+              <a href="{{ .RelPermalink }}">
+                <img
+                  alt="alt title"
+                  class="max-w-full w-full mx-auto rounded-lg h-48 object-cover"
+                  src="{{ .Params.thumbnail }}"
+                />
+              </a>
+              <div class="py-3 pl-3 sm:pl-0">
+                <h3 class="text-lg font-bold leading-tight mb-2">
+                  <a href="{{ .RelPermalink }}">{{ .Params.title }}</a>
+                </h3>
+                <p class="text-gray-600 leading-tight mb-1 line-clamp-2">
+                  {{ .Params.quickRead }}
+                </p>
+                <a class="text-gray-500" href="#"
+                  ><span
+                    class="inline-block h-3 border-l-2 border-green-600 mr-2"
+                  ></span
+                  >{{ .Params.tag }}</a
+                >
               </div>
             </div>
           </div>
+          {{end}}
         </div>
-
-        <!-- block news -->
-        <div class="bg-white py-6">
-          <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
-            <div class="flex flex-row flex-wrap">
-              <div class="flex-shrink max-w-full w-full overflow-hidden">
-                <div class="w-full py-3">
-                  <h2 class="text-gray-800 text-2xl font-bold">
-                    <span class="inline-block h-5 border-l-4 border-green-600 mr-2"></span>All Blog Posts
-                  </h2>
-                </div>
-                <div class="flex flex-row flex-wrap -mx-3">
-
-                    {{range .Pages}}
-                    <div class="flex-shrink max-w-full w-full sm:w-1/2 lg:w-1/4 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
-                        <div class="flex flex-row sm:block hover-img">
-                            <a href="#">
-                                <img class="max-w-full w-full mx-auto rounded-lg" src="../notassets/Articles Gallery/pic1.jpeg" alt="alt title">
-                            </a>
-                            <div class="py-3 pl-3 sm:pl-0">
-                                <h3 class="text-lg font-bold leading-tight mb-2">
-                                    <a href="{{ .RelPermalink }}">{{ .Params.title }}</a>
-                                </h3>
-                                <p class="hidden md:block text-gray-600 leading-tight mb-1 line-clamp-2">{{ .Params.quickRead }}</p>
-                                <a class="text-gray-500" href="#"><span class="inline-block h-3 border-l-2 border-green-600 mr-2"></span>{{ .Params.tag }}</a>
-                            </div>
-                        </div>
-                    </div>
-                    {{end}}
-
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 {{ end }}

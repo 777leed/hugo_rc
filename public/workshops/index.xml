@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workshops on Resilient Communities</title>
+    <link>http://localhost:1313/workshops/</link>
+    <description>Recent content in Workshops on Resilient Communities</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/workshops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Delivering an Elevator Pitch Workshop</title>
+      <link>http://localhost:1313/workshops/delivering-an-elevator-pitch-workshop/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/workshops/delivering-an-elevator-pitch-workshop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Group Management Workshop</title>
+      <link>http://localhost:1313/workshops/group-management-workshop/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/workshops/group-management-workshop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Meditation and Mindfulness Workshop</title>
+      <link>http://localhost:1313/workshops/meditation-and-mindfulness-workshop/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/workshops/meditation-and-mindfulness-workshop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Participatory Approaches to Community Development Workshop</title>
+      <link>http://localhost:1313/workshops/participatory-approaches-to-community-development-workshop/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/workshops/participatory-approaches-to-community-development-workshop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Project Design Management Trainings</title>
+      <link>http://localhost:1313/workshops/project-design-management-trainings/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/workshops/project-design-management-trainings/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Risk-Taking for Women Workshop</title>
+      <link>http://localhost:1313/workshops/risk-taking-for-women-workshop/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/workshops/risk-taking-for-women-workshop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sustainability Checklist Workshop</title>
+      <link>http://localhost:1313/workshops/sustainability-checklist-workshop/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/workshops/sustainability-checklist-workshop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The Business Model Canvas Workshop</title>
+      <link>http://localhost:1313/workshops/the-business-model-canvas-workshop/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/workshops/the-business-model-canvas-workshop/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L&#39;Interview de l&#39;Atelier</title>
+    <link href="/css/output.css" rel="stylesheet" />
+    <link href="/css/partnerSilder.css" rel="stylesheet" />
+    <link href="/css/overlay.css" rel="stylesheet" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/blaze-slider@latest/dist/blaze.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/blaze-slider@latest/dist/blaze-slider.min.js"></script>
+
+    
+  </head>
+
+  <body
+    class="bg-white w-full h-full m-0 p-0 antialiased"
+    style="scroll-behavior: smooth"
+  >
+    <main> 
+
+<div
+  id="header-container"
+  class="min-h-20 h-auto justify-center w-full px-7 flex flex-col mx-auto absolute top-0 z-20"
+>
+  <nav
+    class="relative flex flex-wrap items-center justify-between w-full group py-7 shrink-0"
+  >
+    <a href="http://localhost:1313/fr" class="flex gap-2 items-center">
+      <img class="h-16 w-16" src="/notassets/logo transparent.svg" alt="" />
+      <div class="flex flex-col gap-1">
+        <span class="text-[#0E773F] text-sm font-medium"
+          >Communautés Résilientes</span
+        >
+        <span class="text-gray-400 text-xs">Inspiration par l&#39;Innovation</span>
+      </div>
+    </a>
+    <div class="items-center justify-between hidden gap-12 text-black lg:flex">
+      <a
+        class="text-sm font-semibold text-gray-600 hover:text-[#0E773F]"
+        href="http://localhost:1313/fr"
+        >Accueil</a
+      >
+      
+      <div>
+        <button
+          id="dropdownAboutButton"
+          data-dropdown-toggle="dropdownAbout"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-gray-600 hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+        >
+          À propos
+        </button>
+        
+        <div
+          id="dropdownAbout"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownAboutButton"
+          >
+            <li>
+              <a
+                href="http://localhost:1313/fr/about"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >À propos de nous</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/fr/what_we_do"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >Ce que nous faisons</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a
+        class="text-sm font-semibold text-gray-600 hover:text-[#0E773F]"
+        href="http://localhost:1313/fr/projects"
+        >Projets</a
+      >
+      
+      <div>
+        <button
+          id="dropdownInternshipButton"
+          data-dropdown-toggle="dropdownInternship"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-gray-600 hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+        >
+          Stage
+        </button>
+        
+        <div
+          id="dropdownInternship"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownInternshipButton"
+          >
+            <li>
+              <a
+                href="http://localhost:1313/fr/internship"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >Programmes de Stage</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/fr/intern_projects"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >Projets des Stagiaires</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div>
+        <button
+          id="dropdownGetInvolvedButton"
+          data-dropdown-toggle="dropdownGetInvolved"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-gray-600 hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+        >
+          S&#39;impliquer
+        </button>
+        
+        <div
+          id="dropdownGetInvolved"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownGetInvolvedButton"
+          >
+            <li>
+              <a
+                href="http://localhost:1313/fr/volunteer_group"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >Groupe de bénévoles</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/fr/partnership"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >Partenariat</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div>
+        <button
+          id="dropdownResourcesButton"
+          data-dropdown-toggle="dropdownResources"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-gray-600 hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+        >
+          Ressources
+        </button>
+        
+        <div
+          id="dropdownResources"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownResourcesButton"
+          >
+            <li>
+              <a
+                href="http://localhost:1313/fr/workshops"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >Ateliers</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/fr/articles"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >Articles</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/fr/map"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >Carte des Projets</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div>
+        <button
+          id="dropdownLanguageButton"
+          data-dropdown-toggle="dropdownLanguage"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-gray-600 hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+          style="text-transform: capitalize"
+        >
+          fr
+          <img
+            src="/notassets/icons/arrow-drop.png"
+            alt="Arrow Icon"
+            class="ml-2 w-4 h-4"
+          />
+        </button>
+        
+        <div
+          id="dropdownLanguage"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownLanguageButton"
+          >
+            
+            <li>
+              <a
+                href="http://localhost:1313/en"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >English</a
+              >
+            </li>
+            
+            <li>
+              <a
+                href="http://localhost:1313/fr"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >Français</a
+              >
+            </li>
+            
+            <li>
+              <a
+                href="http://localhost:1313/ar"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >العربية</a
+              >
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="items-center hidden gap-8 lg:flex">
+      <div
+        class="items-baseline justify-between hidden gap-4 text-slate-400 md:flex"
+      >
+        
+        <a href="http://www.facebook.com/resilientcommunitiesmorocco/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+            /></svg
+        ></a>
+
+        
+        <a href="https://twitter.com/ResComm2017">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 6.9199219 6 L 21.136719 26.726562 L 6.2285156 44 L 9.40625 44 L 22.544922 28.777344 L 32.986328 44 L 43 44 L 28.123047 22.3125 L 42.203125 6 L 39.027344 6 L 26.716797 20.261719 L 16.933594 6 L 6.9199219 6 z"
+            ></path></svg
+        ></a>
+
+        
+        <a href="https://www.instagram.com/resilient_communities/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+            /></svg
+        ></a>
+
+        
+        <a
+          href="https://www.linkedin.com/company/resilient-communities-non-profit/"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+            /></svg
+        ></a>
+
+        
+        <a href="https://www.youtube.com/@resilientcommunities4942">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+            /></svg
+        ></a>
+
+        
+        <a href="https://www.tiktok.com/@resilient_communities">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="h-4 w-4"
+          >
+            
+            <path
+              fill="currentColor"
+              d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+            /></svg
+        ></a>
+      </div>
+      <a
+        href="http://localhost:1313/fr/donation_page"
+        class="text-white flex items-center justify-between gap-1 bg-[#0E773F] px-4 py-2 rounded-full font-bold"
+      >
+        <span>Faire un don</span>
+      </a>
+    </div>
+    <button
+      onclick="(() => { this.closest('.group').classList.toggle('open')})()"
+      class="flex lg:hidden"
+    >
+      <img src="/notassets/svgs/menu.svg" alt="" />
+    </button>
+    <div
+      class="z-20 absolute flex md:hidden transition-all overflow-auto duration-300 ease-in-out flex-col items-center shadow-main justify-center w-full gap-3 bg-white bg-opacity-30 backdrop-blur-xl backdrop-filter max-h-0 group-[.open]:py-4 px-4 rounded-2xl group-[.open]:max-h-80 mt-2 top-full"
+    >
+      <br />
+      <br />
+      <br />
+      <br />
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/fr"
+        >Home</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/fr/about"
+        >About Us</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/fr/what_we_do"
+        >What We do</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/fr/projects"
+        >Projects</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/fr/internship"
+        >Internship Programs</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/fr/intern_projects"
+        >Intern Projects</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/fr/volunteer_group"
+        >Volunteer Group</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/fr/partnership"
+        >Partnership</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/fr/articles"
+        >Articles</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/fr/map"
+        >Projects Map</a
+      >
+
+      <a
+        href="http://localhost:1313/fr/donation_page"
+        class="text-sm text-white flex items-center justify-between gap-1 bg-[#0E773F] px-4 py-2 rounded-full font-bold"
+      >
+        <span>Donate Now</span>
+      </a>
+      
+      <div class="mt-6 flex justify-center w-full gap-4">
+        
+        <a
+          href="http://localhost:1313/en"
+          class="text-xs font-semibold text-dark-grey-700 hover:text-dark-grey-900 transition-all duration-300"
+        >
+          English
+        </a>
+        
+        <a
+          href="http://localhost:1313/fr"
+          class="text-xs font-semibold text-dark-grey-700 hover:text-dark-grey-900 transition-all duration-300"
+        >
+          Français
+        </a>
+        
+        <a
+          href="http://localhost:1313/ar"
+          class="text-xs font-semibold text-dark-grey-700 hover:text-dark-grey-900 transition-all duration-300"
+        >
+          العربية
+        </a>
+        
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+<div class="mt-40 mb-10 w-full relative">
+  
+  <div class="max-w-screen-lg mx-auto px-4 lg:px-8">
+    <div class="mb-6 w-full relative">
+      <div class="px-4 lg:px-0">
+        <h2
+          class="text-3xl md:text-4xl font-semibold text-gray-800 leading-tight"
+        >
+          L&#39;Interview de l&#39;Atelier
+        </h2>
+        <a
+          href="#"
+          class="py-2 text-green-700 inline-flex items-center justify-center"
+        >
+          
+        </a>
+        <div class="flex items-center py-2 mb-4">
+          <img
+            src="/notassets/Profile%20Pics/Antoinette%20Lim%20Pic.webp"
+            class="h-8 w-8 rounded-full mr-2 object-cover"
+          />
+          <div>
+            <p class="font-semibold text-gray-700 text-sm">
+              Antoinette Lim Pic
+            </p>
+            <p class="text-gray-600 text-xs">2024-01-01 00:00:00 &#43;0000 UTC</p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="/notassets/Articles%20Gallery/workshopbg.jpg"
+        class="w-full h-64 md:h-80 object-cover rounded-lg"
+      />
+    </div>
+    <br />
+
+    <div class="flex flex-col lg:flex-row lg:space-x-8">
+      <div
+        class="mt-6 lg:mt-12 text-gray-700 text-base text-justify leading-relaxed w-full"
+      >
+        <!-- raw HTML omitted -->
+<p><strong>Antoinette : Quel est le premier atelier que vous avez animé ?</strong></p>
+<p>Rees : Peut-être en 2015, j&rsquo;étais dans le corps de la paix, et j&rsquo;ai dirigé un atelier appelé évaluation des besoins avec un volontaire du corps africain, nommé Sufian. C&rsquo;était à Rabat ou à Casablanca, je ne sais plus lequel. Je pense que c&rsquo;était à Rabat. Lui et moi avons parcouru tout le Maroc pour animer cet atelier d&rsquo;évaluation des besoins. Ce qui est amusant, c&rsquo;est qu&rsquo;à l&rsquo;origine, je n&rsquo;étais pas censé le faire. À l&rsquo;origine, ce n&rsquo;était pas moi et lui qui devions animer l&rsquo;atelier avec lui. Ce devait être une personne de la cohorte inférieure à la mienne au sein de Peace Corps, mais elle est tombée malade et m&rsquo;a appelé pour me dire : &quot; Hé, tu habites près de Rabat, tu peux faire ça ? &quot; et j&rsquo;ai répondu : &quot; Oui ! Bien sûr, j&rsquo;adorerais ! Sufian est cool ! Je connais Sufian !&quot; Le reste appartient à l&rsquo;histoire&hellip;</p>
+<p><strong>Antoinette : Vous avez un manuel qui peut vous guider, à la place ?</strong></p>
+<p>Rees : À ce stade, nous n&rsquo;avions pas de manuel de l&rsquo;animateur, de manuel du participant, de diapositives, c&rsquo;est quelque chose que j&rsquo;ai développé avec Resilient Communities. Il y avait une série de documents, une image, un récit de cas, deux ou trois récits de cas, et quoi d&rsquo;autre ? &hellip; Alors oui, c&rsquo;est tout.</p>
+<p><strong>Antoinette : Mais en gros, vous connaissez déjà l&rsquo;atelier sur l&rsquo;évaluation des besoins</strong>.</p>
+<p>Rees : Oui, je connaissais le matériel. Je connaissais déjà le contenu qui devait être transmis et qui faisait partie de ma formation au sein du Corps de la Paix. Mais il est vrai que j&rsquo;ai eu du mal avec cette expérience. Vous pouvez voir l&rsquo;effet de cette lutte dans mon travail actuel avec les communautés résilientes. Sous la forme de manuels du participant, de manuels de l&rsquo;animateur et des ressources correspondantes.</p>
+<p><strong>Antoinette : Qu&rsquo;est-ce qui vous a poussé à animer des ateliers maintenant ? Est-ce que cela vient des frustrations de votre premier atelier ?</strong></p>
+<p>Rees : Non ! C&rsquo;était une très bonne expérience, mais elle n&rsquo;a pas été facile. Alors oui, ce qui compte pour moi, c&rsquo;est la durabilité de quelque chose, la reproductibilité. J&rsquo;avais un projet qui m&rsquo;avait été confié par une autre volontaire du Corps de la Paix, et la seule raison pour laquelle il était reproductible, pour que quelqu&rsquo;un d&rsquo;autre qu&rsquo;elle puisse le faire, c&rsquo;est que moi aussi, même si je n&rsquo;étais pas un expert en la matière, je connaissais très bien le sujet en question, j&rsquo;avais fait des recherches et j&rsquo;avais regardé des vidéos sur YouTube, tout ça. C&rsquo;était donc l&rsquo;une des principales frustrations en termes de création de matériel et d&rsquo;animation d&rsquo;un atelier.</p>
+<p>Mais je pense que ce qui m&rsquo;a vraiment incité à animer des ateliers, en quelque sorte à plein temps, c&rsquo;est qu&rsquo;en 2019, peu avant Covid, je suis professeur d&rsquo;anglais et il y a eu une série d&rsquo;ateliers pour les professeurs d&rsquo;anglais organisés par Oxford University Press. C&rsquo;était ici à Tanger, dans un grand hôtel, alors j&rsquo;ai roulé à vélo jusqu&rsquo;à l&rsquo;hôtel, j&rsquo;étais bien habillée. J&rsquo;étais prête à rencontrer des amis, à nouer des liens et à apprendre quelque chose de nouveau. J&rsquo;étais prêt pour un atelier. Je suis arrivé à l&rsquo;atelier et le type n&rsquo;a fait que parler. Pendant deux heures, il a parlé du livre qu&rsquo;il avait écrit. C&rsquo;était une information intéressante et utile, mais ce n&rsquo;était pas un atelier. J&rsquo;étais très ennuyé parce que tout ce qu&rsquo;il a dit aurait pu être une vidéo YouTube. Tout ce qu&rsquo;il a dit aurait pu faire l&rsquo;objet d&rsquo;une vidéo sur YouTube ou d&rsquo;un article sur le web. J&rsquo;étais ennuyée parce que j&rsquo;avais perdu mon temps et parce que les gens autour de moi venaient de différentes villes du Maroc. J&rsquo;imaginais donc cette énorme perte de temps, d&rsquo;argent et de travail, pour venir d&rsquo;une autre ville et regarder quelqu&rsquo;un pendant deux heures sur quelque chose qui aurait pu être une vidéo YouTube. J&rsquo;étais très ennuyé. Je pense que c&rsquo;est à ce moment-là que je me suis dit : &quot; Bon, c&rsquo;est moi qui dois animer l&rsquo;atelier, pas ces idiots &ldquo;, et c&rsquo;est à ce moment-là que j&rsquo;ai compris.</p>
+<p><strong>Antoinette : Quand avez-vous commencé à faire des ateliers ?</strong></p>
+<p>Rees : Je dirais que j&rsquo;ai vraiment commencé en 2015 quand j&rsquo;ai eu mon premier, genre, goût pour donner des ateliers et puis j&rsquo;ai décidé de faire ça comme un travail vers 2019</p>
+<p>**Antoinette : Comment votre formation et votre expérience vous ont-elles préparé à animer des ateliers ? Est-ce que vous avez besoin d&rsquo;une formation pour cela ? **Antoinette : Comment votre formation et votre expérience vous ont-elles préparée à animer des ateliers ?**</p>
+<p>Rees : Pas vraiment.</p>
+<p>J&rsquo;ai étudié la littérature anglaise et la création littéraire à l&rsquo;université. Je pense que mes études m&rsquo;ont donné la capacité de faire des recherches, d&rsquo;apprendre des choses de manière indépendante et d&rsquo;être très adaptable en général.</p>
+<p>Mais il y a eu un point très important dans mon éducation. J&rsquo;ai obtenu mon diplôme universitaire en trois ans, dans trois universités différentes. Je suis allé dans une université, j&rsquo;y ai passé un an, puis je suis allé dans une autre université, j&rsquo;y ai passé un an, puis je suis allé dans une troisième université, j&rsquo;y ai passé un an, puis j&rsquo;ai obtenu mon diplôme et ma dernière année s&rsquo;est déroulée à l&rsquo;université de Géorgie. À l&rsquo;université de Géorgie, il y avait une société de discussion, une société de débat, appelée la Demosthenian Literary Society. Parler debout. Tout est improvisé. L&rsquo;idée est de créer des discours de grande qualité avec peu ou pas de planification préalable. C&rsquo;est ce que j&rsquo;ai fait tous les jeudis soirs à 19 heures pendant plus d&rsquo;un an. Je me suis levé et j&rsquo;ai parlé de tous les sujets possibles. J&rsquo;ai saisi toutes les occasions qui se présentaient à moi pour parler en public et dans ce style particulier - ce qui est rare. Tout le monde ne parle pas de tous les sujets. Mais je l&rsquo;ai fait. C&rsquo;était mon objectif. Parce que je voulais être le genre de personne capable de parler de manière convaincante de n&rsquo;importe quel sujet. Je me suis donc entraînée à cela. Je dirais que c&rsquo;est la partie essentielle de mon éducation, pas de mon éducation formelle, mais cette formation a été et est toujours essentielle à ce que je suis en tant que professionnel ou en tant que personne.</p>
+<p><strong>Antoinette : Y a-t-il des défis que vous avez relevés et qui sont similaires à ceux de la plupart de vos ateliers ?</strong></p>
+<p>Rees : Pas vraiment, chaque atelier a ses propres besoins, ses propres nuances. Je pense qu&rsquo;à l&rsquo;ère du virtuel et dans le monde post-COVID, chaque atelier a ses propres besoins et ses propres nuances. Dans le monde dans lequel nous vivons aujourd&rsquo;hui, les ateliers à distance représentent désormais une grande partie de mon travail. Nous avons des difficultés avec le travail en ligne, la collaboration en ligne, le zoom, la gestion des salles de réunion, la gestion des participants. Je pense que les problèmes les plus communs aux ateliers sont les tâches administratives telles que l&rsquo;invitation des participants, le choix de l&rsquo;heure, l&rsquo;organisation du système de regroupement.</p>
+<p><strong>Antoinette : Une personne difficile ? Comment gérez-vous cette situation ?</strong></p>
+<p>Rees : Personnellement, je n&rsquo;ai pas d&rsquo;expérience dans ce domaine. J&rsquo;imagine que c&rsquo;est possible. Mais je pense que la nature des ateliers est qu&rsquo;ils sont si sélectifs que seules les personnes intéressées viennent à l&rsquo;atelier et parce que j&rsquo;aime penser que mes ateliers eux-mêmes sont de très haute qualité, personne n&rsquo;est jamais insatisfait de la qualité de ce qu&rsquo;il sort de quelque chose. Par exemple, c&rsquo;est ce que j&rsquo;ai fait lors de l&rsquo;atelier sur l&rsquo;enseignement, ici à Tanger. Dans ce cas, je suis partie, j&rsquo;étais la &ldquo;Karen&rdquo;. Je me suis dit &ldquo;c&rsquo;est stupide, je ne vais pas perdre mon temps, je pensais que c&rsquo;était un atelier, je pensais qu&rsquo;on allait pratiquer, je pensais qu&rsquo;on allait faire des jeux, je pensais qu&rsquo;on allait faire quelque chose, tout ce que fait ce type c&rsquo;est essayer de me vendre son livre&rdquo;. C&rsquo;est peut-être un excellent livre, c&rsquo;est peut-être le livre qui aurait changé ma carrière, mais parce qu&rsquo;on s&rsquo;attendait à un atelier et qu&rsquo;il n&rsquo;a pas répondu à cette attente, je me suis senti trahi, et je n&rsquo;allais donc pas perdre mon temps avec lui, même si, peut-être, l&rsquo;information était géniale, étonnante et utile. Quoi qu&rsquo;il en soit, je n&rsquo;ai jamais eu de &ldquo;Karen&rdquo; et je pense que la raison en est simplement&hellip; la QUALITÉ. C&rsquo;est arrogant, mais j&rsquo;y crois.</p>
+<p><strong>Antoinette : En ce qui concerne la participation du public, allez-vous encourager les participants à communiquer entre eux ou voulez-vous contrôler les échanges entre eux ?</strong></p>
+<p>Rees : Un peu des deux, je pense. Je veux qu&rsquo;ils communiquent beaucoup entre eux, mais sur le sujet en question. Ainsi, toute conversation entre les participants doit servir un objectif plus large de l&rsquo;atelier et ce n&rsquo;est pas parce que je n&rsquo;aime pas le bavardage en général, mais c&rsquo;est simplement une question de timing. Si vous commencez à introduire dans votre atelier des bavardages généraux, par exemple pour faire connaissance ou pour briser la glace, cela prolonge la durée de l&rsquo;atelier.</p>
+<p><strong>Antoinette : Qu&rsquo;en est-il d&rsquo;une session en petits groupes où personne ne parle ?</strong></p>
+<p>Rees : Je pense que cela fait partie de l&rsquo;organisation de l&rsquo;atelier. Cela me semble être un problème d&rsquo;organisation si personne ne parle, car cela signifie qu&rsquo;on ne leur a pas donné de question gérable à poser ou à laquelle répondre. Si vous donnez une question à n&rsquo;importe qui, même la personne la plus timide sera capable de trouver une réponse si elle est pertinente pour elle ou si elle est pertinente pour quelque chose qu&rsquo;elle veut savoir ou qu&rsquo;elle veut pratiquer ou qu&rsquo;elle veut apprendre. Mais si le sujet de discussion n&rsquo;est pas pertinent pour eux, s&rsquo;il est trop simple, si vous ne leur avez pas donné le temps nécessaire, si vous n&rsquo;avez pas modelé la question, si vous n&rsquo;avez pas fait la mise en place correctement, alors il y aura des silences gênants dans ce genre de situation. Mais c&rsquo;est au facilitateur d&rsquo;éviter cela.</p>
+<p><strong>Antoinette : Donc, vous préparez une question à laquelle ils doivent répondre ?</strong></p>
+<p>Rees : Tout à fait. Cela fait partie de l&rsquo;objectif du manuel du participant. Le MP est généralement structuré sous la forme d&rsquo;une série de questions. Ces questions sont en fait les questions de discussion qui seront utilisées pendant l&rsquo;atelier. Oui, chaque discussion comporte une sorte d&rsquo;incitation, il y a des informations que nous devons mettre sur la table. J&rsquo;ai besoin de savoir ce que vous savez ; vous avez besoin de savoir ce que je sais. De cette façon, nous pouvons parvenir ensemble à un consensus et l&rsquo;appliquer à un scénario ou je veux que vous me donniez un retour d&rsquo;information pour que je puisse vous donner un retour d&rsquo;information et que nous puissions avoir cet échange mutuel. L&rsquo;objectif est le retour d&rsquo;information. Il y a toujours une tâche ou un objectif central de communication dans nos ateliers.</p>
+<p><strong>Antoinette : Comment évaluez-vous l&rsquo;efficacité des formations et des programmes ?</strong></p>
+<p>Rees : Dans nos séries d&rsquo;ateliers, nous ne procédons pas à une évaluation formelle. Je pense qu&rsquo;il y a certainement une marge de progression en termes de suivi et d&rsquo;évaluation, de fixation d&rsquo;objectifs.</p>
+<p>Où en étions-nous ? Où en sont les participants lorsqu&rsquo;ils entrent dans l&rsquo;atelier ? Comment se sentaient-ils au début et à la fin de l&rsquo;atelier ? Six mois plus tard, envoyez-leur un courriel. &ldquo;Hé, où en êtes-vous maintenant ?&rdquo;</p>
+<p>En termes de suivi et d&rsquo;évaluation, nous pouvons certainement nous améliorer, mais pour moi, le succès de l&rsquo;atelier réside dans ce que les participants en retirent. C&rsquo;est ce sur quoi je me concentre vraiment. Par conséquent, si l&rsquo;atelier a permis de dégager un bon enseignement dès la phase de planification, et si je vois qu&rsquo;il s&rsquo;agit de quelque chose de reproductible, d&rsquo;une compétence affinée ou d&rsquo;une sorte de produit physique, je ne me préoccupe pas vraiment de l&rsquo;évolution des participants, ni de savoir s&rsquo;ils l&rsquo;ont réellement mis en pratique dans leur vie ou dans quelle mesure ils ont été capables de le faire. Tant que l&rsquo;enseignement est bon, ces choses se produiront. À ce stade, ce n&rsquo;est plus qu&rsquo;une question de main-d&rsquo;œuvre, de travail et d&rsquo;efforts. En tant que responsable de la formation et du développement des communautés résilientes, dois-je donc assurer le suivi et l&rsquo;évaluation de chaque atelier que nous organisons ? Cela ressemble à un cauchemar administratif. Parce que nous organisons un atelier par semaine et qu&rsquo;envoyer des courriels à chaque personne qui participe à nos ateliers prend du temps. Mon temps est limité et je préférerais le consacrer à la création d&rsquo;outils utiles qui mèneraient à de bons résultats plutôt que de suivre les résultats et de passer moins de temps à la préparation.</p>
+<p><strong>Antoinette : Et si vous faisiez un sondage ? Mais je suppose qu&rsquo;il faut aussi du temps pour l&rsquo;analyser.</strong></p>
+<p>Rees : C&rsquo;est tout à fait possible. Comme &ldquo;0-10 comment vous sentez-vous maintenant à propos de ce sujet&rdquo; puis à la fin de l&rsquo;atelier &ldquo;0-10 comment vous sentez-vous MAINTENANT ?&rdquo; La seule chose que ce type d&rsquo;évaluation discrète à court terme nous apporterait, c&rsquo;est une sorte de point publicitaire. Il s&rsquo;agirait davantage d&rsquo;une évaluation publicitaire que d&rsquo;une évaluation basée sur le contenu. C&rsquo;est donc de là que je viens en ce qui concerne le choix du moment de l&rsquo;atelier. &ldquo;D&rsquo;accord, 5 minutes, donnez-vous une note de 0 à 10 et écrivez les attentes que vous avez par rapport à l&rsquo;atelier. Cinq autres minutes à la fin de l&rsquo;atelier. &ldquo;0-10, où en êtes-vous ? Donnez-vous un retour critique.&rdquo; Nous avons intégré cela dans l&rsquo;atelier, en termes de retour d&rsquo;information personnel, en particulier avec des compétences affinées ou des ateliers basés sur les compétences. L&rsquo;idée de formaliser le processus d&rsquo;évaluation, je ne vois pas quelle valeur elle aurait immédiatement pour nous et ce n&rsquo;est donc pas quelque chose sur lequel j&rsquo;ai travaillé de près.</p>
+<p>Mais pour l&rsquo;essentiel, notre réputation parle d&rsquo;elle-même. La seule chose que ce type de suivi et d&rsquo;évaluation permet de faire, c&rsquo;est de mettre les parties prenantes à l&rsquo;aise. Je pense que cela vient de là. En fait, lorsque vous recevez une subvention d&rsquo;une organisation, celle-ci vous dit : &ldquo;Vous devez obtenir des résultats pour nous. Nous ne pouvons pas venir visiter physiquement le site, mais vous devez nous montrer des résultats.&rdquo; C&rsquo;est également important pour corriger le tir, mais à ce stade, je ne pense pas que notre programme ait besoin d&rsquo;être corrigé et nous n&rsquo;avons pas d&rsquo;autres parties prenantes que nos participants. Nous avons tellement travaillé sur le processus de conception de l&rsquo;atelier que le suivi et l&rsquo;évaluation informels nous conviennent le mieux.</p>
+<p><strong>Antoinette : Qu&rsquo;entendez-vous par suivi et évaluation informels ?</strong></p>
+<p>Rees : Bon nombre de nos ateliers comprennent un retour d&rsquo;information personnalisé appelé +Δ &ldquo;plus delta&rdquo;.</p>
+<p>Plus - Qu&rsquo;est-ce que je fais bien ?
+Delta - Qu&rsquo;est-ce que je pourrais changer ? Qu&rsquo;est-ce que je pourrais améliorer ?
+Nous posons ces questions à la fin de bon nombre de nos activités et de nos ateliers. Cette approche plus informelle, plus personnalisée, plus communicative du suivi et de l&rsquo;évaluation est celle vers laquelle nous tendons. Parce qu&rsquo;elle a) contribue activement aux objectifs de l&rsquo;atelier, qui consiste généralement à affiner certaines compétences que les participants peuvent déjà avoir. Elle permet donc d&rsquo;atteindre cet objectif tout en évitant de dépersonnaliser les choses. Parfois, je crains que ce style de 0-10 (avant et après le sondage) ne dépersonnalise l&rsquo;atelier. Ils donnent l&rsquo;impression que l&rsquo;atelier est réglé, que ces documents deviennent souvent des &ldquo;montrez-nous que nous avons fait du bon travail&rdquo;, et je déteste cela. C&rsquo;est pourquoi, personnellement, je ne fais pas cela spécifiquement pour les ateliers. Nous avons apprécié cette approche informelle.</p>
+<p>Une très longue réponse, j&rsquo;ai l&rsquo;impression que dans une certaine mesure, je me justifiais à moi-même. Je n&rsquo;ai jamais vraiment, profondément réfléchi à la question de savoir si nous devrions faire une sorte de pré-sondage et de post-sondage. Peut-être qu&rsquo;un jour nous le ferons, mais pour l&rsquo;instant, je n&rsquo;ai rien prévu à ce sujet.</p>
+<p><strong>Antoinette : Cette question a été posée par l&rsquo;une de vos stagiaires. Si vous n&rsquo;avez jamais animé d&rsquo;atelier vous-même, quelles sont vos attentes ou les questions que vous vous posez lorsque vous entamez le processus ?</strong></p>
+<p>Rees : Je peux interpréter cette question de deux façons.</p>
+<ol>
+<li>un atelier, c&rsquo;est-à-dire que j&rsquo;ai déjà animé un atelier, j&rsquo;ai des compétences d&rsquo;orateur, mais on me présente un nouvel atelier avec un nouveau manuel de l&rsquo;animateur, et c&rsquo;est un atelier que je n&rsquo;ai jamais animé auparavant. Quelles sont les questions que je dois me poser dans ce cas de figure ? Ou</li>
+<li>je suis quelqu&rsquo;un qui n&rsquo;a jamais animé d&rsquo;atelier auparavant et je commence tout juste à me familiariser avec cet environnement, quelles questions dois-je me poser ? Dans le cas du deuxième scénario, je dois me demander : &ldquo;Quelles sont les capacités de base dont un animateur a besoin ? Quelles sont les ressources dont je dispose ?&rdquo; C&rsquo;est donc en termes de.. :</li>
+</ol>
+<p>Mes compétences en matière d&rsquo;art oratoire sont-elles bonnes ?
+Dans quels domaines dois-je améliorer mes compétences en matière d&rsquo;art oratoire ?
+Que sais-je de l&rsquo;animation d&rsquo;ateliers en général ? Les techniques de regroupement, l&rsquo;élicitation, l&rsquo;externalisation de l&rsquo;information pour renforcer l&rsquo;indépendance des participants.
+-Ensuite, j&rsquo;examinerai également les ressources dont je dispose. Ce sont mes outils centraux, ma boîte à outils. Dans le monde en ligne, cela signifie ZOOM. &ldquo;Suis-je capable d&rsquo;utiliser des salles de réunion, de faire passer les participants d&rsquo;une salle à l&rsquo;autre ? De quelle manière vais-je développer la communication dans l&rsquo;atelier ?&rdquo;</p>
+<p>Voilà donc les questions que je me poserais, les bases du processus. Qui suis-je en tant qu&rsquo;animateur ? Quelles sont les compétences dont un animateur a besoin ? Quels sont les outils dont je dispose ? Puis-je utiliser ces outils ? Telles sont les questions que je me poserai si je débute.</p>
+<p>Si je possède déjà ces compétences et que je me suis déjà posé ces questions, dans le cas où je suis déjà un animateur expérimenté. En outre, je suis confronté à un nouvel atelier que je dois animer. Je poserais les questions suivantes :</p>
+<p>&ldquo;Quel est l&rsquo;objectif de cet atelier ? Le manuel de l&rsquo;animateur permet-il d&rsquo;atteindre cet objectif ? Quel est le contenu nécessaire et inutile ? Suis-je un expert en la matière ? Ai-je besoin d&rsquo;être un expert en la matière ? Quelles sont les informations que je connais déjà et que je ne connaissais pas ? Quelles sont les informations supplémentaires que je dois rechercher pour me familiariser davantage avec ce sujet ?</p>
+<p>Je pense que la première étape de tout nouvel atelier que vous donnez est d&rsquo;aller sur YouTube et de faire une recherche pour chaque terme, même ceux que vous connaissez déjà, dans le manuel de l&rsquo;animateur. Ainsi, plus vous lisez, regardez et écoutez, plus vous vous imprégnez du discours qui entoure cette idée. Je pense que c&rsquo;est la partie la plus importante du rôle d&rsquo;animateur. Vous n&rsquo;avez pas besoin d&rsquo;être un expert en la matière, mais vous devez être un membre du discours de cette communauté autour de cet atelier.</p>
+<p><strong>Antoinette : Quels conseils pouvez-vous donner aux personnes qui souhaitent créer leurs propres ateliers ?</strong></p>
+<p>Rees : Je pense que je vais simplement donner le conseil classique que je donne à tous mes stagiaires. La première chose que j&rsquo;enseigne est de se concentrer sur ce que l&rsquo;on peut en retirer. Tout ce que vous avez voulu enseigner, tout ce que vous avez fait, que ce soit une compétence ou un produit physique, a une utilité. Selon ma définition, un &ldquo;produit à emporter&rdquo; est un produit reproductible, utilisable, ou une compétence affinée. Cela peut être n&rsquo;importe quoi. Ainsi, quel que soit l&rsquo;atelier que vous prévoyez d&rsquo;organiser, ne vous préoccupez pas des autres phases, ne vous préoccupez pas du matériel que vous allez présenter, ne vous préoccupez pas de la manière dont vous allez le mettre en pratique. Ne vous préoccupez que de cela : Qu&rsquo;est-ce que vous en retirez ? Quelle est la compétence affinée ? Quel est le produit reproductible et utilisable ? Tant que vous avez cette idée en tête, tout le reste se met en place.</p>
+<p><strong>Antoinette : Enfin, comment rendre un atelier intéressant ?</strong></p>
+<p>Rees : Il y a trois phases dans un atelier : la transmission de l&rsquo;information - Présenter -, la pratique - où l&rsquo;on pratique la compétence pour la première fois ou une petite partie du produit - et enfin la production - où l&rsquo;on fait tout de manière indépendante, où l&rsquo;on pratique cette compétence par soi-même, ou où l&rsquo;on fabrique le produit par soi-même, sans conseils, et cela vient de ma carrière d&rsquo;enseignant. PRÉSENTER. PRATIQUER. PRODUIRE.</p>
+<p>Il est vrai que l&rsquo;atelier comporte une partie secrète dont nous ne parlons pas vraiment. L&rsquo;épice secrète - l&rsquo;élément de plaisir, ou l&rsquo;élément de &ldquo;oOOH ! C&rsquo;est tellement intéressant !&rdquo;</p>
+<p>Comment trouver cet élément ? Comment y parvenir ? L&rsquo;expérience. L&rsquo;imagination. L&rsquo;observation des autres. Il n&rsquo;y a pas de règle générale. Mais il est vrai que chaque atelier a son épice secrète, ce qui le rend amusant ou intéressant.</p>
+<p>C&rsquo;est souvent en trouvant cette épice secrète qu&rsquo;un bon atelier devient un excellent atelier.</p>
+<!-- raw HTML omitted -->
+
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+</main>
+
+    <div class="h-screen border-gray-200 border-t">
+      
+      <div>
+        <div class="pt-2">
+          <h2 class="text-[#0E773F] text-base font-semibold text-center mt-2">
+            Partenaires &amp; Collaborateurs
+          </h2>
+          <h2
+            class="text-gray-800 text-2xl font-semibold text-center font-['Playfair Display'] font-serif mb-4"
+          >
+            Nos Anciens Partenaires
+          </h2>
+        </div>
+
+        <div class="logos">
+          <div class="logos-slide">
+            <img src="/notassets/Partners/logo1.png" />
+            <img src="/notassets/Partners/logo2.png" />
+            <img src="/notassets/Partners/logo3.png" />
+            <img src="/notassets/Partners/logo4.png" />
+            <img src="/notassets/Partners/logo5.png" />
+            <img src="/notassets/Partners/logo6.png" />
+            <img src="/notassets/Partners/logo7.png" />
+            <img src="/notassets/Partners/logo1.png" />
+            <img src="/notassets/Partners/logo2.png" />
+            <img src="/notassets/Partners/logo3.png" />
+            <img src="/notassets/Partners/logo4.png" />
+            <img src="/notassets/Partners/logo5.png" />
+            <img src="/notassets/Partners/logo6.png" />
+            <img src="/notassets/Partners/logo7.png" />
+          </div>
+        </div>
+      </div>
+
+      
+      <footer class="bg-white pt-4 sm:pt-10 lg:pt-12">
+        <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <div
+            class="mb-10 grid grid-cols-2 gap-12 border-t pt-8 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-10"
+          >
+            <div class="col-span-full lg:col-span-2">
+              
+              <div class="mb-4 lg:-mt-2">
+                <a
+                  href="/"
+                  class="inline-flex items-center gap-2 text-xl font-bold text-black md:text-2xl"
+                  aria-label="logo"
+                >
+                  <img
+                    class="h-16 w-16"
+                    src="/notassets/logo transparent.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-1">
+                    <span class="text-green-900 text-sm"
+                      >Communautés Résilientes</span
+                    >
+                    <span class="text-gray-500 text-xs"
+                      >Inspiration par l&#39;Innovation</span
+                    >
+                  </div>
+                </a>
+              </div>
+              
+
+              <p class="mb-6 text-gray-500 sm:pr-8">
+Pour toute demande de renseignements, veuillez contacter Eastman Johnson à l&#39;adresse ejohnson@resilientcommunitiesngo.org.
+              </p>
+
+              
+              <div class="items-baseline hidden gap-4 text-slate-400 md:flex">
+                
+                <a href="http://www.facebook.com/resilientcommunitiesmorocco/">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                    /></svg
+                ></a>
+
+                
+                <a href="https://twitter.com/ResComm2017">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 50 50"
+                  >
+                    <path
+                      d="M 6.9199219 6 L 21.136719 26.726562 L 6.2285156 44 L 9.40625 44 L 22.544922 28.777344 L 32.986328 44 L 43 44 L 28.123047 22.3125 L 42.203125 6 L 39.027344 6 L 26.716797 20.261719 L 16.933594 6 L 6.9199219 6 z"
+                    ></path></svg
+                ></a>
+
+                
+                <a href="https://www.instagram.com/resilient_communities/">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    /></svg
+                ></a>
+
+                
+                <a
+                  href="https://www.linkedin.com/company/resilient-communities-non-profit/"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                    /></svg
+                ></a>
+
+                
+                <a href="https://www.youtube.com/@resilientcommunities4942">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                    /></svg
+                ></a>
+
+                
+                <a href="https://www.tiktok.com/@resilient_communities">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    class="h-4 w-4"
+                  >
+                    
+                    <path
+                      fill="currentColor"
+                      d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+                    /></svg
+                ></a>
+              </div>
+              
+            </div>
+
+            
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                <a href="http://localhost:1313/fr/what_we_do">Ce que nous faisons</a>
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/what_we_do"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Projets et Programmes Collaboratifs</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/what_we_do"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    ></a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/what_we_do"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Projets d&#39;Engagement Communautaire</a
+                  >
+                </div>
+              </nav>
+            </div>
+
+            
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                
+                S&#39;impliquer
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/partnership"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    ></a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/volunteer_group"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Groupes de bénévoles 
+                  </a>
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/map"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Carte des Projets</a
+                  >
+                </div>
+              </nav>
+            </div>
+            
+
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                <a href="http://localhost:1313/fr/internship">Programmes de Stage</a>
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/intern_projects"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Projets des Stagiaires</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/Articles"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Articles</a
+                  >
+                </div>
+              </nav>
+            </div>
+            
+
+            
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                <a href="http://localhost:1313/fr/about">À propos de nous</a>
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/about"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Notre équipe</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/about"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Notre mission</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/fr/Projects"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Projets</a
+                  >
+                </div>
+              </nav>
+            </div>
+            
+          </div>
+
+          <div class="border-t py-8 text-center text-sm text-gray-400">
+            © 2024 - Resilient Communities. Tous droits réservés.
+          </div>
+        </footer>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        
+        const links = document.querySelectorAll('a');
+    
+        links.forEach(link => {
+          
+          let href = link.getAttribute('href');
+    
+          
+          if (href && href.includes('/en/')) {
+            
+            href = href.replace('/en/', '/');
+            link.setAttribute('href', href);
+          }
+        });
+      });
+    </script>
+    
+  </body>
+</html>

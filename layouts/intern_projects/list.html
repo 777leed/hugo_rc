@@ -1,99 +1,92 @@
 {{ define "main" }}
 
-        <!-- Header & Hero -->
-        <div class="h-screen overflow-hidden w-full">
-            <div class="relative flex justify-center gap-4 flex-col items-center mx-auto h-full w-full bg-cover bg-local" style="background-image:url('/notassets/silhouttebg.jpg');">
-                        <!-- Header -->
+<!-- Header & Hero -->
+{{ partial "hero.html" . }}
 
-                {{ partial "header.html" . }}
-                <h1 class="font-['Playfair Display'] font-serif text-rg text-5xl text-center text-white leading-tight">
-                  Resilient Communities <br> Around The World
-                </h1>
-                <span class="text-white line-clamp-4 text-center">
-                    Our mission is to positively influence a multitude of communities,<br>ranging from renowned landmarks to undiscovered villages,<br>making a meaningful impact wherever we go.
-                </span>
-                <div class="flex gap-4">
-                  <button class="text-white flex items-center justify-between gap-1 bg-[#0E773F] px-6 py-2 rounded-full font-bold min-w-[150px] hover:"><span>Donate</span><span class="material-symbols-outlined">
-                    arrow_right_alt
-                    </span>
-                  </button>
-                  <button class="text-white flex items-center justify-between gap-1 border-[#0E773F] border-2 px-6 py-2 rounded-full font-bold min-w-[150px]"><span>Join Now</span><span class="material-symbols-outlined">
-                    arrow_right_alt
-                    </span>
-                  </button>
-                </div>
-
-
+<!-- Our Recent Interns -->
+<div class="min-h-screen bg-white py-6 sm:py-8 lg:py-12" id="firstsectionn">
+  <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+    <div class="md:pt-8">
+      <p
+        class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+      >
+        {{ i18n "Inter40c6d" }}
+      </p>
+      <h1
+        class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left rtl:text-right"
+      >
+        {{ i18n "Recen1b3fa" }}
+      </h1>
+      <div class="flex flex-wrap justify-center" id="card-container">
+        {{ range .Pages }}
+        <div
+          class="card scale-90 relative w-72 h-96 bg-white rounded-lg max-w-xs shadow-lg group"
+        >
+          <img
+            alt="Person's Picture"
+            class="w-full h-full object-cover rounded-lg"
+            src="{{ .Params.pic }}"
+          />
+          <div
+            class="rounded-lg absolute bottom-0 left-0 right-0 px-6 py-4 bg-black bg-opacity-50 text-white"
+          >
+            <h2 class="text-lg font-bold">{{ .Params.name }}</h2>
+            <p class="text-sm">{{ .Params.position }}</p>
+          </div>
+          <div
+            class="absolute inset-0 rounded-lg bg-gray-800 bg-opacity-75 text-white px-6 py-4 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          >
+            <div
+              class="flex justify-center items-center absolute top-0 pt-4 gap-2"
+            >
+              <img alt="" class="w-7 h-auto" src="{{ .Params.symbol }}" />
+              <a href="{{ .Params.linkedIn }}">
+                <svg
+                  class="h-5 w-5 text-slate-100 hover:text-slate-200"
+                  fill="currentColor"
+                  viewbox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                  ></path>
+                </svg>
+              </a>
             </div>
+            <p class="text-justify" style="hyphens: auto">{{ .Params.text }}</p>
+          </div>
         </div>
-        <!-- Our Recent Interns -->
-        <div class="min-h-screen bg-white py-6 sm:py-8 lg:py-12">
-                <div class="mx-auto max-w-screen-xl px-4 md:px-8">
-                  <div class="md:pt-8">
-                    <p class="text-center font-bold text-green-700 md:text-left">Intern Projects</p>
-                    <h1 class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left">Recent Intern Projects
-                    </h1>
-                    <div id="card-container" class="flex flex-wrap justify-between">
-                        {{ range .Pages }}
-                        <div class="card scale-90 relative w-72 h-96 bg-white rounded-lg max-w-xs shadow-lg group">
-                            <img class="w-full h-full object-cover rounded-lg" src="../notassets/Profile Pics/pic003.jpeg" alt="Person's Picture">
-                            <div class="rounded-lg absolute bottom-0 left-0 right-0 px-6 py-4 bg-black bg-opacity-50 text-white">
-                                <h2 class="text-lg font-bold">{{ .Params.name }}</h2>
-                                <p class="text-sm">{{ .Params.position }}</p>
-                            </div>
-                            <div class="absolute inset-0 rounded-lg bg-gray-800 bg-opacity-75 text-white px-6 py-4 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                {{ if .Params.ucStudent}}
-                                <div class="flex justify-center items-center absolute top-0 pt-4 gap-2">
-                                    <img src="/notassets/icons/uc-white-logo.png" class="w-7 h-auto" alt="">
-                                   <a href="">
-                                    <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="h-5 w-5 text-slate-100 hover:text-slate-200"
-                                    fill="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path
-                                      d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                                    </svg>
-                                   </a>
-                                </div>
-                                {{ end }}
-                                <p class="text-center">{{ .Params.text }}</p>
-                            </div>
-                        </div>
-                        {{ end }}
-                    </div>
-               
+        {{ end }}
+      </div>
+      <div class="mt-8 cursor-pointer mx-auto text-center" id="see-all-button">
+        <span class="font-normal text-green-700 hover:font-medium"
+          >{{ i18n "SeeAl8317e" }}</span
+        >
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll("#card-container .card");
+    const seeAllButton = document.getElementById("see-all-button");
 
-                    <div id="see-all-button" class="mt-8 cursor-pointer mx-auto text-center">
-                      <span class="font-normal text-green-700 hover:font-medium">See All</span>
-                    </div>
-                  </div>
-                </div>
-        </div>
+    // Show only the first 8 cards initially
+    const initialCardsToShow = 8;
+    cards.forEach((card, index) => {
+      if (index >= initialCardsToShow) {
+        card.classList.add("hidden");
+      }
+    });
 
-
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                const cards = document.querySelectorAll("#card-container .card");
-                const seeAllButton = document.getElementById("see-all-button");
-            
-                // Show only the first 8 cards initially
-                const initialCardsToShow = 8;
-                cards.forEach((card, index) => {
-                    if (index >= initialCardsToShow) {
-                        card.classList.add("hidden");
-                    }
-                });
-            
-                // Show all cards when the "See All" button is clicked
-                seeAllButton.addEventListener("click", function() {
-                    cards.forEach(card => {
-                        card.classList.remove("hidden");
-                    });
-                    seeAllButton.classList.add("hidden"); // Hide the button after showing all cards
-                });
-            });
-            </script>
-            
+    // Show all cards when the "See All" button is clicked
+    seeAllButton.addEventListener("click", function () {
+      cards.forEach((card) => {
+        card.classList.remove("hidden");
+      });
+      seeAllButton.classList.add("hidden"); // Hide the button after showing all cards
+    });
+  });
+</script>
 
 {{ end }}

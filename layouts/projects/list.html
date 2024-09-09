@@ -1,155 +1,144 @@
 {{ define "main" }}
+<style>
+  .active-category {
+    background-color: #e0e0e0; /* Example highlight color */
+    border-radius: 5px; /* Optional: add some styling */
+  }
+</style>
 <!-- Header & Hero -->
-<div class="h-screen overflow-hidden w-full">
-            <!-- Hero -->
-            <div class="relative flex justify-center gap-4 flex-col items-center mx-auto h-full w-full bg-cover bg-local" style="background-image:url('/notassets/bannerimageplus1.png');">
-                <!-- Header -->
-               {{ partial "header.html" . }}
-                <h1 class="font-['Playfair Display'] font-serif text-white text-5xl text-center leading-tight">
-                  Resilient Communities <br> Around The World
-                </h1>
-                <span class="text-white line-clamp-4 text-center">
-                    Our mission is to positively influence a multitude of communities,<br>ranging from renowned landmarks to undiscovered villages,<br>making a meaningful impact wherever we go.
-                </span>
-                <div class="flex gap-4">
-                  <button class="text-white flex items-center justify-between gap-1 bg-[#0E773F] px-6 py-2 rounded-full font-bold min-w-[150px] hover:"><span>See Projects</span><span class="material-symbols-outlined">
-                    arrow_right_alt
-                    </span>
-                  </button>
-                  <button class="text-white flex items-center justify-between gap-1 border-[#0E773F] border-2 px-6 py-2 rounded-full font-bold min-w-[150px]"><span>Join Now</span><span class="material-symbols-outlined">
-                    arrow_right_alt
-                    </span>
-                  </button>
-                </div>
+{{ partial "hero.html" . }}
 
-
-            </div>
-</div>
- <!-- desc -->
-<div class="bg-white">
+<!-- desc -->
+<div class="bg-white" id="projectList">
+  <br />
+  <br />
   <h2 class="text-[#0E773F] text-base font-semibold text-center mb-2 mt-4">
-    Latest Projects & Campaigns
+    {{ i18n "Lates8c4b2" }}
   </h2>
-  <h2 class="text-gray-800 text-2xl font-semibold text-center font-['Playfair Display'] font-serif mb-4">
-    Our Latest RC Projects
+  <h2
+    class="text-gray-800 text-2xl font-semibold text-center font-['Playfair Display'] font-serif mb-4"
+  >
+    {{ i18n "OurLa35d1e" }}
   </h2>
-  <p class="p-7 font-sans text-sm antialiased font-light leading-relaxed text-gray-700 text-left">
-  Explore the impact of our NGO with 'Our Latest RC Projects.' Showcasing a commitment to positive change, we invite you to delve into our innovative and community-driven initiatives. From community projects and program campaigns to infrastructure project campaigns and engineering prototyping campaigns, our diverse efforts aim to create lasting change. Witness the transformative power of compassion and join us in shaping a better tomorrow through our ongoing RC projects. Together, let's amplify the reach of resilience and change lives for the better.
+  <p
+    class="p-7 font-sans text-sm antialiased font-light leading-relaxed text-gray-700 text-center rtl:text-right"
+  >
+    {{ i18n "Explocdaff" }}
   </p>
 </div>
 <!-- project body -->
-<div class="bg-gray-50">
-
-    <div class="flex justify-between p-7">
-      <div class="flex gap-4">
-          <span class="flex items-center gap-1 text-sm font-semibold text-gray-900">
-              <span class="material-symbols-outlined">
-              flag
-              </span>
-              <span class="text-center hidden lg:block">All Projects
-              </span>
-          </span>
-          <span class="flex items-center gap-1 text-sm font-semibold text-gray-900">
-
-              <span class="material-symbols-outlined">
-              check_circle
-              </span>
-              <span class="hidden lg:block">Completed
-              </span>
-          </span>
-          <span class="flex items-center gap-1 text-sm font-semibold text-gray-900">
-
-              <span class="material-symbols-outlined">
-              pending
-              </span>
-              <span class="hidden lg:block">Ongoing
-              </span>
-          </span>
-          <div class="hidden relative text-left lg:inline-block">
-          <div>
-              <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
-              Filters
-              <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-              </svg>
-              </button>
-          </div>
-
-          <!--
-              Dropdown menu, show/hide based on menu state.
-
-              Entering: "transition ease-out duration-100"
-              From: "transform opacity-0 scale-95"
-              To: "transform opacity-100 scale-100"
-              Leaving: "transition ease-in duration-75"
-              From: "transform opacity-100 scale-100"
-              To: "transform opacity-0 scale-95"
-          -->
-          <div id="menuu" class="absolute hidden right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="py-1" role="none">
-              <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Active Projects</a>
-              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Community Projects</a>
-              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">infrastructure Projects</a>
-              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Engineering Prototyping </a>
-
-              </div>
-          </div>
-          </div>
-
-
-      </div>
-      <div class="flex gap-4 text-sm font-semibold text-gray-900">
-          <span class="flex items-center gap-1">
-              <span class="material-symbols-outlined">
-              list
-              </span>
-              <span>List
-              </span>
-          </span>
-          <span class="flex items-center gap-1">
-              <span class="material-symbols-outlined">
-              grid_view
-              </span>
-              <span>Grid
-              </span>
-          </span>
-      </div>
+<div class="bg-gray-50 mb-10">
+  <div class="flex justify-between p-7">
+    <div class="flex gap-4 flex-wrap justify-center w-full">
+      <span
+        class="cursor-pointer p-2 flex items-center gap-1 text-sm font-semibold text-gray-900 category"
+        data-category="all"
+      >
+        <span class="material-symbols-outlined"> flag </span>
+        <span class="text-center lg:block">{{ i18n "AllPrd869e" }}</span>
+      </span>
+      <span
+        class="cursor-pointer p-2 flex items-center gap-1 text-sm font-semibold text-gray-900 category"
+        data-category="completed"
+      >
+        <span class="material-symbols-outlined"> check_circle </span>
+        <span class="lg:block">{{ i18n "Compl07ca5" }}</span>
+      </span>
+      <span
+        class="cursor-pointer p-2 flex items-center gap-1 text-sm font-semibold text-gray-900 category"
+        data-category="ongoing"
+      >
+        <span class="material-symbols-outlined"> pending </span>
+        <span class="lg:block">{{ i18n "Ongoi7ee7d" }}</span>
+      </span>
     </div>
-    <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {{ range .Pages}}
-        <div class="scale-90 relative flex w-full max-w-[20rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
-          <div class="relative mx-2 mt-2 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
-              <img src="../notassets/Projects pics/{{ .Params.thumbnail }}" class="object-cover w-full max-h-48" alt="prjct" />
-              <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-r from-transparent via-transparent to-black/60"></div>
-          </div>
-          <div class="p-4">
-              <div class="mb-2">
-              <h5 class="font-sans text-base antialiased font-medium leading-snug line-clamp-2 tracking-normal text-blue-gray-900">
-                {{ .Title }}                </h5>
-              <h5 class="block font-sans text-sm antialiased font-normal leading-snug tracking-normal text-blue-gray-900">
-                {{ .Params.location }}
-              </h5>
-
-              </div>
-              <p class="font-sans text-sm antialiased font-light leading-relaxed text-gray-700 mb-2 line-clamp-3 ">
-                {{ .Params.description }}
-              </p>
-              <h5 class="block font-sans text-sm antialiased font-medium italic leading-snug tracking-normal text-[#3B4A3F]">
-              Estimated Budget : {{ .Params.estimated }}$ USD
-              </h5>
-
-          </div>
-          <div class="p-4 pt-2">
-              <a href="{{ .RelPermalink }}" class="block w-full select-none rounded-lg bg-[#3B4A3F] py-2.5 px-5 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-              Read More
-              </a>
-          </div>
+  </div>
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap w-full justify-center gap-6">
+      {{ range .Pages}}
+      <div
+        class="scale-90 relative flex w-full max-w-[20rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg project-card"
+        data-completed="{{ .Params.completed }}"
+        data-ongoing="{{ .Params.ongoing }}"
+      >
+        <div
+          class="relative mx-2 mt-2 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40"
+        >
+          <img
+            alt="project"
+            class="object-cover w-full h-48"
+            src="/notassets/Projects pics/{{ .Params.thumbnail }}"
+          />
+          <div
+            class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-r from-transparent via-transparent to-black/60"
+          ></div>
         </div>
-        {{ end }}
+        <div class="p-4">
+          <div class="mb-2">
+            <h5
+              class="h-12 font-sans text-base antialiased font-medium leading-snug line-clamp-2 tracking-normal text-blue-gray-900"
+            >
+              {{ .Params.title}}
+            </h5>
+            <h5
+              class="block font-sans text-sm antialiased font-normal leading-snug tracking-normal text-blue-gray-900"
+            >
+              {{ .Params.location }}
+            </h5>
+          </div>
+          <p
+            class="font-sans text-sm antialiased font-light leading-relaxed text-gray-700 mb-2 line-clamp-3"
+          >
+            {{ .Params.description }}
+          </p>
+          <h5
+            class="block font-sans text-sm antialiased font-medium italic leading-snug tracking-normal text-[#3B4A3F]"
+          >
+            {{ i18n "Estima6071" }}
+          </h5>
+        </div>
+        <div class="p-4 pt-2">
+          <a
+            class="block w-full select-none rounded-lg bg-[#3B4A3F] py-2.5 px-5 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            href="{{ .RelPermalink }}"
+            type="button"
+            >{{ i18n "ReadM4cd70" }}</a
+          >
+        </div>
       </div>
+      {{ end }}
     </div>
-
+  </div>
 </div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const categories = document.querySelectorAll(".category");
+    const projects = document.querySelectorAll(".project-card");
+
+    categories.forEach((category) => {
+      category.addEventListener("click", function () {
+        // Remove 'active' class from all categories
+        categories.forEach((cat) => cat.classList.remove("active-category"));
+
+        // Add 'active' class to the clicked category
+        this.classList.add("active-category");
+
+        // Get the category type
+        const categoryType = this.getAttribute("data-category");
+
+        // Filter projects
+        projects.forEach((project) => {
+          if (categoryType === "all") {
+            project.style.display = "block";
+          } else if (project.getAttribute(`data-${categoryType}`) === "true") {
+            project.style.display = "block";
+          } else {
+            project.style.display = "none";
+          }
+        });
+      });
+    });
+  });
+</script>
+
 {{ end }}

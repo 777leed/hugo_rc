@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Workshop Interview</title>
+    <link href="/css/output.css" rel="stylesheet" />
+    <link href="/css/partnerSilder.css" rel="stylesheet" />
+    <link href="/css/overlay.css" rel="stylesheet" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/blaze-slider@latest/dist/blaze.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/blaze-slider@latest/dist/blaze-slider.min.js"></script>
+
+    
+  </head>
+
+  <body
+    class="bg-white w-full h-full m-0 p-0 antialiased"
+    style="scroll-behavior: smooth"
+  >
+    <main> 
+
+<div
+  id="header-container"
+  class="min-h-20 h-auto justify-center w-full px-7 flex flex-col mx-auto absolute top-0 z-20"
+>
+  <nav
+    class="relative flex flex-wrap items-center justify-between w-full group py-7 shrink-0"
+  >
+    <a href="http://localhost:1313/en" class="flex gap-2 items-center">
+      <img class="h-16 w-16" src="/notassets/logo transparent.svg" alt="" />
+      <div class="flex flex-col gap-1">
+        <span class="text-[#0E773F] text-sm font-medium"
+          >Resilient Communities</span
+        >
+        <span class="text-gray-400 text-xs">Inspiration through Innovation</span>
+      </div>
+    </a>
+    <div class="items-center justify-between hidden gap-12 text-black lg:flex">
+      <a
+        class="text-sm font-semibold text-gray-600 hover:text-[#0E773F]"
+        href="http://localhost:1313/en"
+        >Home</a
+      >
+      
+      <div>
+        <button
+          id="dropdownAboutButton"
+          data-dropdown-toggle="dropdownAbout"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-gray-600 hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+        >
+          About
+        </button>
+        
+        <div
+          id="dropdownAbout"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownAboutButton"
+          >
+            <li>
+              <a
+                href="http://localhost:1313/en/about"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/en/what_we_do"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >What We Do</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a
+        class="text-sm font-semibold text-gray-600 hover:text-[#0E773F]"
+        href="http://localhost:1313/en/projects"
+        >Projects</a
+      >
+      
+      <div>
+        <button
+          id="dropdownInternshipButton"
+          data-dropdown-toggle="dropdownInternship"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-gray-600 hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+        >
+          Internship
+        </button>
+        
+        <div
+          id="dropdownInternship"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownInternshipButton"
+          >
+            <li>
+              <a
+                href="http://localhost:1313/en/internship"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >Internship Programs</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/en/intern_projects"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >Intern Projects</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div>
+        <button
+          id="dropdownGetInvolvedButton"
+          data-dropdown-toggle="dropdownGetInvolved"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-gray-600 hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+        >
+          Get Involved
+        </button>
+        
+        <div
+          id="dropdownGetInvolved"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownGetInvolvedButton"
+          >
+            <li>
+              <a
+                href="http://localhost:1313/en/volunteer_group"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >Volunteer Group</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/en/partnership"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >Partnership</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div>
+        <button
+          id="dropdownResourcesButton"
+          data-dropdown-toggle="dropdownResources"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-gray-600 hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+        >
+          Resources
+        </button>
+        
+        <div
+          id="dropdownResources"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownResourcesButton"
+          >
+            <li>
+              <a
+                href="http://localhost:1313/en/workshops"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >Workshops</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/en/articles"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >Articles</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/en/map"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >Projects Map</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div>
+        <button
+          id="dropdownLanguageButton"
+          data-dropdown-toggle="dropdownLanguage"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-gray-600 hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+          style="text-transform: capitalize"
+        >
+          en
+          <img
+            src="/notassets/icons/arrow-drop.png"
+            alt="Arrow Icon"
+            class="ml-2 w-4 h-4"
+          />
+        </button>
+        
+        <div
+          id="dropdownLanguage"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownLanguageButton"
+          >
+            
+            <li>
+              <a
+                href="http://localhost:1313/en"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >English</a
+              >
+            </li>
+            
+            <li>
+              <a
+                href="http://localhost:1313/fr"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >Français</a
+              >
+            </li>
+            
+            <li>
+              <a
+                href="http://localhost:1313/ar"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-600"
+                >العربية</a
+              >
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="items-center hidden gap-8 lg:flex">
+      <div
+        class="items-baseline justify-between hidden gap-4 text-slate-400 md:flex"
+      >
+        
+        <a href="http://www.facebook.com/resilientcommunitiesmorocco/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+            /></svg
+        ></a>
+
+        
+        <a href="https://twitter.com/ResComm2017">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 6.9199219 6 L 21.136719 26.726562 L 6.2285156 44 L 9.40625 44 L 22.544922 28.777344 L 32.986328 44 L 43 44 L 28.123047 22.3125 L 42.203125 6 L 39.027344 6 L 26.716797 20.261719 L 16.933594 6 L 6.9199219 6 z"
+            ></path></svg
+        ></a>
+
+        
+        <a href="https://www.instagram.com/resilient_communities/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+            /></svg
+        ></a>
+
+        
+        <a
+          href="https://www.linkedin.com/company/resilient-communities-non-profit/"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+            /></svg
+        ></a>
+
+        
+        <a href="https://www.youtube.com/@resilientcommunities4942">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+            /></svg
+        ></a>
+
+        
+        <a href="https://www.tiktok.com/@resilient_communities">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="h-4 w-4"
+          >
+            
+            <path
+              fill="currentColor"
+              d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+            /></svg
+        ></a>
+      </div>
+      <a
+        href="http://localhost:1313/en/donation_page"
+        class="text-white flex items-center justify-between gap-1 bg-[#0E773F] px-4 py-2 rounded-full font-bold"
+      >
+        <span>Donate Now</span>
+      </a>
+    </div>
+    <button
+      onclick="(() => { this.closest('.group').classList.toggle('open')})()"
+      class="flex lg:hidden"
+    >
+      <img src="/notassets/svgs/menu.svg" alt="" />
+    </button>
+    <div
+      class="z-20 absolute flex md:hidden transition-all overflow-auto duration-300 ease-in-out flex-col items-center shadow-main justify-center w-full gap-3 bg-white bg-opacity-30 backdrop-blur-xl backdrop-filter max-h-0 group-[.open]:py-4 px-4 rounded-2xl group-[.open]:max-h-80 mt-2 top-full"
+    >
+      <br />
+      <br />
+      <br />
+      <br />
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/en"
+        >Home</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/en/about"
+        >About Us</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/en/what_we_do"
+        >What We do</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/en/projects"
+        >Projects</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/en/internship"
+        >Internship Programs</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/en/intern_projects"
+        >Intern Projects</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/en/volunteer_group"
+        >Volunteer Group</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/en/partnership"
+        >Partnership</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/en/articles"
+        >Articles</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/en/map"
+        >Projects Map</a
+      >
+
+      <a
+        href="http://localhost:1313/en/donation_page"
+        class="text-sm text-white flex items-center justify-between gap-1 bg-[#0E773F] px-4 py-2 rounded-full font-bold"
+      >
+        <span>Donate Now</span>
+      </a>
+      
+      <div class="mt-6 flex justify-center w-full gap-4">
+        
+        <a
+          href="http://localhost:1313/en"
+          class="text-xs font-semibold text-dark-grey-700 hover:text-dark-grey-900 transition-all duration-300"
+        >
+          English
+        </a>
+        
+        <a
+          href="http://localhost:1313/fr"
+          class="text-xs font-semibold text-dark-grey-700 hover:text-dark-grey-900 transition-all duration-300"
+        >
+          Français
+        </a>
+        
+        <a
+          href="http://localhost:1313/ar"
+          class="text-xs font-semibold text-dark-grey-700 hover:text-dark-grey-900 transition-all duration-300"
+        >
+          العربية
+        </a>
+        
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+<div class="mt-40 mb-10 w-full relative">
+  
+  <div class="max-w-screen-lg mx-auto px-4 lg:px-8">
+    <div class="mb-6 w-full relative">
+      <div class="px-4 lg:px-0">
+        <h2
+          class="text-3xl md:text-4xl font-semibold text-gray-800 leading-tight"
+        >
+          The Workshop Interview
+        </h2>
+        <a
+          href="#"
+          class="py-2 text-green-700 inline-flex items-center justify-center"
+        >
+          
+        </a>
+        <div class="flex items-center py-2 mb-4">
+          <img
+            src="/notassets/Profile%20Pics/Antoinette%20Lim%20Pic.webp"
+            class="h-8 w-8 rounded-full mr-2 object-cover"
+          />
+          <div>
+            <p class="font-semibold text-gray-700 text-sm">
+              Antoinette Lim Pic
+            </p>
+            <p class="text-gray-600 text-xs">2024-01-01 00:00:00 &#43;0000 UTC</p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="/notassets/Articles%20Gallery/workshopbg.jpg"
+        class="w-full h-64 md:h-80 object-cover rounded-lg"
+      />
+    </div>
+    <br />
+
+    <div class="flex flex-col lg:flex-row lg:space-x-8">
+      <div
+        class="mt-6 lg:mt-12 text-gray-700 text-base text-justify leading-relaxed w-full"
+      >
+        <!-- raw HTML omitted -->
+<p><strong>Antoinette: What is the first workshop you conducted?</strong></p>
+<p>Rees: Maybe in 2015 I was in the peace corps, and I led a workshop called a needs-based assessment with an African corps volunteer, named Sufian. It was in Rabat or Casablanca; I can’t remember which one. I think it was in Rabat, He and I basically travelled all around Morocco, giving this needs-based assessment workshop. The funny thing is originally I was not supposed to do it. Originally it was not me and him giving the workshop with him. It was supposed to be someone in the cohort below me at peace corps but she got sick and she called me up and said “Hey, you live near Rabat, can you do this?” and I was like “Yeah! Of course, I’d love to! Sufian’s cool! I know Sufian!” So, the rest is history&hellip;</p>
+<p><strong>Antoinette: Do you have a manual that can guide you, instead?</strong></p>
+<p>Rees: At that stage we didn’t have a facilitator’s manual, a participant’s manual, slides, that’s very much something that I have developed with Resilient Communities. There was a series of materials, there was a picture, a case narrative, 2 or 3 case narratives, and what else? … So yeah, that was it.</p>
+<p><strong>Antoinette: But basically, you already know the needs-based assessment workshop.</strong></p>
+<p>Rees: Yes, I knew the material. I knew the content that needed to be delivered already that was part of my Peace Corps training. But it is true that I have struggled with that experience. You can see the effect of the struggle I had in my current work with Resilient Communities. In the form of Participants’ Manuals, Facilitator’s Manuals, and the resources regarding it.</p>
+<p><strong>Antoinette: What made you conduct workshops now? Did it come from the frustrations from your first workshop?</strong></p>
+<p>Rees: No! It was a really good experience, but it wasn’t an easy one. So yeah, one thing that matters for me is the sustainability of something, the reproducibility. I had a project that was given to me by another Peace Corps volunteer, and the only reason that it was reproducible, that someone other than her could do it was because I also, though not a subject matter expert, but I was very familiar with the subject matter at hand, that I did my research and I watched YouTube videos all that stuff. So that was one of the key frustrations in terms of materials creation and in terms of how to lead a workshop.</p>
+<p>But what I think really inspired me to do workshops, sort of on a full-time basis, is in 2019 shortly before Covid, I’m an English Teacher and there was an English teacher workshop series hosted by Oxford University Press. It was here in Tangier, and it was at some big hotel, so I rode my bicycle all the way to the hotel, dressed up nicely. I was prepared to meet friends, make connections and learn something new. I was ready for a workshop. I got to this workshop and the guy just talked. About the book he had written, for two hours. It was all interesting and useful information, but IT WAS NOT A WORKSHOP. I was so annoyed because everything he said could have been a YouTube video. Could have been a web article. I was annoyed because I had wasted my time and because the people around me were from different cities in Morocco. So, I was just imagining this huge loss of time and money and labor, to come from a different city to come and watch someone for two hours about something that could have been a YouTube video. I was just so annoyed. I think that was really the moment, “Okay, I’m the one who needs to give the workshop. 😊 not these idiots” that was really the moment for me.</p>
+<p><strong>Antoinette: When did you start making workshops?</strong></p>
+<p>Rees: I would say my real beginning was in 2015 when I got my first, like, taste for giving workshops and then I decide to do this as a job around 2019</p>
+<p><strong>Antoinette: How has your education and experience prepared you to facilitate workshops? Like do you need training for this?</strong></p>
+<p>Rees: Not really.</p>
+<p>I was an English Literature and Creative Writing Major in the University. I also began a History Major, but I never finished that one, and I think my education gave me the ability to do research, to learn things independently and just be very adaptable in general.</p>
+<p>But there was one very key point in my education. I graduated university in 3 years from 3 different universities. I went to one university, spent one year there, then I went to another university and spent one year there and then I went to a third university and spent one year there then I graduated and my last year was at the University of Georgia. Then at the University of Georgia there was a speaking society, a debate society, called the Demosthenian Literary Society. Speaking on your feet. Everything is improvised. And the idea is to create high quality speeches with little to no prior planning. That’s what I did every Thursday night at 7 o&rsquo;clock for over a year. I stood up and I talked on every single topic that I could. I took every single opportunity I could to do public speaking and do this particular style of public speaking–which was a rare thing. Not everybody speaks on every single topic. But I did. That was my goal. Because I wanted to be the kind of person who could speak convincingly about anything. So, I trained that. I would say that was the key part of my education, not of my formal education but that training was and is extremely essential to who I am as a professional or as a person.</p>
+<p><strong>Antoinette: Are there challenges that you’ve experienced that is/are similar to most of your workshops?</strong></p>
+<p>Rees: Not really, every workshop has its own needs, has its own nuances. I think especially in the virtual age and the post-COVID world. In this world we now live in, where remote workshops are now a big part of what I do. We have difficulties with online work, online collaboration, zoom, handling breakout rooms, handling participants. I think the more general shared problems among workshops are the administrative tasks like inviting people, deciding on a time, organizing the grouping system.</p>
+<p><strong>Antoinette: Difficult person? How do you handle that situation?</strong></p>
+<p>Rees: I personally do not have any experience with that. I imagine that is possible. But I think the nature of workshops is that they are so selective only people who are interested will come to the workshop and because I like to think that my workshops themselves are very high quality no one’s ever dissatisfied with the quality that they walk out of something. For example, that’s what I did in the “workshop” that was delivered about teaching, here in Tangier. In that case, I walked out, I was the “Karen”. I was like “this is stupid, I’m not gonna waste my time, I thought this is a workshop, I thought we’re gonna practice, I thought we’re gonna play games, I thought we’re gonna make something, all this guy is doing is trying to sell me his book.” Maybe it is a great book, maybe it is the book that would have changed my career, but because there was an expectation of a workshop and he didn’t fulfill that expectation, I felt betrayed, and therefore I was not going to waste my time on him, even though, maybe, the information was great, amazing, and useful. In any case, I’ve never had a ‘Karen’ and I think the reason for that is simply… QUALITY. Which is arrogant but I do believe it.</p>
+<p><strong>Antoinette: On audience participation, will you encourage the participants to be communicating with each other or do you want to control the interchanges between them?</strong></p>
+<p>Rees: A little bit of both, I guess. I want them to communicate a lot between each other but about the topic at hand. So, any conversation that is happening between participants should be serving some larger purpose of the workshop and that’s not because I dislike just general chatter but it’s simply a timing issue. If you start to introduce just general chatter like getting to know you and general ice breakers into your workshop it extends the time the workshop takes.</p>
+<p><strong>Antoinette: How about in a breakout session where nobody is talking?</strong></p>
+<p>Rees: I think that is a part of the workshop organization. That sounds like an organizational issue to me if nobody’s speaking because that means they weren’t given a manageable question to ask or to answer. If you give anybody a question, even the shyest person will be able to come up with an answer if its relevant to them or if it&rsquo;s relevant to something they want to know or want to practice or want to learn. But if the discussion topic is irrelevant to them or if it&rsquo;s too simple or you did not give them proper time for it, you didn’t model the question, if you didn’t do the set up correctly then there will be uncomfortable silences in these kinds of things. But that is for the facilitator to avoid.</p>
+<p><strong>Antoinette: So, you prepare a prompt for them to answer?</strong></p>
+<p>Rees: Definitely. So, that is part of the purpose of the participant’s manual. The PM is usually structured as a series of questions. These questions are actually the discussion questions that will be used during the workshop. So yes, every discussion has some kind of prompt, there’s some information that we need to put on the table. I need to know what you know; you need to know what I know. That way together we could come up with some kind of consensus and apply it to a scenario or I want you to give me feedback so I can give you feedback and we can have this mutual exchange. The goal is feedback. There’s always some central task or goal to communication in our workshops.</p>
+<p><strong>Antoinette: How do you evaluate training and program effectiveness?</strong></p>
+<p>Rees: In our workshop series, we don’t evaluate formally. I think there is definitely room for growth in terms of monitoring and evaluation, goal setting.</p>
+<p>Where were we? Where are the participants when they entered the workshop? How did they feel at the beginning and at the end of the workshop? And then six months later send them an email. “Hey, where are you now?”</p>
+<p>In terms of monitoring and evaluation, we can definitely improve but the success of the workshop for me is in the takeaway. Which is what I really focus on. So, if there is a good takeaway in the workshop all the way in the planning phase, and if I see it something that is reproducible, a refined skill, or some sort of a physical product, I don’t really worry so much about the growth of the participants or whether or not they really put it into effect on their lives or to what extent they were able to put it. As long as the takeaway is good, these things will happen. At that point it is just a question of manpower, labor, effort. So, do I as the Resilient Communities Head of Training and Development want to do monitoring and evaluation for every workshop that we give? That sounds like an administrative nightmare. Because we give one workshop a week and sending emails to every single person who does our workshops takes time. My time is limited, I’d rather spend that time focusing on creating good takeaways that would lead to good results rather than tracking results and spending less time on preparation.</p>
+<p><strong>Antoinette: How about giving a survey? But I guess that too takes time to review.</strong></p>
+<p>Rees: That is definitely a possibility. Like “0-10 how do you feel now about this topic” then at the end of the workshop “0-10 how do you feel NOW?” The only thing that this kind of low-key short-term evaluation would give to us is sort of an advertising point. That would be more of an advertising rather than a content-based evaluation. So, that’s where I think I come from in terms of workshop timing. “Okay 5 minutes, give yourself a 0-10 write any expectations you have for the workshop.” Another five minutes at the end of the workshop. “0-10 where are you? Give yourself some critical feedback.” We have that built in the workshop, in terms of personal feedback, especially with refined skills or skills-based workshops. So the idea of formalizing the evaluation process, I just can’t see what value it would immediately have for us and so it’s not something that I have worked on closely.</p>
+<p>But for the most part, our reputation speaks for itself. The only thing that style of monitoring and evaluation does is to set your stakeholders at ease. I think that’s really where that comes from. It is basically when you get a grant from some organization that says “You need to get results for us. We can’t come and physically visit the site, but you need to demonstrate results.” It is also important for course correction, but at this point I don’t think our program needs correction and we don’t have any stakeholders other than our participants. We put so much work into the workshop design process that informal monitoring and evaluation is best for us.</p>
+<p><strong>Antoinette: What do you mean by informal monitoring and evaluation?</strong></p>
+<p>Rees: Many of our workshops include a personalized feedback that’s called a +Δ “plus delta”.</p>
+<p>Plus - What am I doing well?
+Delta - What could I change? What could I do better?
+We have these questions at the end of many of our activities and of our workshops. This more informal, more personalized, more communicative approach in monitoring and evaluation is what we lean towards. Because it a) contributes actively to the workshop goals, which is usually refining some skills that the participants might already have. So, it accomplishes that goal and also avoid de-personalizing things. Sometimes I worry that this style of 0-10 (pre-polling and post-polling), they de-personalize the workshop. They make it look just like dialed in, that those papers often become a “show us that we did a good job,” and I hate that. That’s why I personally do not do this specifically for workshops. We’ve enjoyed this informal approach.</p>
+<p>A very long answer, I feel like to a certain I was justifying myself to myself. I never really, deeply considered, should we be doing some sort of pre-polling and post-polling. Maybe someday we will, but at this point, I don’t have any plans for it.</p>
+<p><strong>Antoinette: This question came from one of your interns. If you haven’t conducted a workshop yourself before, what are some expectations or questions you have as you begin to start the process?</strong></p>
+<p>Rees: I could interpret this question in two ways.</p>
+<p>1.A workshop as in I’m already a past workshop facilitator, I have speaking skills, but there’s this new workshop presented to me with a new facilitator’s manual, and it’s a workshop I haven’t delivered before. What questions do I have in that scenario? Or
+2.I’m someone who’s never done a workshop before and I’m just getting into this environment, what questions do I ask myself? In the case of the second scenario, I need to ask myself, “What basic capacities does a facilitator need? What resources do I have available?” So that’s in terms of:</p>
+<p>-How good are my public speaking skills?
+-Where do I need to improve on my public speaking skills?
+-What do I know about facilitating workshops in general? Grouping techniques, eliciting, externalizing information to build participant independence.
+-Then I would also examine the resources I have available. These are my central tools, my tool kit. In the online world, that means ZOOM. “Am I capable of using breakout rooms? changing people between rooms? In what ways am I going to build communication in the workshop?”</p>
+<p>So, these are the things I would ask myself, the basics of the process. Who am I as a facilitator? What skills does a facilitator need? What tools do I have available? Can I use those tools? These are the questions I’ll be asking if I’m just starting out.</p>
+<p>If I already have those skills and I have already asked those questions, in the case where I’m already a practiced facilitator. In addition, I’m faced with a new workshop that I need to give. I would ask my questions of:</p>
+<p>“What is the takeaway of this workshop? Does this facilitator’s manual lead towards the takeaway? What is the necessary and unnecessary content? Am I a subject matter expert? Do I need to be a subject matter expert? What is the information that I already know and didn’t know? What extra information do I need to research in order to become more familiar with this topic?”</p>
+<p>I basically think that the first step to any new workshop that you give is to go on YouTube and do a search for every term, even the ones you already know, in the facilitator’s manual. So, the more you read, watch, and listen, the more you get into the discourse surrounding this idea. I think that is the most important part of being a facilitator. You don’t need to be a subject matter expert, but you need to be a member of the discourse of this community surrounding this workshop.</p>
+<p><strong>Antoinette: What advice can you give to people who want to create their own workshops?</strong></p>
+<p>Rees: I think I’ll just give the classic advice that I give to all of my interns. The first thing I teach: focus on the takeaway. Anything that you have ever wanted to teach, anything you have ever done, as a skill or a physical product, has some kind of a takeaway. “Takeaway,” as I define it, is a reproducible, usable, product or a refined skill. That could be anything. So, whatever workshop you are planning to do, don’t worry about the other phases, don’t worry about what material you’re gonna present, don’t worry about how you’re gonna practice that. Just worry about: What is your takeaway? What is the refined skill? What is the reproducible, usable product? As long as you figure that out, everything else will fall into place.</p>
+<p><strong>Antoinette: Lastly, how do you make a workshop interesting?</strong></p>
+<p>Rees: So, three phases to a workshop, Information delivery - Present, Practice – where you do the skill for the first time or a small part of the product, and then Produce – where you do everything independently, you do this skill on your own, or make the product on your own, no guidance, and this came from my teaching career. PRESENT. PRACTICE. PRODUCE.</p>
+<p>It is true that there is a secret part to the workshop that we don’t really talk about. The secret spice – the element of fun, or the element of “oOOH! That’s so interesting!”</p>
+<p>How do I find that element? How do I do it? Experience. Imagination. Watching others. There’s no general rule. But it is true that each workshop has its own secret spice, the thing that makes it fun or interesting.</p>
+<p>Finding that secret spice is often what takes a good workshop into a great one.</p>
+<!-- raw HTML omitted -->
+
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+</main>
+
+    <div class="h-screen border-gray-200 border-t">
+      
+      <div>
+        <div class="pt-2">
+          <h2 class="text-[#0E773F] text-base font-semibold text-center mt-2">
+            Partners &amp; Collaborators
+          </h2>
+          <h2
+            class="text-gray-800 text-2xl font-semibold text-center font-['Playfair Display'] font-serif mb-4"
+          >
+            Our Past Partners
+          </h2>
+        </div>
+
+        <div class="logos">
+          <div class="logos-slide">
+            <img src="/notassets/Partners/logo1.png" />
+            <img src="/notassets/Partners/logo2.png" />
+            <img src="/notassets/Partners/logo3.png" />
+            <img src="/notassets/Partners/logo4.png" />
+            <img src="/notassets/Partners/logo5.png" />
+            <img src="/notassets/Partners/logo6.png" />
+            <img src="/notassets/Partners/logo7.png" />
+            <img src="/notassets/Partners/logo1.png" />
+            <img src="/notassets/Partners/logo2.png" />
+            <img src="/notassets/Partners/logo3.png" />
+            <img src="/notassets/Partners/logo4.png" />
+            <img src="/notassets/Partners/logo5.png" />
+            <img src="/notassets/Partners/logo6.png" />
+            <img src="/notassets/Partners/logo7.png" />
+          </div>
+        </div>
+      </div>
+
+      
+      <footer class="bg-white pt-4 sm:pt-10 lg:pt-12">
+        <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <div
+            class="mb-10 grid grid-cols-2 gap-12 border-t pt-8 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-10"
+          >
+            <div class="col-span-full lg:col-span-2">
+              
+              <div class="mb-4 lg:-mt-2">
+                <a
+                  href="/"
+                  class="inline-flex items-center gap-2 text-xl font-bold text-black md:text-2xl"
+                  aria-label="logo"
+                >
+                  <img
+                    class="h-16 w-16"
+                    src="/notassets/logo transparent.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-1">
+                    <span class="text-green-900 text-sm"
+                      >Resilient Communities</span
+                    >
+                    <span class="text-gray-500 text-xs"
+                      >Inspiration through Innovation</span
+                    >
+                  </div>
+                </a>
+              </div>
+              
+
+              <p class="mb-6 text-gray-500 sm:pr-8">
+For any inquiries, please contact Eastman Johnson at ejohnson@resilientcommunitiesngo.org.
+              </p>
+
+              
+              <div class="items-baseline hidden gap-4 text-slate-400 md:flex">
+                
+                <a href="http://www.facebook.com/resilientcommunitiesmorocco/">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                    /></svg
+                ></a>
+
+                
+                <a href="https://twitter.com/ResComm2017">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 50 50"
+                  >
+                    <path
+                      d="M 6.9199219 6 L 21.136719 26.726562 L 6.2285156 44 L 9.40625 44 L 22.544922 28.777344 L 32.986328 44 L 43 44 L 28.123047 22.3125 L 42.203125 6 L 39.027344 6 L 26.716797 20.261719 L 16.933594 6 L 6.9199219 6 z"
+                    ></path></svg
+                ></a>
+
+                
+                <a href="https://www.instagram.com/resilient_communities/">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    /></svg
+                ></a>
+
+                
+                <a
+                  href="https://www.linkedin.com/company/resilient-communities-non-profit/"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                    /></svg
+                ></a>
+
+                
+                <a href="https://www.youtube.com/@resilientcommunities4942">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                    /></svg
+                ></a>
+
+                
+                <a href="https://www.tiktok.com/@resilient_communities">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    class="h-4 w-4"
+                  >
+                    
+                    <path
+                      fill="currentColor"
+                      d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+                    /></svg
+                ></a>
+              </div>
+              
+            </div>
+
+            
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                <a href="http://localhost:1313/en/what_we_do">What We Do</a>
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313/en/what_we_do"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Collaborative Projects and Programs</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/en/what_we_do"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    ></a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/en/what_we_do"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Community Engagement Projects</a
+                  >
+                </div>
+              </nav>
+            </div>
+
+            
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                
+                Get Involved
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313/en/partnership"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    ></a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/en/volunteer_group"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Volunteer Groups 
+                  </a>
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/en/map"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Projects Map</a
+                  >
+                </div>
+              </nav>
+            </div>
+            
+
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                <a href="http://localhost:1313/en/internship">Internship Programs</a>
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313/en/intern_projects"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Intern Projects</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/en/Articles"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Articles</a
+                  >
+                </div>
+              </nav>
+            </div>
+            
+
+            
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                <a href="http://localhost:1313/en/about">About Us</a>
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313/en/about"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Our Team</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/en/about"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Our Mission</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/en/Projects"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Projects</a
+                  >
+                </div>
+              </nav>
+            </div>
+            
+          </div>
+
+          <div class="border-t py-8 text-center text-sm text-gray-400">
+            © 2024 - Resilient Communities. All rights reserved.
+          </div>
+        </footer>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        
+        const links = document.querySelectorAll('a');
+    
+        links.forEach(link => {
+          
+          let href = link.getAttribute('href');
+    
+          
+          if (href && href.includes('/en/')) {
+            
+            href = href.replace('/en/', '/');
+            link.setAttribute('href', href);
+          }
+        });
+      });
+    </script>
+    
+  </body>
+</html>

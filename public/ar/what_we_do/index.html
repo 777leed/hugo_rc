@@ -1,0 +1,1981 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ما نقوم به</title>
+    <link href="/css/output.css" rel="stylesheet" />
+    <link href="/css/partnerSilder.css" rel="stylesheet" />
+    <link href="/css/overlay.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="/css/rtl.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/blaze-slider@latest/dist/blaze.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/blaze-slider@latest/dist/blaze-slider.min.js"></script>
+
+    
+  </head>
+
+  <body
+    class="bg-white w-full h-full m-0 p-0 antialiased"
+    style="scroll-behavior: smooth"
+  >
+    <main>
+
+<style>
+  #scroll-arrow {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .scroll-animation img {
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+</style>
+
+<div class="h-screen overflow-hidden w-full">
+  <div
+    class="relative flex justify-center gap-4 flex-col items-center mx-auto h-full w-full bg-cover bg-local p-4 md:p-8"
+    style="background-image:url('../notassets/somekindameeting_better.jpg');"
+  >
+    
+    
+
+<div
+  id="header-container"
+  class="min-h-20 h-auto justify-center w-full px-7 flex flex-col mx-auto absolute top-0 z-10"
+>
+  <nav
+    class="relative flex flex-wrap items-center justify-between w-full group py-7 shrink-0"
+  >
+    <a href="http://localhost:1313/ar" class="flex gap-2 items-center">
+      <img class="h-16 w-16" src="/notassets/logo transparent.svg" alt="" />
+      <div class="flex flex-col gap-1">
+        <span class="text-[#0E773F] text-sm font-medium"
+          >مجتمعات مرنة</span
+        >
+        <span class="text-gray-400 text-xs">الإلهام من خلال الابتكار</span>
+      </div>
+    </a>
+    <div class="items-center justify-between hidden gap-12 text-black lg:flex">
+      <a
+        class="text-sm font-semibold text-white hover:text-[#0E773F]"
+        href="http://localhost:1313/ar"
+        >الرئيسية</a
+      >
+      
+      <div>
+        <button
+          id="dropdownAboutButton"
+          data-dropdown-toggle="dropdownAbout"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-white hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+        >
+          حول
+        </button>
+        
+        <div
+          id="dropdownAbout"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownAboutButton"
+          >
+            <li>
+              <a
+                href="http://localhost:1313/ar/about"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >من نحن</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/ar/what_we_do"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >ماذا نفعل</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a
+        class="text-sm font-semibold text-white hover:text-[#0E773F]"
+        href="http://localhost:1313/ar/projects"
+        >المشاريع</a
+      >
+      
+      <div>
+        <button
+          id="dropdownInternshipButton"
+          data-dropdown-toggle="dropdownInternship"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-white hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+        >
+          التدريب
+        </button>
+        
+        <div
+          id="dropdownInternship"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownInternshipButton"
+          >
+            <li>
+              <a
+                href="http://localhost:1313/ar/internship"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >برامج التدريب</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/ar/intern_projects"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >مشاريع المتدربين</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div>
+        <button
+          id="dropdownGetInvolvedButton"
+          data-dropdown-toggle="dropdownGetInvolved"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-white hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+        >
+          شارك معنا
+        </button>
+        
+        <div
+          id="dropdownGetInvolved"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownGetInvolvedButton"
+          >
+            <li>
+              <a
+                href="http://localhost:1313/ar/volunteer_group"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >مجموعة المتطوعين</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/ar/partnership"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >الشراكة</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div>
+        <button
+          id="dropdownResourcesButton"
+          data-dropdown-toggle="dropdownResources"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-white hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+        >
+          الموارد
+        </button>
+        
+        <div
+          id="dropdownResources"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownResourcesButton"
+          >
+            <li>
+              <a
+                href="http://localhost:1313/ar/workshops"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >ورش العمل</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/ar/articles"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >المقالات</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://localhost:1313/ar/map"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >خريطة المشاريع</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div>
+        <button
+          id="dropdownLanguageButton"
+          data-dropdown-toggle="dropdownLanguage"
+          data-dropdown-delay="100"
+          data-dropdown-trigger="hover"
+          class="text-sm font-semibold text-white hover:text-slate-400 text-center inline-flex items-center"
+          type="button"
+          style="text-transform: capitalize"
+        >
+          ar
+          <img
+            src="/notassets/icons/arrow-drop.png"
+            alt="Arrow Icon"
+            class="ml-2 w-4 h-4"
+          />
+        </button>
+        
+        <div
+          id="dropdownLanguage"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownLanguageButton"
+          >
+            
+            <li>
+              <a
+                href="http://localhost:1313/en"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >English</a
+              >
+            </li>
+            
+            <li>
+              <a
+                href="http://localhost:1313/fr"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Français</a
+              >
+            </li>
+            
+            <li>
+              <a
+                href="http://localhost:1313/ar"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >العربية</a
+              >
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="items-center hidden gap-8 lg:flex">
+      <div
+        class="items-baseline justify-between hidden gap-4 text-slate-400 md:flex"
+      >
+        
+        <a href="http://www.facebook.com/resilientcommunitiesmorocco/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+            /></svg
+        ></a>
+
+        
+        <a href="https://twitter.com/ResComm2017">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 6.9199219 6 L 21.136719 26.726562 L 6.2285156 44 L 9.40625 44 L 22.544922 28.777344 L 32.986328 44 L 43 44 L 28.123047 22.3125 L 42.203125 6 L 39.027344 6 L 26.716797 20.261719 L 16.933594 6 L 6.9199219 6 z"
+            ></path></svg
+        ></a>
+
+        
+        <a href="https://www.instagram.com/resilient_communities/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+            /></svg
+        ></a>
+
+        
+        <a
+          href="https://www.linkedin.com/company/resilient-communities-non-profit/"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+            /></svg
+        ></a>
+
+        
+        <a href="https://www.youtube.com/@resilientcommunities4942">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 hover:text-slate-200"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+            /></svg
+        ></a>
+
+        
+        <a href="https://www.tiktok.com/@resilient_communities">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="h-4 w-4"
+          >
+            
+            <path
+              fill="currentColor"
+              d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+            /></svg
+        ></a>
+      </div>
+      <a
+        href="http://localhost:1313/ar/donation_page"
+        class="text-white flex items-center justify-between gap-1 bg-[#0E773F] px-4 py-2 rounded-full font-bold"
+      >
+        <span>تبرع الآن</span>
+      </a>
+    </div>
+    <button
+      onclick="(() => { this.closest('.group').classList.toggle('open')})()"
+      class="flex lg:hidden"
+    >
+      <img src="/notassets/svgs/menu.svg" alt="" />
+    </button>
+    <div
+      class="z-20 absolute flex md:hidden transition-all overflow-auto duration-300 ease-in-out flex-col items-center shadow-main justify-center w-full gap-3 bg-white bg-opacity-30 backdrop-blur-xl backdrop-filter max-h-0 group-[.open]:py-4 px-4 rounded-2xl group-[.open]:max-h-80 mt-2 top-full"
+    >
+      <br />
+      <br />
+      <br />
+      <br />
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/ar"
+        >Home</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/ar/about"
+        >About Us</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/ar/what_we_do"
+        >What We do</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/ar/projects"
+        >Projects</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/ar/internship"
+        >Internship Programs</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/ar/intern_projects"
+        >Intern Projects</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/ar/volunteer_group"
+        >Volunteer Group</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/ar/partnership"
+        >Partnership</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/ar/articles"
+        >Articles</a
+      >
+      <a
+        class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+        href="http://localhost:1313/ar/map"
+        >Projects Map</a
+      >
+
+      <a
+        href="http://localhost:1313/ar/donation_page"
+        class="text-sm text-white flex items-center justify-between gap-1 bg-[#0E773F] px-4 py-2 rounded-full font-bold"
+      >
+        <span>Donate Now</span>
+      </a>
+      
+      <div class="mt-6 flex justify-center w-full gap-4">
+        
+        <a
+          href="http://localhost:1313/en"
+          class="text-xs font-semibold text-dark-grey-700 hover:text-dark-grey-900 transition-all duration-300"
+        >
+          English
+        </a>
+        
+        <a
+          href="http://localhost:1313/fr"
+          class="text-xs font-semibold text-dark-grey-700 hover:text-dark-grey-900 transition-all duration-300"
+        >
+          Français
+        </a>
+        
+        <a
+          href="http://localhost:1313/ar"
+          class="text-xs font-semibold text-dark-grey-700 hover:text-dark-grey-900 transition-all duration-300"
+        >
+          العربية
+        </a>
+        
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+    
+    <h1
+      class="font-['Playfair Display'] font-serif text-white text-3xl md:text-5xl text-center leading-tight md:leading-snug px-4"
+    >
+      المجتمعات المتماسكة<br>حول العالم
+    </h1>
+
+    <span
+      class="text-white text-center mt-4 px-4 md:px-0"
+      style="max-width: 500px"
+    >
+      مهمتنا هي التأثير بشكل إيجابي على العديد من المجتمعات،ابتداءً من المعالم الشهيرة وصولاً إلى القرى الغير مكتشفة،لنترك بصمة معنوية في كل مكان نذهب إليه.
+    </span>
+
+    <div class="flex gap-4 mt-6">
+      <a
+        href="http://localhost:1313/ar/what_we_do/#firstsection"
+        class="text-white flex items-center justify-between gap-1 bg-[#0E773F] px-6 py-3 rounded-full font-bold min-w-[150px] hover:bg-green-700 transition-colors"
+      >
+        <span>أعمدتنا</span>
+        <span class="material-symbols-outlined">arrow_right_alt</span>
+      </a>
+
+      <a
+        href="http://localhost:1313/ar/%d8%a7%d9%86%d8%b6%d9%85_%d8%a5%d9%84%d9%8a%d9%86%d8%a7"
+        class="text-white flex items-center justify-between gap-1 border-[#0E773F] border-2 px-6 py-3 rounded-full font-bold min-w-[150px] hover:border-green-700 transition-colors"
+      >
+        <span>انضم الآن</span>
+        <span class="material-symbols-outlined">arrow_right_alt</span>
+      </a>
+    </div>
+
+    
+    <div id="scroll-arrow" class="scroll-animation h-7 w-7 mt-8">
+      <img src="/notassets/icons/arrow.png" alt="Scroll Down" />
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const scrollArrow = document.getElementById("scroll-arrow");
+
+    function hideScrollArrow() {
+      scrollArrow.style.opacity = "0";
+      setTimeout(() => {
+        scrollArrow.style.display = "none";
+      }, 500); 
+    }
+
+    
+    window.addEventListener("scroll", function () {
+      hideScrollArrow();
+    });
+
+    
+    window.addEventListener("wheel", function () {
+      hideScrollArrow();
+    });
+
+    window.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+        hideScrollArrow();
+      }
+    });
+  });
+</script>
+
+
+<div
+  class="h-fit min-h-screen flex flex-col justify-center w-full overflow-hidden relative px-7"
+  id="firstsection"
+>
+  <div class="bg-white">
+    <h2 class="text-[#0E773F] text-base font-semibold text-center mb-2 mt-4">
+      الأهداف والأسباب
+    </h2>
+    <h2
+      class="text-gray-800 text-2xl font-semibold text-center font-['Playfair Display'] font-serif mb-4"
+    >
+      ما الذي نفعله في RC
+    </h2>
+    <p
+      class="p-10 font-sans text-sm antialiased font-light leading-relaxed text-gray-700 text-center"
+    >
+      تتمحور أهداف المركز حول المحاور الثلاثة للتنمية المستدامة: المشاريع والبرامج التعاونية (اقتصادية/بيئية/اجتماعية)، والتدريب والتطوير (اجتماعي)، واستضافة أنشطة المشاركة المجتمعية لبرامج التبادل (اجتماعي ثقافي). إذا كنت مهتمًا بمعرفة المزيد عن مشاريعنا، أو كيف يمكنك أنت أو جمعيتك الدخول في شراكة معنا، و/أو كيف يمكنك دعم مهمتنا، فلا تتردد في الاتصال بنا على ejohnson@resilientcommunitiesngo.org
+    </p>
+  </div>
+  
+  <div class="flex flex-col lg:flex-row justify-center bg-gray-50">
+    <div class="flex w-full lg:w-1/3 items-center p-6 lg:px-8">
+      <div
+        class="flex flex-col w-full px-4 py-6 h-full text-center items-center max-w-md"
+      >
+        <div class="h-12 w-12 mb-2">
+          <img
+            alt=""
+            class="h-full w-full"
+            src="/notassets/icons/training.png"
+          />
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold mb-2">التدريب والتطوير</span>
+          <span class="text-gray-500 mb-2">تزويد الشباب بالمهارات اللازمة لإحداث تغيير مستدام في مجتمعاتهم.</span>
+        </div>
+        <div class="flex items-center text-[#0E773F] gap-1">
+          <a href="#area1"
+            ><span class="font-semibold">شاهد المزيد</span>
+          </a>
+          <span class="material-symbols-outlined"> arrow_circle_right </span>
+        </div>
+      </div>
+    </div>
+    <div class="flex w-full lg:w-1/3 items-center p-6 lg:px-8">
+      <div
+        class="flex flex-col w-full px-4 py-6 h-full text-center items-center max-w-md"
+      >
+        <div class="h-12 w-12 mb-2">
+          <img
+            alt=""
+            class="h-full w-full"
+            src="/notassets/icons/community-engagement.png"
+          />
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold mb-2">المشاركة المجتمعية</span>
+          <span class="text-gray-500 mb-2">المبادرات والأنشطة التعاونية التي تربط طلاب التبادل بالثقافات والتقاليد المحلية</span>
+        </div>
+        <div class="flex items-center text-[#0E773F] gap-1">
+          <a href="#area2"
+            ><span class="font-semibold">شاهد المزيد</span>
+          </a>
+          <span class="material-symbols-outlined"> arrow_circle_right </span>
+        </div>
+      </div>
+    </div>
+    <div class="flex w-full lg:w-1/3 items-center p-6 lg:px-8">
+      <div
+        class="flex flex-col w-full px-4 py-6 h-full text-center items-center max-w-md"
+      >
+        <div class="h-12 w-12 mb-2">
+          <img
+            alt=""
+            class="h-full w-full"
+            src="/notassets/icons/collaborations.png"
+          />
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold mb-2">المشاريع التعاونية</span>
+          <span class="text-gray-500 mb-2">تمكين المتدربين من قيادة التغيير المجتمعي من خلال ورش العمل العملية والمبادرات التجريبية.</span>
+        </div>
+        <div class="flex items-center text-[#0E773F] gap-1">
+          <a href="#area3"
+            ><span class="font-semibold">شاهد المزيد</span>
+          </a>
+          <span class="material-symbols-outlined"> arrow_circle_right </span>
+        </div>
+      </div>
+    </div>
+    <div class="flex w-full lg:w-1/3 items-center p-6 lg:px-8">
+      <div
+        class="flex flex-col w-full px-4 py-6 h-full text-center items-center max-w-md"
+      >
+        <div class="h-12 w-12 mb-2">
+          <img alt="" class="h-full w-full" src="/notassets/icons/tour.png" />
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold mb-2">مجموعات المتطوعين</span>
+          <span class="text-gray-500 mb-2">مجموعات المتطوعين المؤثرة، وتعزيز التعاون العالمي، والتغيير المستدام وتمكين المجتمعات المحلية</span>
+        </div>
+        <div class="flex items-center text-[#0E773F] gap-1">
+          <a href="#area4"
+            ><span class="font-semibold">شاهد المزيد</span>
+          </a>
+          <span class="material-symbols-outlined"> arrow_circle_right </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="px-7 min-h-screen w-full mb-10">
+  
+  <div class="w-full px-7">
+    <div class="pt-4">
+      <h2 class="text-[#0E773F] text-base font-semibold" id="area1">
+        مجالات المشروع
+      </h2>
+      <h2
+        class="text-gray-950 text-2xl font-semibold font-['Playfair Display'] font-serif mb-4"
+      >
+        المشاريع والبرامج التعاونية
+      </h2>
+    </div>
+    <article
+      class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-20 lg:pt-40 w-full mx-auto"
+    >
+      <img
+        alt="University of Southern California"
+        class="absolute inset-0 h-full w-full object-cover"
+        src="/notassets/somekindameeting.jpg"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+      ></div>
+      <h3 class="z-10 mt-3 mb-2 text-3xl font-bold text-white">
+        عوامل التغيير
+      </h3>
+      <div
+        class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300 lg:text-left rtl:text-right"
+      >
+        منذ عام 2016، تتعاون المجتمعات المرنة مع كلية الهندسة والعلوم التطبيقية في جامعة سينسيناتي لإنشاء مشاريع التخرج لطلاب السنة النهائية في كلية الهندسة. وتحت إشرافنا، يقوم هؤلاء الطلاب بإجراء مشاريع بحثية وتصميم مشاريع، ويساعدون في تطوير مشاريع رائدة مع المركز الوطني للدراسات والبحوث حول المياه والطاقة التابع لجامعة القاضي عياض في مراكش. وعلاوة على ذلك، يمكّن برنامج التدريب الداخلي لدينا المتدربين من إنشاء ورش عمل ومشاريع بدعم منا، مما يعزز الاعتقاد بأن أي شخص يمكن أن يكون &#34;عامل تغيير&#34; في مجتمعه إذا ما توفرت له الموارد والمساعدة المناسبة.
+      </div>
+    </article>
+  </div>
+  
+  <div class="relative px-7 overflow-hidden">
+    <div class="pt-8 blaze-slider">
+      <div class="blaze-container">
+        <div class="blaze-track">
+           
+          
+          
+
+          <div class="blaze-slide">
+            <div class="w-80 h-fit mr-2">
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="/notassets/Projects pics/Collaborative%20Projects%20and%20programs/Tassdert%20Solar%20Panels/tassdert%20project.webp"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                ألواح شمسية تاسدرت
+              </h2>
+            </div>
+          </div>
+           
+          
+           
+          
+           
+          
+          
+
+          <div class="blaze-slide">
+            <div class="w-80 h-fit mr-2">
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="/notassets/Projects pics/Collaborative%20Projects%20and%20programs/Environemtal%20Issues/pic1.jpg"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                الحلول الإبداعية لمشاكل البيئة في المغرب والمنطقة البحر الأبيض المتوسط
+              </h2>
+            </div>
+          </div>
+           
+          
+           
+          
+          
+
+          <div class="blaze-slide">
+            <div class="w-80 h-fit mr-2">
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="/notassets/Projects pics/Collaborative%20Projects%20and%20programs/Trash%20and%20Methane%20Gas%20Powered%20Pottery%20Kiln/somekindameeting.jpg"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                فرن الخزف القابل للتحريق بالقمامة والغاز الميثان
+              </h2>
+            </div>
+          </div>
+           
+          
+          
+
+          <div class="blaze-slide">
+            <div class="w-80 h-fit mr-2">
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="/notassets/Projects pics/Collaborative%20Projects%20and%20programs/landfill/pic1.jpeg"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                مرفق إدارة النفايات والفرز
+              </h2>
+            </div>
+          </div>
+           
+          
+           
+          
+          
+
+          <div class="blaze-slide">
+            <div class="w-80 h-fit mr-2">
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="/notassets/Projects pics/Collaborative%20Projects%20and%20programs/gas%20treatment/pic2.png"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                نظام غطاء الغاز الميثاني لمرافق معالجة مياه الصرف الصحي بالبرك العميقة
+              </h2>
+            </div>
+          </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="px-7 min-h-screen w-full mb-10">
+  
+  <div class="w-full px-7">
+    <div class="pt-4 border-t">
+      <h2 class="text-[#0E773F] text-base font-semibold" id="area2">
+        مجالات المشروع
+      </h2>
+      <h2
+        class="text-gray-950 text-2xl font-semibold font-['Playfair Display'] font-serif mb-4"
+      >
+        أنشطة المشاركة المجتمعية
+      </h2>
+    </div>
+    <article
+      class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-20 lg:pt-40 w-full mx-auto"
+    >
+      <img
+        alt="University of Southern California"
+        class="absolute inset-0 h-full w-full object-cover"
+        src="/notassets/project banner green version.png"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+      ></div>
+      <h3 class="z-10 mt-3 mb-2 text-3xl font-bold text-white">
+        تبادل الثقافات
+      </h3>
+      <div
+        class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300 lg:text-left rtl:text-right"
+      >
+        تقدم المجتمعات الصامدة أنشطة مجتمعية متعددة مع الجمعيات والمنظمات المحلية في تمصلوحت لمجموعات طلاب التبادل في المغرب مثل أمديست، ومركز اللغة والثقافة في مراكش، ومركز التبادل المغربي. وقد تم تنظيم أنشطة مع الجمعيات المحلية في مركز الشباب ومركز فيرس آند فورتس المعروف. داخل المجتمع، نعرض على الطلاب زيارة إحدى العائلات المحلية وتناول وجبة مطبوخة في المنزل معهم. ثم نخرج إلى الشوارع من خلال وضع الأواني وزراعتها وطلائها من خلال نشاط &#34;زوين أب&#34; الذي نقوم به.
+      </div>
+    </article>
+  </div>
+  
+  <div class="relative px-7 overflow-hidden">
+    <div class="pt-8 blaze-slider">
+      <div class="blaze-container">
+        <div class="blaze-track">
+              
+
+          
+          <div class="blaze-slide">
+            <div class="w-80 h-fit mr-2">
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="/notassets/Projects pics/Community%20Engagement/Fiers%20et%20Forts%20Youth%20House%20Activities/pic1.jpg"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                أنشطة دار الشباب مع Fiers et Forts
+              </h2>
+            </div>
+          </div>
+            
+
+          
+          <div class="blaze-slide">
+            <div class="w-80 h-fit mr-2">
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="/notassets/Projects pics/Community%20Engagement/youth%20center%20sports/pic1.jpg"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                أنشطة مركز الشباب ومركز الرياضة
+              </h2>
+            </div>
+          </div>
+              
+
+          
+          <div class="blaze-slide">
+            <div class="w-80 h-fit mr-2">
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="/notassets/Projects pics/Collaborative%20Projects%20and%20programs/Tassdert%20Well%20Safeguarding/pic1.png"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                ضمان السلامة والأمان: إعادة بناء بئر في تاسدرت
+              </h2>
+            </div>
+          </div>
+                
+
+          
+          <div class="blaze-slide">
+            <div class="w-80 h-fit mr-2">
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="/notassets/Projects pics/Community%20Engagement/ZwinUp/pic3.jpg"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                نشاط Zwin-Up 
+              </h2>
+            </div>
+          </div>
+              
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="px-7 min-h-screen w-full mb-10">
+  
+  <div class="w-full px-7">
+    <div class="pt-4 border-t">
+      <h2 class="text-[#0E773F] text-base font-semibold" id="area3">
+        مجالات المشروع
+      </h2>
+      <h2
+        class="text-gray-950 text-2xl font-semibold font-['Playfair Display'] font-serif mb-4"
+      >
+        التدريب والتطوير
+      </h2>
+    </div>
+    <article
+      class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-20 lg:pt-40 w-full mx-auto"
+    >
+      <img
+        alt="University of Southern California"
+        class="absolute inset-0 h-full w-full object-cover"
+        src="/notassets/Projects pics/Training and development/banner.jpg"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+      ></div>
+      <h3 class="z-10 mt-3 mb-2 text-3xl font-bold text-white">
+        التثقيف والتمكين
+      </h3>
+      <div
+        class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300 lg:text-left rtl:text-right"
+      >
+        تؤمن المجتمعات المرنة بأن التنمية الاجتماعية هي حجر الزاوية في بناء مجتمعات أقوى للمستقبل. فالجمهور المتعلم والمتمكّن لديه القدرة على إطلاق أي شيء يحلم به. وفي كثير من الأحيان، يحتاج الشباب إلى مرشدين لتوجيههم وموارد لمساعدتهم على الانطلاق. تساعد المجتمعات المرنة، جنباً إلى جنب مع الجمعيات الشريكة الرائعة لنا، في تمكين المجتمعات من خلال تقديم ندوات وورش عمل ودورات تدريبية للشباب والجمعيات المحلية. تُقدَّم باقات ورش العمل التي نقدمها شخصياً أو افتراضياً وباللغة الإنجليزية أو الفرنسية أو العربية المغربية (الدارجة). المواد التي نقدمها هي كتيبات الميسرين والمشاركين وشرائح العروض التقديمية.
+      </div>
+    </article>
+  </div>
+  
+  <div class="relative px-7 overflow-hidden">
+    <div id="blur-overlay"></div>
+    <div class="pt-8 blaze-slider">
+      <div class="blaze-container">
+        <div class="blaze-track">
+           
+          
+          <div class="blaze-slide">
+            <div
+              class="w-80 h-fit mr-2"
+              data-description="نحن نعتقد أن بناء القدرات أمر مهم لتمكين الأفراد من امتلاك المهارات والموارد اللازمة لإثارة التغيير في مجتمعاتهم. لهذا السبب ، كانت مجتمعات قوية تركز على توفير ورش عمل معتمدة لعرض الطلاب والجمعيات الشبابية التفكير الإبداعي والنقدي ، وكيفية إنشاء وإدارة وتنفيذ مشاريعهم الخاصة. لقد نفذنا ورشة عملنا في إدارة تصميم المشاريع مع شركاء في تيفلت ، سيدي سليمان ، أيت داود ، مراكش ، تامسلوت ، وعن بعد."
+              data-docurl=""
+              data-title="تدريبات إدارة تصميم المشاريع"
+              data-train="yes"
+            >
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="/notassets/Projects pics/Training%20and%20development/workshop1/pic2.jpeg"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                تدريبات إدارة تصميم المشاريع
+              </h2>
+            </div>
+          </div>
+          
+          
+          <div class="blaze-slide">
+            <div
+              class="w-80 h-fit mr-2"
+              data-description="تمثيل جميع الأصوات في المجتمع جزء أساسي من التنمية المجتمعية الإيجابية والناجحة. تناقش ورشة العمل هذه النهج المشارك في تنمية المجتمع، أو كيف يمكن أن تكون مشاريع تنمية المجتمع أكثر شمولًا طوال تصميمها وإنشائها. سينظر المشاركون في هذه الورشة إلى عدة سيناريوهات لتنمية المجتمع ويناقشون ما إذا كانت مشاركة، وكيف يمكن تحسينها لتمثيل المجتمع بشكل أفضل. سيقوم المشاركون أيضًا بأخذ المشاريع التي عملوا عليها وفحص ما إذا كانوا استخدموا النهج المشارك."
+              data-docurl=""
+              data-title="ورشة العمل للنهج المشارك في تنمية المجتمع"
+              data-train="yes"
+            >
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="/notassets/Projects pics/Training%20and%20development/w6.jpg"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                ورشة العمل للنهج المشارك في تنمية المجتمع
+              </h2>
+            </div>
+          </div>
+          
+          
+          <div class="blaze-slide">
+            <div
+              class="w-80 h-fit mr-2"
+              data-description="جزء أساسي من ضمان نجاح المشروع هو وجود فريق يعمل بشكل جيد معًا. إن وجود ميسر ماهر يتفاعل مع جميع أفراد المجموعة ويشجع الجميع يعد جزءًا مهمًا من ذلك. تتناول هذه الورشة نصائح حول إدارة المجموعات وكيفية كون الميسر أثناء العمل على مشروع. يُتحدث عن صفات الميسر الجيد، وكيفية التعامل مع المشاركين الصعبين، وغير ذلك. يحصل المشاركون على فرصة لممارسة المهارات المدرسة من خلال النشاط في النهاية. تعد هذه الورشة مفيدة لأي شخص يشغل منصب القيادة أو أي شخص يهتم بخلق ديناميكية مجموعة أفضل داخل مشروعه أو منظمته."
+              data-docurl=""
+              data-title="ورشة عمل إدارة المجموعات"
+              data-train="yes"
+            >
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="/notassets/Projects pics/Training%20and%20development/w7.jpg"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                ورشة عمل إدارة المجموعات
+              </h2>
+            </div>
+          </div>
+          
+          
+          <div class="blaze-slide">
+            <div
+              class="w-80 h-fit mr-2"
+              data-description="ممارسة التأمل تسمح لنا بملاحظة أفكارنا وهي تأتي وتذهب دون حكم. من خلال الممارسة المستمرة، يمكن للفرد الحصول على فهم أفضل للذات ونظرة أكثر صحة للعقل. تعلم هذه الورشة المشاركين أنواعًا مختلفة من التأمل وتتيح لهم ممارسة تأمل موجّه لمدة 10 دقائق في النهاية. بالإضافة إلى ذلك، يتم تزويد المشاركين بموارد لاستكشاف المزيد."
+              data-docurl=""
+              data-title="ورشة عمل التأمل والوعي الذهني"
+              data-train="yes"
+            >
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="/notassets/Projects pics/Training%20and%20development/w3.jpg"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                ورشة عمل التأمل والوعي الذهني
+              </h2>
+            </div>
+          </div>
+          
+          
+          <div class="blaze-slide">
+            <div
+              class="w-80 h-fit mr-2"
+              data-description="كما يقال، الانطباع الأول يعني الكثير. في هذه الورشة، يتعلم المشاركون أهمية الانطباع الأول عندما يتعلق الأمر بالتواصل وتوسيع المشاريع. جزء أساسي من الانطباع الأول هو خطاب المصعد، أو ما تخبر الشركاء والمستثمرين المحتملين به لإعطائهم شرحًا واضحًا ومختصرًا عن مشروعك وكذلك لإلهامهم للعمل معك. يتمرن المشاركون على إعداد أنواع متعددة من خطابات المصعد، بما في ذلك تلك المخصصة لوسائل التواصل الاجتماعي. يقوم المشاركون أيضًا بممارسة هذه الخطابات ويتم تزويدهم بموارد إضافية في النهاية."
+              data-docurl=""
+              data-title="ورشة عمل تقديم خطاب مصعد"
+              data-train="yes"
+            >
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="/notassets/Projects pics/Training%20and%20development/w5.jpg"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                ورشة عمل تقديم خطاب مصعد
+              </h2>
+            </div>
+          </div>
+          
+          
+          <div class="blaze-slide">
+            <div
+              class="w-80 h-fit mr-2"
+              data-description="بشكل عام، تتحمل النساء أقل مخاطر من الرجال. وهذا يؤدي إلى نقص الفرص للنساء ويسهم في تعزيز عدم المساواة بين الجنسين بشكل عام. تتحدى هذه الورشة المشاركين للتفكير في الأسباب التي قد تجعل النساء يتحملون مخاطر أقل، كما توفر موارد تشجيع النساء على تحمل المزيد من المخاطر. في المرحلة النهائية للورشة، يكتسب المشاركون الممارسة والثقة في تحمل المخاطر في السيناريوهات التي من المحتمل مواجهتها في حياتهم المهنية."
+              data-docurl=""
+              data-title="ورشة عمل حول المخاطرة للنساء"
+              data-train="yes"
+            >
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="/notassets/Projects pics/Training%20and%20development/w2.jpg"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                ورشة عمل حول المخاطرة للنساء
+              </h2>
+            </div>
+          </div>
+          
+          
+          <div class="blaze-slide">
+            <div
+              class="w-80 h-fit mr-2"
+              data-description="غالبًا ما يُعتقد بالاستدامة في سياق البيئة، ولكن تسهل هذه الورشة نقاشًا حول الاستدامة بوجه عام. إنها تقدم قائمة تحقق يمكن للمؤسسات استخدامها لضمان استمرار تأثير مشاريعهم بعد انتهاء تدخلهم المباشر فيها. يستطيع المشاركون تقييم مشاريعهم الخاصة ووضع طرق لتحسينها بحيث يكون بإمكانهم إحداث تأثير أكثر دوامًا."
+              data-docurl=""
+              data-title="ورشة عمل حول قائمة التحقق من الاستدامة"
+              data-train="yes"
+            >
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="/notassets/Projects pics/Training%20and%20development/w4.jpg"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                ورشة عمل حول قائمة التحقق من الاستدامة
+              </h2>
+            </div>
+          </div>
+          
+          
+          <div class="blaze-slide">
+            <div
+              class="w-80 h-fit mr-2"
+              data-description="خريطة نموذج العمل التجاري هي أداة تجارية تُستخدم لتصوير جميع المكونات اللازمة لبدء عمل تجاري، بما في ذلك العملاء، وسبل الوصول إلى السوق، والمقترح القيمة، والتمويل. تناقش هذه الورشة خريطة نموذج العمل التجاري وتوضح للمشاركين كيفية تطبيقها على أعمالهم ومنظماتهم الخاصة. يناقش المشاركون ما هيتها ويطبقونها على عدة شركات لمناقشة ما إذا كان هذا النموذج سيكون مفيدًا لتلك الشركة أم لا. تُتيح الورشة للمشاركين النظر إلى أعمالهم بطريقة جديدة، مما يثير الإبداع والأفكار الجديدة."
+              data-docurl=""
+              data-title="ورشة عمل خريطة نموذج العمل التجاري"
+              data-train="yes"
+            >
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="/notassets/Projects pics/Training%20and%20development/w8.jpg"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                ورشة عمل خريطة نموذج العمل التجاري
+              </h2>
+            </div>
+          </div>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="px-7 min-h-screen w-full mb-10">
+  
+  <div class="w-full px-7">
+    <div class="pt-4 border-t">
+      <h2 class="text-[#0E773F] text-base font-semibold" id="area4">
+        مجالات المشروع
+      </h2>
+      <h2
+        class="text-gray-950 text-2xl font-semibold font-['Playfair Display'] font-serif mb-4"
+      >
+        مجموعات المتطوعين
+      </h2>
+    </div>
+    <article
+      class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-20 lg:pt-40 w-full mx-auto"
+    >
+      <img
+        alt="University of Southern California"
+        class="absolute inset-0 h-full w-full object-cover"
+        src="/notassets/sky-toubkal.jpg"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+      ></div>
+      <a
+        class="z-10 mt-3 mb-2 text-3xl font-bold text-white hover:underline"
+        href="http://localhost:1313//volunteer_group"
+        >قم ببناء رحلتك الخاصة</a
+      >
+      <div
+        class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300 lg:text-left rtl:text-right"
+      >
+        خصص رحلتك الجماعية التطوعية إلى المغرب من خلال خياراتنا المرنة لمسار الرحلة المثالية للمجموعات التي يقودها أعضاء هيئة التدريس أو المجموعات المستقلة. سواء كنت تتطلع إلى الانغماس في الثقافة المحلية أو الانخراط في خدمة المجتمع أو استكشاف المناظر الطبيعية المتنوعة في المغرب، يمكنك بناء برنامج رحلتك الخاص بك ليناسب أهداف مجموعتك. اختر من بين مجموعة من الأنشطة، بدءاً من التبادل الثقافي وورش العمل التعليمية إلى المشاريع المجتمعية العملية، وكلها مصممة لخلق تجربة هادفة ومؤثرة.
+      </div>
+    </article>
+  </div>
+  
+  <div class="relative px-7 overflow-hidden">
+    <div class="pt-8 blaze-slider">
+      <div class="blaze-container">
+        <div class="blaze-track">
+           
+          
+          <div class="blaze-slide">
+            <div
+              class="w-80 h-fit mr-2"
+              data-description=""
+              data-docurl=""
+              data-title="أنشطة خارجية"
+              data-train="yes"
+            >
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="https://images.unsplash.com/photo-1527624091752-3de87aef5b31?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                أنشطة خارجية
+              </h2>
+            </div>
+          </div>
+          
+          
+          <div class="blaze-slide">
+            <div
+              class="w-80 h-fit mr-2"
+              data-description="تفاعل مع الحرفيين والصناعيين المحليين في فاس من خلال برنامج تبادل ثقافي. سيكون للمتطوعين الفرصة لتعلم المهارات التقليدية مثل الخزف والنسيج وحرفة الجلود بينما يشاركون تجاربهم الثقافية الخاصة. يعزز هذا البرنامج التفاهم المتبادل والتقدير لتراث المغرب الثقافي الغني."
+              data-docurl=""
+              data-title="برنامج تبادل ثقافي"
+              data-train="yes"
+            >
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                برنامج تبادل ثقافي
+              </h2>
+            </div>
+          </div>
+          
+          
+          <div class="blaze-slide">
+            <div
+              class="w-80 h-fit mr-2"
+              data-description="يقدم تخييم توبقال تجربة لا تُنسى محاطة بجبال الأطلس العالي الساحرة في المغرب. يوفر موقع التخييم الخاص بنا مكانًا هادئًا لعشاق الرياضات الخارجية، مع مناظر خلابة، وإقامة مريحة، والوصول إلى تجارب المشي لمسافات طويلة المثيرة والثقافية. سواء كنت مسافرًا منفردًا أو مجموعة تبحث عن المغامرة، يعد تخييم توبقال وجهة تضمن إقامة ممتعة بين جمالها الطبيعي في المغرب."
+              data-docurl=""
+              data-title="تخييم توبقال"
+              data-train="yes"
+            >
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="https://images.unsplash.com/photo-1664474736769-5ec5f2ea0c17?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                تخييم توبقال
+              </h2>
+            </div>
+          </div>
+          
+          
+          <div class="blaze-slide">
+            <div
+              class="w-80 h-fit mr-2"
+              data-description="دعم شباب الرباط من خلال إجراء ورش عمل تمكين تركز على بناء المهارات وتوجيه المهني وتطوير الشخصية. سيعمل المتطوعون مع المنظمات المحلية لتوجيه وتحفيز الشباب، مساعدتهم على تحقيق كامل إمكاناتهم والمساهمة بشكل إيجابي في مجتمعاتهم."
+              data-docurl=""
+              data-title="تواجد في الفندق"
+              data-train="yes"
+            >
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="https://images.unsplash.com/photo-1466500131625-e13cc9be24ec?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                تواجد في الفندق
+              </h2>
+            </div>
+          </div>
+          
+          
+          <div class="blaze-slide">
+            <div
+              class="w-80 h-fit mr-2"
+              data-description=""
+              data-docurl=""
+              data-title="رحلات الحافلات"
+              data-train="yes"
+            >
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="https://images.unsplash.com/photo-1563221004-968a49a5d59a?q=80&amp;w=1374&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                رحلات الحافلات
+              </h2>
+            </div>
+          </div>
+          
+          
+          <div class="blaze-slide">
+            <div
+              class="w-80 h-fit mr-2"
+              data-description="ساعد في الحفاظ على الجمال الطبيعي لشواطئ الصويرة من خلال المشاركة في مبادرة تنظيف الشاطئ. سيعمل المتطوعون معًا على جمع والتخلص السليم من القمامة، مما يضمن بيئة نظيفة وأكثر صحة لكل من السكان المحليين والسياح. هذا النشاط هو وسيلة رائعة لتحقيق تأثير إيجابي والاستمتاع بالمناظر الساحلية الرائعة."
+              data-docurl=""
+              data-title="مبادرة تنظيف الشاطئ"
+              data-train="yes"
+            >
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="https://images.unsplash.com/photo-1617953141905-b27fb1f17d88?q=80&amp;w=1374&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                مبادرة تنظيف الشاطئ
+              </h2>
+            </div>
+          </div>
+          
+          
+          <div class="blaze-slide">
+            <div
+              class="w-80 h-fit mr-2"
+              data-description="انضم إلى المتطوعين المحليين في إنشاء وصيانة حدائق المجتمع في مراكش. يهدف هذا المشروع إلى تعزيز الزراعة المستدامة وتوفير المنتجات الطازجة للمجتمعات غير المخدومة. سيتعلم المشاركون عن الزراعة العضوية وتحويل السماد والحفاظ على المياه بينما يعززون الشعور بالمجتمع والرعاية البيئية."
+              data-docurl=""
+              data-title="مشروع حديقة المجتمع"
+              data-train="yes"
+            >
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="https://images.unsplash.com/photo-1630441466350-d053acf63b22?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                مشروع حديقة المجتمع
+              </h2>
+            </div>
+          </div>
+          
+          
+          <div class="blaze-slide">
+            <div
+              class="w-80 h-fit mr-2"
+              data-description="دعم شباب الرباط من خلال إجراء ورش عمل تمكينية تركز على بناء المهارات وإرشاد الحياة المهنية والتنمية الشخصية. سيعمل المتطوعون مع المنظمات المحلية لتوجيه وتحفيز الشباب، مساعدين على تحقيق إمكانياتهم بالكامل والمساهمة بشكل إيجابي في مجتمعاتهم."
+              data-docurl=""
+              data-title="وجبات المطعم"
+              data-train="yes"
+            >
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="https://images.unsplash.com/photo-1712982003967-45a06d8d735b?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                وجبات المطعم
+              </h2>
+            </div>
+          </div>
+          
+          
+          <div class="blaze-slide">
+            <div
+              class="w-80 h-fit mr-2"
+              data-description="قدم الدعم لشباب الرباط من خلال إجراء ورش عمل لتمكينهم تركز على بناء المهارات وتوجيههم في مساراتهم المهنية وتطويرهم الشخصي. سيعمل المتطوعون مع المنظمات المحلية لتوجيه وإلهام الشباب، مساعدينهم على تحقيق قدراتهم الكاملة والمساهمة بشكل إيجابي في مجتمعاتهم."
+              data-docurl=""
+              data-title="ورش عمل تمكين الشباب"
+              data-train="yes"
+            >
+              <div class="w-full h-60 relative">
+                <img
+                  alt=""
+                  class="rounded-lg w-full object-cover h-full"
+                  src="https://images.unsplash.com/uploads/1412273646059cc129bb5/eae0a1da?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                />
+                <div
+                  class="rounded-lg absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
+                ></div>
+              </div>
+              <h2
+                class="text-gray-800 text-base font-semibold mt-4 line-clamp-1"
+              >
+                ورش عمل تمكين الشباب
+              </h2>
+            </div>
+          </div>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    
+    const sliders = [];
+
+    const initializeSliders = () => {
+      
+      sliders.forEach((slider) => slider.destroy());
+      sliders.length = 0; 
+
+      
+      const sliderElements = document.querySelectorAll(".blaze-slider");
+      sliderElements.forEach((element) => {
+        const slider = new BlazeSlider(element, {
+          all: {
+            slidesToShow: 1,
+            transitionDuration: 300,
+            loop: true,
+          },
+          "(min-width: 600px)": {
+            slidesToShow: 1,
+          },
+          "(min-width: 800px)": {
+            slidesToShow: 3.7,
+          },
+        });
+        sliders.push(slider); 
+      });
+    };
+
+    
+    initializeSliders();
+
+    
+    window.addEventListener("resize", initializeSliders);
+  });
+</script>
+<script>
+  
+  var blurOverlay = document.getElementById("blur-overlay");
+
+  document.querySelectorAll(".blaze-slide > div").forEach((element) => {
+    if (element.getAttribute("data-train") === "yes") {
+      element.addEventListener("click", () => {
+        openPopup(element);
+      });
+    }
+  });
+
+  function openPopup(element) {
+    blurOverlay.style.display = "flex";
+    var popup = document.createElement("div");
+    popup.innerHTML = `
+  <div class="bg-white flex flex-col justify-between m-auto rounded-lg lg:flex-row p-4 w-full max-w-4xl h-96">
+      <div class="w-full lg:w-1/3 mb-4 lg:mb-0 lg:mr-4 h-full">
+          <img class="w-full h-full object-cover rounded-lg" src="${
+            element.querySelector("img").src
+          }" alt="Thumbnail">
+      </div>
+      <div class="w-full lg:w-2/3 lg:pl-4 h-full overflow-y-auto">
+          <h2 class="text-gray-800 text-xl font-semibold mb-2">
+              ${element.getAttribute("data-title")}
+          </h2>
+          <span class="text-gray-600 block mb-4">
+              ${element.getAttribute("data-description")}
+          </span>
+          <a href="${element.getAttribute(
+            "data-docurl"
+          )}" download class="text-blue-500 hover:underline flex items-center mt-4">
+              <img src="/notassets/file.png" class="w-5 h-auto mr-2" alt="">
+              Participant's Manual
+          </a>
+      </div>
+  </div>
+`;
+    popup.style.position = "fixed";
+    popup.style.width = "90%";
+    popup.style.height = "auto";
+    popup.style.top = "50%";
+    popup.style.left = "50%";
+    popup.style.transform = "translate(-50%, -50%)";
+    popup.style.zIndex = "1111";
+    popup.style.overflowY = "auto";
+    popup.classList.add("popup"); 
+    document.body.appendChild(popup);
+
+    blurOverlay.addEventListener(
+      "click",
+      (event) => {
+        if (!popup.contains(event.target)) {
+          closePopup(popup);
+        }
+      },
+      { once: true }
+    );
+  }
+
+  function closePopup(popup) {
+    blurOverlay.style.display = "none";
+    document.body.removeChild(popup);
+  }
+</script>
+
+</main>
+
+    <div class="h-screen border-gray-200 border-t">
+      
+      <div>
+        <div class="pt-2">
+          <h2 class="text-[#0E773F] text-base font-semibold text-center mt-2">
+            الشركاء والمتعاونين
+          </h2>
+          <h2
+            class="text-gray-800 text-2xl font-semibold text-center font-['Playfair Display'] font-serif mb-4"
+          >
+            شركاؤنا السابقون
+          </h2>
+        </div>
+
+        <div class="logos">
+          <div class="logos-slide">
+            <img src="/notassets/Partners/logo1.png" />
+            <img src="/notassets/Partners/logo2.png" />
+            <img src="/notassets/Partners/logo3.png" />
+            <img src="/notassets/Partners/logo4.png" />
+            <img src="/notassets/Partners/logo5.png" />
+            <img src="/notassets/Partners/logo6.png" />
+            <img src="/notassets/Partners/logo7.png" />
+            <img src="/notassets/Partners/logo1.png" />
+            <img src="/notassets/Partners/logo2.png" />
+            <img src="/notassets/Partners/logo3.png" />
+            <img src="/notassets/Partners/logo4.png" />
+            <img src="/notassets/Partners/logo5.png" />
+            <img src="/notassets/Partners/logo6.png" />
+            <img src="/notassets/Partners/logo7.png" />
+          </div>
+        </div>
+      </div>
+
+      
+      <footer class="bg-white pt-4 sm:pt-10 lg:pt-12">
+        <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <div
+            class="mb-10 grid grid-cols-2 gap-12 border-t pt-8 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-10"
+          >
+            <div class="col-span-full lg:col-span-2">
+              
+              <div class="mb-4 lg:-mt-2">
+                <a
+                  href="/"
+                  class="inline-flex items-center gap-2 text-xl font-bold text-black md:text-2xl"
+                  aria-label="logo"
+                >
+                  <img
+                    class="h-16 w-16"
+                    src="/notassets/logo transparent.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-1">
+                    <span class="text-green-900 text-sm"
+                      >مجتمعات مرنة</span
+                    >
+                    <span class="text-gray-500 text-xs"
+                      >الإلهام من خلال الابتكار</span
+                    >
+                  </div>
+                </a>
+              </div>
+              
+
+              <p class="mb-6 text-gray-500 sm:pr-8">
+لأي استفسارات، يرجى التواصل مع ايستمان جونسون على ejohnson@resilientcommunitiesngo.org.
+              </p>
+
+              
+              <div class="items-baseline hidden gap-4 text-slate-400 md:flex">
+                
+                <a href="http://www.facebook.com/resilientcommunitiesmorocco/">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                    /></svg
+                ></a>
+
+                
+                <a href="https://twitter.com/ResComm2017">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 50 50"
+                  >
+                    <path
+                      d="M 6.9199219 6 L 21.136719 26.726562 L 6.2285156 44 L 9.40625 44 L 22.544922 28.777344 L 32.986328 44 L 43 44 L 28.123047 22.3125 L 42.203125 6 L 39.027344 6 L 26.716797 20.261719 L 16.933594 6 L 6.9199219 6 z"
+                    ></path></svg
+                ></a>
+
+                
+                <a href="https://www.instagram.com/resilient_communities/">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    /></svg
+                ></a>
+
+                
+                <a
+                  href="https://www.linkedin.com/company/resilient-communities-non-profit/"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                    /></svg
+                ></a>
+
+                
+                <a href="https://www.youtube.com/@resilientcommunities4942">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                    /></svg
+                ></a>
+
+                
+                <a href="https://www.tiktok.com/@resilient_communities">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    class="h-4 w-4"
+                  >
+                    
+                    <path
+                      fill="currentColor"
+                      d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+                    /></svg
+                ></a>
+              </div>
+              
+            </div>
+
+            
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                <a href="http://localhost:1313/ar/what_we_do">ماذا نفعل</a>
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/what_we_do"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >المشاريع والبرامج التعاونية</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/what_we_do"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    ></a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/what_we_do"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >مشاريع مشاركة المجتمع</a
+                  >
+                </div>
+              </nav>
+            </div>
+
+            
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                
+                شارك معنا
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/partnership"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    ></a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/volunteer_group"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >مجموعات المتطوعين 
+                  </a>
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/map"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >خريطة المشاريع</a
+                  >
+                </div>
+              </nav>
+            </div>
+            
+
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                <a href="http://localhost:1313/ar/internship">برامج التدريب</a>
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/intern_projects"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >مشاريع المتدربين</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/Articles"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >المقالات</a
+                  >
+                </div>
+              </nav>
+            </div>
+            
+
+            
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                <a href="http://localhost:1313/ar/about">من نحن</a>
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/about"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >فريقنا</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/about"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >مهمتنا</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313/ar/Projects"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >المشاريع</a
+                  >
+                </div>
+              </nav>
+            </div>
+            
+          </div>
+
+          <div class="border-t py-8 text-center text-sm text-gray-400">
+            © 2024 - مجتمعات مرنة. جميع الحقوق محفوظة.
+          </div>
+        </footer>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        
+        const links = document.querySelectorAll('a');
+    
+        links.forEach(link => {
+          
+          let href = link.getAttribute('href');
+    
+          
+          if (href && href.includes('/en/')) {
+            
+            href = href.replace('/en/', '/');
+            link.setAttribute('href', href);
+          }
+        });
+      });
+    </script>
+    
+  </body>
+</html>

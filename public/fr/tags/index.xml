@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Resilient Communities</title>
+    <link>http://localhost:1313/fr/tags/</link>
+    <description>Recent content in Tags on Resilient Communities</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/fr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eau</title>
+      <link>http://localhost:1313/fr/tags/eau/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/tags/eau/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eau Et Assainissement</title>
+      <link>http://localhost:1313/fr/tags/eau-et-assainissement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/tags/eau-et-assainissement/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Échange Culturel</title>
+      <link>http://localhost:1313/fr/tags/%C3%A9change-culturel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/tags/%C3%A9change-culturel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Éducation &amp; Sports</title>
+      <link>http://localhost:1313/fr/tags/%C3%A9ducation--sports/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/tags/%C3%A9ducation--sports/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Énergie</title>
+      <link>http://localhost:1313/fr/tags/%C3%A9nergie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/tags/%C3%A9nergie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Énergie Solaire</title>
+      <link>http://localhost:1313/fr/tags/%C3%A9nergie-solaire/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/tags/%C3%A9nergie-solaire/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ingénierie</title>
+      <link>http://localhost:1313/fr/tags/ing%C3%A9nierie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/tags/ing%C3%A9nierie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quartiers</title>
+      <link>http://localhost:1313/fr/tags/quartiers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/tags/quartiers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sécurité</title>
+      <link>http://localhost:1313/fr/tags/s%C3%A9curit%C3%A9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/tags/s%C3%A9curit%C3%A9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sports</title>
+      <link>http://localhost:1313/fr/tags/sports/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/tags/sports/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zwin-Up</title>
+      <link>http://localhost:1313/fr/tags/zwin-up/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/tags/zwin-up/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Engineering  on Resilient Communities</title>
+    <link>http://localhost:1313/fr/tags/engineering-/</link>
+    <description>Recent content in Engineering  on Resilient Communities</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/fr/tags/engineering-/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trash and Methane Gas Powered Pottery Kiln</title>
+      <link>http://localhost:1313/fr/projects/trash-and-methane-gas-powered-pottery-kiln/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/projects/trash-and-methane-gas-powered-pottery-kiln/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

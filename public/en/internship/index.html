@@ -1,0 +1,2527 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script
+      src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload"
+      data-no-instant
+      defer
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intern Projects</title>
+    <link href="/css/output.css" rel="stylesheet" />
+    <link href="/css/partnerSilder.css" rel="stylesheet" />
+    <link href="/css/overlay.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/blaze-slider@latest/dist/blaze.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/blaze-slider@latest/dist/blaze-slider.min.js"></script>
+  </head>
+
+  <body
+    class="bg-white w-full h-full m-0 p-0 antialiased"
+    style="scroll-behavior: smooth"
+  >
+    <main>
+      <style>
+        #scroll-arrow {
+          position: fixed;
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 1000;
+          opacity: 1;
+          transition: opacity 0.5s ease-in-out;
+        }
+
+        .scroll-animation img {
+          animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+          0%,
+          20%,
+          50%,
+          80%,
+          100% {
+            transform: translateY(0);
+          }
+          40% {
+            transform: translateY(-10px);
+          }
+          60% {
+            transform: translateY(-5px);
+          }
+        }
+      </style>
+      <div class="h-screen overflow-hidden w-full">
+        <div
+          class="relative flex justify-center gap-4 flex-col items-center mx-auto h-full w-full bg-cover bg-local"
+          style="
+            background-image: url('/notassets/human-hands-connected-with-green-thread.jpg');
+          "
+        >
+          <div
+            id="header-container"
+            class="h-20 justify-center w-full px-7 flex flex-col mx-auto absolute top-0 z-10"
+          >
+            <div
+              class="relative flex flex-wrap items-center justify-between w-full group py-7 shrink-0"
+            >
+              <a href="http://localhost:1313/" class="flex gap-2 items-center">
+                <img
+                  class="h-16 w-16"
+                  src="/notassets/logo transparent.svg"
+                  alt=""
+                />
+                <div class="flex flex-col gap-1">
+                  <span class="text-[#0E773F] text-sm font-medium"
+                    >Resilient Communities</span
+                  >
+                  <span class="text-gray-400 text-xs"
+                    >Inspiration through Innovation</span
+                  >
+                </div>
+              </a>
+              <div
+                class="items-center justify-between hidden gap-12 text-black md:flex"
+              >
+                <ul>
+                  <li><a href="/en">English</a></li>
+
+                  <li><a href="/fr">Français</a></li>
+
+                  <li><a href="/ar">العربية</a></li>
+                </ul>
+                <a
+                  class="text-sm font-semibold text-white hover:text-[#0E773F]"
+                  href="http://localhost:1313/"
+                  >Home</a
+                >
+
+                <div>
+                  <button
+                    id="dropdownAboutButton"
+                    data-dropdown-toggle="dropdownAbout"
+                    data-dropdown-delay="100"
+                    data-dropdown-trigger="hover"
+                    class="text-sm font-semibold text-white hover:text-slate-400 text-center inline-flex items-center"
+                    type="button"
+                  >
+                    About
+                  </button>
+
+                  <div
+                    id="dropdownAbout"
+                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+                  >
+                    <ul
+                      class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                      aria-labelledby="dropdownAboutButton"
+                    >
+                      <li>
+                        <a
+                          href="http://localhost:1313//about"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                          >About Us</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://localhost:1313//what_we_do"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                          >What We Do</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <a
+                  class="text-sm font-semibold text-white hover:text-[#0E773F]"
+                  href="http://localhost:1313//projects"
+                  >Projects</a
+                >
+
+                <div>
+                  <button
+                    id="dropdownInternshipButton"
+                    data-dropdown-toggle="dropdownInternship"
+                    data-dropdown-delay="100"
+                    data-dropdown-trigger="hover"
+                    class="text-sm font-semibold text-white hover:text-slate-400 text-center inline-flex items-center"
+                    type="button"
+                  >
+                    Internship
+                  </button>
+
+                  <div
+                    id="dropdownInternship"
+                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+                  >
+                    <ul
+                      class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                      aria-labelledby="dropdownInternshipButton"
+                    >
+                      <li>
+                        <a
+                          href="http://localhost:1313//internship"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                          >Internship Programs</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://localhost:1313//intern_projects"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                          >Intern Projects</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <button
+                    id="dropdownGetInvolvedButton"
+                    data-dropdown-toggle="dropdownGetInvolved"
+                    data-dropdown-delay="100"
+                    data-dropdown-trigger="hover"
+                    class="text-sm font-semibold text-white hover:text-slate-400 text-center inline-flex items-center"
+                    type="button"
+                  >
+                    Get Involved
+                  </button>
+
+                  <div
+                    id="dropdownGetInvolved"
+                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+                  >
+                    <ul
+                      class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                      aria-labelledby="dropdownGetInvolvedButton"
+                    >
+                      <li>
+                        <a
+                          href="http://localhost:1313//volunteer_group"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                          >Volunteer Group</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://localhost:1313//partnership"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                          >Partnership</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <button
+                    id="dropdownResourcesButton"
+                    data-dropdown-toggle="dropdownResources"
+                    data-dropdown-delay="100"
+                    data-dropdown-trigger="hover"
+                    class="text-sm font-semibold text-white hover:text-slate-400 text-center inline-flex items-center"
+                    type="button"
+                  >
+                    Resources
+                  </button>
+
+                  <div
+                    id="dropdownResources"
+                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+                  >
+                    <ul
+                      class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                      aria-labelledby="dropdownResourcesButton"
+                    >
+                      <li>
+                        <a
+                          href="http://localhost:1313//articles"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                          >Articles</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://localhost:1313//map"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                          >Projects Map</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="items-center hidden gap-8 md:flex">
+                <div
+                  class="items-baseline justify-between hidden gap-4 text-slate-400 md:flex"
+                >
+                  <a
+                    href="http://www.facebook.com/resilientcommunitiesmorocco/"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 hover:text-slate-200"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                      /></svg
+                  ></a>
+
+                  <a href="https://twitter.com/ResComm2017">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 hover:text-slate-200"
+                      fill="currentColor"
+                      viewBox="0 0 50 50"
+                    >
+                      <path
+                        d="M 6.9199219 6 L 21.136719 26.726562 L 6.2285156 44 L 9.40625 44 L 22.544922 28.777344 L 32.986328 44 L 43 44 L 28.123047 22.3125 L 42.203125 6 L 39.027344 6 L 26.716797 20.261719 L 16.933594 6 L 6.9199219 6 z"
+                      ></path></svg
+                  ></a>
+
+                  <a href="https://www.instagram.com/resilient_communities/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 hover:text-slate-200"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                      /></svg
+                  ></a>
+
+                  <a
+                    href="https://www.linkedin.com/company/resilient-communities-non-profit/"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 hover:text-slate-200"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                      /></svg
+                  ></a>
+
+                  <a href="https://www.youtube.com/@resilientcommunities4942">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 hover:text-slate-200"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                      /></svg
+                  ></a>
+
+                  <a href="https://www.tiktok.com/@resilient_communities">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      class="h-4 w-4"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+                      /></svg
+                  ></a>
+                </div>
+                <a
+                  href="http://localhost:1313//donation_page"
+                  class="text-white flex items-center justify-between gap-1 bg-[#0E773F] px-4 py-2 rounded-full font-bold"
+                >
+                  <span>Donate Now</span>
+                </a>
+              </div>
+              <button
+                onclick="(() => { this.closest('.group').classList.toggle('open')})()"
+                class="flex md:hidden"
+              >
+                <img src="/notassets/svgs/menu.svg" alt="" />
+              </button>
+              <div
+                class="absolute flex md:hidden transition-all duration-300 ease-in-out flex-col items-start shadow-main justify-center w-full gap-3 overflow-hidden bg-white max-h-0 group-[.open]:py-4 px-4 rounded-2xl group-[.open]:max-h-64 top-full"
+              >
+                <a
+                  class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+                  href="http://localhost:1313/"
+                  >Home</a
+                >
+                <a
+                  class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+                  href="http://localhost:1313//what_we_do"
+                  >What We do</a
+                >
+                <a
+                  class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+                  href="http://localhost:1313//internship"
+                  >Internship Programs</a
+                >
+                <a
+                  class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+                  href="http://localhost:1313//about"
+                  >Abous Us</a
+                >
+                <button
+                  class="text-sm text-white flex items-center justify-between gap-1 bg-[#0E773F] px-4 py-2 rounded-full font-bold"
+                >
+                  <span>Donate Now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <h1
+            class="font-['Playfair Display'] font-serif text-white text-5xl text-center leading-tight"
+          >
+            Resilient Communities<br />Around The World
+          </h1>
+          <span class="text-white text-center" style="max-width: 500px">
+            Unlock Your Potential with Hands-On Experience: Join Us in Shaping
+            the Future of Community Development.
+          </span>
+          <div class="flex gap-4">
+            <a
+              href="http://localhost:1313/internship//#firstsection"
+              class="text-white flex items-center justify-between gap-1 bg-[#0E773F] px-6 py-2 rounded-full font-bold min-w-[150px] hover:"
+            >
+              <span>See Programs</span>
+              <span class="material-symbols-outlined"> arrow_right_alt </span>
+            </a>
+            <a
+              href="http://localhost:1313//join_us"
+              class="text-white flex items-center justify-between gap-1 border-[#0E773F] border-2 px-6 py-2 rounded-full font-bold min-w-[150px]"
+            >
+              <span>Join Now</span>
+              <span class="material-symbols-outlined"> arrow_right_alt </span>
+            </a>
+          </div>
+          <div id="scroll-arrow" class="scroll-animation h-7 w-7">
+            <img src="/notassets/icons/arrow.png" alt="Scroll Down" />
+          </div>
+        </div>
+      </div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const scrollArrow = document.getElementById("scroll-arrow");
+
+          function hideScrollArrow() {
+            scrollArrow.style.opacity = "0";
+            setTimeout(() => {
+              scrollArrow.style.display = "none";
+            }, 500);
+          }
+
+          window.addEventListener("scroll", function () {
+            hideScrollArrow();
+          });
+
+          window.addEventListener("wheel", function () {
+            hideScrollArrow();
+          });
+
+          window.addEventListener("keydown", function (e) {
+            if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+              hideScrollArrow();
+            }
+          });
+        });
+      </script>
+
+      <div class="bg-white py-6 sm:py-8 lg:py-12" id="firstsection">
+        <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+          <div class="grid gap-8 md:grid-cols-2 lg:gap-12">
+            <div class="md:pt-8">
+              <p
+                class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+              >
+                RC Internship
+              </p>
+
+              <h1
+                class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left rtl:text-right"
+              >
+                Internship Programs
+              </h1>
+
+              <p class="mb-2 text-gray-600 text-justify sm:text-lg md:mb-2">
+                We currently offer Phase-Based and Special Project Internships
+                either remotely or in Morocco. Our models are adaptable to allow
+                you to develop, strengthen, and learn skills to benefit your
+                professional development.
+              </p>
+              <p class="mb-6 text-gray-600 text-justify sm:text-lg md:mb-8">
+                Internships take place during each Academic Semester (Fall -
+                Spring - Summer). Remote internships require 7-30 hours a week,
+                and in-country internships require 30-40 hours a week and are
+                unpaid. If your university program requires more hours, tasks
+                can be adjusted to meet your total work hour requirements.
+              </p>
+
+              <p class="mb-6 text-gray-500 text-justify sm:text-lg md:mb-0">
+                To learn more about our internship options remotely and in
+                Morocco
+              </p>
+              <p class="mb-6 text-gray-500 text-justify sm:text-lg md:mb-8">
+                Contact us at :
+                <a href="" class="text-green-700"
+                  >training@resilientcommunitiesngo.org</a
+                >
+                for more information!
+              </p>
+            </div>
+            <div>
+              <div class="scale-90 rounded-lg h-64 overflow-hidden md:h-auto">
+                <img
+                  src="/notassets/greenspace.png"
+                  loading="lazy"
+                  alt="Photo by Martin Sanchez"
+                  class="h-full w-full object-cover object-center"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="min-h-screen bg-gray-50 py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+          <div class="grid gap-8 md:grid-cols-2 lg:gap-12"></div>
+          <div class="md:pt-8">
+            <p
+              class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+            >
+              RC Internship
+            </p>
+
+            <h1
+              class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left rtl:text-right"
+            >
+              Internship Programs
+            </h1>
+
+            <p class="mb-2 text-gray-600 text-justify sm:text-lg md:mb-2">
+              Resilient Communities (RC) offers a variety of internship programs
+              tailored to different interests and goals. Whether you're a
+              student, a professional, or someone passionate about community
+              development, we have opportunities for you. Please note, interns
+              are responsible for expenses such as airfare and personal costs.
+              While we don't offer scholarships, we encourage exploring funding
+              options through your university's study abroad office.
+            </p>
+
+            <p class="mb-6 text-gray-600 text-justify sm:text-lg md:mb-8">
+              Applications are due 2 months prior to the program's start date.
+              Start and end dates will coincide with typical academic semester
+              dates.
+            </p>
+
+            <blockquote
+              class="mb-6 border-l-4 pl-4 italic text-gray-500 sm:text-lg md:mb-8 md:pl-6"
+            >
+              Select from the following Internship programs to see the full
+              corresponding details
+            </blockquote>
+          </div>
+          <div class="lg:w-full w-full mx-auto overflow-auto">
+            <div class="w-full">
+              <div class="relative right-0">
+                <ul
+                  class="relative flex flex-wrap p-1 list-none rounded-xl bg-gray-100"
+                  data-tabs="tabs"
+                  role="list"
+                >
+                  <li class="z-30 flex-auto text-center">
+                    <a
+                      class="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                      data-tab-target=""
+                      active=""
+                      role="tab"
+                      aria-selected="true"
+                      aria-controls="app"
+                    >
+                      <span class="ml-1 phase-change"
+                        >Phase-Based Internship (PBI)</span
+                      >
+                    </a>
+                  </li>
+                  <li class="z-30 flex-auto text-center">
+                    <a
+                      class="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                      data-tab-target=""
+                      role="tab"
+                      aria-selected="false"
+                      aria-controls="message"
+                    >
+                      <span class="ml-1 phase-change"
+                        >Special Project Internship (SPI)</span
+                      >
+                    </a>
+                  </li>
+                  <li class="z-30 flex-auto text-center">
+                    <a
+                      class="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                      data-tab-target=""
+                      role="tab"
+                      aria-selected="false"
+                      aria-controls="settings"
+                    >
+                      <span class="ml-1 phase-change"
+                        >In-Person Internship (IPI)</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+                <div data-tab-content="" class="p-5">
+                  <div class="block opacity-100" id="app" role="tabpanel">
+                    <div class="block">
+                      <p
+                        class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                      >
+                        PBI
+                      </p>
+                      <h1
+                        class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                      >
+                        Internship Outline
+                      </h1>
+
+                      <p
+                        class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8"
+                      >
+                        Once the candidate is selected, the Resilient
+                        Communities’ team will meet with the intern to discuss
+                        the intern’s passions and goals and how they can be
+                        applied to the phases outlined below. Interns will draft
+                        an article at the end of each phase summarizing what
+                        knowledge and skills were gained. The articles will be
+                        published to Resilient Communities’ website.
+                      </p>
+                      <h1
+                        class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                      >
+                        Onboarding
+                      </h1>
+
+                      <p
+                        class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8"
+                      >
+                        The internship will begin with a dialogue about the
+                        provided task list and the expectations from all
+                        parties. The details of the projects and the internship
+                        deliverables will be discussed and determined.
+                      </p>
+
+                      <h1
+                        class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                      >
+                        Program Phases
+                      </h1>
+
+                      <div class="w-full overflow-hidden">
+                        <div class="relative mb-3">
+                          <h6 class="mb-0">
+                            <button
+                              class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                              data-collapse-target="animated-collapse-1"
+                            >
+                              <span>Phase I - Research & Development</span>
+                              <i
+                                class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                              ></i>
+                            </button>
+                          </h6>
+                          <div
+                            data-collapse="animated-collapse-1"
+                            class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                          >
+                            <div
+                              class="p-4 mb-6 text-justify sm:text-base md:mb-8"
+                            >
+                              <ul class="list-disc">
+                                <li class="mb-2">
+                                  <span class="text-gray-600">
+                                    Perform R&D on your own, ongoing, and/or a
+                                    future project. This phase will be done
+                                    individually, unless there is an intern with
+                                    the same or overlapping interests.
+                                  </span>
+                                  <ul
+                                    class="list-decimal px-4 mt-2 text-gray-500"
+                                  >
+                                    <li>R&D on your own project topic</li>
+                                    <li>
+                                      R&D on a project needed by RC or a partner
+                                      association.
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="mb-2">
+                                  <span class="text-gray-600">
+                                    An article will be written by the intern on
+                                    topics related to the phase and agreed upon
+                                    between the intern and RC staff.
+                                  </span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="relative mb-3">
+                          <h6 class="mb-0">
+                            <button
+                              class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                              data-collapse-target="animated-collapse-2"
+                            >
+                              <span>Phase II - Workshop Development</span>
+                              <i
+                                class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                              ></i>
+                            </button>
+                          </h6>
+                          <div
+                            data-collapse="animated-collapse-2"
+                            class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                          >
+                            <div
+                              class="p-4 mb-6 text-justify sm:text-base md:mb-8"
+                            >
+                              <ul class="list-disc">
+                                <li class="mb-2">
+                                  <span class="text-gray-600">
+                                    The second phase will include a training on
+                                    how to create an effective workshop followed
+                                    by the creation of a workshop of your
+                                    choice, led by our Head of Training and
+                                    Development, N.G. Rees. You will participate
+                                    with other RC interns during this phase.
+                                  </span>
+                                  <ul
+                                    class="list-decimal px-4 mt-2 text-gray-500"
+                                  >
+                                    <li>
+                                      Creation of an RC Workshop (chosen by RC);
+                                    </li>
+                                    <li>
+                                      Creation of a group workshop (voted on
+                                      between interns); and
+                                    </li>
+                                    <li>
+                                      Creation of individual workshops (one per
+                                      intern chosen by each intern).
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="mb-2">
+                                  <span class="text-gray-600">
+                                    Drafting and publication of an article.
+                                  </span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="relative mb-3">
+                          <h6 class="mb-0">
+                            <button
+                              class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                              data-collapse-target="animated-collapse-3"
+                            >
+                              <span
+                                >Phase III - Proposal Development & Fundraising
+                                Campaign</span
+                              >
+                              <i
+                                class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                              ></i>
+                            </button>
+                          </h6>
+                          <div
+                            data-collapse="animated-collapse-3"
+                            class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                          >
+                            <div
+                              class="p-4 mb-6 text-justify sm:text-base md:mb-8"
+                            >
+                              <ul class="list-disc">
+                                <li class="mb-2">
+                                  <span class="text-gray-600">
+                                    Specific documents to be prepared will be
+                                    related to the intern's personal project and
+                                    RC's/partner's project. This phase will be
+                                    done individually, unless there is an intern
+                                    with the same or overlapping interests.
+                                  </span>
+                                  <ul
+                                    class="list-decimal px-4 mt-2 text-gray-500"
+                                  >
+                                    <li>
+                                      Writing a proposal and/or creating a
+                                      fundraising campaign for your personal
+                                      project;
+                                    </li>
+                                    <li>
+                                      Writing a proposal and/or creating a
+                                      fundraising campaign for RC's/partner's
+                                      project.
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="mb-2">
+                                  <span class="text-gray-600">
+                                    Drafting and publication of an article.
+                                  </span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                          ><a href="/docs/PBI Program Description.pdf"
+                            >Download Description</a
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hidden opacity-0" id="message" role="tabpanel">
+                    <div class="block">
+                      <p
+                        class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                      >
+                        SPI
+                      </p>
+                      <h1
+                        class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                      >
+                        Internship Outline
+                      </h1>
+
+                      <p
+                        class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8"
+                      >
+                        SPI interns follow the PBI structure, but with reduced
+                        requirements. While they can elect to participate in the
+                        full PBI process, SPI interns are expected to fulfill
+                        specific tasks that further their own goals and the
+                        goals of RC. The exact details of each SPI are
+                        negotiated between RC and the intern. As an intern, you
+                        will employ your skills to work independently and in
+                        teams with fellow interns and Moroccan association
+                        project managers with supervision from RC staff
+                      </p>
+
+                      <p
+                        class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                      >
+                        SPI
+                      </p>
+                      <h1
+                        class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                      >
+                        Onboarding
+                      </h1>
+
+                      <p
+                        class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8"
+                      >
+                        The internship will begin with a dialogue about the
+                        provided task list and the expectations from all
+                        parties. The details of the projects and the internship
+                        deliverables will be discussed and determined.
+                      </p>
+
+                      <h1
+                        class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                      >
+                        Past SPI intern topics have included
+                      </h1>
+                      <div class="px-4 mb-6 text-justify sm:text-base md:mb-8">
+                        <ul class="list-disc">
+                          <li class="mb-2">
+                            <span class="text-gray-600">
+                              Social Media Intern (content creation and updating
+                              website)
+                            </span>
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600">
+                              Workshop Development and Facilitator
+                            </span>
+                          </li>
+                          <li class="mb-2">
+                            <span class="text-gray-600">
+                              Graphic Design Intern.
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <h1
+                        class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                      >
+                        Program Phases
+                      </h1>
+
+                      <div class="w-full overflow-hidden">
+                        <div class="relative mb-3">
+                          <h6 class="mb-0">
+                            <button
+                              class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                              data-collapse-target="animated-collapse-4"
+                            >
+                              <span>Phase I - Research & Development</span>
+                              <i
+                                class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                              ></i>
+                            </button>
+                          </h6>
+                          <div
+                            data-collapse="animated-collapse-4"
+                            class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                          >
+                            <div
+                              class="p-4 mb-6 text-justify sm:text-base md:mb-8"
+                            >
+                              <ul class="list-disc">
+                                <li class="mb-2">
+                                  <span class="text-gray-600">
+                                    Initial research for interns’ projects are
+                                    completed, and milestones are set for
+                                    internship completion.
+                                  </span>
+                                </li>
+                                <li class="mb-2">
+                                  <span class="text-gray-600">
+                                    Participation in PBI R&D is optional and can
+                                    be done in concert with another intern.
+                                  </span>
+                                </li>
+                                <li class="mb-2">
+                                  <span class="text-gray-600">
+                                    An article will be written by the intern on
+                                    topics related to the phase and agreed upon
+                                    between the intern and RC staff.
+                                  </span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="relative mb-3">
+                          <h6 class="mb-0">
+                            <button
+                              class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                              data-collapse-target="animated-collapse-5"
+                            >
+                              <span>Phase II - Workshop Development</span>
+                              <i
+                                class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                              ></i>
+                            </button>
+                          </h6>
+                          <div
+                            data-collapse="animated-collapse-5"
+                            class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                          >
+                            <div
+                              class="p-4 mb-6 text-justify sm:text-base md:mb-8"
+                            >
+                              <ul class="list-disc">
+                                <li class="mb-2">
+                                  <span class="text-gray-600">
+                                    Interns will participate in all trainings on
+                                    workshop development, however participation
+                                    in the workshop creation process itself is
+                                    optional.
+                                  </span>
+                                </li>
+                                <li class="mb-2">
+                                  <span class="text-gray-600">
+                                    Drafting and publication of an article.
+                                  </span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="relative mb-3">
+                          <h6 class="mb-0">
+                            <button
+                              class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                              data-collapse-target="animated-collapse-6"
+                            >
+                              <span
+                                >Phase III - Project Proposal Development</span
+                              >
+                              <i
+                                class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                              ></i>
+                            </button>
+                          </h6>
+                          <div
+                            data-collapse="animated-collapse-6"
+                            class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                          >
+                            <div
+                              class="p-4 mb-6 text-justify sm:text-base md:mb-8"
+                            >
+                              <ul class="list-disc">
+                                <li class="mb-2">
+                                  <span class="text-gray-600">
+                                    The intern receives feedback and assistance
+                                    from RC in accomplishing their milestones.
+                                    The phase concludes upon project completion.
+                                  </span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                          ><a href="/docs/SPI Program Description.pdf"
+                            >Download Description</a
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hidden opacity-0" id="settings" role="tabpanel">
+                    <div class="block">
+                      <p
+                        class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                      >
+                        IPI
+                      </p>
+                      <h1
+                        class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                      >
+                        Internship Outline
+                      </h1>
+
+                      <p
+                        class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8"
+                      >
+                        IPI Interns will follow either (1) a special project
+                        internship (SPI) program with objectives and milestones
+                        decided by the intern and RC, or (2) a phase-based
+                        internship (PBI) program with hands-on collaboration on
+                        workshops and activities with local centers and
+                        associations around the country.
+                      </p>
+
+                      <h1
+                        class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                      >
+                        Onboarding
+                      </h1>
+
+                      <p
+                        class="mb-6 text-gray-600 text-justify sm:text-base md:mb-8"
+                      >
+                        The internship will begin with a dialogue about the
+                        provided task list and the expectations from all
+                        parties. The details of the projects and the internship
+                        deliverables will be discussed and determined.
+                      </p>
+
+                      <h1
+                        class="mb-4 text-center text-xl font-medium text-gray-800 sm:text-2xl md:mb-6 md:text-left rtl:text-right"
+                      >
+                        Program Phases
+                      </h1>
+
+                      <div class="w-full overflow-hidden">
+                        <div class="relative mb-3">
+                          <h6 class="mb-0">
+                            <button
+                              class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                              data-collapse-target="animated-collapse-7"
+                            >
+                              <span
+                                >Phase I - Workshop Development / Language and
+                                Culture Learning (6 weeks)</span
+                              >
+                              <i
+                                class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                              ></i>
+                            </button>
+                          </h6>
+                          <div
+                            data-collapse="animated-collapse-7"
+                            class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                          >
+                            <div
+                              class="p-4 mb-6 text-justify sm:text-base md:mb-8"
+                            >
+                              <ul class="list-disc">
+                                <li class="mb-2">
+                                  <span class="text-gray-600">
+                                    The main objective in Phase 1 is to build
+                                    the intern’s agency working within Morocco.
+                                  </span>
+                                </li>
+                                <li class="mb-2">
+                                  <span class="text-gray-600">
+                                    We want them to be able to travel and work
+                                    independently and to build a network of
+                                    counterparts and mentors across multiple
+                                    cities.
+                                  </span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="relative mb-3">
+                          <h6 class="mb-0">
+                            <button
+                              class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                              data-collapse-target="animated-collapse-8"
+                            >
+                              <span
+                                >Phase II - Research Topic & Project Development
+                                (6 weeks)</span
+                              >
+                              <i
+                                class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                              ></i>
+                            </button>
+                          </h6>
+                          <div
+                            data-collapse="animated-collapse-8"
+                            class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                          >
+                            <div
+                              class="p-4 mb-6 text-justify sm:text-base md:mb-8"
+                            >
+                              <ul class="list-disc">
+                                <li class="mb-2">
+                                  <span class="text-gray-600">
+                                    ​In Phase II, the intern uses their
+                                    increased agency to build workshops and
+                                    begin actively contributing to development
+                                    work in Morocco.
+                                  </span>
+                                </li>
+                                <li class="mb-2">
+                                  <span class="text-gray-600">
+                                    They develop and deliver workshops,
+                                    coordinate with NGOs and their counterparts,
+                                    and organize small pre-funded or no-fund
+                                    projects.
+                                  </span>
+                                </li>
+                                <li class="mb-2">
+                                  <span class="text-gray-600">
+                                    The intern also pursues their own passion
+                                    project based on the needs they identified
+                                    in the communities they visited during Phase
+                                    I.
+                                  </span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="relative mb-3">
+                          <h6 class="mb-0">
+                            <button
+                              class="relative flex items-center w-full py-4 font-semibold text-left rtl:text-right transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                              data-collapse-target="animated-collapse-9"
+                            >
+                              <span
+                                >Phase III - Project Proposal Development &
+                                Community Engagement (4 weeks)</span
+                              >
+                              <i
+                                class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                              ></i>
+                            </button>
+                          </h6>
+                          <div
+                            data-collapse="animated-collapse-9"
+                            class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                          >
+                            <div
+                              class="p-4 mb-6 text-justify sm:text-base md:mb-8"
+                            >
+                              <ul class="list-disc">
+                                <li class="mb-2">
+                                  <span class="text-gray-600">
+                                    Phase III uses the intern’s research as a
+                                    basis to apply grant writing and PDM skills.
+                                    It marks the transition from small-scale
+                                    projects to large-scale vision, and it
+                                    emboldens the intern to pursue such work in
+                                    the future.
+                                  </span>
+                                </li>
+                                <li class="mb-2">
+                                  <span class="text-gray-600">
+                                    At the end of the Phase, the intern executes
+                                    their project or ensures ownership is vested
+                                    in community members.
+                                  </span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+                          >Download Description</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="min-h-screen bg-white py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+          <div class="grid gap-8 md:grid-cols-2 lg:gap-12"></div>
+          <div class="md:pt-8">
+            <p
+              class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+            >
+              RC Internship
+            </p>
+
+            <h1
+              class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left rtl:text-right"
+            >
+              Program Dates
+            </h1>
+
+            <p class="mb-2 text-gray-600 text-justify sm:text-lg md:mb-2">
+              To help you budget, keep in mind that students are responsible for
+              the cost of international airfare, local transportation, personal
+              expenses, and management fees. Since Resilient Communities does
+              not currently offer any scholarships, it is recommended that you
+              check with your university's study abroad office to learn about
+              any travel scholarships they may offer to help pay for some
+              expenses.
+            </p>
+
+            <p class="mb-6 text-gray-600 text-justify sm:text-lg md:mb-8">
+              Applications are due 2 months prior to the program's start date.
+              Start and end dates will coincide with typical academic semester
+              dates.
+            </p>
+
+            <blockquote
+              class="mb-6 border-l-4 pl-4 italic text-gray-500 sm:text-lg md:mb-8 md:pl-6"
+            >
+              RC will assist with your living arrangments before your departure
+              for Morocco. Contact us to discuss a program plan that best fits
+              your budget!
+            </blockquote>
+          </div>
+          <div class="lg:w-full w-full mx-auto overflow-auto">
+            <table
+              class="table-auto w-full text-left rtl:text-right whitespace-no-wrap"
+            >
+              <thead>
+                <tr>
+                  <th
+                    class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl"
+                  >
+                    PROGRAM
+                  </th>
+                  <th
+                    class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100"
+                  >
+                    APPLICATION DUE
+                  </th>
+                  <th
+                    class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100"
+                  >
+                    START DATE
+                  </th>
+                  <th
+                    class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100"
+                  >
+                    END DATE
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="px-4 py-3 text-gray-700">
+                    Summer Semester (15 weeks)
+                  </td>
+                  <td class="px-4 py-3">March 22nd, 2025</td>
+                  <td class="px-4 py-3">May 22nd, 2025</td>
+                  <td class="px-4 py-3 text-lg">August 12th, 2025</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-3 text-gray-700">
+                    Fall Semester (15 weeks)
+                  </td>
+                  <td class="px-4 py-3">July 5th, 2024</td>
+                  <td class="px-4 py-3">Sep 5th, 2024</td>
+                  <td class="px-4 py-3 text-lg">Dec 10th, 2024</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-3 text-gray-700">
+                    Spring Semester (15 weeks)
+                  </td>
+                  <td class="px-4 py-3">November 23rd, 2024</td>
+                  <td class="px-4 py-3">Jan 23rd, 2025</td>
+                  <td class="px-4 py-3 text-lg">May 4th, 2025</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="min-h-screen bg-gray-50 py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+          <div class="grid gap-8 md:grid-cols-2 lg:gap-12">
+            <div class="md:pt-8">
+              <p
+                class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+              >
+                RC Internship
+              </p>
+
+              <h1
+                class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left rtl:text-right"
+              >
+                Get Started
+              </h1>
+
+              <div class="md:pr-10 md:py-6">
+                <div class="flex relative pb-12">
+                  <div
+                    class="h-full w-10 absolute inset-0 flex items-center justify-center"
+                  >
+                    <div
+                      class="h-full w-1 bg-gray-200 pointer-events-none"
+                    ></div>
+                  </div>
+                  <div
+                    class="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10"
+                  >
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex-grow pl-4">
+                    <h2
+                      class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+                    >
+                      Connect with us
+                    </h2>
+                    <p class="leading-relaxed text-gray-700">
+                      Reach out to establish contact with our internship
+                      program.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex relative pb-12">
+                  <div
+                    class="h-full w-10 absolute inset-0 flex items-center justify-center"
+                  >
+                    <div
+                      class="h-full w-1 bg-gray-200 pointer-events-none"
+                    ></div>
+                  </div>
+                  <div
+                    class="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10"
+                  >
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                  </div>
+                  <div class="flex-grow pl-4">
+                    <h2
+                      class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+                    >
+                      Start an application
+                    </h2>
+                    <p class="leading-relaxed text-gray-700">
+                      Send us your resume and a cover letter expressing your
+                      interest and the program structure you'd like to be a part
+                      of.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex relative pb-12">
+                  <div
+                    class="h-full w-10 absolute inset-0 flex items-center justify-center"
+                  >
+                    <div
+                      class="h-full w-1 bg-gray-200 pointer-events-none"
+                    ></div>
+                  </div>
+                  <div
+                    class="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10"
+                  >
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <circle cx="12" cy="5" r="3"></circle>
+                      <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                    </svg>
+                  </div>
+                  <div class="flex-grow pl-4">
+                    <h2
+                      class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+                    >
+                      Contact your campus study abroad office (if applicable)
+                    </h2>
+                    <p class="leading-relaxed text-gray-700">
+                      Get in touch with your campus study abroad office for
+                      assistance.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex relative">
+                  <div
+                    class="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10"
+                  >
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                      <path d="M22 4L12 14.01l-3-3"></path>
+                    </svg>
+                  </div>
+                  <div class="flex-grow pl-4">
+                    <h2
+                      class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+                    >
+                      Finish
+                    </h2>
+                    <p class="leading-relaxed text-gray-700">
+                      Completing all onboarding steps required
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="mt-36 h-64 rounded-md overflow-hidden md:h-auto">
+                <video controls="controls" preload="metadata">
+                  <source
+                    src="https://video.wixstatic.com/video/82b4fb_83712fd4db2f4b93a7f3d15c1e2ab957/480p/mp4/file.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="min-h-screen bg-white py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+          <div class="md:pt-8">
+            <p
+              class="text-center font-bold text-green-700 md:text-left rtl:text-right"
+            >
+              Testimonials
+            </p>
+            <h1
+              class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left rtl:text-right"
+            >
+              Our Recent Interns
+            </h1>
+            <div id="card-container" class="flex flex-wrap justify-between">
+              <div
+                class="card scale-90 relative w-72 h-96 bg-white rounded-lg max-w-xs shadow-lg group"
+              >
+                <img
+                  class="w-full h-full object-cover rounded-lg"
+                  src="../notassets/Profile%20Pics/Amelia%20Wills_JPG.webp"
+                  alt="Person's Picture"
+                />
+                <div
+                  class="rounded-lg absolute bottom-0 left-0 right-0 px-6 py-4 bg-black bg-opacity-50 text-white"
+                >
+                  <h2 class="text-lg font-bold">Amelia Wills</h2>
+                  <p class="text-sm">Fall 2021 Intern</p>
+                </div>
+                <div
+                  class="absolute inset-0 rounded-lg bg-gray-800 bg-opacity-75 text-white px-6 py-4 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                >
+                  <div
+                    class="flex justify-center items-center absolute top-0 pt-4 gap-2"
+                  >
+                    <img
+                      src="/notassets/icons/uc-white-logo.png"
+                      class="w-7 h-auto"
+                      alt=""
+                    />
+                    <a
+                      href="https://www.linkedin.com/in/amelia-wills-6a99b348"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 text-slate-100 hover:text-slate-200"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="text-justify" style="hyphens: auto">
+                    For Amelia&#39;s SPI, she created and facilitated virtual
+                    workshops organized by Resilient Communities as well as
+                    those made by other interns. She also wrote articles about
+                    the workshops she facilitated and her experiences with them.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="card scale-90 relative w-72 h-96 bg-white rounded-lg max-w-xs shadow-lg group"
+              >
+                <img
+                  class="w-full h-full object-cover rounded-lg"
+                  src="../notassets/Profile%20Pics/Ana.webp"
+                  alt="Person's Picture"
+                />
+                <div
+                  class="rounded-lg absolute bottom-0 left-0 right-0 px-6 py-4 bg-black bg-opacity-50 text-white"
+                >
+                  <h2 class="text-lg font-bold">Ana Clevenger</h2>
+                  <p class="text-sm">Fall 2021 Intern</p>
+                </div>
+                <div
+                  class="absolute inset-0 rounded-lg bg-gray-800 bg-opacity-75 text-white px-6 py-4 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                >
+                  <div
+                    class="flex justify-center items-center absolute top-0 pt-4 gap-2"
+                  >
+                    <img
+                      src="/notassets/icons/uc-white-logo.png"
+                      class="w-7 h-auto"
+                      alt=""
+                    />
+                    <a
+                      href="https://www.linkedin.com/in/ana-clevenger-664800154"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 text-slate-100 hover:text-slate-200"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="text-justify" style="hyphens: auto">
+                    For her SPI, Ana worked on updating the Resilient
+                    Communities website as well as our social media. She also
+                    participated in weekly workshop meetings with the other
+                    interns.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="card scale-90 relative w-72 h-96 bg-white rounded-lg max-w-xs shadow-lg group"
+              >
+                <img
+                  class="w-full h-full object-cover rounded-lg"
+                  src="../notassets/Profile%20Pics/Antoinette%20Lim%20Pic.webp"
+                  alt="Person's Picture"
+                />
+                <div
+                  class="rounded-lg absolute bottom-0 left-0 right-0 px-6 py-4 bg-black bg-opacity-50 text-white"
+                >
+                  <h2 class="text-lg font-bold">Antoinette Danica Lim</h2>
+                  <p class="text-sm">Summer &amp; Fall 2021 Intern</p>
+                </div>
+                <div
+                  class="absolute inset-0 rounded-lg bg-gray-800 bg-opacity-75 text-white px-6 py-4 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                >
+                  <div
+                    class="flex justify-center items-center absolute top-0 pt-4 gap-2"
+                  >
+                    <img
+                      src="/notassets/icons/uc-white-logo.png"
+                      class="w-7 h-auto"
+                      alt=""
+                    />
+                    <a
+                      href="https://www.linkedin.com/in/antoinettedanicalim"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 text-slate-100 hover:text-slate-200"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="text-justify" style="hyphens: auto">
+                    During her Co-op, Antoinette assisted us with further
+                    research and development towards our Concept Note for the
+                    Green Climate Fund proposal. Her personal project entailed
+                    creating a business plan and establishing a foundation in
+                    her home country of the Philippines.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="card scale-90 relative w-72 h-96 bg-white rounded-lg max-w-xs shadow-lg group"
+              >
+                <img
+                  class="w-full h-full object-cover rounded-lg"
+                  src="../notassets/Profile%20Pics/pic003.jpeg"
+                  alt="Person's Picture"
+                />
+                <div
+                  class="rounded-lg absolute bottom-0 left-0 right-0 px-6 py-4 bg-black bg-opacity-50 text-white"
+                >
+                  <h2 class="text-lg font-bold">Arju Piya</h2>
+                  <p class="text-sm">Summer 2021 Intern</p>
+                </div>
+                <div
+                  class="absolute inset-0 rounded-lg bg-gray-800 bg-opacity-75 text-white px-6 py-4 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                >
+                  <div
+                    class="flex justify-center items-center absolute top-0 pt-4 gap-2"
+                  >
+                    <img
+                      src="/notassets/icons/uc-white-logo.png"
+                      class="w-7 h-auto"
+                      alt=""
+                    />
+                    <a
+                      href="https://www.linkedin.com/in/arjupiya"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 text-slate-100 hover:text-slate-200"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="text-justify" style="hyphens: auto">
+                    Arju fulfilled her summer co-op requirement for the School
+                    of Planning at UC. She assisted us with developing workshop
+                    content and organizing a fundraising campaign to help build
+                    and equip a classroom for the women&#39;s cooperative in the
+                    local mosque.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="card scale-90 relative w-72 h-96 bg-white rounded-lg max-w-xs shadow-lg group"
+              >
+                <img
+                  class="w-full h-full object-cover rounded-lg"
+                  src="../notassets/Profile%20Pics/Blake%20Steiner.webp"
+                  alt="Person's Picture"
+                />
+                <div
+                  class="rounded-lg absolute bottom-0 left-0 right-0 px-6 py-4 bg-black bg-opacity-50 text-white"
+                >
+                  <h2 class="text-lg font-bold">Blake Steiner</h2>
+                  <p class="text-sm">Summer 2020 Intern</p>
+                </div>
+                <div
+                  class="absolute inset-0 rounded-lg bg-gray-800 bg-opacity-75 text-white px-6 py-4 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                >
+                  <div
+                    class="flex justify-center items-center absolute top-0 pt-4 gap-2"
+                  >
+                    <img
+                      src="/notassets/icons/uc-white-logo.png"
+                      class="w-7 h-auto"
+                      alt=""
+                    />
+                    <a
+                      href="https://www.linkedin.com/in/blake-steiner-006639a9"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 text-slate-100 hover:text-slate-200"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="text-justify" style="hyphens: auto">
+                    Blake was an RPCV in Morocco from 2016 to 2018. During his
+                    internship, he teamed up with Matt Roy to create a
+                    &#39;Health Workshop&#39; targeted towards Moroccan youth.
+                    He also helped write the project proposal for our
+                    waste-powered pottery kilns in Tameslouht, which are now
+                    ready to be funded.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="min-h-screen bg-gray-50 py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+          <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+            <div class="mb-10 md:mb-16">
+              <h2
+                class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl"
+              >
+                What's Included ?
+              </h2>
+
+              <p
+                class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg"
+              >
+                This is a section of some simple filler text, also known as
+                placeholder text. It shares some characteristics of a real
+                written text but is random or otherwise generated.
+              </p>
+            </div>
+
+            <div
+              class="grid gap-8 sm:grid-cols-2 md:gap-12 xl:grid-cols-3 xl:gap-16"
+            >
+              <div class="flex gap-4 md:gap-6">
+                <div
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802"
+                    />
+                  </svg>
+                </div>
+
+                <div>
+                  <h3 class="mb-2 text-lg font-semibold md:text-xl">
+                    Language Learning
+                  </h3>
+                  <p class="mb-2 text-gray-500">
+                    One Month of Language Learning (Moroccan Arabic and/or
+                    French - optional).
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 md:gap-6">
+                <div
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819"
+                    />
+                  </svg>
+                </div>
+
+                <div>
+                  <h3 class="mb-2 text-lg font-semibold md:text-xl">Housing</h3>
+                  <p class="mb-2 text-gray-500">
+                    Assistance in finding and preparing suitable accommodations
+                    for your stay in Morocco.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 md:gap-6">
+                <div
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+                    />
+                  </svg>
+                </div>
+
+                <div>
+                  <h3 class="mb-2 text-lg font-semibold md:text-xl">
+                    Pre-departure Advising
+                  </h3>
+                  <p class="mb-2 text-gray-500">
+                    Comprehensive guidance to prepare you for your internship
+                    experience in Morocco.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 md:gap-6">
+                <div
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+                    />
+                  </svg>
+                </div>
+
+                <div>
+                  <h3 class="mb-2 text-lg font-semibold md:text-xl">
+                    Orientation
+                  </h3>
+                  <p class="mb-2 text-gray-500">
+                    On-site introduction to Moroccan culture, customs, and
+                    safety upon arrival.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 md:gap-6">
+                <div
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                    />
+                  </svg>
+                </div>
+
+                <div>
+                  <h3 class="mb-2 text-lg font-semibold md:text-xl">
+                    24/7 Emergency Support
+                  </h3>
+                  <p class="mb-2 text-gray-500">
+                    Continuous support and assistance available throughout your
+                    stay.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 md:gap-6">
+                <div
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-green-700 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m20.893 13.393-1.135-1.135a2.252 2.252 0 0 1-.421-.585l-1.08-2.16a.414.414 0 0 0-.663-.107.827.827 0 0 1-.812.21l-1.273-.363a.89.89 0 0 0-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 0 1-1.81 1.025 1.055 1.055 0 0 1-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 0 1-1.383-2.46l.007-.042a2.25 2.25 0 0 1 .29-.787l.09-.15a2.25 2.25 0 0 1 2.37-1.048l1.178.236a1.125 1.125 0 0 0 1.302-.795l.208-.73a1.125 1.125 0 0 0-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 0 1-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 0 1-1.458-1.137l1.411-2.353a2.25 2.25 0 0 0 .286-.76m11.928 9.869A9 9 0 0 0 8.965 3.525m11.928 9.868A9 9 0 1 1 8.965 3.525"
+                    />
+                  </svg>
+                </div>
+
+                <div>
+                  <h3 class="mb-2 text-lg font-semibold md:text-xl">
+                    Cultural and Co-curricular Activities
+                  </h3>
+                  <p class="mb-2 text-gray-500">
+                    Engage in enriching experiences that immerse you in Moroccan
+                    culture.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          var total = document.querySelectorAll("[data-tabs]");
+          var getEventTarget = function getEventTarget(e) {
+            e = e || window.event;
+            return e.target || e.srcElement;
+          };
+          total.forEach(function (item, i) {
+            var moving_div = document.createElement("div");
+            var first_li = item.querySelector(
+              "li:first-child [data-tab-target]"
+            );
+            var tab = first_li.cloneNode();
+            tab.innerHTML = "-";
+            tab.classList.remove("bg-inherit", "text-slate-700");
+            tab.classList.add("bg-white", "text-white");
+            tab.style.animation = ".2s ease";
+            moving_div.classList.add(
+              "z-10",
+              "absolute",
+              "text-slate-700",
+              "rounded-lg",
+              "bg-inherit",
+              "flex-auto",
+              "text-center",
+              "bg-none",
+              "border-0",
+              "block",
+              "shadow"
+            );
+            moving_div.setAttribute("moving-tab", "");
+            moving_div.setAttribute("data-tab-target", "");
+            moving_div.appendChild(tab);
+            item.appendChild(moving_div);
+            var list_length = item.getElementsByTagName("li").length;
+            moving_div.style.padding = "0px";
+            moving_div.style.width =
+              item.querySelector("li:nth-child(1)").offsetWidth + "px";
+            moving_div.style.transform = "translate3d(0px, 0px, 0px)";
+            moving_div.style.transition = ".5s ease";
+            item.onmouseover = function (event) {
+              var target = getEventTarget(event);
+              var li = target.closest("li");
+              if (li) {
+                var nodes = Array.from(li.closest("ul").children);
+                var index = nodes.indexOf(li) + 1;
+                item.querySelector(
+                  "li:nth-child(" + index + ") [data-tab-target]"
+                ).onclick = function () {
+                  item.querySelectorAll("li").forEach(function (list_item) {
+                    list_item.firstElementChild.removeAttribute("active");
+                    list_item.firstElementChild.setAttribute(
+                      "aria-selected",
+                      "false"
+                    );
+                  });
+                  li.firstElementChild.setAttribute("active", "");
+                  li.firstElementChild.setAttribute("aria-selected", "true");
+                  moving_div = item.querySelector("[moving-tab]");
+                  var sum = 0;
+                  if (item.classList.contains("flex-col")) {
+                    for (var j = 1; j <= nodes.indexOf(li); j++) {
+                      sum += item.querySelector(
+                        "li:nth-child(" + j + ")"
+                      ).offsetHeight;
+                    }
+                    moving_div.style.transform =
+                      "translate3d(0px," + sum + "px, 0px)";
+                    moving_div.style.height = item.querySelector(
+                      "li:nth-child(" + j + ")"
+                    ).offsetHeight;
+                  } else {
+                    for (var j = 1; j <= nodes.indexOf(li); j++) {
+                      sum += item.querySelector(
+                        "li:nth-child(" + j + ")"
+                      ).offsetWidth;
+                    }
+                    moving_div.style.transform =
+                      "translate3d(" + sum + "px, 0px, 0px)";
+                    moving_div.style.width =
+                      item.querySelector("li:nth-child(" + index + ")")
+                        .offsetWidth + "px";
+                  }
+                };
+              }
+            };
+          });
+          window.addEventListener("resize", function (event) {
+            total.forEach(function (item, i) {
+              item = item.parentElement.firstElementChild;
+              item.querySelector("[moving-tab]").remove();
+              var moving_div = document.createElement("div");
+              var tab = item
+                .querySelector("[data-tab-target][aria-selected='true']")
+                .cloneNode();
+              tab.innerHTML = "-";
+              tab.classList.remove("bg-inherit");
+              tab.classList.add("bg-white", "text-white");
+              tab.style.animation = ".2s ease";
+              moving_div.classList.add(
+                "z-10",
+                "absolute",
+                "text-slate-700",
+                "rounded-lg",
+                "bg-inherit",
+                "flex-auto",
+                "text-center",
+                "bg-none",
+                "border-0",
+                "block",
+                "shadow"
+              );
+              moving_div.setAttribute("moving-tab", "");
+              moving_div.setAttribute("data-tab-target", "");
+              moving_div.appendChild(tab);
+              item.appendChild(moving_div);
+              moving_div.style.padding = "0px";
+              moving_div.style.transition = ".5s ease";
+              var li = item.querySelector(
+                "[data-tab-target][aria-selected='true']"
+              ).parentElement;
+              if (li) {
+                var nodes = Array.from(li.closest("ul").children);
+                var index = nodes.indexOf(li) + 1;
+                var sum = 0;
+                if (item.classList.contains("flex-col")) {
+                  for (var j = 1; j <= nodes.indexOf(li); j++) {
+                    sum += item.querySelector(
+                      "li:nth-child(" + j + ")"
+                    ).offsetHeight;
+                  }
+                  moving_div.style.transform =
+                    "translate3d(0px," + sum + "px, 0px)";
+                  moving_div.style.width =
+                    item.querySelector("li:nth-child(" + index + ")")
+                      .offsetWidth + "px";
+                  moving_div.style.height = item.querySelector(
+                    "li:nth-child(" + j + ")"
+                  ).offsetHeight;
+                } else {
+                  for (var j = 1; j <= nodes.indexOf(li); j++) {
+                    sum += item.querySelector(
+                      "li:nth-child(" + j + ")"
+                    ).offsetWidth;
+                  }
+                  moving_div.style.transform =
+                    "translate3d(" + sum + "px, 0px, 0px)";
+                  moving_div.style.width =
+                    item.querySelector("li:nth-child(" + index + ")")
+                      .offsetWidth + "px";
+                }
+              }
+            });
+            if (window.innerWidth < 991) {
+              total.forEach(function (item, i) {
+                if (!item.classList.contains("flex-col")) {
+                  item.classList.add("flex-col", "on-resize");
+                }
+              });
+            } else {
+              total.forEach(function (item, i) {
+                if (item.classList.contains("on-resize")) {
+                  item.classList.remove("flex-col", "on-resize");
+                }
+              });
+            }
+          });
+          var total = document.querySelectorAll("[data-tab-content]");
+          if (total[0]) {
+            total.forEach(function (nav_pills) {
+              var links = nav_pills.parentElement.querySelectorAll(
+                "li a[data-tab-target]"
+              );
+              links.forEach(function (link) {
+                link.addEventListener("click", function () {
+                  var clicked_tab = document.querySelector(
+                    "#" + link.getAttribute("aria-controls")
+                  );
+                  if (!clicked_tab.classList.contains("block", "opacity-100")) {
+                    var active_link = clicked_tab
+                      .closest("[data-tab-content]")
+                      .parentElement.querySelector(
+                        "li a[data-tab-target][aria-selected='true']"
+                      );
+                    var active_panel = document.querySelector(
+                      "#" + active_link.getAttribute("aria-controls")
+                    );
+                    active_panel.classList.remove("block", "opacity-100");
+                    active_panel.classList.add("hidden", "opacity-0");
+                    clicked_tab.classList.add("block", "opacity-100");
+                    clicked_tab.classList.remove("hidden", "opacity-0");
+                  }
+                });
+              });
+            });
+          }
+        })();
+      </script>
+      <script>
+        (function () {
+          var triggers = document.querySelectorAll("[data-collapse-target]");
+          var collapses = document.querySelectorAll("[data-collapse]");
+          if (triggers && collapses) {
+            Array.from(triggers).forEach(function (trigger) {
+              return Array.from(collapses).forEach(function (collapse) {
+                if (
+                  trigger.dataset.collapseTarget === collapse.dataset.collapse
+                ) {
+                  trigger.addEventListener("click", function () {
+                    if (
+                      collapse.style.height &&
+                      collapse.style.height !== "0px"
+                    ) {
+                      collapse.style.height = 0;
+                      collapse.style.overflow = "hidden";
+                      trigger.removeAttribute("open");
+                    } else {
+                      collapse.style.height = "".concat(
+                        collapse.children[0].clientHeight,
+                        "px"
+                      );
+                      collapse.style.overflow = "visible";
+                      trigger.setAttribute("open", "");
+                    }
+                  });
+                }
+              });
+            });
+          }
+        })();
+      </script>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          function updatePhaseText() {
+            var abbreviations = {
+              "In-Person Internship (IPI)": "IPI",
+              "Special Project Internship (SPI)": "SPI",
+              "Phase-Based Internship (PBI)": "PBI",
+            };
+
+            var spans = document.querySelectorAll("span.phase-change");
+
+            spans.forEach(function (span) {
+              var fullText = span.innerText.trim();
+              if (window.innerWidth < 768 && abbreviations[fullText]) {
+                span.innerText = abbreviations[fullText];
+              } else if (
+                window.innerWidth >= 768 &&
+                Object.values(abbreviations).includes(fullText)
+              ) {
+                for (var key in abbreviations) {
+                  if (abbreviations[key] === fullText) {
+                    span.innerText = key;
+                  }
+                }
+              }
+            });
+          }
+
+          updatePhaseText();
+
+          window.addEventListener("resize", updatePhaseText);
+        });
+      </script>
+    </main>
+
+    <div class="h-screen border-gray-200 border-t">
+      <div>
+        <div class="pt-2">
+          <h2 class="text-[#0E773F] text-base font-semibold text-center mt-2">
+            Partners & Collaborators
+          </h2>
+          <h2
+            class="text-gray-800 text-2xl font-semibold text-center font-['Playfair Display'] font-serif mb-4"
+          >
+            Our Past Partners
+          </h2>
+        </div>
+
+        <div class="logos">
+          <div class="logos-slide">
+            <img src="/notassets/Partners/logo1.png" />
+            <img src="/notassets/Partners/logo2.png" />
+            <img src="/notassets/Partners/logo3.png" />
+            <img src="/notassets/Partners/logo4.png" />
+            <img src="/notassets/Partners/logo5.png" />
+            <img src="/notassets/Partners/logo6.png" />
+            <img src="/notassets/Partners/logo7.png" />
+            <img src="/notassets/Partners/logo1.png" />
+            <img src="/notassets/Partners/logo2.png" />
+            <img src="/notassets/Partners/logo3.png" />
+            <img src="/notassets/Partners/logo4.png" />
+            <img src="/notassets/Partners/logo5.png" />
+            <img src="/notassets/Partners/logo6.png" />
+            <img src="/notassets/Partners/logo7.png" />
+          </div>
+        </div>
+      </div>
+
+      <footer class="bg-white pt-4 sm:pt-10 lg:pt-12">
+        <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <div
+            class="mb-10 grid grid-cols-2 gap-12 border-t pt-8 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-10"
+          >
+            <div class="col-span-full lg:col-span-2">
+              <div class="mb-4 lg:-mt-2">
+                <a
+                  href="/"
+                  class="inline-flex items-center gap-2 text-xl font-bold text-black md:text-2xl"
+                  aria-label="logo"
+                >
+                  <img
+                    class="h-16 w-16"
+                    src="/notassets/logo transparent.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-1">
+                    <span class="text-green-900 text-sm"
+                      >Resilient Communities</span
+                    >
+                    <span class="text-gray-500 text-xs"
+                      >Inspiration through Innovation</span
+                    >
+                  </div>
+                </a>
+              </div>
+
+              <p class="mb-6 text-gray-500 sm:pr-8">
+                For any inquiries, please contact Eastman Johnson at
+                <b class="text-gray-600 font-normal"
+                  >ejohnson@resilientcommunitiesngo.org.</b
+                >
+              </p>
+
+              <div class="items-baseline hidden gap-4 text-slate-400 md:flex">
+                <a href="http://www.facebook.com/resilientcommunitiesmorocco/">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                    /></svg
+                ></a>
+
+                <a href="https://twitter.com/ResComm2017">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 50 50"
+                  >
+                    <path
+                      d="M 6.9199219 6 L 21.136719 26.726562 L 6.2285156 44 L 9.40625 44 L 22.544922 28.777344 L 32.986328 44 L 43 44 L 28.123047 22.3125 L 42.203125 6 L 39.027344 6 L 26.716797 20.261719 L 16.933594 6 L 6.9199219 6 z"
+                    ></path></svg
+                ></a>
+
+                <a href="https://www.instagram.com/resilient_communities/">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    /></svg
+                ></a>
+
+                <a
+                  href="https://www.linkedin.com/company/resilient-communities-non-profit/"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                    /></svg
+                ></a>
+
+                <a href="https://www.youtube.com/@resilientcommunities4942">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 hover:text-slate-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                    /></svg
+                ></a>
+
+                <a href="https://www.tiktok.com/@resilient_communities">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    class="h-4 w-4"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+                    /></svg
+                ></a>
+              </div>
+            </div>
+
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                <a href="">What we do</a>
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313//what_we_do"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Collaborative Projects and Programs</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313//what_we_do"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Training & Development</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313//what_we_do"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Community Engagement Projects</a
+                  >
+                </div>
+              </nav>
+            </div>
+
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                Get Involved
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313//partnership"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Partnerships & Collaborations</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313//volunteer_group"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Volunteer Groups
+                  </a>
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313//map"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Projects Map</a
+                  >
+                </div>
+              </nav>
+            </div>
+
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                <a href="http://localhost:1313//internship"
+                  >Internship Programs</a
+                >
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313//intern_projects"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Intern Projects</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313//Articles"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Internship Articles</a
+                  >
+                </div>
+              </nav>
+            </div>
+
+            <div>
+              <div
+                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
+              >
+                <a href="">About Us</a>
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="http://localhost:1313//about"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Our Team</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313//about"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Our Mission</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="http://localhost:1313//Projects"
+                    class="text-gray-500 transition duration-100 hover:text-green-500 active:text-green-500"
+                    >Our Projects</a
+                  >
+                </div>
+              </nav>
+            </div>
+          </div>
+
+          <div class="border-t py-8 text-center text-sm text-gray-400">
+            © 2024 - Resilient Communities. All rights reserved.
+          </div>
+        </footer>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  </body>
+</html>
