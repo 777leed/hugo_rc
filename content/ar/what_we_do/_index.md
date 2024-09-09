@@ -6,5 +6,5 @@ cta1: "أعمدتنا"
 cta2: "انضم الآن"
 cta1link: "#firstsection"
 cta2link: "انضم_إلينا"
-bg: "../notassets/somekindameeting_better.jpg"
+bg: "/notassets/somekindameeting_better.jpg"
 ---

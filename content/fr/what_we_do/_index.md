@@ -6,5 +6,5 @@ cta1: "Nos Piliers"
 cta2: "Rejoignez-nous"
 cta1link: "#firstsection"
 cta2link: "nous_rejoindre"
-bg: "../notassets/somekindameeting_better.jpg"
+bg: "/notassets/somekindameeting_better.jpg"
 ---

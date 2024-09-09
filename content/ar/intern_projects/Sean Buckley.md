@@ -3,6 +3,6 @@ name: "شون بكلي"
 position: "متدرب خريف 2020"
 text: "ساعد شون في تصوير بيانات النفايات الصلبة الخاصة بنا لمقاطعة الهاوز باستخدام نظام معلومات جغرافية. قام بتطوير ورشة عمل لتصميم وتنفيذ حديقة في مجتمعك الخاص. كما ساعدنا شون في إجراء البحوث لتقديم مقترحاتنا لصندوق العمل الدبلوماسي المواطنين وصندوق تغير المناخ الأخضر."
 symbol: "/notassets/icons/uc-white-logo.png"
-pic: "../notassets/Profile Pics/pic002.jpeg"
+pic: "/notassets/Profile Pics/pic002.jpeg"
 linkedIn: "https://www.linkedin.com/in/seanbuckley3"
 ---

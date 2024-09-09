@@ -30,7 +30,7 @@
           {{ range .Params.images }}
           <img
             class="w-16 h-16 object-cover rounded-lg clickable-img"
-            src="../../notassets/Projects pics/{{ . }}"
+            src="/notassets/Projects pics/{{ . }}"
             alt=""
           />
           {{ end }}
@@ -39,7 +39,7 @@
           <img
             id="thumbnail-img"
             class="w-full object-cover rounded-lg lg:h-full"
-            src="../../notassets/Projects pics/{{ .Params.thumbnail }}"
+            src="/notassets/Projects pics/{{ .Params.thumbnail }}"
             alt=""
           />
         </div>
@@ -149,7 +149,7 @@
             <div class="w-full flex gap-4">
               <img
                 class="w-6 h-6"
-                src="../../notassets/icons/{{ .icon }}"
+                src="/notassets/icons/{{ .icon }}"
                 alt=""
               />
               <span>{{ .name }}</span>
