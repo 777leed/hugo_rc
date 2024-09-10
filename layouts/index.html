@@ -1,18 +1,5 @@
 {{ define "main" }}
 <!-- Your existing HTML content for the homepage -->
-<style>
-  #preloader {
-    background: white url(notassets/preloder.gif) no-repeat center center;
-    height: 100%;
-    width: 100%;
-    background-size: 15%;
-    position: fixed;
-    z-index: 100;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-  }
-</style>
-<div id="preloader"></div>
 
 <!-- Header & Hero -->
 {{ partial "hero.html" . }}
@@ -29,7 +16,7 @@
       <div class="h-12 w-12 mb-4">
         <img
           loading="lazy"
-          src="notassets/icons/donation.png"
+          src="/notassets/icons/donation.png"
           class="h-full w-full"
           alt="Donation Icon"
         />
@@ -52,7 +39,7 @@
       <div class="h-12 w-12 mb-4">
         <img
           loading="lazy"
-          src="notassets/icons/team.png"
+          src="/notassets/icons/team.png"
           class="h-full w-full"
           alt="Team Icon"
         />
@@ -75,7 +62,7 @@
       <div class="h-12 w-12 mb-4">
         <img
           loading="lazy"
-          src="notassets/icons/contact-mail.png"
+          src="/notassets/icons/contact-mail.png"
           class="h-full w-full"
           alt="Contact Icon"
         />
@@ -138,7 +125,7 @@
         <img
           loading="lazy"
           class="object-cover w-full h-auto rounded-lg shadow-lg"
-          src="notassets/collage-white.png"
+          src="/notassets/collage-white.png"
           alt="Collage Image"
         />
       </div>
@@ -267,7 +254,7 @@
     {{ end }} {{ end }}
   </div>
   <a
-    href="#"
+    href="{{ .Site.BaseURL }}{{ .Lang }}/projects"
     class="text-[#0e773faf] text-base font-semibold text-center mb-2 mt-2 hover:text-[#0e773f]"
   >
     <span class="underline underline-offset-8">{{ i18n "seeMore" }}</span>
@@ -328,27 +315,11 @@
   </div>
 
   <a
-    href="#"
+    href="{{ .Site.BaseURL }}{{ .Lang }}/articles"
     class="text-[#0e773faf] text-base font-semibold text-center mb-2 mt-2 hover:text-[#0e773f]"
   >
     <span class="underline underline-offset-8">{{ i18n "seeMore" }}</span>
   </a>
 </div>
-
-<script>
-  function sleep(ms) {
-    return new Promise((resolve) => setTimeout(resolve, ms));
-  }
-
-  var loader = document.getElementById("preloader");
-
-  // Hide preloader after 3 seconds
-  setTimeout(() => {
-    loader.style.opacity = "0";
-    setTimeout(() => {
-      loader.style.display = "none";
-    }, 500); // Adjust the delay based on your transition duration
-  }, 1000); // 3000ms = 3 seconds
-</script>
 
 {{ end }}

@@ -28,12 +28,36 @@
       transform: translateY(-5px);
     }
   }
+
+  .bg-hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0; /* Fallback color or low-res placeholder */
+    transition: background-image 0.5s ease-in-out;
+  }
+
+  #preloader {
+    background: white url("/notassets/preloder.gif") no-repeat center center;
+    height: 100%;
+    width: 100%;
+    background-size: 15%;
+    position: fixed;
+    z-index: 100;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  @media (max-width: 640px) {
+    #preloader {
+      background-size: 30%; /* Change background size to 30% for mobile */
+    }
+  }
 </style>
+
+<div id="preloader"></div>
 
 <div class="h-screen overflow-hidden w-full">
   <div
-    class="relative flex justify-center gap-4 flex-col items-center mx-auto h-full w-full bg-cover bg-local p-4 md:p-8"
-    style="background-image:url('{{.Params.bg}}');"
+    class="bg-hero relative flex justify-center gap-4 flex-col items-center mx-auto h-full w-full bg-cover bg-local p-4 md:p-8"
   >
     <!-- Header -->
     {{ partial "header.html" . }}
@@ -103,5 +127,34 @@
         hideScrollArrow();
       }
     });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const loader = document.getElementById("preloader");
+    const heroBg = document.querySelector(".bg-hero");
+
+    // Create a new Image object to load the background image
+    const img = new Image();
+    img.src = "{{ .Params.bg | absURL }}";
+    img.onload = () => {
+      // Once the image is loaded, set it as the background of your hero section
+      heroBg.style.backgroundImage = `url('${img.src}')`;
+      // Fade out and hide the preloader
+      loader.style.opacity = "0";
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 500); // matches the CSS transition duration
+    };
+
+    // Optional: Handle image loading errors
+    img.onerror = () => {
+      console.error("Failed to load background image");
+      loader.style.opacity = "0"; // Hide the preloader even if there's an error
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 500);
+    };
   });
 </script>
