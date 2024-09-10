@@ -11,7 +11,7 @@ date: 2024-01-01
 location: "Tameslouht, Morocco"
 description: "Ninety-Five percent of the world’s olive trees are located in the Mediterranean region. As a result, many municipalities suffer from finding a solution to the wastewater (OWW) produced by olive oil production. The Marrakech-Safi region has additional environmental challenges within the artisanal sector, particularly in Tameslouht. Due to its arid climate, wood is scarce, which forces potters to burn tires to power their kilns. When considering alternative designs for Tameslouht’s pottery sector it is important to consciously merge traditional with modern practice and design. The EnergyXchange case study was the cornerstone of the thesis and the starting point for the development of Tameslouht’s own waste-powered kiln project utilizing methane gas that uses OWW as a substrate for production and solid was  te for combustion."
 estimated: "3241"
-thumbnail: "Collaborative Projects and programs/Environemtal Issues/pic1.jpg"
+thumbnail: "Collaborative Projects and programs/Environemtal Issues/pic1.webp"
 sdescription: "Merging traditional & modern practices and design"
 budget: "5234"
 raised: "5234"

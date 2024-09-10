@@ -11,7 +11,7 @@ date: 2024-01-01
 location: "Tameslouht, Maroc"
 description: "Pour l'année universitaire 2017-2018, les Communautés Résilientes ont créé un projet de fin d'études pour les étudiants en génie mécanique. L'équipe comprenait également deux étudiants en génie de l'environnement, un professeur d'EnvE et un instructeur en céramique qui ont travaillé ensemble pour créer la meilleure solution possible afin de remédier aux fours à poterie traditionnels, mais toxiques, de Tameslouht alimentés par la combustion de pneus."
 estimated: "3241"
-thumbnail: "Collaborative Projects and programs/Trash and Methane Gas Powered Pottery Kiln/somekindameeting.jpg"
+thumbnail: "Collaborative Projects and programs/Trash and Methane Gas Powered Pottery Kiln/somekindameeting.webp"
 sdescription: "Remédier aux fours traditionnels à poterie de Tameslouht alimentés par la combustion de pneus"
 budget: "5234"
 raised: "5234"
@@ -20,9 +20,9 @@ tags:
   - "Ingénierie"
   - "Énergie"
 images:
-  - "Collaborative Projects and programs/Trash and Methane Gas Powered Pottery Kiln/somekindameeting.jpg"
-  - "Collaborative Projects and programs/Trash and Methane Gas Powered Pottery Kiln/pic1.jpeg"
-  - "Collaborative Projects and programs/Trash and Methane Gas Powered Pottery Kiln/pic2.jpeg"
+  - "Collaborative Projects and programs/Trash and Methane Gas Powered Pottery Kiln/somekindameeting.webp"
+  - "Collaborative Projects and programs/Trash and Methane Gas Powered Pottery Kiln/pic1.webp"
+  - "Collaborative Projects and programs/Trash and Methane Gas Powered Pottery Kiln/pic2.webp"
 documents:
   - name: "Capping System.PDF"
     icon: "pdf.png"

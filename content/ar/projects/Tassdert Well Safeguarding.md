@@ -11,7 +11,7 @@ date: 2024-01-01
 location: "تاسدرت، المغرب"
 description: "بالشراكة مع جمعية شباب تاسدرت، يركز هذا المشروع على حماية بئر في قرية صغيرة في وادي سوس بالمغرب، التي أصبحت خطرًا عامًا على السكان. يتضمن المبادرة إعادة بناء البئر واستبدال الباب بواحد جديد وآمن من أجل ضمان السلامة ومنع الحوادث. يعالج هذا المشروع المخاوف العاجلة المتعلقة بالسلامة ويساعد في حماية المجتمع من المخاطر المحتملة المرتبطة بالبئر. من خلال تعزيز أمان البئر، نهدف إلى تحسين السلامة العامة والمساهمة في رفاهية سكان القرية."
 estimated: "3241"
-thumbnail: "Collaborative Projects and programs/Tassdert Well Safeguarding/pic1.png"
+thumbnail: "Collaborative Projects and programs/Tassdert Well Safeguarding/pic1.webp"
 sdescription: "حماية بئر في قرية صغيرة في وادي سوس"
 budget: "5234"
 raised: "5234"
@@ -20,9 +20,9 @@ tags:
   - "المياه والصرف الصحي"
   - "السلامة"
 images:
-  - "Collaborative Projects and programs/Tassdert Well Safeguarding/pic1.png"
-  - "Collaborative Projects and programs/Tassdert Well Safeguarding/pic2.png"
-  - "Collaborative Projects and programs/Tassdert Well Safeguarding/pic3.png"
+  - "Collaborative Projects and programs/Tassdert Well Safeguarding/pic1.webp"
+  - "Collaborative Projects and programs/Tassdert Well Safeguarding/pic2.webp"
+  - "Collaborative Projects and programs/Tassdert Well Safeguarding/pic3.webp"
 
 documents:
   - name: "Capping System.PDF"

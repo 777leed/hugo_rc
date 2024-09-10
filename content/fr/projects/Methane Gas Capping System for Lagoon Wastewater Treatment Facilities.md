@@ -11,7 +11,7 @@ date: 2024-01-01
 location: "Marrakech, Maroc"
 description: "Le Projet de Fin d'Études en Génie de l'Environnement 2018-2019 était axé sur la conception d'un système de captage de gaz méthane pour les bassins anaérobies de traitement des eaux usées. Le méthane produit pourrait être utilisé pour les nouveaux prototypes de four de poterie ou pour un usage domestique. Un réacteur pilote est en cours de conception pour vérifier les mètres cubes de méthane produits et déterminer le meilleur processus de lavage du gaz."
 estimated: "3241"
-thumbnail: "Collaborative Projects and programs/gas treatment/pic2.png"
+thumbnail: "Collaborative Projects and programs/gas treatment/pic2.webp"
 sdescription: "petite description"
 budget: "5234"
 raised: "5234"
@@ -20,8 +20,8 @@ tags:
   - "Eau et Assainissement"
   - "Énergie"
 images:
-  - "Collaborative Projects and programs/gas treatment/pic2.png"
-  - "Collaborative Projects and programs/gas treatment/pic1.png"
+  - "Collaborative Projects and programs/gas treatment/pic2.webp"
+  - "Collaborative Projects and programs/gas treatment/pic1.webp"
 documents:
   - name: "Capping System.PDF"
     icon: "pdf.png"

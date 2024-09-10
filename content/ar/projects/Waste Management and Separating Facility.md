@@ -11,7 +11,7 @@ date: 2024-01-01
 location: "تامسلوت، المغرب"
 description: "خلال العام الدراسي 2019-2020، يقوم طلاب الهندسة البيئية بتصميم مكب ومرفق إدارة النفايات في تامسلوت. سيتم استخدام التقرير والتصاميم التي تم إنتاجها لدعم فصل النفايات وإعادة استخدامها من خلال استخدام بيانات النفايات الصلبة التي تم جمعها من قبل Eastman خلال بحثه في برنامج Fulbright."
 estimated: "3241"
-thumbnail: "Collaborative Projects and programs/landfill/pic1.jpeg"
+thumbnail: "Collaborative Projects and programs/landfill/pic1.webp"
 sdescription: "وصف صغير"
 budget: "5234"
 raised: "5234"
@@ -20,9 +20,9 @@ tags:
   - "المياه والصرف الصحي"
   - "الطاقة"
 images:
-  - "Collaborative Projects and programs/landfill/pic1.jpeg"
-  - "Collaborative Projects and programs/landfill/pic2.jpeg"
-  - "Collaborative Projects and programs/landfill/pic3.png"
+  - "Collaborative Projects and programs/landfill/pic1.webp"
+  - "Collaborative Projects and programs/landfill/pic2.webp"
+  - "Collaborative Projects and programs/landfill/pic3.webp"
 
 documents:
   - name: "نظام الغطاء.PDF"
