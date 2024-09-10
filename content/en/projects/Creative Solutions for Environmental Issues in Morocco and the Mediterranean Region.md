@@ -20,9 +20,9 @@ tags:
   - "Water and Sanitation"
   - "Energy"
 images:
-  - "Collaborative Projects and programs/Environemtal Issues/pic1.jpg"
-  - "Collaborative Projects and programs/Environemtal Issues/pic2.png"
-  - "Collaborative Projects and programs/Environemtal Issues/pic3.png"
+  - "Collaborative Projects and programs/Environemtal Issues/pic1.webp"
+  - "Collaborative Projects and programs/Environemtal Issues/pic2.webp"
+  - "Collaborative Projects and programs/Environemtal Issues/pic3.webp"
 documents:
   - name: "Capping System.PDF"
     icon: "pdf.png"
