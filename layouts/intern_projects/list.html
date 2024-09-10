@@ -23,6 +23,7 @@
           class="card scale-90 relative w-72 h-96 bg-white rounded-lg max-w-xs shadow-lg group"
         >
           <img
+            loading="lazy"
             alt="Person's Picture"
             class="w-full h-full object-cover rounded-lg"
             src="{{ .Params.pic }}"
@@ -39,7 +40,12 @@
             <div
               class="flex justify-center items-center absolute top-0 pt-4 gap-2"
             >
-              <img alt="" class="w-7 h-auto" src="{{ .Params.symbol }}" />
+              <img
+                loading="lazy"
+                alt=""
+                class="w-7 h-auto"
+                src="{{ .Params.symbol }}"
+              />
               <a href="{{ .Params.linkedIn }}">
                 <svg
                   class="h-5 w-5 text-slate-100 hover:text-slate-200"

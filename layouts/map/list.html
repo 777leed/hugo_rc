@@ -114,18 +114,18 @@
             <div class="w-full min-h-fit flex flex-col lg:flex-row justify-between">
                 <div class="flex flex-col lg:flex-row h-[20rem] gap-4 mb-4 w-full lg:w-1/2">
                     <div class="flex flex-row lg:flex-col justify-between w-full lg:w-[10%]">
-                        <img class="w-16 h-16 object-cover rounded-lg" src="/notassets/Projects pics/${
+                        <img loading="lazy" class="w-16 h-16 object-cover rounded-lg" src="/notassets/Projects pics/${
                           markerData.images[0]
                         }" alt="">
-                        <img class="w-16 h-16 object-cover rounded-lg" src="/notassets/Projects pics/${
+                        <img loading="lazy" class="w-16 h-16 object-cover rounded-lg" src="/notassets/Projects pics/${
                           markerData.images[1]
                         }" alt="">
-                        <img class="w-16 h-16 object-cover rounded-lg" src="/notassets/Projects pics/${
+                        <img loading="lazy" class="w-16 h-16 object-cover rounded-lg" src="/notassets/Projects pics/${
                           markerData.images[2]
                         }" alt="">
                     </div>
                     <div class="w-full h-full lg:w-[90%]">
-                        <img class="w-full object-cover rounded-lg lg:h-full" src="/notassets/Projects pics/${
+                        <img loading="lazy" class="w-full object-cover rounded-lg lg:h-full" src="/notassets/Projects pics/${
                           markerData.mainImage
                         }" alt="">
                     </div> 
@@ -201,7 +201,7 @@
                         <span class="text-sm text-gray-700">{{i18n "info_documents1819"}}</span>
                         <button class="text-center bg-white px-4 py-2 rounded-full font-semibold w-full mt-4 md:w-auto md:px-6 md:py-3">
                             <div class="w-full flex gap-4">
-                                <img class="w-6 h-6" src="/notassets/icons/${
+                                <img loading="lazy" class="w-6 h-6" src="/notassets/icons/${
                                   markerData.documents[0].icon
                                 }" alt="">
                                 <span>${markerData.documents[0].name}</span>
@@ -210,7 +210,7 @@
 
                         <button class="text-center bg-white px-4 py-2 rounded-full font-semibold w-full mt-4 md:w-auto md:px-6 md:py-3">
                             <div class="w-full flex gap-4">
-                                <img class="w-6 h-6" src="/notassets/icons/${
+                                <img loading="lazy" class="w-6 h-6" src="/notassets/icons/${
                                   markerData.documents[1].icon
                                 }" alt="">
                                 <span>${markerData.documents[1].name}</span>
@@ -227,7 +227,7 @@
                             ${markerData.partners
                               .map(
                                 (partnerImage) => `
-                                <img class="object-cover h-16 w-16" src="/notassets/Partners/${partnerImage}" alt="">
+                                <img loading="lazy" class="object-cover h-16 w-16" src="/notassets/Partners/${partnerImage}" alt="">
                             `
                               )
                               .join("")}

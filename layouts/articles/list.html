@@ -49,6 +49,7 @@
           {{ $firstArticle := index (.Pages | first 5) 0 }}
           <a href="{{ $firstArticle.RelPermalink }}">
             <img
+              loading="lazy"
               alt="{{ $firstArticle.Params.title }}"
               class="max-w-full w-full mx-auto h-auto"
               src="{{ $firstArticle.Params.thumbnail }}"
@@ -89,6 +90,7 @@
             <div class="relative hover-img max-h-48 overflow-hidden">
               <a href="{{ .RelPermalink }}">
                 <img
+                  loading="lazy"
                   alt="{{ .Params.title }}"
                   class="w-full h-48 object-cover"
                   src="{{ .Params.thumbnail }}"
@@ -145,6 +147,7 @@
             <div class="flex flex-col hover-img">
               <a href="{{ .RelPermalink }}">
                 <img
+                  loading="lazy"
                   alt="alt title"
                   class="max-w-full w-full mx-auto rounded-lg h-48 object-cover"
                   src="{{ .Params.thumbnail }}"

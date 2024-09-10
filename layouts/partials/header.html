@@ -8,7 +8,12 @@
     class="relative flex flex-wrap items-center justify-between w-full group py-7 shrink-0"
   >
     <a href="{{ .Site.BaseURL }}{{ .Lang }}" class="flex gap-2 items-center">
-      <img class="h-16 w-16" src="/notassets/logo transparent.svg" alt="" />
+      <img
+        loading="lazy"
+        class="h-16 w-16"
+        src="/notassets/logo transparent.svg"
+        alt=""
+      />
       <div class="flex flex-col gap-1">
         <span class="text-[#0E773F] text-sm font-medium"
           >{{ i18n "resilientcomm" }}</span
@@ -199,6 +204,7 @@
         >
           {{ .Lang }}
           <img
+            loading="lazy"
             src="/notassets/icons/arrow-drop.png"
             alt="Arrow Icon"
             class="ml-2 w-4 h-4"
@@ -323,7 +329,7 @@
       onclick="(() => { this.closest('.group').classList.toggle('open')})()"
       class="flex lg:hidden"
     >
-      <img src="/notassets/svgs/menu.svg" alt="" />
+      <img loading="lazy" src="/notassets/svgs/menu.svg" alt="" />
     </button>
     <div
       class="z-20 absolute flex md:hidden transition-all overflow-auto duration-300 ease-in-out flex-col items-center shadow-main justify-center w-full gap-3 bg-white bg-opacity-30 backdrop-blur-xl backdrop-filter max-h-0 group-[.open]:py-4 px-4 rounded-2xl group-[.open]:max-h-80 mt-2 top-full"
