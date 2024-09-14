@@ -16,7 +16,7 @@
     {{ i18n "Partn846f1" }}
   </h2>
   <p
-    class="p-10 font-sans text-sm antialiased font-light leading-relaxed text-center text-gray-700 rtl:text-right"
+    class="p-10 font-sans text-sm antialiased font-light leading-relaxed text-justify text-gray-700 rtl:text-right"
   >
     {{ i18n "Areyo71284" }}
   </p>
@@ -318,66 +318,62 @@
       {{ i18n "Conta550bb" }}
     </h2>
     <p
-      class="p-10 font-sans text-sm antialiased font-light leading-relaxed text-gray-700 rtl:text-right"
+      class="p-10 font-sans text-sm antialiased font-light leading-relaxed text-gray-700 text-center rtl:text-right"
     >
       {{ i18n "Welco01679" }}
     </p>
   </div>
   <form
-    action="https://formspree.io/f/xyzgjkbq"
-    class="p-8 bg-gray-50 flex justify-center flex-col"
-    method="post"
-    
-  >
-    <div class="flex gap-4 flex-wrap">
-      <input class="mt-1 block w-1/2 rounded-md border border-slate-300 bg-white
-      px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold
-      placeholder:text-gray-500 focus:border-[#0E773F] focus:outline-none
-      focus:ring-1 focus:ring-[#0E773F] sm:text-sm" name="name" placeholder="{{
-      i18n "organization_university_name" }}" type="text" />
+  action="https://formspree.io/f/xyzgjkbq"
+  class="p-7 sm:p-8 bg-gray-50 flex justify-center flex-col w-full mx-auto"
+  method="post"
+>
+  <div class="flex flex-col sm:flex-row gap-4 mb-6">
+    <div class="w-full sm:w-1/2">
+      <input 
+        class="mt-1 block w-full rounded-md border border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-[#0E773F] focus:outline-none focus:ring-1 focus:ring-[#0E773F] sm:text-sm" 
+        name="name" 
+        placeholder="{{ i18n "organization_university_name" }}" 
+        type="text" 
+      />
+    </div>
+    <div class="w-full sm:w-1/2">
       <input
-        class="mt-1 block w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-[#0E773F] focus:outline-none focus:ring-1 focus:ring-[#0E773F] sm:text-sm"
+        class="mt-1 block w-full rounded-md border border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-[#0E773F] focus:outline-none focus:ring-1 focus:ring-[#0E773F] sm:text-sm"
         name="email"
         placeholder="{{ i18n "Email1e674" }}*"
         type="email"
       />
     </div>
-    <div class="my-6 flex gap-4 flex-wrap">
-      <input class="mt-1 block w-1/2 rounded-md border border-slate-300 bg-white
-      px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold
-      placeholder:text-gray-500 focus:border-[#0E773F] focus:outline-none
-      focus:ring-1 focus:ring-[#0E773F] sm:text-sm" name="number"
-      placeholder="{{ i18n "phone_number" }}" type="tel" />
+  </div>
+  <div class="flex flex-col sm:flex-row gap-4 mb-6">
+    <div class="w-full sm:w-1/2">
+      <input 
+        class="mt-1 block w-full rounded-md border border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-[#0E773F] focus:outline-none focus:ring-1 focus:ring-[#0E773F] sm:text-sm" 
+        name="number"
+        placeholder="{{ i18n "phone_number" }}" 
+        type="tel" 
+      />
+    </div>
+    <div class="w-full sm:w-1/2">
       <select
-        class="block w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-[#0E773F] focus:outline-none focus:ring-1 focus:ring-[#0E773F] sm:text-sm"
+        class="block w-full rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-[#0E773F] focus:outline-none focus:ring-1 focus:ring-[#0E773F] sm:text-sm"
         id="select"
         name="select"
       >
-        <option
-          class="font-semibold text-slate-400"
-          value="{{ i18n "Proje0039c" }}"
-        >
+        <option class="font-semibold text-slate-400" value="{{ i18n "Proje0039c" }}">
           {{ i18n "Proje0039c" }}
         </option>
         <option class="font-semibold text-slate-400" value="Internships/Co-ops">
           {{ i18n "Interb2b7b" }}
         </option>
-        <option
-          class="font-semibold text-slate-400"
-          value="Capstone/Studio Project"
-        >
+        <option class="font-semibold text-slate-400" value="Capstone/Studio Project">
           {{ i18n "Capstb131b" }}
         </option>
-        <option
-          class="font-semibold text-slate-400"
-          value="Service Learning Trip"
-        >
+        <option class="font-semibold text-slate-400" value="Service Learning Trip">
           {{ i18n "Servi2de9d" }}
         </option>
-        <option
-          class="font-semibold text-slate-400"
-          value="Faculty-Led Service Learning Trip"
-        >
+        <option class="font-semibold text-slate-400" value="Faculty-Led Service Learning Trip">
           {{ i18n "Faculad34a" }}
         </option>
         <option class="font-semibold text-slate-400" value="Other">
@@ -385,24 +381,25 @@
         </option>
       </select>
     </div>
-    <div class="">
-      <textarea
-        class="mb-10 h-40 w-1/2 resize-none rounded-md border border-slate-300 p-5 font-semibold"
-        cols="30"
-        id="text"
-        name="textarea"
-        placeholder="{{ i18n "message" }}"
-        rows="10"
-      ></textarea>
-    </div>
-    <div class="text-center">
-      <button
-        class="cursor-pointer mb-10 rounded-lg bg-[#0E773F] px-8 py-5 text-sm font-semibold text-white"
-        type="submit"
-      >
-        {{ i18n "Submife8d9" }}
-      </button>
-    </div>
-  </form>
+  </div>
+  <div class="mb-6">
+    <textarea
+      class="h-40 w-full resize-none rounded-md border border-slate-300 p-5 font-semibold"
+      cols="30"
+      id="text"
+      name="textarea"
+      placeholder="{{ i18n "message" }}"
+      rows="10"
+    ></textarea>
+  </div>
+  <div class="text-center">
+    <button
+      class="cursor-pointer rounded-lg bg-[#0E773F] px-8 py-5 text-sm font-semibold text-white hover:bg-[#0A5C2F] transition-colors duration-300"
+      type="submit"
+    >
+      {{ i18n "Submife8d9" }}
+    </button>
+  </div>
+</form>
 </div>
 {{ end }}

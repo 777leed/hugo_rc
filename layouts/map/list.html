@@ -114,18 +114,17 @@
             <div class="w-full min-h-fit flex flex-col lg:flex-row justify-between">
                 <div class="flex flex-col lg:flex-row h-[20rem] gap-4 mb-4 w-full lg:w-1/2">
                     <div class="flex flex-row lg:flex-col justify-between w-full lg:w-[10%]">
-                        <img loading="lazy" class="w-16 h-16 object-cover rounded-lg" src="/notassets/Projects pics/${
-                          markerData.images[0]
-                        }" alt="">
-                        <img loading="lazy" class="w-16 h-16 object-cover rounded-lg" src="/notassets/Projects pics/${
-                          markerData.images[1]
-                        }" alt="">
-                        <img loading="lazy" class="w-16 h-16 object-cover rounded-lg" src="/notassets/Projects pics/${
-                          markerData.images[2]
-                        }" alt="">
+
+                          ${markerData.images
+                            .map(
+                              (image) => `
+                              <img loading="lazy" class="clickable-img w-16 h-16 object-cover rounded-lg mb-2" src="/notassets/Projects pics/${image}" alt="">
+                                        `
+                            )
+                            .join("")}
                     </div>
                     <div class="w-full h-full lg:w-[90%]">
-                        <img loading="lazy" class="w-full object-cover rounded-lg lg:h-full" src="/notassets/Projects pics/${
+                        <img loading="lazy" id="thumbnail-img" class="w-full object-cover rounded-lg h-full" src="/notassets/Projects pics/${
                           markerData.mainImage
                         }" alt="">
                     </div> 
@@ -250,6 +249,14 @@
     popup.style.zIndex = "1111";
     popup.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.3)";
     mapcontent.appendChild(popup);
+    const thumbnailImg = document.getElementById("thumbnail-img");
+    const clickableImages = document.getElementsByClassName("clickable-img");
+
+    Array.from(clickableImages).forEach((element) => {
+      element.addEventListener("click", () => {
+        thumbnailImg.src = element.src;
+      });
+    });
     document
       .getElementById("close-popup-btn")
       .addEventListener("click", function () {
