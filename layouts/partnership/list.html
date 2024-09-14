@@ -325,10 +325,11 @@
   </div>
   <form
     action="https://formspree.io/f/xyzgjkbq"
-    class="p-8 bg-gray-50"
+    class="p-8 bg-gray-50 flex justify-center flex-col"
     method="post"
+    
   >
-    <div class="flex gap-4">
+    <div class="flex gap-4 flex-wrap">
       <input class="mt-1 block w-1/2 rounded-md border border-slate-300 bg-white
       px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold
       placeholder:text-gray-500 focus:border-[#0E773F] focus:outline-none
@@ -341,13 +342,12 @@
         type="email"
       />
     </div>
-    <div class="my-6 flex gap-4">
+    <div class="my-6 flex gap-4 flex-wrap">
       <input class="mt-1 block w-1/2 rounded-md border border-slate-300 bg-white
       px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold
       placeholder:text-gray-500 focus:border-[#0E773F] focus:outline-none
       focus:ring-1 focus:ring-[#0E773F] sm:text-sm" name="number"
       placeholder="{{ i18n "phone_number" }}" type="tel" />
-
       <select
         class="block w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-[#0E773F] focus:outline-none focus:ring-1 focus:ring-[#0E773F] sm:text-sm"
         id="select"
@@ -387,7 +387,7 @@
     </div>
     <div class="">
       <textarea
-        class="mb-10 h-40 w-full resize-none rounded-md border border-slate-300 p-5 font-semibold"
+        class="mb-10 h-40 w-1/2 resize-none rounded-md border border-slate-300 p-5 font-semibold"
         cols="30"
         id="text"
         name="textarea"

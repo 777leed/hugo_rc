@@ -142,7 +142,11 @@
             src="/notassets/Profile Pics/{{ .Params.pic }}"
           />
         </div>
-        <span class="text-base font-semibold block"> {{ .Params.name }} </span>
+        <span
+          class="text-base font-semibold block break-words overflow-hidden w-full"
+        >
+          {{ .Params.name }}
+        </span>
         <span class="text-sm text-gray-500"> {{ .Params.position }} </span>
       </div>
       {{ end }}
@@ -367,7 +371,7 @@
         
           </div>
         </div>
-        <div class="w-3/4 p-2">
+        <div class="w-full p-2 text-left rtl:text-right">
           <span class="text-gray-600">
             ${element.getAttribute("data-desc")}        
           </span>

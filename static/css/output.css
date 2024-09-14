@@ -999,10 +999,6 @@ video {
   width: 5rem;
 }
 
-.w-3\/4 {
-  width: 75%;
-}
-
 .w-4 {
   width: 1rem;
 }
@@ -1354,6 +1350,10 @@ video {
   scroll-behavior: smooth;
 }
 
+.break-words {
+  overflow-wrap: break-word;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1670,6 +1670,10 @@ video {
   background-size: cover;
 }
 
+.bg-fixed {
+  background-attachment: fixed;
+}
+
 .bg-local {
   background-attachment: local;
 }
@@ -1939,11 +1943,6 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-base {
@@ -2735,10 +2734,6 @@ video {
     width: 3.5rem;
   }
 
-  .md\:w-2\/3 {
-    width: 66.666667%;
-  }
-
   .md\:w-auto {
     width: auto;
   }
@@ -2962,10 +2957,6 @@ video {
 
   .lg\:w-2\/3 {
     width: 66.666667%;
-  }
-
-  .lg\:w-3\/4 {
-    width: 75%;
   }
 
   .lg\:w-\[10\%\] {
