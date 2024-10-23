@@ -2,8 +2,15 @@
 <!-- Header & Hero -->
 {{ partial "hero.html" . }}
 
+<style>
+  .active-category {
+    background-color: #e0e0e0; /* Example highlight color */
+    border-radius: 5px; /* Optional: add some styling */
+  }
+</style>
+
 <!-- desc -->
-<div class="bg-white">
+<div class="bg-white px-7">
   <h2 class="text-[#0E773F] text-base font-semibold text-center mb-2 mt-4">
     {{i18n "latest_workshops"}}
   </h2>
@@ -19,15 +26,134 @@
   </p>
 </div>
 
-<!-- project body -->
-<div class="bg-gray-50 mb-10">
-  <div class="container mx-auto px-4">
+<!-- workshop body -->
+<div class="bg-gray-50" id="workshoppbody">
+  <!-- Filters -->
+  <div class="flex justify-between gap-4 flex-col items-center p-7 lg:flex-row">
+    <!-- Left side filters -->
+    <div
+      class="flex gap-4 flex-col flex-wrap lg:flex-row"
+      id="left-side-filters"
+    >
+      <span
+        class="cursor-pointer border rounded-md p-2 flex items-center gap-1 text-sm font-semibold text-gray-900 category"
+        data-category="all"
+      >
+        <span class="material-symbols-outlined">flag</span>
+        <span class="text-center lg:block">{{ i18n "AllPrd869e" }}</span>
+      </span>
+
+      <span
+        class="cursor-pointer border rounded-md p-2 flex items-center gap-1 text-sm font-semibold text-gray-900 category"
+        data-category="Sustainable Development"
+      >
+        <span class="material-symbols-outlined">all_inclusive</span>
+        <span class="lg:block">Sustainable Development</span>
+      </span>
+
+      <span
+        class="cursor-pointer border rounded p-2 flex items-center gap-1 text-sm font-semibold text-gray-900 category"
+        data-category="Professional Development"
+      >
+        <span class="material-symbols-outlined">business_center</span>
+        <span class="lg:block">Professional Development</span>
+      </span>
+    </div>
+
+    <!-- Right side dropdown for remaining categories -->
+    <div class="">
+      <button
+        id="dropdownCategoryButton"
+        data-dropdown-toggle="dropdownCategory"
+        data-dropdown-delay="100"
+        data-dropdown-trigger="hover"
+        class="p-2 flex items-center border rounded-md gap-1 text-sm font-semibold text-gray-900 hover:text-gray-600 text-center"
+        type="button"
+      >
+        More Categories
+        <span class="material-symbols-outlined ml-2 w-4 h-4">
+          keyboard_arrow_down
+        </span>
+      </button>
+
+      <!-- Dropdown menu -->
+      <div
+        id="dropdownCategory"
+        class="z-10 hidden bg-white bg-opacity-50 backdrop-blur-xl backdrop-filter divide-y divide-gray-100 rounded-lg shadow w-44"
+      >
+        <ul
+          class="py-2 text-sm text-gray-700"
+          aria-labelledby="dropdownCategoryButton"
+        >
+          <li>
+            <span
+              class="cursor-pointer flex items-center gap-4 px-4 py-2 hover:bg-gray-100 category"
+              data-category="Personal Development"
+            >
+              <span class="material-symbols-outlined">self_improvement</span>
+              <span>Personal Development</span>
+            </span>
+          </li>
+          <li>
+            <span
+              class="cursor-pointer flex items-center gap-4 px-4 py-2 hover:bg-gray-100 category"
+              data-category="Women's Empowerment"
+            >
+              <span class="material-symbols-outlined">woman</span>
+              <span>Women’s Empowerment</span>
+            </span>
+          </li>
+          <li>
+            <span
+              class="cursor-pointer flex items-center gap-4 px-4 py-2 hover:bg-gray-100 category"
+              data-category="Special Needs Workshop"
+            >
+              <span class="material-symbols-outlined"
+                >settings_accessibility</span
+              >
+              <span>Special Needs Workshop</span>
+            </span>
+          </li>
+          <li>
+            <span
+              class="cursor-pointer flex items-center gap-4 px-4 py-2 hover:bg-gray-100 category"
+              data-category="Community Design Workshops"
+            >
+              <span class="material-symbols-outlined">communities</span>
+              <span>Community Design Workshops</span>
+            </span>
+          </li>
+          <li>
+            <span
+              class="cursor-pointer flex items-center gap-4 px-4 py-2 hover:bg-gray-100 category"
+              data-category="Environment Workshops"
+            >
+              <span class="material-symbols-outlined">eco</span>
+              <span>Environment Workshops</span>
+            </span>
+          </li>
+          <li>
+            <span
+              class="cursor-pointer flex items-center gap-4 px-4 py-2 hover:bg-gray-100 category"
+              data-category="Miscellaneous Workshops"
+            >
+              <span class="material-symbols-outlined">stack_hexagon</span>
+              <span>Miscellaneous Workshops</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Workshops -->
+  <div class="w-full px-7">
     <div id="blur-overlay"></div>
 
-    <div class="flex flex-wrap w-full justify-center gap-6">
+    <div class="flex flex-wrap w-full justify-between" id="card-container">
       {{ range .Pages}}
       <div
-        class="scale-90 relative flex w-full max-w-[20rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg"
+        class="scale-90 mx-auto relative flex w-full max-w-[20rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg workshop-card"
+        data-category="{{ .Params.categoryf }}"
       >
         <div
           class="relative overflow-hidden text-white shadow-lg rounded-t-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40"
@@ -52,7 +178,7 @@
             <h5
               class="block font-sans text-sm antialiased font-normal leading-snug tracking-normal text-blue-gray-900"
             >
-              {{ .Params.location }}
+              {{ .Params.categoryf }}
             </h5>
           </div>
           <p
@@ -60,11 +186,11 @@
           >
             {{ .Params.description }}
           </p>
-          <h5
+          <!-- <h5
             class="block font-sans text-sm antialiased font-medium italic leading-snug tracking-normal text-[#3B4A3F]"
           >
             {{i18n "instructor"}} : {{ .Params.instructor }}
-          </h5>
+          </h5> -->
         </div>
         <div class="p-4 pt-2">
           <button
@@ -80,6 +206,14 @@
         </div>
       </div>
       {{ end }}
+    </div>
+    <div
+      class="mt-8 cursor-pointer mx-auto text-center pb-8"
+      id="see-all-button"
+    >
+      <span class="font-normal text-green-700 hover:font-medium"
+        >{{ i18n "SeeAl8317e" }}</span
+      >
     </div>
   </div>
 </div>
@@ -113,12 +247,10 @@
           <span class="text-gray-600 block mb-4">
               ${element.getAttribute("data-description")}
           </span>
-          <a href="${element.getAttribute(
-            "data-docurl"
-          )}" download class="text-blue-500 hover:underline flex items-center mt-4">
-              <img loading="lazy" src="/notassets/file.png" class="w-5 h-auto mr-2" alt="">
-              Participant's Manual
-          </a>
+          <p class = "text-gray-600 text-sm flex items-center gap-4">
+            <span class="material-symbols-outlined">info</span>
+            To request access to the workshop materials, please contact us at ejohnson@resilientcommunitiesngo.org.  
+          </p>
       </div>
   </div>
 `;
@@ -151,4 +283,82 @@
   }
 </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const categories = document.querySelectorAll(".category");
+    const projects = document.querySelectorAll(".workshop-card");
+    const leftSideFilters = document.getElementById("left-side-filters");
+    let categoryType;
+    let categoryIcon;
+    let filter = document.createElement("div");
+    categories.forEach((category) => {
+      category.addEventListener("click", function () {
+        // Remove 'active' class from all categories
+        categories.forEach((cat) => cat.classList.remove("active-category"));
+
+        // Add 'active' class to the clicked category
+        this.classList.add("active-category");
+        categoryIcon = this.querySelector(
+          ".material-symbols-outlined"
+        ).textContent;
+        // Get the category type
+        categoryType = this.getAttribute("data-category");
+
+        if (
+          categoryType != "Sustainable Development" &&
+          categoryType != "Professional Development" &&
+          categoryType != "all"
+        ) {
+          filter.innerHTML = `
+        <span
+        class="active-category cursor-pointer border rounded p-2 flex items-center gap-1 text-sm font-semibold text-gray-900 category"
+        >
+        <span class="material-symbols-outlined">${categoryIcon}</span>
+        <span class="lg:block">${categoryType}</span>
+      </span>
+        `;
+          leftSideFilters.appendChild(filter);
+        } else {
+          if (filter != null) {
+            filter.remove();
+          }
+        }
+
+        // Filter projects
+        projects.forEach((project) => {
+          if (categoryType === "all") {
+            project.style.display = "block";
+          } else if (categoryType == project.getAttribute("data-category")) {
+            project.style.display = "block";
+          } else {
+            project.style.display = "none";
+          }
+        });
+      });
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll("#card-container .workshop-card");
+    const seeAllButton = document.getElementById("see-all-button");
+
+    // Show only the first 8 cards initially
+    const initialCardsToShow = 12;
+    cards.forEach((card, index) => {
+      if (index >= initialCardsToShow) {
+        card.classList.add("hidden");
+      }
+    });
+
+    // Show all cards when the "See All" button is clicked
+    seeAllButton.addEventListener("click", function () {
+      cards.forEach((card) => {
+        card.classList.remove("hidden");
+      });
+      seeAllButton.classList.add("hidden"); // Hide the button after showing all cards
+    });
+  });
+</script>
 {{ end }}

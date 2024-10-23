@@ -125,7 +125,7 @@
         {{ i18n "Meetwf2a22" }}<br />{{ i18n "Commu14526" }}
       </h2>
     </div>
-    <div class="w-full h-fit flex flex-wrap justify-between gap-2">
+    <div class="w-full h-fit flex flex-wrap gap-6">
       {{ range .Pages }}
       <div
         class="teamcard lg:w-[15%] w-[30%] h-auto"
@@ -133,6 +133,7 @@
         data-name="{{ .Params.name }}"
         data-pic="/notassets/Profile Pics/{{ .Params.pic }}"
         data-position="{{ .Params.position }}"
+        data-linkedin="{{ .Params.linkedin }}"
       >
         <div class="bg-[#6F9B7A] overflow-hidden aspect-w-1 aspect-h-1">
           <img
@@ -150,20 +151,6 @@
         <span class="text-sm text-gray-500"> {{ .Params.position }} </span>
       </div>
       {{ end }}
-      <div class="lg:w-[15%] w-[30%] h-auto">
-        <div class="bg-[#6F9B7A] overflow-hidden aspect-w-1 aspect-h-1">
-          <img
-            loading="lazy"
-            alt=""
-            class="w-full h-full object-cover grayscale hover:grayscale-0"
-            src="/notassets/unknownEmployee.png"
-          />
-        </div>
-        <span class="text-base font-semibold block"
-          >{{ i18n "Carol7e35b" }}</span
-        >
-        <span class="text-sm text-gray-500">{{ i18n "AIDev7096b" }}</span>
-      </div>
     </div>
     <!-- Interns -->
     <div class="pt-4">
@@ -176,23 +163,32 @@
         {{ i18n "Meettdd27f" }}<br />{{ i18n "Commu14526" }}
       </h2>
     </div>
-    <div class="w-full h-fit flex flex-wrap justify-between gap-2">
-      {{ range seq 1 6 }}
-      <div class="lg:w-[15%] w-[30%] h-auto">
+    <div class="w-full h-fit flex flex-wrap gap-6">
+      {{ with .Site.GetPage "/Recent_interns" }} {{ range .Pages }}
+      <div
+        class="teamcard lg:w-[15%] w-[30%] h-auto"
+        data-desc="{{ .Params.text}}"
+        data-name="{{ .Params.name }}"
+        data-pic="{{ .Params.pic }}"
+        data-position="{{ .Params.position }}"
+        data-linkedin="{{ .Params.linkedin }}"
+      >
         <div class="bg-[#6F9B7A] overflow-hidden aspect-w-1 aspect-h-1">
           <img
             loading="lazy"
             alt=""
             class="w-full h-full object-cover grayscale hover:grayscale-0"
-            src="/notassets/unknownEmployee.png"
+            src="{{ .Params.pic }}"
           />
         </div>
-        <span class="text-base font-semibold block"
-          >{{ i18n "Carol7e35b" }}</span
+        <span
+          class="text-base font-semibold block break-words overflow-hidden w-full"
         >
-        <span class="text-sm text-gray-500">{{ i18n "AIDev7096b" }}</span>
+          {{ .Params.name }}
+        </span>
+        <span class="text-sm text-gray-500"> {{ .Params.position }} </span>
       </div>
-      {{ end }}
+      {{ end }} {{ end }}
     </div>
   </section>
 </div>
@@ -347,18 +343,21 @@
           <div class="bg-gray-50">
             <div class="bg-[#6F9B7A] overflow-hidden aspect-w-1 aspect-h-1 w-fit">
                 <div class="p-2">
-                  <div class="flex justify-between">
+                  <div class="flex justify-between items-baseline gap-4">
                     <span class="text-base font-semibold block">
                       ${element.getAttribute("data-name")}
                     </span>
-                    <svg
+                    <a href=${element.getAttribute(
+                      "data-linkedin"
+                    )} target="_blank">                    <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-4 w-4 hover:text-slate-800 text-gray-200"
                     fill="currentColor"
                     viewBox="0 0 24 24">
                     <path
                       d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                    </svg>
+                    </svg></a>
+
                   </div>
                   <span class="text-sm text-gray-200">
                       ${element.getAttribute("data-position")}

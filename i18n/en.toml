@@ -110,7 +110,10 @@ other = "Partners & Collaborators"
 other = "Our Past Partners"
 
 [inquiriesContact]
-other = "For any inquiries, please contact Eastman Johnson at ejohnson@resilientcommunitiesngo.org."
+other = "For any inquiries, please contact Eastman Johnson at"
+
+[ejohnsonEmail]
+other = "ejohnson@resilientcommunitiesngo.org."
 
 [copyright]
 other = "© 2024 - Resilient Communities. All rights reserved."

@@ -8,6 +8,7 @@
     <link rel="icon" href="/favicons/favicon.ico" type="image/x-icon">
     <link href="/css/output.css" rel="stylesheet" />
     <link href="/css/partnerSilder.css" rel="stylesheet" />
+    <link href="/css/highlighter.css" rel="stylesheet" />
     <link href="/css/overlay.css" rel="stylesheet" />
     {{ if eq .Lang "ar" }}
     <link rel="stylesheet" href="{{ "/css/rtl.css" | relURL }}" />
@@ -92,7 +93,7 @@
       </div>
 
       <!-- Footer -->
-      <footer class="bg-white pt-4 sm:pt-10 lg:pt-12">
+      <div class="bg-white pt-4 sm:pt-10 lg:pt-12" id="footerr">
         <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div
             class="mb-10 grid grid-cols-2 gap-12 border-t pt-8 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-10"
@@ -122,14 +123,14 @@
               </div>
               <!-- logo - end -->
 
-              <p class="mb-6 text-gray-500 sm:pr-8">
-{{ i18n "inquiriesContact" }}
+              <p class="mb-6 text-gray-500 relative sm:pr-8">
+              {{ i18n "inquiriesContact" }}<span id="email-span" class="textmarker-effect">{{ i18n "ejohnsonEmail" }}</span>  
               </p>
 
               <!-- social - start -->
               <div class="items-baseline hidden gap-4 text-slate-400 md:flex">
                 <!-- Facebook -->
-                <a href="http://www.facebook.com/resilientcommunitiesmorocco/">
+                <a href="http://www.facebook.com/resilientcommunitiesmorocco/" target="_blank">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-4 w-4 hover:text-slate-500"
@@ -142,7 +143,7 @@
                 ></a>
 
                 <!-- Twitter -->
-                <a href="https://twitter.com/ResComm2017">
+                <a href="https://twitter.com/ResComm2017" target="_blank">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-4 w-4 hover:text-slate-500"
@@ -155,7 +156,7 @@
                 ></a>
 
                 <!-- Instagram -->
-                <a href="https://www.instagram.com/resilient_communities/">
+                <a href="https://www.instagram.com/resilient_communities/" target="_blank">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-4 w-4 hover:text-slate-500"
@@ -170,6 +171,7 @@
                 <!-- Linkedin -->
                 <a
                   href="https://www.linkedin.com/company/resilient-communities-non-profit/"
+                  target="_blank"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -183,7 +185,7 @@
                 ></a>
 
                 <!-- Youtube -->
-                <a href="https://www.youtube.com/@resilientcommunities4942">
+                <a href="https://www.youtube.com/@resilientcommunities4942" target="_blank">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-4 w-4 hover:text-slate-500"
@@ -196,7 +198,7 @@
                 ></a>
 
                 <!-- TikTok -->
-                <a href="https://www.tiktok.com/@resilient_communities">
+                <a href="https://www.tiktok.com/@resilient_communities" target="_blank">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"
@@ -352,7 +354,7 @@
             {{ i18n "copyright" }}
           </div>
         </footer>
-      </footer>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
@@ -374,6 +376,9 @@
         });
       });
     </script>
+
+    
+
     
   </body>
 </html>

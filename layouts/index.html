@@ -1,9 +1,7 @@
 {{ define "main" }}
 <!-- Your existing HTML content for the homepage -->
-
 <!-- Header & Hero -->
 {{ partial "hero.html" . }}
-
 <!-- New Cards -->
 <div class="flex justify-center bg-gray-50">
   <div
@@ -27,10 +25,13 @@
           {{ i18n "contributionMessage" }}
         </span>
       </div>
-      <div class="flex items-center text-[#0E773F] gap-1">
+      <a
+        href="{{ .Site.BaseURL }}{{ .Lang }}/donation_page"
+        class="flex items-center text-[#0E773F] gap-1"
+      >
         <span class="font-semibold">{{ i18n "giveADonation" }}</span>
         <span class="material-symbols-outlined"> arrow_circle_right </span>
-      </div>
+      </a>
     </div>
     <!-- Card 2 -->
     <div
@@ -50,10 +51,13 @@
           {{ i18n "becomePartOfMission" }}
         </span>
       </div>
-      <div class="flex items-center text-[#0E773F] gap-1">
+      <a
+        href="{{ .Site.BaseURL }}{{ .Lang }}/join_us"
+        class="flex items-center text-[#0E773F] gap-1"
+      >
         <span class="font-semibold">{{ i18n "joinUs1" }}</span>
         <span class="material-symbols-outlined"> arrow_circle_right </span>
-      </div>
+      </a>
     </div>
     <!-- Card 3 -->
     <div
@@ -71,10 +75,10 @@
         <span class="font-bold mb-2">{{ i18n "getInContact" }}</span>
         <span class="text-gray-500 mb-4"> {{ i18n "contactMessage" }} </span>
       </div>
-      <div class="flex items-center text-[#0E773F] gap-1">
+      <a id="contact-btn" class="flex items-center text-[#0E773F] gap-1">
         <span class="font-semibold">{{ i18n "contactUs1" }}</span>
         <span class="material-symbols-outlined"> arrow_circle_right </span>
-      </div>
+      </a>
     </div>
   </div>
 </div>
@@ -321,5 +325,25 @@
     <span class="underline underline-offset-8">{{ i18n "seeMore" }}</span>
   </a>
 </div>
+
+<script>
+  document
+    .getElementById("contact-btn")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+
+      // Scroll to the footer section smoothly
+      document.getElementById("footerr").scrollIntoView({ behavior: "smooth" });
+
+      // Apply the highlight animation to the email span
+      const emailSpan = document.getElementById("email-span");
+      emailSpan.classList.add("highlight");
+
+      // Remove the highlight class after 2 seconds to reset the animation
+      setTimeout(function () {
+        emailSpan.classList.remove("highlight");
+      }, 2000); // 2 seconds delay
+    });
+</script>
 
 {{ end }}

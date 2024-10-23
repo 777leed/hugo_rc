@@ -1,0 +1,26 @@
+.textmarker-effect {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.textmarker-effect:before {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  background: #fbff2b;
+  height: 10px;
+  left: 0;
+  bottom: -10px;
+  width: 0%;
+  opacity: 0.3;
+  transition: all 0.5s;
+}
+
+.textmarker-effect.highlight:before {
+  width: 100%;
+}
+
+.textmarker-effect:hover {
+  cursor: pointer;
+}

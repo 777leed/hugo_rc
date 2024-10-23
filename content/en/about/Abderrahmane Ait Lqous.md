@@ -1,7 +1,7 @@
 ---
-name: "Eastman Robert Johnson"
-position: "President & Founder"
-linkedin: ""
-pic: "profile1.png"
-description: "Eastman is a native of Georgetown, Kentucky and first discovered his passion for community planning while studying at the University of Cincinnati. He developed a strong connection with Morocco after serving as a Peace Corps volunteer from 2014 to 2016 and then returning as a Fulbright researcher from 2018 to 2019. Eastman founded  Resilient Communities in 2017 and has continued to build a strong network throughout Morocco to support the organization's projects and programs."
+name: "Abderrahmane Ait Lqous"
+position: "Head of Community Engagement"
+linkedin: "https://www.linkedin.com/in/abderrahmane-aitl-qous-95b25780/"
+pic: "profile2.png"
+description: "Abderrahmane is from Tameslouht, Morocco and was Eastman's counterpart while he was a PCV in his hometown. He has worked with various Moroccan and international NGOs and has a BA in sociology of enterprises from Cadi Ayyad University in Marrakech. He is also the Director of the Moroccan association, Youth Without Borders for Development."
 ---
