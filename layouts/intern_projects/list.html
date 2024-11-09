@@ -72,27 +72,6 @@
     </div>
   </div>
 </div>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const cards = document.querySelectorAll("#card-container .card");
-    const seeAllButton = document.getElementById("see-all-button");
-
-    // Show only the first 8 cards initially
-    const initialCardsToShow = 8;
-    cards.forEach((card, index) => {
-      if (index >= initialCardsToShow) {
-        card.classList.add("hidden");
-      }
-    });
-
-    // Show all cards when the "See All" button is clicked
-    seeAllButton.addEventListener("click", function () {
-      cards.forEach((card) => {
-        card.classList.remove("hidden");
-      });
-      seeAllButton.classList.add("hidden"); // Hide the button after showing all cards
-    });
-  });
-</script>
+<script src="/js/internprojects.js"></script>
 
 {{ end }}

@@ -1,5 +1,5 @@
 ---
-title: "Blake's CV workshop"
+title: "CV workshop"
 categoryf: "Professional Development"
 date: 2024-01-01
 location: "Marrakech"

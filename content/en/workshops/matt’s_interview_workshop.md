@@ -1,5 +1,5 @@
 ---
-title: "Matt's Interview Workshop"
+title: "Interview Workshop"
 categoryf: "Professional Development"
 date: 2024-01-01
 location: "Marrakech"

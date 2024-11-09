@@ -75,7 +75,10 @@
         <span class="font-bold mb-2">{{ i18n "getInContact" }}</span>
         <span class="text-gray-500 mb-4"> {{ i18n "contactMessage" }} </span>
       </div>
-      <a id="contact-btn" class="flex items-center text-[#0E773F] gap-1">
+      <a
+        id="contact-btn"
+        class="cursor-pointer flex items-center text-[#0E773F] gap-1"
+      >
         <span class="font-semibold">{{ i18n "contactUs1" }}</span>
         <span class="material-symbols-outlined"> arrow_circle_right </span>
       </a>
@@ -326,24 +329,6 @@
   </a>
 </div>
 
-<script>
-  document
-    .getElementById("contact-btn")
-    .addEventListener("click", function (event) {
-      event.preventDefault();
-
-      // Scroll to the footer section smoothly
-      document.getElementById("footerr").scrollIntoView({ behavior: "smooth" });
-
-      // Apply the highlight animation to the email span
-      const emailSpan = document.getElementById("email-span");
-      emailSpan.classList.add("highlight");
-
-      // Remove the highlight class after 2 seconds to reset the animation
-      setTimeout(function () {
-        emailSpan.classList.remove("highlight");
-      }, 2000); // 2 seconds delay
-    });
-</script>
+<script src="/js/home.js"></script>
 
 {{ end }}
