@@ -2,8 +2,14 @@ var blurOverlay = document.getElementById("blur-overlay");
 function openPopup(e) {
   blurOverlay.style.display = "flex";
   var t = document.createElement("div");
+  var notice =
+    "To request access to the workshop materials, please contact us at ejohnson@resilientcommunitiesngo.org.";
+  if (document.documentElement.lang === "ar") {
+    notice =
+      "للطلب الوصول إلى مواد الورشة، يرجى الاتصال بنا على ejohnson@resilientcommunitiesngo.org.";
+  }
   (t.innerHTML = `
-  <div class="bg-white flex flex-col justify-between m-auto rounded-lg lg:flex-row p-4 w-full max-w-4xl h-96">
+  <div class="bg-white flex gap-4 flex-col justify-between m-auto rounded-lg lg:flex-row p-4 w-full max-w-4xl h-96">
       <div class="w-full lg:w-1/3 mb-4 lg:mb-0 lg:mr-4 h-full">
           <img loading="lazy" class="w-full h-full object-cover rounded-lg" src="${e.getAttribute(
             "data-img"
@@ -18,7 +24,7 @@ function openPopup(e) {
           </span>
           <p class = "text-gray-600 text-sm flex items-center gap-4">
             <span class="material-symbols-outlined">info</span>
-            To request access to the workshop materials, please contact us at ejohnson@resilientcommunitiesngo.org.  
+            ${notice}
           </p>
       </div>
   </div>
