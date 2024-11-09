@@ -829,4 +829,30 @@ other = "Explorez l'impact de notre ONG avec 'Nos Ateliers Récents.' Mettant en
 other = "Instructeur"
 
 
+[SustainableDevelopment]
+other = "Développement Durable"
+
+[ProfessionalDevelopment]
+other = "Développement Professionnel"
+
+[PersonalDevelopment]
+other = "Développement Personnel"
+
+[WomensEmpowerment]
+other = "Autonomisation des Femmes"
+
+[SpecialNeedsWorkshop]
+other = "Atelier pour les Besoins Spéciaux"
+
+[CommunityDesignWorkshops]
+other = "Ateliers de Conception Communautaire"
+
+[EnvironmentWorkshops]
+other = "Ateliers Environnementaux"
+
+[MiscellaneousWorkshops]
+other = "Ateliers Divers"
+
+
+
 

@@ -831,6 +831,31 @@ other = "Explore the impact of our NGO with 'Our Latest Workshops.' Showcasing a
 [instructor]
 other = "Instructor"
 
+[SustainableDevelopment]
+other = "Sustainable Development"
+
+[ProfessionalDevelopment]
+other = "Professional Development"
+
+[PersonalDevelopment]
+other = "Personal Development"
+
+[WomensEmpowerment]
+other = "Women’s Empowerment"
+
+[SpecialNeedsWorkshop]
+other = "Special Needs Workshop"
+
+[CommunityDesignWorkshops]
+other = "Community Design Workshops"
+
+[EnvironmentWorkshops]
+other = "Environment Workshops"
+
+[MiscellaneousWorkshops]
+other = "Miscellaneous Workshops"
+
+
 
 
 
