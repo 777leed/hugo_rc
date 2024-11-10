@@ -1,11 +1,11 @@
 ---
-title: "Atelier de la Liste de contrôle de durabilité"
-category: "Formation et Développement"
+title: "Atelier sur la liste de contrôle de la durabilité"
+category: "Training & Development"
 date: 2024-01-01
 location: "Marrakech"
 workshop: true
 instructor: "Eastman Johnson"
-description: "La durabilité est souvent associée à l'environnement, mais cet atelier facilite une discussion sur la durabilité au-delà de la durabilité environnementale. Il propose une liste de contrôle que les organisations peuvent utiliser pour s'assurer que les impacts de leurs projets perdurent bien après leur intervention directe. Les participants peuvent évaluer leurs propres projets et trouver des moyens de les améliorer afin de créer un impact plus durable."
+description: "On pense souvent à la durabilité en termes d'environnement, mais cet atelier facilite une discussion sur la durabilité au-delà de la durabilité environnementale. Il présente une liste de contrôle que les organisations peuvent utiliser pour s'assurer que l'impact de leurs projets perdure longtemps après leur intervention directe. Les participants sont en mesure d'évaluer leurs propres projets et de trouver des moyens de les améliorer afin qu'ils puissent avoir un impact plus durable."
 thumbnail: "Training and development/w4.jpg"
 document: ""
 categoryf: "Sustainable Development"
