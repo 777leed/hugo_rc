@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
-media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+media_folder: "static/notassets" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 collections:
   - name: "team"
@@ -114,19 +114,45 @@ collections:
         }
       - { label: "Ongoing", name: "ongoing", widget: "boolean", default: false }
       - {
-          label: "Collaboration",
+          label: "Collaborative Projects & Programs",
           name: "collab",
           widget: "boolean",
           default: false,
         }
-      - { label: "Community", name: "commu", widget: "boolean", default: false }
-      - { label: "Latitude", name: "latitude", widget: "number", decimals: 4 }
-      - { label: "Longitude", name: "longitude", widget: "number", decimals: 4 }
-      - { label: "Date", name: "date", widget: "date" }
+      - {
+          label: "Community Engagement Activity",
+          name: "commu",
+          widget: "boolean",
+          default: false,
+        }
+      - {
+          label: "Latitude",
+          name: "latitude",
+          widget: "number",
+          value_type: "float",
+          decimals: 4,
+        }
+      - {
+          label: "Longitude",
+          name: "longitude",
+          widget: "number",
+          value_type: "float",
+          decimals: 4,
+        }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          format: "YYYY-MM-DD",
+        }
       - { label: "Location", name: "location", widget: "string" }
       - { label: "Short Description", name: "sdescription", widget: "text" }
       - { label: "Description", name: "description", widget: "markdown" }
-      - { label: "Estimated Budget", name: "estimated", widget: "string" }
+      - {
+          label: "Estimated Budget (leave empty for now)",
+          name: "estimated",
+          widget: "string",
+        }
       - { label: "Raised Amount", name: "raised", widget: "string" }
       - { label: "Number of Donors", name: "donors", widget: "string" }
       - { label: "Project Budget", name: "budget", widget: "string" }

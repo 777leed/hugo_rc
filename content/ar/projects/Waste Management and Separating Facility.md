@@ -1,4 +1,5 @@
 ---
+
 title: "مرفق إدارة النفايات والفرز"
 category: "المشاريع والبرامج التعاونية"
 completed: true
@@ -17,21 +18,23 @@ budget: "5234"
 raised: "5234"
 donors: "34"
 tags:
-  - "المياه والصرف الصحي"
-  - "الطاقة"
-images:
-  - "/notassets/Projects pics/Collaborative Projects and programs/landfill/pic1.webp"
-  - "/notassets/Projects pics/Collaborative Projects and programs/landfill/pic2.webp"
-  - "/notassets/Projects pics/Collaborative Projects and programs/landfill/pic3.webp"
+
+- "المياه والصرف الصحي"
+- "الطاقة"
+  images:
+- "/notassets/Projects pics/Collaborative Projects and programs/landfill/pic1.webp"
+- "/notassets/Projects pics/Collaborative Projects and programs/landfill/pic2.webp"
+- "/notassets/Projects pics/Collaborative Projects and programs/landfill/pic3.webp"
 
 documents:
-  - name: "نظام الغطاء.PDF"
-    icon: "pdf.png"
-    link: "path/to/Capping System.PDF"
-  - name: "نظام الغطاء.DOCX"
-    icon: "docx.png"
-    link: "path/to/Capping System.DOCX"
-partners:
-  - "uc-logo-red-1.png"
-  - "rc.png"
+
+- name: "نظام الغطاء.PDF"
+  icon: "/notassets/icons/pdf.png"
+  link: "path/to/Capping System.PDF"
+- name: "نظام الغطاء.DOCX"
+  icon: "/notassets/icons/docx.png"
+  link: "path/to/Capping System.DOCX"
+  partners:
+- "/notassets/Partners/uc-logo-red-1.png"
+- "/notassets/Partners/rc.png"
 ---

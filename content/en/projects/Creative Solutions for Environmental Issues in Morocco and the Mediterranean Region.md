@@ -25,11 +25,11 @@ images:
   - "/notassets/Projects pics/Collaborative Projects and programs/Environemtal Issues/pic3.webp"
 documents:
   - name: "Capping System.PDF"
-    icon: "pdf.png"
+    icon: "/notassets/icons/pdf.png"
     link: "path/to/Capping System.PDF"
   - name: "Capping System.DOCX"
     icon: "docx.png"
     link: "path/to/Capping System.DOCX"
 partners:
-  - "uc-logo-red-1.png"
+  - "/notassets/Partners/uc-logo-red-1.png"
 ---

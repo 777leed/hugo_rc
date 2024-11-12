@@ -1,4 +1,5 @@
 ---
+
 title: "Assurer la sécurité : Reconstruction d'un puits à Tassdert"
 category: "Activités d'engagement communautaire"
 completed: true
@@ -17,21 +18,23 @@ budget: "5234"
 raised: "5234"
 donors: "34"
 tags:
-  - "Eau et Assainissement"
-  - "Sécurité"
-images:
-  - "/notassets/Projects pics/Collaborative Projects and programs/Tassdert Well Safeguarding/pic1.webp"
-  - "/notassets/Projects pics/Collaborative Projects and programs/Tassdert Well Safeguarding/pic2.webp"
-  - "/notassets/Projects pics/Collaborative Projects and programs/Tassdert Well Safeguarding/pic3.webp"
+
+- "Eau et Assainissement"
+- "Sécurité"
+  images:
+- "/notassets/Projects pics/Collaborative Projects and programs/Tassdert Well Safeguarding/pic1.webp"
+- "/notassets/Projects pics/Collaborative Projects and programs/Tassdert Well Safeguarding/pic2.webp"
+- "/notassets/Projects pics/Collaborative Projects and programs/Tassdert Well Safeguarding/pic3.webp"
 
 documents:
-  - name: "Système de Capsulage.PDF"
-    icon: "pdf.png"
-    link: "path/to/Capping System.PDF"
-  - name: "Système de Capsulage.DOCX"
-    icon: "docx.png"
-    link: "path/to/Capping System.DOCX"
-partners:
-  - "tassdert.png"
-  - "rc.png"
+
+- name: "Système de Capsulage.PDF"
+  icon: "/notassets/icons/pdf.png"
+  link: "path/to/Capping System.PDF"
+- name: "Système de Capsulage.DOCX"
+  icon: "/notassets/icons/docx.png"
+  link: "path/to/Capping System.DOCX"
+  partners:
+- "tassdert.png"
+- "/notassets/Partners/rc.png"
 ---

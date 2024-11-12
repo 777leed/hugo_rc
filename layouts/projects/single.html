@@ -28,7 +28,8 @@
           class="flex flex-row lg:flex-col justify-between w-full lg:w-[10%]"
         >
           {{ range .Params.images }}
-          <img loading="lazy"
+          <img
+            loading="lazy"
             class="w-16 h-16 object-cover rounded-lg clickable-img"
             src="{{ . }}"
             alt=""
@@ -36,7 +37,8 @@
           {{ end }}
         </div>
         <div class="w-full lg:w-[90%]">
-          <img loading="lazy"
+          <img
+            loading="lazy"
             id="thumbnail-img"
             class="w-full object-cover rounded-lg h-full overflow-hidden"
             src="{{ .Params.thumbnail }}"
@@ -56,8 +58,7 @@
               >paid</span
             >
             <span class="font-semibold text-gray-800 text-sm mr-1"></span>
-              {{i18n "budget1234"}} :</span
-            >
+            <span> {{i18n "budget1234"}} : </span>
             <span class="font-semibold text-gray-800 text-sm"
               >{{ .Params.budget }}$</span
             >
@@ -67,8 +68,8 @@
               >paid</span
             >
             <span class="font-semibold text-gray-800 text-sm mr-1"
-              >{{i18n "raised5678"}} : </span
-            >
+              >{{i18n "raised5678"}} :
+            </span>
             <span class="font-semibold text-gray-800 text-sm"
               >{{ .Params.raised }}$</span
             >
@@ -77,8 +78,8 @@
             <span class="material-symbols-outlined text-[#0E773F] mr-1"
               >person</span
             >
-            <span class="font-semibold text-gray-800 text-sm mr-1"
-              > {{i18n "donors91011"}} :</span
+            <span class="font-semibold text-gray-800 text-sm mr-1">
+              {{i18n "donors91011"}} :</span
             >
             <span class="font-semibold text-gray-800 text-sm"
               >{{ .Params.donors }}</span
@@ -88,9 +89,9 @@
             <span class="material-symbols-outlined text-[#0E773F] mr-1"
               >location_on</span
             >
-            <span class="font-semibold text-gray-800 text-sm mr-1"
-              > {{i18n "location1213"}} : </span
-            >
+            <span class="font-semibold text-gray-800 text-sm mr-1">
+              {{i18n "location1213"}} :
+            </span>
             <span class="font-semibold text-gray-800 text-sm"
               >{{ .Params.location }}</span
             >
@@ -101,7 +102,7 @@
           <button
             class="text-white text-center bg-[#0E773F] px-4 py-2 rounded-full font-semibold w-full"
           >
-          {{i18n "donateNow"}}
+            {{i18n "donateNow"}}
           </button>
         </a>
       </div>
@@ -136,22 +137,17 @@
           <h2
             class="text-gray-800 text-xl font-semibold font-['Playfair Display'] font-serif mb-4 border-b border-gray-400"
           >
-          {{i18n "documents1617"}} 
+            {{i18n "documents1617"}}
           </h2>
           <span class="text-sm text-gray-700"
             >{{i18n "info_documents1819"}}
-            </span
-          >
+          </span>
           {{ range .Params.documents }}
           <button
             class="text-center bg-white px-4 py-2 rounded-full font-semibold w-full mt-4"
           >
             <div class="w-full flex gap-4">
-              <img loading="lazy"
-                class="w-6 h-6"
-                src="/notassets/icons/{{ .icon }}"
-                alt=""
-              />
+              <img loading="lazy" class="w-6 h-6" src="{{ .icon }}" alt="" />
               <span>{{ .name }}</span>
             </div>
           </button>
@@ -161,14 +157,15 @@
           <h2
             class="text-gray-800 text-xl font-semibold font-['Playfair Display'] font-serif mb-4 border-b border-gray-400"
           >
-          {{i18n "partners"}}
+            {{i18n "partners"}}
           </h2>
           <span class="text-sm text-gray-700">{{i18n "partners2021"}} </span>
           <div class="flex w-full gap-4 mt-4">
             {{ range .Params.partners }}
-            <img loading="lazy"
+            <img
+              loading="lazy"
               class="object-cover h-16 w-16"
-              src="/notassets/Partners/{{ . }}"
+              src="/{{ . }}"
               alt=""
             />
             {{ end }}

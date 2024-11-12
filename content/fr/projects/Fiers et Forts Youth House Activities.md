@@ -25,12 +25,12 @@ images:
   - "/notassets/Projects pics/Community Engagement/Fiers et Forts Youth House Activities/pic3.jpg"
 documents:
   - name: "Capping System.PDF"
-    icon: "pdf.png"
+    icon: "/notassets/icons/pdf.png"
     link: "path/to/Capping System.PDF"
   - name: "Capping System.DOCX"
-    icon: "docx.png"
+    icon: "/notassets/icons/docx.png"
     link: "path/to/Capping System.DOCX"
 partners:
-  - "logo5.png"
-  - "NSLI-Y_Logo_White_Text.png"
+  - "/notassets/Partners/logo5.png"
+  - "/notassets/Partners/NSLI-Y_Logo_White_Text.png"
 ---

@@ -1,4 +1,5 @@
 ---
+
 title: "Solutions Créatives pour les Problèmes Environnementaux au Maroc et dans la Région Méditerranéenne"
 category: "Projets et Programmes Collaboratifs"
 completed: true
@@ -17,21 +18,23 @@ budget: "5234"
 raised: "5234"
 donors: "34"
 tags:
-  - "Eau et Assainissement"
-  - "Énergie"
-images:
-  - "/notassets/Projects pics/Collaborative Projects and programs/Environemtal Issues/pic1.webp"
-  - "/notassets/Projects pics/Collaborative Projects and programs/Environemtal Issues/pic2.webp"
-  - "/notassets/Projects pics/Collaborative Projects and programs/Environemtal Issues/pic3.webp"
+
+- "Eau et Assainissement"
+- "Énergie"
+  images:
+- "/notassets/Projects pics/Collaborative Projects and programs/Environemtal Issues/pic1.webp"
+- "/notassets/Projects pics/Collaborative Projects and programs/Environemtal Issues/pic2.webp"
+- "/notassets/Projects pics/Collaborative Projects and programs/Environemtal Issues/pic3.webp"
 
 documents:
-  - name: "Capping System.PDF"
-    icon: "pdf.png"
-    link: "path/to/Capping System.PDF"
-  - name: "Capping System.DOCX"
-    icon: "docx.png"
-    link: "path/to/Capping System.DOCX"
-partners:
-  - "uc-logo-red-1.png"
-  - "rc.png"
+
+- name: "Capping System.PDF"
+  icon: "/notassets/icons/pdf.png"
+  link: "path/to/Capping System.PDF"
+- name: "Capping System.DOCX"
+  icon: "/notassets/icons/docx.png"
+  link: "path/to/Capping System.DOCX"
+  partners:
+- "/notassets/Partners/uc-logo-red-1.png"
+- "/notassets/Partners/rc.png"
 ---
