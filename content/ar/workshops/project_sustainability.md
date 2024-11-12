@@ -6,6 +6,6 @@ location: "Marrakech"
 workshop: true
 instructor: "Eastman Johnson"
 description: "وضع استراتيجيات لضمان استدامة المشاريع على المدى الطويل."
-thumbnail: "sincerly-green.jpg"
+thumbnail: "/notassets/Projects pics/sincerly-green.jpg"
 document: ""
 ---

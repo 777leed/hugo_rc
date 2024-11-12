@@ -6,6 +6,6 @@ location: "Marrakech"
 workshop: true
 instructor: "Eastman Johnson"
 description: "Découvrez le processus de design thinking pour des solutions créatives et durables."
-thumbnail: "sincerly-green.jpg"
+thumbnail: "/notassets/Projects pics/sincerly-green.jpg"
 document: ""
 ---

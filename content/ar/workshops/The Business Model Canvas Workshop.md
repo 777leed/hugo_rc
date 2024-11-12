@@ -6,7 +6,7 @@ location: "Marrakech"
 workshop: true
 instructor: "Eastman Johnson"
 description: "لوحة نموذج الأعمال هي أداة عمل تُستخدم لتصور جميع المكونات اللازمة لبدء عمل تجاري، بما في ذلك العملاء، والطريق إلى السوق، والقيمة المقترحة والتمويل. تناقش ورشة العمل هذه لوحة نموذج الأعمال وتوضح للمشاركين كيفية تطبيقها على أعمالهم ومؤسساتهم. يناقش المشاركون ماهية هذا النموذج ويطبقونه على العديد من الأعمال التجارية لمناقشة ما إذا كان هذا النموذج مفيداً لهذا العمل أم لا. وتتيح ورشة العمل للمشاركين النظر إلى أعمالهم بطريقة جديدة، مما يثير الإبداع والأفكار الجديدة."
-thumbnail: "Training and development/w8.jpg"
+thumbnail: "/notassets/Projects pics/Training and development/w8.jpg"
 document: ""
 categoryf: "Professional Development"
 ---

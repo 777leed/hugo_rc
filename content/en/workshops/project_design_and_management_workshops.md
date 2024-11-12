@@ -6,6 +6,6 @@ location: "Marrakech"
 workshop: true
 instructor: "Eastman Johnson"
 description: "Learn essential techniques for designing and managing sustainable projects."
-thumbnail: "sincerly-green.jpg"
+thumbnail: "/notassets/Projects pics/sincerly-green.jpg"
 document: ""
 ---

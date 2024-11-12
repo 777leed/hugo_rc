@@ -6,6 +6,6 @@ location: "Marrakech"
 workshop: true
 instructor: "Eastman Johnson"
 description: "Explorer les pratiques de gestion des déchets et l'éducation."
-thumbnail: "sincerly-green.jpg"
+thumbnail: "/notassets/Projects pics/sincerly-green.jpg"
 document: ""
 ---

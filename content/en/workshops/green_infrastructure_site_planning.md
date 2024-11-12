@@ -6,6 +6,6 @@ location: "Marrakech"
 workshop: true
 instructor: "Eastman Johnson"
 description: "Learn eco-friendly site planning techniques for sustainable infrastructure."
-thumbnail: "sincerly-green.jpg"
+thumbnail: "/notassets/Projects pics/sincerly-green.jpg"
 document: ""
 ---

@@ -30,7 +30,7 @@
           {{ range .Params.images }}
           <img loading="lazy"
             class="w-16 h-16 object-cover rounded-lg clickable-img"
-            src="/notassets/Projects pics/{{ . }}"
+            src="{{ . }}"
             alt=""
           />
           {{ end }}
@@ -39,7 +39,7 @@
           <img loading="lazy"
             id="thumbnail-img"
             class="w-full object-cover rounded-lg h-full overflow-hidden"
-            src="/notassets/Projects pics/{{ .Params.thumbnail }}"
+            src="{{ .Params.thumbnail }}"
             alt=""
           />
         </div>

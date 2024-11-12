@@ -10,7 +10,7 @@ description: >
   ولهذا السبب ركزت المجتمعات المرنة على تقديم ورش عمل معتمدة لتعليم الطلاب والجمعيات الشبابية التفكير الإبداعي والنقدي، 
   وكيفية إنشاء وإدارة وتنفيذ مشاريعهم الخاصة. لقد نفذنا ورشة عمل "إدارة المشاريع" مع شركائنا في تيفلت وسيدي سليمان 
   وآيت داود ومراكش وتامصلوحت وافتراضياً.
-thumbnail: "Training and development/workshop1/pic2.jpeg"
+thumbnail: "/notassets/Projects pics/Training and development/workshop1/pic2.jpeg"
 document: ""
 categoryf: "Professional Development"
 ---

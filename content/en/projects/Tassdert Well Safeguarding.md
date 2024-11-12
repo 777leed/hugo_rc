@@ -11,7 +11,7 @@ date: 2024-01-01
 location: "Tassdert, Morocco"
 description: "In partnership with the Tassdert Youth Association, this project focuses on safeguarding a well in a small village in Souss Valley, Morocco, that has become a public danger to residents. The initiative involves rebuilding and replacing the well door with a new, secure one to ensure safety and prevent accidents. This project addresses urgent safety concerns and helps protect the community from potential hazards associated with the well. By enhancing the well’s security, we aim to improve overall safety and contribute to the well-being of the village's residents."
 estimated: "3241"
-thumbnail: "Collaborative Projects and programs/Tassdert Well Safeguarding/pic1.webp"
+thumbnail: "/notassets/Projects pics/Collaborative Projects and programs/Tassdert Well Safeguarding/pic1.webp"
 sdescription: "Safeguarding a well in a small village in Souss Valley"
 budget: "5234"
 raised: "5234"
@@ -20,9 +20,9 @@ tags:
   - "Water and Sanitation"
   - "Safety"
 images:
-  - "Collaborative Projects and programs/Tassdert Well Safeguarding/pic1.webp"
-  - "Collaborative Projects and programs/Tassdert Well Safeguarding/pic2.webp"
-  - "Collaborative Projects and programs/Tassdert Well Safeguarding/pic3.webp"
+  - "/notassets/Projects pics/Collaborative Projects and programs/Tassdert Well Safeguarding/pic1.webp"
+  - "/notassets/Projects pics/Collaborative Projects and programs/Tassdert Well Safeguarding/pic2.webp"
+  - "/notassets/Projects pics/Collaborative Projects and programs/Tassdert Well Safeguarding/pic3.webp"
 
 documents:
   - name: "Capping System.PDF"

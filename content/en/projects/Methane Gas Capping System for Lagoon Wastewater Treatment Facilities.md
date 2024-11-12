@@ -11,7 +11,7 @@ date: 2024-01-01
 location: "Marakkech, Morocco"
 description: "The 2018-2019 Environmental Engineering Capstone Project focused on designing a methane gas capping system for the wastewater treatment anaerobic ponds. The potential use of the methane can be for the new pottery kiln prototypes or for household use. A prototype small-batch reactor is in the process of being designed to verify the cubic meters of methane produced and determine the best gas scrubbing process."
 estimated: "3241"
-thumbnail: "Collaborative Projects and programs/gas treatment/pic2.webp"
+thumbnail: "/notassets/Projects pics/Collaborative Projects and programs/gas treatment/pic2.webp"
 sdescription: "small description"
 budget: "5234"
 raised: "5234"
@@ -20,8 +20,8 @@ tags:
   - "Water and Sanitation"
   - "Energy"
 images:
-  - "Collaborative Projects and programs/gas treatment/pic2.webp"
-  - "Collaborative Projects and programs/gas treatment/pic1.webp"
+  - "/notassets/Projects pics/Collaborative Projects and programs/gas treatment/pic2.webp"
+  - "/notassets/Projects pics/Collaborative Projects and programs/gas treatment/pic1.webp"
 documents:
   - name: "Capping System.PDF"
     icon: "pdf.png"

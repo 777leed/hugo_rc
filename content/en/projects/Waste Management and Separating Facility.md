@@ -11,7 +11,7 @@ date: 2024-01-01
 location: "Tameslouht, Morocco"
 description: "For the 2019-2020 academic year, the environmental engineering students are designing a landfill and waste management facility in Tameslouht. The report and designs produced will be used to support waste separation and reuse by utilizing the solid waste data gathered by Eastman during his Fulbright research."
 estimated: "3241"
-thumbnail: "Collaborative Projects and programs/landfill/pic1.webp"
+thumbnail: "/notassets/Projects pics/Collaborative Projects and programs/landfill/pic1.webp"
 sdescription: "small description"
 budget: "5234"
 raised: "5234"
@@ -20,9 +20,9 @@ tags:
   - "Water and Sanitation"
   - "Energy"
 images:
-  - "Collaborative Projects and programs/landfill/pic1.webp"
-  - "Collaborative Projects and programs/landfill/pic2.webp"
-  - "Collaborative Projects and programs/landfill/pic3.webp"
+  - "/notassets/Projects pics/Collaborative Projects and programs/landfill/pic1.webp"
+  - "/notassets/Projects pics/Collaborative Projects and programs/landfill/pic2.webp"
+  - "/notassets/Projects pics/Collaborative Projects and programs/landfill/pic3.webp"
 
 documents:
   - name: "Capping System.PDF"
