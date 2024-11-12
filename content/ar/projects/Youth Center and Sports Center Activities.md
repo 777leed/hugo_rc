@@ -23,7 +23,6 @@ images:
   - "/notassets/Projects pics/Community Engagement/youth center sports/pic1.jpg"
   - "/notassets/Projects pics/Community Engagement/youth center sports/pic2.jpg"
   - "/notassets/Projects pics/Community Engagement/youth center sports/pic3.jpg"
-
 documents:
   - name: "Capping System.PDF"
     icon: "/notassets/icons/pdf.png"

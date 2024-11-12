@@ -22,8 +22,7 @@ tags:
 images:
   - "/notassets/Projects pics/Collaborative Projects and programs/Environemtal Issues/pic1.webp"
   - "/notassets/Projects pics/Collaborative Projects and programs/Environemtal Issues/pic2.webp"
-  - "/notassets/Projects pics/Collaborative Projects and programs/Environemtal Issues/pic3.webp"
-documents:
+  - "/notassets/Projects pics/Collaborative Projects and programs/Environemtal Issues/pic3.webp"documents:
   - name: "Capping System.PDF"
     icon: "/notassets/icons/pdf.png"
     link: "path/to/Capping System.PDF"

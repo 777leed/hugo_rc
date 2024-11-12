@@ -18,22 +18,19 @@ budget: "5234"
 raised: "5234"
 donors: "34"
 tags:
-
 - "Water"
 - "Solar Energy"
   images:
 - "/notassets/Projects pics/Collaborative Projects and programs/Tassdert Solar Panels/tassdert project.webp"
 - "/notassets/Projects pics/Collaborative Projects and programs/Tassdert Solar Panels/tassdert project.webp"
 - "/notassets/Projects pics/Collaborative Projects and programs/Tassdert Solar Panels/tassdert project.webp"
-
 documents:
-
 - name: "Capping System.PDF"
   icon: "/notassets/icons/pdf.png"
   link: "path/to/Capping System.PDF"
 - name: "Capping System.DOCX"
   icon: "/notassets/icons/docx.png"
   link: "path/to/Capping System.DOCX"
-  partners:
+partners:
 - "/notassets/Partners/rc.png" - "/notassets/Partners/tassdert.png"
 ---

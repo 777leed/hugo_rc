@@ -18,23 +18,20 @@ budget: "5234"
 raised: "5234"
 donors: "34"
 tags:
-
 - "Cultural Exchange"
 - "Education & Sports"
   images:
 - "/notassets/Projects pics/Community Engagement/Fiers et Forts Youth House Activities/pic1.jpg"
 - "/notassets/Projects pics/Community Engagement/Fiers et Forts Youth House Activities/pic2.jpg"
 - "/notassets/Projects pics/Community Engagement/Fiers et Forts Youth House Activities/pic3.jpg"
-
 documents:
-
 - name: "Capping System.PDF"
   icon: "/notassets/icons/pdf.png"
   link: "path/to/Capping System.PDF"
 - name: "Capping System.DOCX"
   icon: "/notassets/icons/docx.png"
   link: "path/to/Capping System.DOCX"
-  partners:
+partners:
 - "logo5.png"
 - "NSLI-Y_Logo_White_Text.png"
 ---

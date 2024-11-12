@@ -18,7 +18,6 @@ budget: "5234"
 raised: "5234"
 donors: "34"
 tags:
-
 - "Eau et Assainissement"
 - "Énergie"
   images:
@@ -31,7 +30,7 @@ tags:
 - name: "Capping System.DOCX"
   icon: "/notassets/icons/docx.png"
   link: "path/to/Capping System.DOCX"
-  partners:
+partners:
 - "/notassets/Partners/uc-logo-red-1.png"
 - "/notassets/Partners/rc.png"
 ---
