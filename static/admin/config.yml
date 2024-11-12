@@ -35,3 +35,254 @@ collections:
       - { label: "Thumbnail", name: "thumbnail", widget: "image" }
       - { label: "Tag", name: "tag", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "donation_page" # Collection name, used in routes
+    label: "Donation Page" # Displayed in the CMS UI
+    folder: "content/en/donation_page" # Path to the folder containing donation documents
+    create: true # Allow creating new donation entries
+    slug: "{{slug}}" # Keeps the filename as the slug without a date prefix
+    fields: # Define fields for each donation entry
+      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Route", name: "route", widget: "string" }
+      - {
+          label: "Icon",
+          name: "icon",
+          widget: "image",
+          allow_multiple: false,
+          choose_url: true,
+        }
+  - name: "intern_projects" # Collection name used in routes
+    label: "Intern Projects" # Display name in the CMS UI
+    folder: "content/en/intern_projects" # Path to the folder containing intern project documents
+    create: true # Allow users to create new entries
+    slug: "{{slug}}" # Use the title or name as the slug
+    fields: # Define fields for each intern project
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Position", name: "position", widget: "string" }
+      - { label: "Text", name: "text", widget: "text" }
+      - {
+          label: "Symbol",
+          name: "symbol",
+          widget: "image",
+          allow_multiple: false,
+          choose_url: true,
+        } # Allows image upload or URL for the symbol
+      - {
+          label: "Profile Picture",
+          name: "pic",
+          widget: "image",
+          allow_multiple: false,
+          choose_url: true,
+        } # Allows image upload or URL for the profile picture
+      - { label: "LinkedIn", name: "linkedIn", widget: "string" } # LinkedIn profile link
+  - name: "internship" # Collection name for routes
+    label: "Internships" # Display name in the CMS UI
+    folder: "content/en/internship" # Path to the folder containing internship documents
+    create: true # Allow users to create new entries
+    slug: "{{slug}}" # Use the intern's name as the slug
+    fields: # Define fields for each internship entry
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Position", name: "position", widget: "string" }
+      - { label: "Text", name: "text", widget: "text" }
+      - {
+          label: "Symbol",
+          name: "symbol",
+          widget: "image",
+          allow_multiple: false,
+          choose_url: true,
+        } # Allows image upload or URL for the symbol
+      - {
+          label: "Profile Picture",
+          name: "pic",
+          widget: "image",
+          allow_multiple: false,
+          choose_url: true,
+        } # Allows image upload or URL for the profile picture
+      - { label: "LinkedIn", name: "linkedIn", widget: "string" } # LinkedIn profile link
+  - name: "projects" # Collection name for routes
+    label: "Projects" # Display name in the CMS UI
+    folder: "content/en/projects" # Path to the folder containing project documents
+    create: true # Allow users to create new entries
+    slug: "{{slug}}" # Use the project title as the slug
+    fields: # Define fields for each project entry
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Category", name: "category", widget: "string" }
+      - {
+          label: "Completed",
+          name: "completed",
+          widget: "boolean",
+          default: false,
+        }
+      - { label: "Ongoing", name: "ongoing", widget: "boolean", default: false }
+      - {
+          label: "Collaboration",
+          name: "collab",
+          widget: "boolean",
+          default: false,
+        }
+      - { label: "Community", name: "commu", widget: "boolean", default: false }
+      - { label: "Latitude", name: "latitude", widget: "number", decimals: 4 }
+      - { label: "Longitude", name: "longitude", widget: "number", decimals: 4 }
+      - { label: "Date", name: "date", widget: "date" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Short Description", name: "sdescription", widget: "text" }
+      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Estimated Budget", name: "estimated", widget: "string" }
+      - { label: "Raised Amount", name: "raised", widget: "string" }
+      - { label: "Number of Donors", name: "donors", widget: "string" }
+      - { label: "Project Budget", name: "budget", widget: "string" }
+      - {
+          label: "Thumbnail",
+          name: "thumbnail",
+          widget: "image",
+          allow_multiple: false,
+          choose_url: true,
+        }
+      - { label: "Tags", name: "tags", widget: "list", allow_add: true }
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        allow_add: true
+        field:
+          { label: "Image", name: "image", widget: "image", choose_url: true }
+      - label: "Documents"
+        name: "documents"
+        widget: "list"
+        fields:
+          - { label: "Document Name", name: "name", widget: "string" }
+          - {
+              label: "Icon",
+              name: "icon",
+              widget: "image",
+              allow_multiple: false,
+              choose_url: true,
+            }
+          - { label: "Link", name: "link", widget: "string" }
+      - label: "Partners"
+        name: "partners"
+        widget: "list"
+        allow_add: true
+        field:
+          {
+            label: "Partner Logo",
+            name: "logo",
+            widget: "image",
+            choose_url: true,
+          }
+  - name: "recent_interns" # Collection name for routes
+    label: "Recent Interns" # Display name in the CMS UI
+    folder: "content/en/Recent_Interns" # Path to the folder containing recent intern documents
+    create: true # Allow users to create new entries
+    slug: "{{slug}}" # Use the intern's name as the slug
+    fields: # Define fields for each recent intern entry
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Position", name: "position", widget: "string" }
+      - { label: "Description", name: "text", widget: "text" }
+      - {
+          label: "Symbol",
+          name: "symbol",
+          widget: "image",
+          allow_multiple: false,
+          choose_url: true,
+        }
+      - {
+          label: "Profile Picture",
+          name: "pic",
+          widget: "image",
+          allow_multiple: false,
+          choose_url: true,
+        }
+      - { label: "LinkedIn Profile", name: "linkedIn", widget: "string" }
+  - name: "volunteer_group" # Collection name for routes
+    label: "Volunteer Group" # Display name in the CMS UI
+    folder: "content/en/volunteer_group" # Path to the folder containing volunteer group documents
+    create: true # Allow users to create new entries
+    slug: "{{slug}}" # Use the title as the slug
+    fields: # Define fields for each volunteer group entry
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Price Tag", name: "pricetag", widget: "number", default: 0 }
+      - { label: "Description", name: "description", widget: "text" }
+      - {
+          label: "Thumbnail",
+          name: "thumbnail",
+          widget: "image",
+          allow_multiple: false,
+          choose_url: true,
+        }
+      - { label: "Type", name: "type", widget: "string" }
+  - name: "what_we_do" # Collection name for routes
+    label: "What We Do" # Display name in the CMS UI
+    folder: "content/en/what_we_do" # Path to the folder containing documents
+    create: true # Allow users to create new entries
+    slug: "{{slug}}" # Use the title as the slug
+    fields: # Define fields for each entry
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Thumbnail",
+          name: "thumbnail",
+          widget: "image",
+          allow_multiple: false,
+          choose_url: true,
+        }
+      - {
+          label: "Link to Project",
+          name: "linkToProject",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Manual PDF",
+          name: "manualPdf",
+          widget: "file",
+          required: false,
+        }
+      - { label: "Description", name: "desc", widget: "text", required: false }
+      - {
+          label: "Collaborative Project",
+          name: "collab",
+          widget: "boolean",
+          default: false,
+        }
+      - {
+          label: "Community Involvement",
+          name: "comm",
+          widget: "boolean",
+          default: false,
+        }
+      - {
+          label: "Training Program",
+          name: "training",
+          widget: "boolean",
+          default: false,
+        }
+  - name: "workshops" # Collection name for routes
+    label: "Workshops" # Display name in the CMS UI
+    folder: "content/en/workshops" # Path to the folder containing documents
+    create: true # Allow users to create new entries
+    slug: "{{slug}}" # Use the title as the slug
+    fields: # Define fields for each entry
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Category", name: "categoryf", widget: "string" }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          format: "YYYY-MM-DD",
+        }
+      - { label: "Location", name: "location", widget: "string" }
+      - {
+          label: "Workshop",
+          name: "workshop",
+          widget: "boolean",
+          default: true,
+        }
+      - { label: "Instructor", name: "instructor", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - {
+          label: "Thumbnail",
+          name: "thumbnail",
+          widget: "image",
+          allow_multiple: false,
+          choose_url: true,
+        }
+      - { label: "Document", name: "document", widget: "file", required: false }
