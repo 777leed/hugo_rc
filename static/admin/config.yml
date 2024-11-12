@@ -1,0 +1,37 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+collections:
+  - name: "team"
+    label: "Team Members"
+    folder: "content/en/about" # Path to the folder where documents are stored
+    create: true # Allow users to create new documents
+    slug: "{{slug}}" # Filename template
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Position", name: "position", widget: "string" }
+      - { label: "LinkedIn Profile", name: "linkedin", widget: "string" }
+      - { label: "Profile Picture", name: "pic", widget: "image" }
+      - { label: "Description", name: "description", widget: "text" }
+  - name: "articles"
+    label: "Articles"
+    folder: "content/en/articles" # Path to the folder where documents are stored
+    create: true # Allow users to create new documents
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template with date and slug
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Quick Read Summary", name: "quickRead", widget: "text" }
+      - {
+          label: "Paragraph",
+          name: "paragraph",
+          widget: "text",
+          required: false,
+        }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Author Picture", name: "authorpic", widget: "image" }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image" }
+      - { label: "Tag", name: "tag", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
