@@ -1,5 +1,4 @@
 ---
-
 title: "ضمان السلامة والأمان: إعادة بناء بئر في تاسدرت"
 category: "أنشطة المشاركة المجتمعية"
 completed: true
@@ -20,11 +19,11 @@ donors: "34"
 tags:
   - "المياه والصرف الصحي"
   - "السلامة"
-  images:
+images:
   - "/notassets/Projects pics/Collaborative Projects and programs/Tassdert Well Safeguarding/pic1.webp"
   - "/notassets/Projects pics/Collaborative Projects and programs/Tassdert Well Safeguarding/pic2.webp"
   - "/notassets/Projects pics/Collaborative Projects and programs/Tassdert Well Safeguarding/pic3.webp"
-  documents:
+documents:
   - name: "Capping System.PDF"
     icon: "/notassets/icons/pdf.png"
     link: "path/to/Capping System.PDF"
