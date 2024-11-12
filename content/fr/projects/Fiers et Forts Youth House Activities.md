@@ -23,7 +23,7 @@ images:
   - "/notassets/Projects pics/Community Engagement/Fiers et Forts Youth House Activities/pic1.jpg"
   - "/notassets/Projects pics/Community Engagement/Fiers et Forts Youth House Activities/pic2.jpg"
   - "/notassets/Projects pics/Community Engagement/Fiers et Forts Youth House Activities/pic3.jpg"
-  documents:
+documents:
   - name: "Capping System.PDF"
     icon: "/notassets/icons/pdf.png"
     link: "path/to/Capping System.PDF"
