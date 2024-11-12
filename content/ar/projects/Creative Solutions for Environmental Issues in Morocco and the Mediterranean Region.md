@@ -1,5 +1,4 @@
 ---
-
 title: "الحلول الإبداعية لمشاكل البيئة في المغرب والمنطقة البحر الأبيض المتوسط"
 category: "المشاريع والبرامج التعاونية"
 completed: true
@@ -18,20 +17,20 @@ budget: "5234"
 raised: "5234"
 donors: "34"
 tags:
-- "المياه والصرف الصحي"
-- "الطاقة"
-  images:
-- "/notassets/Projects pics/Collaborative Projects and programs/Environemtal Issues/pic1.webp"
-- "/notassets/Projects pics/Collaborative Projects and programs/Environemtal Issues/pic2.webp"
-- "/notassets/Projects pics/Collaborative Projects and programs/Environemtal Issues/pic3.webp"
-  documents:
-- name: "Capping System.PDF"
-  icon: "/notassets/icons/pdf.png"
-  link: "path/to/Capping System.PDF"
-- name: "Capping System.DOCX"
-  icon: "/notassets/icons/docx.png"
-  link: "path/to/Capping System.DOCX"
+  - "المياه والصرف الصحي"
+  - "الطاقة"
+images:
+  - "/notassets/Projects pics/Collaborative Projects and programs/Environemtal Issues/pic1.webp"
+  - "/notassets/Projects pics/Collaborative Projects and programs/Environemtal Issues/pic2.webp"
+  - "/notassets/Projects pics/Collaborative Projects and programs/Environemtal Issues/pic3.webp"
+documents:
+  - name: "Capping System.PDF"
+    icon: "/notassets/icons/pdf.png"
+    link: "path/to/Capping System.PDF"
+  - name: "Capping System.DOCX"
+    icon: "/notassets/icons/docx.png"
+    link: "path/to/Capping System.DOCX"
 partners:
-- "/notassets/Partners/uc-logo-red-1.png"
-- "/notassets/Partners/rc.png"
+  - "/notassets/Partners/uc-logo-red-1.png"
+  - "/notassets/Partners/rc.png"
 ---

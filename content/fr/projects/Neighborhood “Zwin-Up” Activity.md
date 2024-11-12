@@ -1,5 +1,4 @@
 ---
-
 title: "Activité de quartier Zwin-Up"
 category: "Activités d'engagement communautaire"
 completed: true
@@ -18,20 +17,20 @@ budget: "5234"
 raised: "5234"
 donors: "34"
 tags:
-- "Zwin-Up"
-- "Quartiers"
-  images:
-- "/notassets/Projects pics/Community Engagement/ZwinUp/pic3.jpg"
-- "/notassets/Projects pics/Community Engagement/ZwinUp/pic2.jpg"
-- "/notassets/Projects pics/Community Engagement/ZwinUp/pic1.jpg"
+  - "Zwin-Up"
+  - "Quartiers"
+images:
+  - "/notassets/Projects pics/Community Engagement/ZwinUp/pic3.jpg"
+  - "/notassets/Projects pics/Community Engagement/ZwinUp/pic2.jpg"
+  - "/notassets/Projects pics/Community Engagement/ZwinUp/pic1.jpg"
 documents:
-- name: "Capping System.PDF"
-  icon: "/notassets/icons/pdf.png"
-  link: "chemin/vers/Capping System.PDF"
-- name: "Capping System.DOCX"
-  icon: "/notassets/icons/docx.png"
-  link: "chemin/vers/Capping System.DOCX"
+  - name: "Capping System.PDF"
+    icon: "/notassets/icons/pdf.png"
+    link: "chemin/vers/Capping System.PDF"
+  - name: "Capping System.DOCX"
+    icon: "/notassets/icons/docx.png"
+    link: "chemin/vers/Capping System.DOCX"
 partners:
-- "/notassets/Partners/uc-logo-red-1.png"
-- "/notassets/Partners/rc.png"
+  - "/notassets/Partners/uc-logo-red-1.png"
+  - "/notassets/Partners/rc.png"
 ---

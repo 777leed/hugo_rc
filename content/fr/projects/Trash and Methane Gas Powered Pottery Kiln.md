@@ -1,5 +1,4 @@
 ---
-
 title: "Four à poterie alimenté par des déchets et du gaz méthane"
 category: "Projets et Programmes Collaboratifs"
 completed: true
@@ -18,19 +17,19 @@ budget: "5234"
 raised: "5234"
 donors: "34"
 tags:
-- "Ingénierie"
-- "Énergie"
-  images:
-- "/notassets/Projects pics/Collaborative Projects and programs/Trash and Methane Gas Powered Pottery Kiln/somekindameeting.webp"
-- "/notassets/Projects pics/Collaborative Projects and programs/Trash and Methane Gas Powered Pottery Kiln/pic1.webp"
-- "/notassets/Projects pics/Collaborative Projects and programs/Trash and Methane Gas Powered Pottery Kiln/pic2.webp"
-  documents:
-- name: "Capping System.PDF"
-  icon: "/notassets/icons/pdf.png"
-  link: "path/to/Capping System.PDF"
-- name: "Capping System.DOCX"
-  icon: "/notassets/icons/docx.png"
-  link: "path/to/Capping System.DOCX"
+  - "Ingénierie"
+  - "Énergie"
+images:
+  - "/notassets/Projects pics/Collaborative Projects and programs/Trash and Methane Gas Powered Pottery Kiln/somekindameeting.webp"
+  - "/notassets/Projects pics/Collaborative Projects and programs/Trash and Methane Gas Powered Pottery Kiln/pic1.webp"
+  - "/notassets/Projects pics/Collaborative Projects and programs/Trash and Methane Gas Powered Pottery Kiln/pic2.webp"
+documents:
+  - name: "Capping System.PDF"
+    icon: "/notassets/icons/pdf.png"
+    link: "path/to/Capping System.PDF"
+  - name: "Capping System.DOCX"
+    icon: "/notassets/icons/docx.png"
+    link: "path/to/Capping System.DOCX"
 partners:
   - "/notassets/Partners/uc-logo-red-1.png"
   - "/notassets/Partners/rc.png"

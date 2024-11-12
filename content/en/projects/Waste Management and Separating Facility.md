@@ -1,5 +1,4 @@
 ---
-
 title: "Waste Management and Separating Facility"
 category: "Collaborative Projects & Programs"
 completed: true
@@ -18,20 +17,20 @@ budget: "5234"
 raised: "5234"
 donors: "34"
 tags:
-- "Water and Sanitation"
-- "Energy"
-  images:
-- "/notassets/Projects pics/Collaborative Projects and programs/landfill/pic1.webp"
-- "/notassets/Projects pics/Collaborative Projects and programs/landfill/pic2.webp"
-- "/notassets/Projects pics/Collaborative Projects and programs/landfill/pic3.webp"
+  - "Water and Sanitation"
+  - "Energy"
+images:
+  - "/notassets/Projects pics/Collaborative Projects and programs/landfill/pic1.webp"
+  - "/notassets/Projects pics/Collaborative Projects and programs/landfill/pic2.webp"
+  - "/notassets/Projects pics/Collaborative Projects and programs/landfill/pic3.webp"
 documents:
-- name: "Capping System.PDF"
-  icon: "/notassets/icons/pdf.png"
-  link: "path/to/Capping System.PDF"
-- name: "Capping System.DOCX"
-  icon: "/notassets/icons/docx.png"
-  link: "path/to/Capping System.DOCX"
+  - name: "Capping System.PDF"
+    icon: "/notassets/icons/pdf.png"
+    link: "path/to/Capping System.PDF"
+  - name: "Capping System.DOCX"
+    icon: "/notassets/icons/docx.png"
+    link: "path/to/Capping System.DOCX"
 partners:
-- "/notassets/Partners/uc-logo-red-1.png"
-- "/notassets/Partners/rc.png"
+  - "/notassets/Partners/uc-logo-red-1.png"
+  - "/notassets/Partners/rc.png"
 ---

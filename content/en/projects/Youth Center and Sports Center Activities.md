@@ -1,5 +1,4 @@
 ---
-
 title: "Youth Center and Sports Center Activities"
 category: "Community Engagement Activities"
 completed: true
@@ -18,20 +17,20 @@ budget: "5234"
 raised: "5234"
 donors: "34"
 tags:
-- "Sports"
-- "Cultural Exchange"
-  images:
-- "/notassets/Projects pics/Community Engagement/youth center sports/pic1.jpg"
-- "/notassets/Projects pics/Community Engagement/youth center sports/pic2.jpg"
-- "/notassets/Projects pics/Community Engagement/youth center sports/pic3.jpg"
+  - "Sports"
+  - "Cultural Exchange"
+images:
+  - "/notassets/Projects pics/Community Engagement/youth center sports/pic1.jpg"
+  - "/notassets/Projects pics/Community Engagement/youth center sports/pic2.jpg"
+  - "/notassets/Projects pics/Community Engagement/youth center sports/pic3.jpg"
 documents:
-- name: "Capping System.PDF"
-  icon: "/notassets/icons/pdf.png"
-  link: "path/to/Capping System.PDF"
-- name: "Capping System.DOCX"
-  icon: "/notassets/icons/docx.png"
-  link: "path/to/Capping System.DOCX"
+  - name: "Capping System.PDF"
+    icon: "/notassets/icons/pdf.png"
+    link: "path/to/Capping System.PDF"
+  - name: "Capping System.DOCX"
+    icon: "/notassets/icons/docx.png"
+    link: "path/to/Capping System.DOCX"
 partners:
-- "NSLI-Y_Logo_White_Text.png"
-- "CLC.png"
+  - "NSLI-Y_Logo_White_Text.png"
+  - "CLC.png"
 ---
