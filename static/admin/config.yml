@@ -36,7 +36,7 @@ collections:
       - { label: "Tag", name: "tag", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "donation_page" # Collection name, used in routes
-    label: "Donation Page" # Displayed in the CMS UI
+    label: "Donation Links" # Displayed in the CMS UI
     folder: "content/en/donation_page" # Path to the folder containing donation documents
     create: true # Allow creating new donation entries
     slug: "{{slug}}" # Keeps the filename as the slug without a date prefix
@@ -75,7 +75,7 @@ collections:
         } # Allows image upload or URL for the profile picture
       - { label: "LinkedIn", name: "linkedIn", widget: "string" } # LinkedIn profile link
   - name: "internship" # Collection name for routes
-    label: "Internships" # Display name in the CMS UI
+    label: "Interns Displayed (Internship Page)" # Display name in the CMS UI
     folder: "content/en/internship" # Path to the folder containing internship documents
     create: true # Allow users to create new entries
     slug: "{{slug}}" # Use the intern's name as the slug
@@ -169,7 +169,7 @@ collections:
             choose_url: true,
           }
   - name: "recent_interns" # Collection name for routes
-    label: "Recent Interns" # Display name in the CMS UI
+    label: "Recent Interns (About Us Page)" # Display name in the CMS UI
     folder: "content/en/Recent_Interns" # Path to the folder containing recent intern documents
     create: true # Allow users to create new entries
     slug: "{{slug}}" # Use the intern's name as the slug
@@ -193,7 +193,7 @@ collections:
         }
       - { label: "LinkedIn Profile", name: "linkedIn", widget: "string" }
   - name: "volunteer_group" # Collection name for routes
-    label: "Volunteer Group" # Display name in the CMS UI
+    label: "Itinerary Activities" # Display name in the CMS UI
     folder: "content/en/volunteer_group" # Path to the folder containing volunteer group documents
     create: true # Allow users to create new entries
     slug: "{{slug}}" # Use the title as the slug
@@ -210,51 +210,6 @@ collections:
           choose_url: true,
         }
       - { label: "Type", name: "type", widget: "string" }
-  - name: "what_we_do" # Collection name for routes
-    label: "What We Do" # Display name in the CMS UI
-    folder: "content/en/what_we_do" # Path to the folder containing documents
-    create: true # Allow users to create new entries
-    slug: "{{slug}}" # Use the title as the slug
-    fields: # Define fields for each entry
-      - { label: "Title", name: "title", widget: "string" }
-      - {
-          label: "Thumbnail",
-          name: "thumbnail",
-          widget: "image",
-          allow_multiple: false,
-          choose_url: true,
-        }
-      - {
-          label: "Link to Project",
-          name: "linkToProject",
-          widget: "string",
-          required: false,
-        }
-      - {
-          label: "Manual PDF",
-          name: "manualPdf",
-          widget: "file",
-          required: false,
-        }
-      - { label: "Description", name: "desc", widget: "text", required: false }
-      - {
-          label: "Collaborative Project",
-          name: "collab",
-          widget: "boolean",
-          default: false,
-        }
-      - {
-          label: "Community Involvement",
-          name: "comm",
-          widget: "boolean",
-          default: false,
-        }
-      - {
-          label: "Training Program",
-          name: "training",
-          widget: "boolean",
-          default: false,
-        }
   - name: "workshops" # Collection name for routes
     label: "Workshops" # Display name in the CMS UI
     folder: "content/en/workshops" # Path to the folder containing documents
