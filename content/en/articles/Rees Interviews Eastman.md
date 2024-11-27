@@ -5,7 +5,7 @@ paragraph: ""
 author: "Rees N.G"
 authorpic: "/notassets/Profile Pics/profile4.png"
 tag: "Interview"
-thumbnail: "/notassets/eastmanposter.jpg"
+thumbnail: "/notassets/eastmanposter.webp"
 quickRead: "Rees: We both came to Morocco through the Peace Corps in 2014. What motivated you to join?"
 ---
 

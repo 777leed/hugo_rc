@@ -5,7 +5,7 @@ paragraph: ""
 author: "ريس ن.ج"
 tag: "مقابلة"
 authorpic: "/notassets/Profile Pics/profile4.png"
-thumbnail: "/notassets/eastmanposter.jpg"
+thumbnail: "/notassets/eastmanposter.webp"
 quickRead: "ريس: كلانا جاء إلى المغرب من خلال فيلق السلام في عام 2014. ما الذي دفعك للانضمام؟"
 ---
 
