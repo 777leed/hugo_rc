@@ -330,6 +330,13 @@
 </div>
 
 <script src="/js/home.js"></script>
+<style>
+  #root {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms ease-in-out;
+  }
+</style>
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", (user) => {
@@ -364,6 +371,19 @@
     v.type = "text/javascript";
     s.parentNode.insertBefore(v, s);
   })(document, "script");
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+      var rootDiv = document.getElementById("root");
+      if (rootDiv) {
+        // Show the root div after the page loads
+        rootDiv.style.display = "block";
+        rootDiv.style.opacity = "1";
+        rootDiv.style.pointerEvents = "auto";
+      }
+    }, 2000); // Wait 2 seconds before showing
+  });
 </script>
 
 {{ end }}
